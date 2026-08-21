@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Dashboard — Portfolio Admin</title>
+<link rel="stylesheet" href="assets/css/admin.css">
+</head>
+<body>
+  <nav class="admin-nav">
+    <a href="dashboard.html">Portfolio Admin</a>
+    <div class="links">
+      <span data-user-email></span>
+      <a href="media.html">Media</a>
+      <a href="account.html">Account</a>
+      <button class="link-btn" onclick="adminLogout()">Log out</button>
+    </div>
+  </nav>
+  <div class="admin-shell">
+    <h1>Content</h1>
+    <p class="hint">Edit a section, save your draft, then publish when you're happy with it. Nothing here affects the live site until you hit Publish.</p>
+
+    <h2>Hero</h2>
+    <ul class="entry-list" id="heroList"></ul>
+
+    <h2>Projects</h2>
+    <ul class="entry-list" id="projectList"></ul>
+
+    <h2>Hobbies</h2>
+    <ul class="entry-list" id="hobbyList"></ul>
+  </div>
+  <script src="config.js"></script>
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/auth-guard.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+</body>
+</html>

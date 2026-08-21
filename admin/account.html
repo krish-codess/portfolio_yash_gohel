@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Account — Portfolio Admin</title>
+<link rel="stylesheet" href="assets/css/admin.css">
+</head>
+<body>
+  <nav class="admin-nav">
+    <a href="dashboard.html">Portfolio Admin</a>
+    <div class="links">
+      <span data-user-email></span>
+      <a href="media.html">Media</a>
+      <a href="account.html">Account</a>
+      <button class="link-btn" onclick="adminLogout()">Log out</button>
+    </div>
+  </nav>
+  <div class="admin-shell">
+    <a class="btn" href="dashboard.html" style="margin-bottom:20px;display:inline-block">&larr; Back to dashboard</a>
+    <h1>Account</h1>
+    <p class="hint">Change your password any time — you don't need anyone's help to do this.</p>
+    <div id="msg" class="msg"></div>
+
+    <div class="card">
+      <form id="changeForm">
+        <label for="currentPassword">Current password</label>
+        <input type="password" id="currentPassword" required autocomplete="current-password">
+        <label for="newPassword">New password</label>
+        <input type="password" id="newPassword" required minlength="8" autocomplete="new-password">
+        <div class="row">
+          <button type="submit" class="primary" id="submitBtn">Change password</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="config.js"></script>
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/auth-guard.js"></script>
+  <script src="assets/js/account.js"></script>
+</body>
+</html>

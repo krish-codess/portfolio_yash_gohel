@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Log in — Portfolio Admin</title>
+<link rel="stylesheet" href="assets/css/admin.css">
+</head>
+<body>
+  <div class="admin-shell narrow">
+    <div class="card">
+      <h1>Portfolio Admin</h1>
+      <p class="hint">Log in to edit and publish your site's content.</p>
+      <div id="msg" class="msg error"></div>
+      <form id="loginForm">
+        <label for="email">Email</label>
+        <input type="email" id="email" required autocomplete="username">
+        <label for="password">Password</label>
+        <input type="password" id="password" required autocomplete="current-password">
+        <div class="row">
+          <button type="submit" class="primary" id="submitBtn">Log in</button>
+          <a class="btn" href="forgot-password.html">Forgot password?</a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="config.js"></script>
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/login.js"></script>
+</body>
+</html>
