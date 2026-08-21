@@ -1,0 +1,2117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script>(function(){try{
+  var t=localStorage.getItem('theme')||'dark';
+  var p=localStorage.getItem('palette')||'risograph';
+  var m=localStorage.getItem('minimal')==='true';
+  document.documentElement.setAttribute('data-theme',t);
+  document.documentElement.setAttribute('data-palette',p);
+  if(m)document.documentElement.setAttribute('data-minimal','true');
+}catch(e){document.documentElement.setAttribute('data-theme','dark');document.documentElement.setAttribute('data-palette','risograph');}})();</script>
+<title>Yash Gohel: Creative Strategist &amp; Full-Funnel Marketer</title>
+<meta name="description" content="Bold, HUD-framed portfolio for Yash Gohel, Creative Strategist & Full-Funnel Marketer. I build content and growth systems end-to-end. 6+ years across healthtech, fintech, and DTC." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   DESIGN SYSTEM: monochrome only. dark is default, light via
+   :root[data-theme="light"]. All "accent" tokens are grayscale.
+   ============================================================ */
+:root{
+  --bg:#0a0a0b;
+  --bg-2:#111113;
+  --bg-3:#17171a;
+  --surface:rgba(255,255,255,.05);
+  --surface-2:rgba(255,255,255,.09);
+  --border:rgba(255,255,255,.14);
+  --border-2:rgba(255,255,255,.26);
+  --text:#f2f2f0;
+  --muted:#9c9c9f;
+  --muted-2:#67676a;
+  --panel-a:#1e1e21;
+  --panel-b:#111113;
+  --on-accent:#0a0a0b;
+  --hairline:rgba(255,255,255,.16);
+  --footer-bg:#000000;
+  --footer-fg:#f5f5f3;
+  --footer-muted:rgba(245,245,243,.5);
+  --footer-border:rgba(245,245,243,.16);
+  --display:'Anton',Impact,sans-serif;
+  --sans:'Space Grotesk',-apple-system,BlinkMacSystemFont,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace;
+  --maxw:1240px;
+  --railw:64px;
+  /* palette layer: mono is the default; dark is the default mode.
+     accent/accent-2/accent-glow are the only hue-bearing tokens in the
+     system, so switching palette never has to touch structural CSS. */
+  --accent:#f2f2f0;--accent-rgb:242,242,240;
+  --accent-2:#9c9c9f;
+  --accent-on:#0a0a0b;
+  --accent-glow:rgba(255,255,255,.22);
+}
+:root[data-theme="light"]{
+  --bg:#f6f6f4;
+  --bg-2:#eeeeec;
+  --bg-3:#e6e6e3;
+  --surface:rgba(10,10,8,.04);
+  --surface-2:rgba(10,10,8,.07);
+  --border:rgba(10,10,8,.12);
+  --border-2:rgba(10,10,8,.22);
+  --text:#121210;
+  --muted:#57575b;
+  --muted-2:#8a8a8d;
+  --panel-a:#e9e9e6;
+  --panel-b:#dededa;
+  --on-accent:#f6f6f4;
+  --hairline:rgba(10,10,8,.16);
+  --accent:#121210;--accent-rgb:18,18,16;
+  --accent-2:#57575b;
+  --accent-on:#f6f6f4;
+  --accent-glow:rgba(10,10,8,.14);
+}
+@media(prefers-color-scheme:light){
+  :root:not([data-theme="dark"]):not([data-theme="light"]){
+    --bg:#f6f6f4;--bg-2:#eeeeec;--bg-3:#e6e6e3;
+    --surface:rgba(10,10,8,.04);--surface-2:rgba(10,10,8,.07);
+    --border:rgba(10,10,8,.12);--border-2:rgba(10,10,8,.22);
+    --text:#121210;--muted:#57575b;--muted-2:#8a8a8d;
+    --panel-a:#e9e9e6;--panel-b:#dededa;--on-accent:#f6f6f4;--hairline:rgba(10,10,8,.16);
+    --accent:#121210;--accent-rgb:18,18,16;--accent-2:#57575b;--accent-on:#f6f6f4;--accent-glow:rgba(10,10,8,.14);
+  }
+}
+/* ---- palette: pastel, dreamy lavender/plum, dark mode ---- */
+:root[data-palette="pastel"]{
+  --accent:#c9b8ff;--accent-rgb:201,184,255;--accent-2:#a3f0cf;--accent-on:#161320;--accent-glow:rgba(201,184,255,.28);
+  --bg:#15111f;--bg-2:#1b1629;--bg-3:#231b35;
+  --surface:rgba(201,184,255,.06);--surface-2:rgba(201,184,255,.11);
+  --border:rgba(201,184,255,.16);--border-2:rgba(201,184,255,.28);
+  --panel-a:#241c37;--panel-b:#1a1526;--muted:#aca0cf;--muted-2:#726892;--hairline:rgba(201,184,255,.16);
+}
+/* ---- palette: pastel, light mode ---- */
+:root[data-palette="pastel"][data-theme="light"]{
+  --accent:#7c5cff;--accent-rgb:124,92,255;--accent-2:#1f9d72;--accent-on:#ffffff;--accent-glow:rgba(124,92,255,.18);
+  --bg:#faf7ff;--bg-2:#f3edff;--bg-3:#ece2ff;
+  --surface:rgba(124,92,255,.05);--surface-2:rgba(124,92,255,.09);
+  --border:rgba(124,92,255,.14);--border-2:rgba(124,92,255,.24);
+  --panel-a:#efe7ff;--panel-b:#e5d9ff;--muted:#6b6289;--muted-2:#948bb2;--hairline:rgba(124,92,255,.16);
+}
+/* ---- palette: cyber, magenta/cyan glow, dark mode ---- */
+:root[data-palette="cyber"]{
+  --accent:#ff2e9e;--accent-rgb:255,46,158;--accent-2:#22e6ff;--accent-on:#0a0a0b;--accent-glow:rgba(255,46,158,.32);
+  --bg:#08060d;--bg-2:#0d0a15;--bg-3:#130e1f;
+  --surface:rgba(34,230,255,.05);--surface-2:rgba(255,46,158,.08);
+  --border:rgba(255,46,158,.18);--border-2:rgba(34,230,255,.26);
+  --panel-a:#170d21;--panel-b:#0c1521;--muted:#9c93bd;--muted-2:#615a7d;--hairline:rgba(255,46,158,.16);
+}
+/* ---- palette: cyber, light mode ---- */
+:root[data-palette="cyber"][data-theme="light"]{
+  --accent:#e0157e;--accent-rgb:224,21,126;--accent-2:#0891b2;--accent-on:#ffffff;--accent-glow:rgba(224,21,126,.2);
+  --bg:#fbf7fb;--bg-2:#f7eef8;--bg-3:#f0e2f3;
+  --surface:rgba(224,21,126,.05);--surface-2:rgba(8,145,178,.07);
+  --border:rgba(224,21,126,.14);--border-2:rgba(8,145,178,.22);
+  --panel-a:#f5e5f5;--panel-b:#e4f2f7;--muted:#6b4a63;--muted-2:#9c7d94;--hairline:rgba(224,21,126,.14);
+}
+/* ---- palette: brass, matte black + warm brass + light wood, dark mode ---- */
+:root[data-palette="brass"]{
+  --accent:#c99b4e;--accent-rgb:201,155,78;--accent-2:#8c6a2f;--accent-on:#141210;--accent-glow:rgba(201,155,78,.3);
+  --bg:#141210;--bg-2:#1c1912;--bg-3:#221e15;
+  --surface:rgba(196,152,84,.05);--surface-2:rgba(196,152,84,.09);
+  --border:rgba(196,152,84,.14);--border-2:rgba(196,152,84,.24);
+  --panel-a:#241f16;--panel-b:#1a1610;--muted:#b8ab8f;--muted-2:#756a54;--hairline:rgba(196,152,84,.16);
+}
+/* ---- palette: brass, cream + brass, light mode ---- */
+:root[data-palette="brass"][data-theme="light"]{
+  --accent:#a97a2c;--accent-rgb:169,122,44;--accent-2:#6b4f21;--accent-on:#f7f1e4;--accent-glow:rgba(169,122,44,.2);
+  --bg:#f7f1e4;--bg-2:#f0e8d5;--bg-3:#e8ddc4;
+  --surface:rgba(140,100,40,.05);--surface-2:rgba(140,100,40,.08);
+  --border:rgba(120,90,40,.14);--border-2:rgba(120,90,40,.24);
+  --panel-a:#efe6d2;--panel-b:#e3d6b8;--muted:#6b5c3f;--muted-2:#9c8b68;--hairline:rgba(120,90,40,.16);
+}
+/* ---- palette: editorial, off-white on true black + oxblood, dark mode ---- */
+:root[data-palette="editorial"]{
+  --accent:#7d1f2b;--accent-rgb:125,31,43;--accent-2:#a83244;--accent-on:#f5f2ea;--accent-glow:rgba(168,50,68,.28);
+  --bg:#0a0a0a;--bg-2:#121212;--bg-3:#181818;
+  --surface:rgba(255,255,255,.04);--surface-2:rgba(255,255,255,.07);
+  --border:rgba(255,255,255,.12);--border-2:rgba(255,255,255,.22);
+  --panel-a:#161616;--panel-b:#0f0f0f;--muted:#a3a099;--muted-2:#656258;--hairline:rgba(255,255,255,.16);
+}
+/* ---- palette: editorial, near-black on off-white, light mode ---- */
+:root[data-palette="editorial"][data-theme="light"]{
+  --accent:#6f1622;--accent-rgb:111,22,34;--accent-2:#93222f;--accent-on:#f7f4ec;--accent-glow:rgba(111,22,34,.16);
+  --bg:#f7f4ec;--bg-2:#efeade;--bg-3:#e6dfcd;
+  --surface:rgba(10,10,10,.04);--surface-2:rgba(10,10,10,.07);
+  --border:rgba(10,10,10,.12);--border-2:rgba(10,10,10,.22);
+  --panel-a:#efeade;--panel-b:#e3dcc8;--muted:#58544a;--muted-2:#8c8677;--hairline:rgba(10,10,10,.16);
+}
+/* ---- palette: terracotta, espresso brown + clay + olive, dark mode ---- */
+:root[data-palette="terracotta"]{
+  --accent:#c1602f;--accent-rgb:193,96,47;--accent-2:#8f9c5a;--accent-on:#1c1410;--accent-glow:rgba(193,96,47,.3);
+  --bg:#1c1410;--bg-2:#241a14;--bg-3:#2c2018;
+  --surface:rgba(196,106,66,.06);--surface-2:rgba(196,106,66,.1);
+  --border:rgba(196,106,66,.16);--border-2:rgba(196,106,66,.26);
+  --panel-a:#2e2119;--panel-b:#201712;--muted:#c2a68e;--muted-2:#806b57;--hairline:rgba(196,106,66,.16);
+}
+/* ---- palette: terracotta, sun-washed sand + clay + olive, light mode ---- */
+:root[data-palette="terracotta"][data-theme="light"]{
+  --accent:#a84b22;--accent-rgb:168,75,34;--accent-2:#6c7a3e;--accent-on:#f3e6d3;--accent-glow:rgba(168,75,34,.2);
+  --bg:#f3e6d3;--bg-2:#ecdcc2;--bg-3:#e3cfab;
+  --surface:rgba(150,80,40,.05);--surface-2:rgba(150,80,40,.08);
+  --border:rgba(120,70,35,.15);--border-2:rgba(120,70,35,.25);
+  --panel-a:#ecdcc2;--panel-b:#e0cba9;--muted:#6e5236;--muted-2:#a1815e;--hairline:rgba(120,70,35,.16);
+}
+/* ---- palette: forest, near-black green + moss + muted gold, dark mode ---- */
+:root[data-palette="forest"]{
+  --accent:#b9932f;--accent-rgb:185,147,47;--accent-2:#5a8a5f;--accent-on:#0c1210;--accent-glow:rgba(185,147,47,.28);
+  --bg:#0c1210;--bg-2:#101a16;--bg-3:#14211a;
+  --surface:rgba(122,155,102,.06);--surface-2:rgba(122,155,102,.1);
+  --border:rgba(122,155,102,.16);--border-2:rgba(122,155,102,.26);
+  --panel-a:#162019;--panel-b:#0e1712;--muted:#9fb098;--muted-2:#5f7159;--hairline:rgba(122,155,102,.16);
+}
+/* ---- palette: forest, pale sage + moss + muted gold, light mode ---- */
+:root[data-palette="forest"][data-theme="light"]{
+  --accent:#8c6f1f;--accent-rgb:140,111,31;--accent-2:#3f6b46;--accent-on:#eef1e6;--accent-glow:rgba(140,111,31,.2);
+  --bg:#eef1e6;--bg-2:#e5ead9;--bg-3:#d9e0c8;
+  --surface:rgba(50,80,40,.05);--surface-2:rgba(50,80,40,.08);
+  --border:rgba(40,65,32,.14);--border-2:rgba(40,65,32,.24);
+  --panel-a:#e5ead9;--panel-b:#d5ddc4;--muted:#4c5c46;--muted-2:#7d8d72;--hairline:rgba(40,65,32,.16);
+}
+/* ---- palette: risograph, ink-black + cobalt + fluoro pink, dark mode ---- */
+:root[data-palette="risograph"]{
+  --accent:#0050e0;--accent-rgb:0,80,224;--accent-2:#ff2d8c;--accent-on:#f2f0ea;--accent-glow:rgba(255,45,140,.3);
+  --bg:#0e0e14;--bg-2:#14141e;--bg-3:#1a1a26;
+  --surface:rgba(0,90,220,.07);--surface-2:rgba(255,45,140,.07);
+  --border:rgba(0,90,220,.22);--border-2:rgba(255,45,140,.3);
+  --panel-a:#181824;--panel-b:#10101a;--muted:#a6a3b8;--muted-2:#625f78;--hairline:rgba(0,90,220,.2);
+}
+/* ---- palette: risograph, uncoated paper + cobalt + fluoro pink, light mode ---- */
+:root[data-palette="risograph"][data-theme="light"]{
+  --accent:#0044c8;--accent-rgb:0,68,200;--accent-2:#e8106f;--accent-on:#f3f0e6;--accent-glow:rgba(232,16,111,.18);
+  --bg:#f3f0e6;--bg-2:#ece7d8;--bg-3:#e2dbc4;
+  --surface:rgba(0,70,200,.05);--surface-2:rgba(255,20,130,.05);
+  --border:rgba(0,70,200,.18);--border-2:rgba(255,20,130,.24);
+  --panel-a:#ece7d8;--panel-b:#e0d9c2;--muted:#504e63;--muted-2:#848295;--hairline:rgba(0,70,200,.16);
+}
+/* ---- palette: sepia, dim reading-room brown + faded ink, dark mode ---- */
+:root[data-palette="sepia"]{
+  --accent:#a9784a;--accent-rgb:169,120,74;--accent-2:#7d5c3a;--accent-on:#1a140d;--accent-glow:rgba(169,120,74,.26);
+  --bg:#1a140d;--bg-2:#201a12;--bg-3:#262016;
+  --surface:rgba(196,160,100,.06);--surface-2:rgba(196,160,100,.1);
+  --border:rgba(196,160,100,.15);--border-2:rgba(196,160,100,.24);
+  --panel-a:#241e15;--panel-b:#191309;--muted:#b0a084;--muted-2:#6f6350;--hairline:rgba(196,160,100,.15);
+}
+/* ---- palette: sepia, parchment + faded ink, light mode ---- */
+:root[data-palette="sepia"][data-theme="light"]{
+  --accent:#8a5a2c;--accent-rgb:138,90,44;--accent-2:#5f4020;--accent-on:#f0e4c8;--accent-glow:rgba(138,90,44,.2);
+  --bg:#f0e4c8;--bg-2:#e8d8b4;--bg-3:#ddc99c;
+  --surface:rgba(120,85,40,.05);--surface-2:rgba(120,85,40,.08);
+  --border:rgba(100,70,30,.15);--border-2:rgba(100,70,30,.25);
+  --panel-a:#e8d8b4;--panel-b:#dcc99b;--muted:#6b5738;--muted-2:#998158;--hairline:rgba(100,70,30,.16);
+}
+/* ---- palette: glass, deep navy + frost blue, dark mode ---- */
+:root[data-palette="glass"]{
+  --accent:#6fb7ff;--accent-rgb:111,183,255;--accent-2:#b9d9ff;--accent-on:#0a1220;--accent-glow:rgba(111,183,255,.32);
+  --bg:#0a1220;--bg-2:#0f1930;--bg-3:#14213c;
+  --surface:rgba(120,170,255,.08);--surface-2:rgba(120,170,255,.13);
+  --border:rgba(160,200,255,.18);--border-2:rgba(160,200,255,.28);
+  --panel-a:#16223c;--panel-b:#0d1626;--muted:#a9bdda;--muted-2:#64769c;--hairline:rgba(160,200,255,.18);
+}
+/* ---- palette: glass, airy white-blue, light mode ---- */
+:root[data-palette="glass"][data-theme="light"]{
+  --accent:#2f7ee0;--accent-rgb:47,126,224;--accent-2:#6fa8e8;--accent-on:#eef4fb;--accent-glow:rgba(47,126,224,.18);
+  --bg:#eef4fb;--bg-2:#e4eefa;--bg-3:#d7e7f7;
+  --surface:rgba(70,130,220,.05);--surface-2:rgba(70,130,220,.09);
+  --border:rgba(70,130,220,.15);--border-2:rgba(70,130,220,.25);
+  --panel-a:#e9f2fb;--panel-b:#dbe9f7;--muted:#52667e;--muted-2:#8ba0b8;--hairline:rgba(70,130,220,.16);
+}
+/* ---- palette: spiderverse, ink-navy + comic-primary pop, dark mode (CMYK misregistration mood) ---- */
+:root[data-palette="spiderverse"]{
+  --accent:#ff2e88;--accent-rgb:255,46,136;--accent-2:#29f0ff;--accent-on:#0b0e1a;--accent-glow:rgba(255,46,136,.34);
+  --bg:#0b0e1a;--bg-2:#10162a;--bg-3:#171f38;
+  --surface:rgba(255,46,136,.06);--surface-2:rgba(41,240,255,.07);
+  --border:rgba(255,46,136,.2);--border-2:rgba(41,240,255,.28);
+  --panel-a:#1a1030;--panel-b:#10162a;--muted:#b3b3d0;--muted-2:#6c6c92;--hairline:rgba(255,46,136,.2);
+}
+/* ---- palette: spiderverse, newsprint cream + comic-primary pop, light mode ---- */
+:root[data-palette="spiderverse"][data-theme="light"]{
+  --accent:#e0136d;--accent-rgb:224,19,109;--accent-2:#0090a8;--accent-on:#fdfaf2;--accent-glow:rgba(224,19,109,.2);
+  --bg:#f5f0e6;--bg-2:#ece4d4;--bg-3:#e0d4bc;
+  --surface:rgba(224,19,109,.05);--surface-2:rgba(0,144,168,.07);
+  --border:rgba(224,19,109,.16);--border-2:rgba(0,144,168,.24);
+  --panel-a:#efe6d2;--panel-b:#e3d6b8;--muted:#5a5468;--muted-2:#8d87a0;--hairline:rgba(224,19,109,.16);
+}
+/* ---- palette: glass bonus, real frosted-glass blur on key surfaces (only this theme pays the backdrop-filter cost) ---- */
+:root[data-palette="glass"] .card2,:root[data-palette="glass"] .tile2,:root[data-palette="glass"] .frame-nav,
+:root[data-palette="glass"] .palette-menu,:root[data-palette="glass"] .theme-toggle,:root[data-palette="glass"] .palette-btn,
+:root[data-palette="glass"] .audio-toggle,:root[data-palette="glass"] .burger,:root[data-palette="glass"] .art-lightbox img,
+:root[data-palette="glass"] .gallery-lightbox .gl-stage img{
+  backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);
+}
+/* ---- palette: spiderverse bonus, halftone dot-screen on the hero scrim + CMYK-misregistration fringe on the big display headings (only this theme pays the cost) ---- */
+:root[data-palette="spiderverse"] .hv-scrim{
+  background:
+    radial-gradient(rgba(41,240,255,.16) 1px,transparent 1.4px) 0 0/6px 6px,
+    linear-gradient(to top,#0a0a0b 0%,rgba(10,10,11,.72) 22%,transparent 50%),
+    linear-gradient(115deg,rgba(10,10,11,.5) 0%,transparent 38%),
+    radial-gradient(65% 55% at 78% 8%,rgba(10,10,11,.4),transparent 60%);
+}
+:root[data-palette="spiderverse"] .f-title,:root[data-palette="spiderverse"] .hl-line span,
+:root[data-palette="spiderverse"] .contact2 h2,:root[data-palette="spiderverse"] .case2-copy h3,
+:root[data-palette="spiderverse"] .tool2-copy h3{
+  text-shadow:-1.5px 0 0 rgba(41,240,255,.5),1.5px 0 0 rgba(255,46,136,.5);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+body{
+  background:var(--bg);color:var(--text);font-family:var(--sans);
+  line-height:1.5;overflow-x:hidden;transition:background-color .4s ease,color .4s ease;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+button{font:inherit}
+::selection{background:var(--text);color:var(--bg)}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 34px}
+.ph{font-style:italic;color:var(--muted-2);border-bottom:1px dashed var(--border-2);padding-bottom:1px}
+
+/* grain texture, monochrome */
+.grain{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.045;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* ============ CUSTOM CURSOR: a fading green trail (synchronized.studio-style)
+   drawn on a full-viewport canvas, plus a small glowing dot at the tip that
+   grows on hover. The trail color is fixed green on purpose, independent of
+   theme/palette, it's the signature effect. See script for the draw loop. ============ */
+.cursor-trail-canvas{position:fixed;inset:0;z-index:9998;pointer-events:none}
+.cursor-dot{position:fixed;top:0;left:0;width:8px;height:8px;border-radius:50%;
+  background:var(--accent);box-shadow:0 0 10px 2px rgba(var(--accent-rgb),.65),0 0 2px 0 rgba(var(--accent-rgb),.9);
+  pointer-events:none;z-index:9999;opacity:0;will-change:transform;transition:opacity .25s ease,background-color .4s ease}
+html.cursor-active .cursor-dot{opacity:1}
+html.cursor-hidden .cursor-dot,html.cursor-hidden .cursor-trail-canvas{opacity:0!important}
+@media(hover:hover) and (pointer:fine){html.has-custom-cursor,html.has-custom-cursor *{cursor:none}}
+
+/* ============ LOADER (HUD-style, matches the crosshair/coordinate motif) ============ */
+body.loading{overflow:hidden;height:100vh}
+#loader{position:fixed;inset:0;z-index:9999;background:var(--bg);
+  display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding-bottom:60px;
+  transition:opacity .6s ease,visibility .6s ease;overflow:hidden}
+#loader.done{opacity:0;visibility:hidden;pointer-events:none}
+/* giant bookend wordmark, mirrors the footer's giant "Yash Gohel" treatment,
+   the same "brand fills the screen" move kprverse.com opens and closes on */
+.ld-word{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  z-index:0;pointer-events:none;overflow:hidden}
+.ld-word .wl{overflow:hidden}
+.ld-word .wl span{display:block;font-family:var(--display);text-transform:uppercase;letter-spacing:-.02em;
+  font-size:clamp(64px,16vw,240px);line-height:.84;color:var(--text);white-space:nowrap;
+  transform:translateY(100%);transition:transform 1.1s cubic-bezier(.16,1,.3,1)}
+#loader.words-in .wl span{transform:none}
+.ld-word .wl:nth-child(2) span{transition-delay:.08s}
+#loader.done .ld-word{transition:opacity .5s ease .05s;opacity:0}
+.ld-hud{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;
+  transition:opacity .45s ease,transform .45s ease}
+#loader.done .ld-hud{opacity:0;transform:translateY(10px)}
+.ld-cross{width:18px;height:18px;color:var(--muted-2);margin-bottom:14px}
+.ld-cross svg{width:100%;height:100%;fill:none}
+.ld-cross line{stroke:currentColor;stroke-width:1.3}
+.ld-cross circle{fill:currentColor}
+#loader:not(.done) .ld-cross{animation:ldspin 2.6s linear infinite}
+@keyframes ldspin{to{transform:rotate(360deg)}}
+.ld-row{display:flex;align-items:baseline;gap:8px}
+.ld-idx{font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--muted-2)}
+.ld-num{font-family:var(--mono);font-size:clamp(22px,2.6vw,30px);line-height:1;color:var(--text);
+  letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.ld-label{margin-top:14px;font-family:var(--mono);font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted-2)}
+.ld-bar{margin-top:18px;width:min(200px,46vw);height:2px;background:var(--border);overflow:hidden}
+.ld-bar span{display:block;height:100%;width:0;background:var(--text)}
+@media(prefers-reduced-motion:reduce){#loader:not(.done) .ld-cross{animation:none}}
+
+/* ============ FIXED CHROME: burger / theme toggle / rail ============ */
+.burger{position:fixed;top:16px;left:16px;z-index:80;width:42px;height:42px;border-radius:50%;
+  border:1px solid var(--border-2);background:var(--bg);color:var(--text);display:flex;align-items:center;justify-content:center;
+  cursor:pointer;transition:border-color .25s,transform .25s,opacity .2s}
+.burger:hover{border-color:var(--text);transform:scale(1.06)}
+.burger.is-hidden{opacity:0;pointer-events:none}
+.burger svg{width:17px;height:17px}
+.burger line{stroke:currentColor;stroke-width:1.6}
+
+.theme-toggle{position:fixed;top:14px;right:16px;z-index:80;background:var(--surface-2);border:1.5px solid var(--border-2);
+  border-radius:50%;width:48px;height:48px;display:flex;align-items:center;justify-content:center;cursor:pointer;
+  color:var(--text);transition:border-color .3s,color .3s,transform .4s cubic-bezier(.16,1,.3,1),box-shadow .3s,background-color .3s;
+  box-shadow:0 0 0 0 var(--accent-glow),0 2px 10px rgba(0,0,0,.18)}
+.theme-toggle:hover{color:var(--accent);border-color:var(--accent);transform:rotate(160deg);box-shadow:0 0 0 6px var(--accent-glow),0 2px 10px rgba(0,0,0,.18)}
+.theme-toggle .tt-icon{width:19px;height:19px;display:none}
+.theme-toggle .tt-icon svg{width:100%;height:100%}
+:root:not([data-theme="light"]) .theme-toggle .tt-sun{display:block}
+:root[data-theme="light"] .theme-toggle .tt-moon{display:block}
+
+/* ---- palette switcher ---- */
+.minimal-toggle{position:fixed;top:14px;right:128px;z-index:80;background:var(--surface-2);border:1.5px solid var(--border-2);
+  border-radius:50%;width:48px;height:48px;display:flex;align-items:center;justify-content:center;cursor:pointer;
+  color:var(--text);transition:border-color .3s,color .3s,transform .3s cubic-bezier(.16,1,.3,1),box-shadow .3s,background-color .3s;
+  box-shadow:0 0 0 0 var(--accent-glow),0 2px 10px rgba(0,0,0,.18)}
+.minimal-toggle:hover{border-color:var(--accent);color:var(--accent);transform:scale(1.08);box-shadow:0 0 0 6px var(--accent-glow),0 2px 10px rgba(0,0,0,.18)}
+.minimal-toggle svg{width:19px;height:19px}
+.minimal-toggle[aria-pressed="true"]{color:var(--accent);border-color:var(--accent)}
+:root[data-minimal="true"]{filter:grayscale(1) contrast(1.02)}
+
+.palette-switch{position:fixed;top:14px;right:72px;z-index:80}
+.palette-btn{background:var(--surface-2);border:1.5px solid var(--border-2);border-radius:50%;width:48px;height:48px;
+  display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--accent);
+  transition:border-color .3s,color .3s,transform .3s cubic-bezier(.16,1,.3,1),box-shadow .3s,background-color .3s;
+  box-shadow:0 0 0 0 var(--accent-glow),0 2px 10px rgba(0,0,0,.18)}
+.palette-btn:hover{border-color:var(--accent);transform:scale(1.08);box-shadow:0 0 0 6px var(--accent-glow),0 2px 10px rgba(0,0,0,.18)}
+.palette-switch.open .palette-btn{border-color:var(--accent);box-shadow:0 0 0 6px var(--accent-glow),0 2px 10px rgba(0,0,0,.18)}
+.palette-btn svg{width:19px;height:19px}
+.palette-menu{position:absolute;top:56px;right:0;background:var(--bg);border:1.5px solid var(--border-2);
+  border-radius:12px;padding:9px;display:grid;grid-template-columns:repeat(2,1fr);gap:2px;min-width:288px;
+  max-height:min(74vh,560px);overflow-y:auto;
+  opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .22s,transform .22s,visibility .22s;
+  box-shadow:0 16px 34px rgba(0,0,0,.4)}
+.palette-switch.open .palette-menu{opacity:1;visibility:visible;transform:none}
+.palette-opt{display:flex;align-items:center;gap:9px;width:100%;padding:9px 10px;border-radius:6px;background:none;border:none;
+  color:var(--muted);font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;
+  cursor:pointer;text-align:left;transition:background-color .2s,color .2s}
+.palette-opt:hover{background:var(--surface);color:var(--text)}
+.palette-opt.active{color:var(--text)}
+.palette-opt.active::after{content:"✓";margin-left:auto;font-size:11px;color:var(--accent)}
+.palette-opt .sw{width:14px;height:14px;border-radius:50%;flex:none;border:1px solid rgba(128,128,128,.3)}
+.sw-mono{background:linear-gradient(135deg,#f2f2f0,#767679)}
+.sw-pastel{background:linear-gradient(135deg,#c9b8ff,#a3f0cf)}
+.sw-cyber{background:linear-gradient(135deg,#ff2e9e,#22e6ff)}
+.sw-brass{background:linear-gradient(135deg,#c99b4e,#3a2f1c)}
+.sw-editorial{background:linear-gradient(135deg,#f5f2ea,#7d1f2b)}
+.sw-terracotta{background:linear-gradient(135deg,#c1602f,#8f9c5a)}
+.sw-forest{background:linear-gradient(135deg,#b9932f,#1c3324)}
+.sw-risograph{background:linear-gradient(135deg,#0050e0,#ff2d8c)}
+.sw-sepia{background:linear-gradient(135deg,#e8d8b4,#a9784a)}
+.sw-glass{background:linear-gradient(135deg,#6fb7ff,#0a1220)}
+.sw-spiderverse{background:linear-gradient(135deg,#ff2e88,#29f0ff)}
+
+/* ---- background audio toggle, same 42px circular-button family as theme/palette ---- */
+.audio-toggle{position:fixed;bottom:16px;left:16px;z-index:85;background:var(--bg);border:1px solid var(--border-2);
+  border-radius:50%;width:42px;height:42px;display:flex;align-items:center;justify-content:center;cursor:pointer;
+  color:var(--muted);transition:border-color .3s,color .3s,transform .3s cubic-bezier(.16,1,.3,1),box-shadow .3s;
+  box-shadow:0 0 0 0 var(--accent-glow)}
+.audio-toggle:hover{color:var(--accent);border-color:var(--accent);box-shadow:0 0 0 5px var(--accent-glow)}
+
+/* ---- kprverse-style scroll progress rail, fixed to the very top edge ---- */
+.scroll-progress{position:fixed;top:0;left:0;height:3px;width:0%;z-index:9997;
+  background:linear-gradient(90deg,var(--accent),var(--accent-2));
+  transition:background 0.4s ease}
+.audio-toggle.is-hidden{display:none}
+.audio-toggle .at-icon{width:15px;height:15px;display:none}
+.audio-toggle .at-icon svg{width:100%;height:100%}
+.audio-toggle[aria-pressed="true"] .at-on{display:block}
+.audio-toggle:not([aria-pressed="true"]) .at-off{display:block}
+.at-on .bar{fill:currentColor;transform-box:fill-box;transform-origin:center bottom;animation:eqbar 1.1s ease-in-out infinite}
+.at-on .bar:nth-child(1){animation-delay:-.9s}
+.at-on .bar:nth-child(2){animation-delay:-.5s}
+.at-on .bar:nth-child(3){animation-delay:-.2s}
+.at-on .bar:nth-child(4){animation-delay:-.7s}
+@keyframes eqbar{0%,100%{transform:scaleY(.35)}50%{transform:scaleY(1)}}
+@media(prefers-reduced-motion:reduce){.at-on .bar{animation:none}}
+
+.rail{position:fixed;left:0;top:0;bottom:0;width:var(--railw);z-index:60;
+  border-right:1px solid var(--border);background:var(--bg);
+  display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:78px 0 22px;
+  transition:background-color .4s,border-color .4s}
+.rail-mark{font-family:var(--display);font-size:15px;letter-spacing:.02em;color:var(--muted-2);
+  writing-mode:vertical-rl;transform:rotate(180deg)}
+.rail-cross{width:22px;height:22px;color:var(--muted-2)}
+.rail-cross svg{width:100%;height:100%}
+.rail-cross line{stroke:currentColor;stroke-width:1.3}
+.rail-cross circle{fill:currentColor}
+
+/* ============ NAV DRAWER (mobile-first full overlay) ============ */
+.nav-drawer{position:fixed;inset:0;z-index:90;background:var(--bg);display:flex;flex-direction:column;
+  justify-content:center;padding:0 8vw;opacity:0;visibility:hidden;transform:translateY(-12px);
+  transition:opacity .4s cubic-bezier(.16,1,.3,1),transform .4s cubic-bezier(.16,1,.3,1),visibility .4s}
+.nav-drawer.open{opacity:1;visibility:visible;transform:none}
+.drawer-close{position:fixed;top:16px;left:16px;z-index:95;width:42px;height:42px;border-radius:50%;
+  border:1px solid var(--border-2);background:var(--bg);color:var(--text);font-size:20px;line-height:1;
+  display:none;align-items:center;justify-content:center;cursor:pointer}
+.nav-drawer.open .drawer-close{display:flex}
+.drawer-links{display:flex;flex-direction:column;gap:6px}
+.drawer-links a{display:flex;align-items:baseline;gap:20px;font-family:var(--display);
+  font-size:clamp(34px,8vw,88px);text-transform:uppercase;letter-spacing:-.01em;color:var(--muted);
+  transition:color .25s;padding:6px 0;border-bottom:1px solid transparent}
+.drawer-links a:hover{color:var(--text)}
+.drawer-links a .dnum{font-family:var(--mono);font-size:13px;letter-spacing:.1em;color:var(--muted-2)}
+.drawer-foot{margin-top:52px;display:flex;flex-wrap:wrap;gap:28px;font-family:var(--mono);
+  font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.drawer-foot a{border-bottom:1px solid var(--border-2);padding-bottom:3px;transition:color .25s,border-color .25s}
+.drawer-foot a:hover{color:var(--text);border-color:var(--text)}
+
+/* ============ SHELL / FRAME SYSTEM ============ */
+.shell{margin-left:var(--railw)}
+main{position:relative;z-index:2}
+.frame{position:relative;border-bottom:1px solid var(--border);background:var(--bg);transition:background-color .4s ease}
+#work,#quicko,#creative,#contact{background:var(--bg-2)}
+.frame-nav{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;
+  padding:15px 190px 15px 28px;border-bottom:1px solid var(--border);font-family:var(--mono);
+  font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.frame-nav .fn-dot{width:5px;height:5px;background:var(--accent);display:inline-block;flex:none;transition:background-color .3s}
+.fn-mark{display:inline-flex;align-items:center;gap:9px;flex:none}
+.fn-discover{font-family:var(--mono);font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted-2)}
+.frame-links{display:flex;gap:22px;flex-wrap:wrap}
+.frame-links a{color:var(--muted);transition:color .25s}
+.frame-links a:hover,.frame-links a.on{color:var(--accent)}
+.frame-idx{color:var(--muted-2);white-space:nowrap}
+.frame-body{padding:88px 0}
+
+.f-eyebrow{display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:11px;
+  letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-bottom:22px}
+.f-eyebrow::before{content:"";width:7px;height:7px;background:var(--accent);transition:background-color .3s}
+.f-title{font-family:var(--display);text-transform:uppercase;line-height:1.08;letter-spacing:-.01em;
+  font-size:clamp(32px,5.4vw,80px)}
+.f-title .dim{color:var(--muted)}
+.f-lead{color:var(--muted);font-size:clamp(15px,1.7vw,18px);max-width:640px;margin-top:20px;line-height:1.65}
+.f-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:52px}
+
+/* reveal-on-scroll */
+.reveal{opacity:0;transform:translateY(34px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+.reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}.reveal.d4{transition-delay:.32s}
+
+/* ============ HERO ============ */
+.hero-panel{position:relative;min-height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;
+  background:
+    radial-gradient(120% 90% at 85% 0%,rgba(255,255,255,.10),transparent 55%),
+    radial-gradient(100% 80% at 5% 100%,rgba(255,255,255,.07),transparent 55%),
+    repeating-linear-gradient(115deg,rgba(255,255,255,.035) 0 2px,transparent 2px 34px),
+    linear-gradient(155deg,var(--panel-a),var(--panel-b))}
+:root[data-theme="light"] .hero-panel{
+  background:
+    radial-gradient(120% 90% at 85% 0%,rgba(10,10,8,.09),transparent 55%),
+    radial-gradient(100% 80% at 5% 100%,rgba(10,10,8,.06),transparent 55%),
+    repeating-linear-gradient(115deg,rgba(10,10,8,.04) 0 2px,transparent 2px 34px),
+    linear-gradient(155deg,var(--panel-a),var(--panel-b))}
+/* the hero photo is dark-toned regardless of site theme, so text sitting
+   on top of it stays fixed-light in both modes; only the scrim/rest of
+   the page follows the theme toggle */
+.hero-tag{position:absolute;top:26px;left:34px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;
+  text-transform:uppercase;color:rgba(242,242,240,.6);max-width:280px;z-index:2}
+.hero-ph{position:absolute;bottom:26px;right:34px;font-family:var(--mono);font-size:11px;z-index:2;text-align:right}
+.hero-color-toggle{position:absolute;bottom:26px;right:34px;z-index:3;font-family:var(--mono);font-size:10.5px;
+  letter-spacing:.14em;text-transform:uppercase;color:rgba(242,242,240,.8);background:rgba(10,10,11,.4);
+  border:1px solid rgba(255,255,255,.3);padding:9px 15px;cursor:pointer;
+  transition:border-color .25s,color .25s,background-color .25s;backdrop-filter:blur(6px)}
+.hero-color-toggle:hover{color:#fff;border-color:#fff}
+.hero-visual.hv-color .hv-bg,.hero-visual.hv-color .hv-fg{filter:saturate(1)}
+
+/* ============ HERO VISUAL: layered parallax portrait ============
+   To swap the artwork: drop new files into the "Hero Image" folder
+   using the SAME filenames (Background.png / Foreground.png); the
+   page picks them up automatically, no code edits needed. If you
+   want different filenames instead, there is exactly one place to
+   change them: the HERO_BG / HERO_FG constants in the script at the
+   bottom of this file (search "HERO IMAGE SOURCES"). Background
+   drifts with the cursor and scroll; Foreground (the subject) stays
+   put; same depth trick as kprverse.com's hero. */
+.hero-visual{position:absolute;inset:0;z-index:0;overflow:hidden}
+.hv-scroll{position:absolute;inset:-22% 0;will-change:transform}
+.hv-bg{position:absolute;inset:0;background-size:cover;background-position:center 32%;
+  will-change:transform;filter:saturate(0)}
+.hv-fg{position:absolute;bottom:0;left:46%;height:84%;width:auto;max-width:94%;
+  transform:translateX(-50%);object-fit:contain;
+  pointer-events:none;user-select:none;filter:saturate(0)}
+.hv-scrim{position:absolute;inset:0;pointer-events:none;
+  background:
+    linear-gradient(to top,#0a0a0b 0%,rgba(10,10,11,.72) 22%,transparent 50%),
+    linear-gradient(115deg,rgba(10,10,11,.5) 0%,transparent 38%),
+    radial-gradient(65% 55% at 78% 8%,rgba(10,10,11,.4),transparent 60%)}
+.hero-headline{position:relative;z-index:2;padding:0 28px 46px}
+.hl-row{display:flex;align-items:flex-end;gap:16px;overflow:hidden}
+.hl-code{font-family:var(--mono);font-size:clamp(11px,1.1vw,14px);letter-spacing:.06em;color:rgba(242,242,240,.6);
+  padding-bottom:.18em;flex:none}
+.hl-line{overflow:hidden;flex:1;min-width:0}
+.hl-line span{display:block;font-family:var(--display);text-transform:uppercase;letter-spacing:-.015em;
+  font-size:clamp(58px,13vw,190px);line-height:.86;color:#f2f2f0;transform:translateY(108%);
+  transition:transform 1s cubic-bezier(.16,1,.3,1)}
+body.ready .hl-line span{transform:none}
+.hero-sub-wrap{position:relative;z-index:2}
+.hero-sub{padding:38px 28px 0;max-width:680px;color:var(--muted);font-size:clamp(15px,1.7vw,18.5px);line-height:1.65}
+.hero-sub b{color:var(--text);font-weight:600}
+.hero-btns{display:flex;flex-wrap:wrap;gap:16px;padding:30px 28px 0}
+.btn{padding:14px 24px;font-size:13.5px;font-weight:500;letter-spacing:.02em;border-radius:2px;
+  transition:.25s;border:1px solid var(--border-2);display:inline-flex;align-items:center;gap:9px;
+  cursor:pointer;background:none;color:var(--text);font-family:var(--sans)}
+.btn.primary{background:var(--accent);color:var(--accent-on);border-color:var(--accent);transition:.25s,background-color .3s,border-color .3s}
+.btn.primary:hover{filter:brightness(1.08);transform:translateY(-2px)}
+.btn.ghost:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
+.btn .arw{transition:transform .3s}
+.btn:hover .arw{transform:translate(3px,-3px)}
+
+/* proof HUD strip */
+.hud{display:grid;grid-template-columns:repeat(4,1fr)}
+.hud .cell{padding:26px 28px;border-top:1px solid var(--border);border-right:1px solid var(--border)}
+.hud .cell:last-child{border-right:none}
+.hud .cell .tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;color:var(--muted-2);
+  text-transform:uppercase;margin-bottom:14px;display:block}
+.hud .cell .num{font-family:var(--display);font-size:clamp(30px,3.6vw,50px);line-height:1;letter-spacing:-.01em}
+.hud .cell .lbl{margin-top:10px;font-size:12.5px;color:var(--muted);line-height:1.45;max-width:220px}
+
+/* ============ MARQUEE (skills / connective tissue) ============ */
+.marquee{border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:16px 0;
+  overflow:hidden;white-space:nowrap;position:relative;background:var(--bg)}
+.marquee .track{display:inline-flex;gap:34px;animation:scrollx 30s linear infinite;will-change:transform}
+.marquee:hover .track{animation-play-state:paused}
+.marquee span{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-2)}
+.marquee span b{color:var(--text);font-weight:500}
+.marquee .dot{color:var(--text)}
+@keyframes scrollx{to{transform:translateX(-50%)}}
+
+/* ============ MANIFESTO (scroll-fill sticky quote) ============ */
+.manifesto-wrap{height:240vh;position:relative;border-bottom:1px solid var(--border)}
+.manifesto-sticky{position:sticky;top:0;height:100vh;display:flex;flex-direction:column;
+  justify-content:center;overflow:hidden}
+.manifesto{font-family:var(--display);text-transform:uppercase;font-weight:400;text-align:left;
+  letter-spacing:-.005em;font-size:clamp(30px,5.6vw,80px);line-height:1.04;position:relative;z-index:1}
+.manifesto .mword{color:var(--text);opacity:.14;transition:opacity .15s linear;display:inline-block;margin-right:.08em}
+.manifesto .qmark{color:var(--accent);opacity:1}
+.manifesto-cap{align-self:flex-start;max-width:420px;margin-top:40px;position:relative;z-index:1;
+  font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);line-height:1.8}
+
+/* ============ CARDS (sharp / technical, not soft-rounded) ============ */
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border)}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border)}
+.card2{background:var(--bg);padding:32px;position:relative;transition:background-color .3s}
+.card2:hover{background:var(--surface)}
+.card2 .k{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-2);margin-bottom:16px}
+.card2 h3{font-family:var(--display);text-transform:uppercase;font-size:clamp(20px,2.2vw,28px);line-height:1.05;margin-bottom:12px;letter-spacing:-.01em}
+.card2 p.hook{color:var(--muted);font-size:14.5px;line-height:1.6}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.chip2{font-size:12px;padding:7px 12px;border:1px solid var(--border-2);color:var(--text);white-space:nowrap;font-family:var(--mono)}
+.chip2 b{font-weight:700}
+.card2 .cap{margin-top:20px;font-size:12.5px;color:var(--muted-2);line-height:1.55;border-top:1px solid var(--border);padding-top:14px}
+.card2 .tools{margin-top:12px;font-size:11.5px;color:var(--muted-2);font-family:var(--mono);letter-spacing:.02em}
+.link2{margin-top:18px;display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-family:var(--mono);
+  text-transform:uppercase;letter-spacing:.06em;color:var(--text);transition:gap .3s}
+.link2:hover{gap:12px}
+.link2 .arw{transition:transform .3s}
+
+/* ============ DEEP CASE (GoodFlip) ============ */
+.case2{border-top:1px solid var(--border)}
+.case2-head{display:grid;grid-template-columns:1.15fr .85fr}
+.case2-copy{padding:48px 34px}
+.case2-copy .k{font-family:var(--mono);color:var(--muted);font-size:11px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:18px}
+.case2-copy h3{font-family:var(--display);text-transform:uppercase;font-size:clamp(28px,3.6vw,52px);line-height:1.1;margin-bottom:18px;letter-spacing:-.01em}
+.case2-copy .hook{color:var(--muted);font-size:16px;line-height:1.65;max-width:520px}
+.case2-visual{position:relative;border-left:1px solid var(--border);min-height:320px;padding:30px;
+  display:flex;align-items:center;justify-content:center;
+  background:
+    radial-gradient(120% 100% at 85% 10%,rgba(255,255,255,.09),transparent 55%),
+    radial-gradient(120% 100% at 0% 100%,rgba(255,255,255,.06),transparent 55%),linear-gradient(155deg,var(--panel-a),var(--panel-b))}
+:root[data-theme="light"] .case2-visual{
+  background:
+    radial-gradient(120% 100% at 85% 10%,rgba(10,10,8,.08),transparent 55%),
+    radial-gradient(120% 100% at 0% 100%,rgba(10,10,8,.05),transparent 55%),linear-gradient(155deg,var(--panel-a),var(--panel-b))}
+.case2-visual .browser{width:100%;max-width:330px;border:1px solid var(--border-2);background:var(--bg);
+  box-shadow:0 24px 50px rgba(0,0,0,.35)}
+.browser2 .bar{display:flex;gap:6px;padding:10px 14px;border-bottom:1px solid var(--border)}
+.browser2 .bar i{width:8px;height:8px;border-radius:50%;background:var(--border-2)}
+.browser2 .body{padding:20px 18px 24px}
+.browser2 .body .u{font-family:var(--mono);font-size:10.5px;color:var(--muted-2);margin-bottom:12px;word-break:break-all}
+.browser2 .body .hl{font-family:var(--display);text-transform:uppercase;font-size:22px;margin-bottom:8px;letter-spacing:-.005em}
+.browser2 .body .sm{font-size:11.5px;color:var(--muted);line-height:1.5}
+.browser2 .body .prc{margin-top:14px;display:flex;gap:7px;flex-wrap:wrap}
+.browser2 .body .prc span{font-family:var(--mono);font-size:10.5px;border:1px solid var(--border-2);padding:5px 9px;color:var(--text)}
+.hud-stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--border)}
+.hud-stats .s{padding:28px 24px;border-right:1px solid var(--border)}
+.hud-stats .s:last-child{border-right:none}
+.hud-stats .s .tag{font-family:var(--mono);font-size:10.5px;color:var(--muted-2);letter-spacing:.12em;text-transform:uppercase;display:block;margin-bottom:12px}
+.hud-stats .s .n{font-family:var(--display);font-size:clamp(26px,3.2vw,40px);line-height:1;letter-spacing:-.01em}
+.hud-stats .s .l{margin-top:9px;font-size:12px;color:var(--muted);line-height:1.4}
+.case2-detail{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--border)}
+.case2-detail .col{padding:34px}
+.case2-detail .col:first-child{border-right:1px solid var(--border)}
+.case2-detail h5{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted-2);margin-bottom:16px}
+.case2-detail p{color:var(--muted);font-size:14.5px;line-height:1.65;margin-bottom:14px}
+.case2-detail ul{list-style:none;display:flex;flex-direction:column;gap:12px}
+.case2-detail li{position:relative;padding-left:20px;color:var(--text);font-size:14px;line-height:1.55}
+.case2-detail li::before{content:"→";position:absolute;left:0;color:var(--muted-2);font-family:var(--mono)}
+.case2-foot{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;
+  padding:24px 34px;border-top:1px solid var(--border);background:var(--surface)}
+.case2-foot .tools{font-family:var(--mono);font-size:11.5px;color:var(--muted-2)}
+
+/* ============ TOOLS TEASER ============ */
+.tool2{border-top:1px solid var(--border)}
+.tool2-inner{display:grid;grid-template-columns:1.05fr .95fr}
+.tool2-copy{padding:48px 34px;border-right:1px solid var(--border)}
+.tool2-copy .live{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:10.5px;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:20px}
+.tool2-copy .live i{width:7px;height:7px;border-radius:50%;background:var(--accent);animation:pulse 2s infinite;transition:background-color .3s}
+@keyframes pulse{0%{box-shadow:0 0 0 0 var(--accent-glow)}70%{box-shadow:0 0 0 9px transparent}100%{box-shadow:0 0 0 0 transparent}}
+.tool2-copy h3{font-family:var(--display);text-transform:uppercase;font-size:clamp(26px,3.2vw,42px);line-height:1.1;margin-bottom:16px}
+.tool2-copy p{color:var(--muted);font-size:15px;line-height:1.65;max-width:480px}
+.tool2-stats{padding:34px;display:flex;flex-direction:column;justify-content:center;gap:24px}
+.tool2-stats .row{display:flex;align-items:baseline;gap:16px;border-bottom:1px solid var(--border);padding-bottom:16px}
+.tool2-stats .row:last-child{border-bottom:none;padding-bottom:0}
+.tool2-stats .row .n{font-family:var(--display);font-size:clamp(24px,2.6vw,34px);flex:none}
+.tool2-stats .row .l{font-size:12.5px;color:var(--muted);line-height:1.4}
+
+/* ============ CREATIVE GRID ============ */
+.tile-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:190px;gap:1px;background:var(--border)}
+.tile2{position:relative;background:var(--bg);overflow:hidden;display:flex;align-items:flex-end;padding:18px;
+  transition:background-color .3s}
+.tile2:hover{background:var(--surface)}
+.tile2 .fill{position:absolute;inset:0;opacity:.9}
+.tile2 .t{position:relative;z-index:2}
+.tile2 .t b{display:block;font-family:var(--display);text-transform:uppercase;font-size:18px;margin-bottom:2px;letter-spacing:-.005em}
+.tile2 .t span{font-size:12px;color:var(--muted);font-family:var(--mono)}
+.tile2.wide{grid-column:span 2}
+.tile2.tall{grid-row:span 2}
+.g1{background:repeating-linear-gradient(45deg,rgba(255,255,255,.05) 0 2px,transparent 2px 10px),radial-gradient(120% 120% at 20% 20%,rgba(255,255,255,.09),transparent 60%),var(--panel-a)}
+.g2{background:repeating-linear-gradient(135deg,rgba(255,255,255,.05) 0 2px,transparent 2px 10px),radial-gradient(120% 120% at 80% 20%,rgba(255,255,255,.07),transparent 60%),var(--panel-a)}
+.g3{background:repeating-linear-gradient(90deg,rgba(255,255,255,.05) 0 2px,transparent 2px 10px),radial-gradient(120% 120% at 30% 80%,rgba(255,255,255,.09),transparent 60%),var(--panel-b)}
+.g4{background:repeating-linear-gradient(0deg,rgba(255,255,255,.05) 0 2px,transparent 2px 10px),radial-gradient(120% 120% at 70% 70%,rgba(255,255,255,.07),transparent 60%),var(--panel-b)}
+:root[data-theme="light"] .g1,:root[data-theme="light"] .g2,:root[data-theme="light"] .g3,:root[data-theme="light"] .g4{
+  background-blend-mode:normal}
+:root[data-theme="light"] .g1{background:repeating-linear-gradient(45deg,rgba(10,10,8,.045) 0 2px,transparent 2px 10px),radial-gradient(120% 120% at 20% 20%,rgba(10,10,8,.07),transparent 60%),var(--panel-a)}
+:root[data-theme="light"] .g2{background:repeating-linear-gradient(135deg,rgba(10,10,8,.045) 0 2px,transparent 2px 10px),radial-gradient(120% 120% at 80% 20%,rgba(10,10,8,.06),transparent 60%),var(--panel-a)}
+:root[data-theme="light"] .g3{background:repeating-linear-gradient(90deg,rgba(10,10,8,.045) 0 2px,transparent 2px 10px),radial-gradient(120% 120% at 30% 80%,rgba(10,10,8,.07),transparent 60%),var(--panel-b)}
+:root[data-theme="light"] .g4{background:repeating-linear-gradient(0deg,rgba(10,10,8,.045) 0 2px,transparent 2px 10px),radial-gradient(120% 120% at 70% 70%,rgba(10,10,8,.06),transparent 60%),var(--panel-b)}
+
+/* ============ ART & ILLUSTRATION: interactive click-hold gallery ============
+   Same layered-parallax trick as the hero: background drifts with cursor +
+   scroll, foreground stays put. Swap files in "art section/images for the
+   background" (same names) to change the scene; see ART_BG/ART_FG in the
+   script. Pop-up gallery images live in "art section/images for the pop up". */
+.art-panel{position:relative;height:78vh;min-height:520px;max-height:760px;overflow:hidden;
+  margin-top:48px;border:1px solid var(--border);cursor:pointer;-webkit-touch-callout:none}
+.art-visual{position:absolute;inset:0;z-index:0;overflow:hidden}
+.art-scroll{position:absolute;inset:-20% 0;will-change:transform}
+.art-bg{position:absolute;inset:0;background-size:cover;background-position:center;will-change:transform}
+.art-fg{position:absolute;bottom:5%;left:8%;height:24%;width:auto;max-width:60%;object-fit:contain;
+  pointer-events:none;user-select:none}
+.art-scrim{position:absolute;inset:0;pointer-events:none;z-index:1;
+  background:linear-gradient(180deg,rgba(6,6,8,.4) 0%,rgba(6,6,8,.1) 38%,rgba(6,6,8,.55) 100%)}
+
+.art-prompt{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:2;
+  display:flex;flex-direction:column;align-items:center;gap:14px;
+  transition:opacity .35s,transform .35s,left .12s ease-out,top .12s ease-out;
+  user-select:none}
+.art-panel.burst-open .art-prompt{opacity:0;transform:translate(-50%,-50%) scale(.7)}
+.art-ring{position:relative;width:76px;height:76px;flex:none}
+.art-ring svg{width:100%;height:100%;transform:rotate(-90deg);display:block}
+.art-ring circle{fill:none;stroke-width:1.4}
+.art-ring .track{stroke:rgba(255,255,255,.3)}
+.art-ring .fill{stroke:var(--accent);stroke-dasharray:207;stroke-dashoffset:207}
+.art-ring .cross{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff}
+.art-ring .cross svg{width:16px;height:16px}
+.art-panel.holding .art-ring .cross{color:var(--accent)}
+/* glitchy signal-lock flicker while the hold is charging */
+@keyframes art-flicker{
+  0%,100%{filter:brightness(1) saturate(1)}
+  8%{filter:brightness(1.4) saturate(1.3)}
+  10%{filter:brightness(.7)}
+  20%{filter:brightness(1.15)}
+  24%{filter:brightness(.85) saturate(.8)}
+  62%{filter:brightness(1.3)}
+  66%{filter:brightness(.9)}
+  80%{filter:brightness(1.05)}
+}
+.art-panel.holding .art-bg,.art-panel.holding .art-fg{animation:art-flicker .5s steps(1,end) infinite}
+@media(prefers-reduced-motion:reduce){.art-panel.holding .art-bg,.art-panel.holding .art-fg{animation:none}}
+.art-prompt-label{font-family:var(--mono);font-size:11px;letter-spacing:.24em;text-transform:uppercase;
+  color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.7)}
+.art-panel.holding .art-prompt-label{color:var(--accent)}
+.art-tag{position:absolute;top:22px;left:26px;z-index:2;font-family:var(--mono);font-size:10.5px;
+  letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.75);text-shadow:0 2px 10px rgba(0,0,0,.7)}
+.art-idx{position:absolute;bottom:22px;right:26px;z-index:2;font-family:var(--mono);font-size:10.5px;
+  letter-spacing:.14em;color:rgba(255,255,255,.6);text-shadow:0 2px 10px rgba(0,0,0,.7)}
+
+.art-burst{position:absolute;inset:0;z-index:3;pointer-events:none}
+.art-panel.burst-open .art-burst{pointer-events:auto}
+.art-card{position:absolute;left:50%;top:50%;width:150px;border-radius:3px;overflow:hidden;
+  background:#f4f4f2;border:3px solid #f4f4f2;box-shadow:0 24px 55px rgba(0,0,0,.55);
+  transform:translate(-50%,-50%) scale(.15);opacity:0;cursor:pointer}
+.art-card img{width:100%;aspect-ratio:9/16;object-fit:cover;display:block;pointer-events:none}
+.art-card .cap{padding:7px 10px 9px;font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;
+  text-transform:uppercase;color:#141414}
+
+.art-close-hint{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);z-index:2;
+  font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;
+  color:rgba(255,255,255,.7);opacity:0;transition:opacity .3s;pointer-events:none;white-space:nowrap}
+.art-panel.burst-open .art-close-hint{opacity:1}
+
+.art-lightbox{position:fixed;inset:0;z-index:500;background:rgba(4,4,5,.94);display:flex;
+  align-items:center;justify-content:center;opacity:0;visibility:hidden;
+  transition:opacity .3s,visibility .3s;padding:50px}
+.art-lightbox.open{opacity:1;visibility:visible}
+.art-lightbox img{max-width:min(920px,88vw);max-height:80vh;border:1px solid rgba(255,255,255,.18);
+  object-fit:contain;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.art-lightbox .lb-close{position:absolute;top:24px;right:28px;color:#fff;background:none;
+  border:1px solid rgba(255,255,255,.32);border-radius:50%;width:42px;height:42px;
+  display:flex;align-items:center;justify-content:center;cursor:pointer;transition:border-color .2s}
+.art-lightbox .lb-close:hover{border-color:#fff}
+.art-lightbox .lb-close svg{width:16px;height:16px}
+
+@media(max-width:720px){
+  .art-panel{height:64vh;min-height:440px}
+  .art-card{width:112px}
+}
+
+/* ============ ABOUT ============ */
+.about2{display:grid;grid-template-columns:.78fr 1.22fr}
+.about2-photo{position:relative;min-height:420px;border-right:1px solid var(--border);overflow:hidden;
+  background:
+    radial-gradient(120% 90% at 75% 10%,rgba(255,255,255,.09),transparent 55%),
+    radial-gradient(120% 90% at 10% 100%,rgba(255,255,255,.06),transparent 55%),linear-gradient(155deg,var(--panel-a),var(--panel-b))}
+:root[data-theme="light"] .about2-photo{
+  background:
+    radial-gradient(120% 90% at 75% 10%,rgba(10,10,8,.08),transparent 55%),
+    radial-gradient(120% 90% at 10% 100%,rgba(10,10,8,.05),transparent 55%),linear-gradient(155deg,var(--panel-a),var(--panel-b))}
+.about2-photo .init{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  font-family:var(--display);font-size:min(38vw,220px);color:var(--border-2);letter-spacing:-.02em}
+.about2-photo .note{position:absolute;bottom:16px;left:16px;font-family:var(--mono);font-size:10.5px;color:var(--muted-2)}
+.spec-ticks{position:absolute;top:22px;right:22px;bottom:22px;display:flex;flex-direction:column;
+  align-items:center;gap:12px;pointer-events:none;z-index:2}
+.spec-ticks .spec-label{font-family:var(--mono);font-size:9px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--muted-2);writing-mode:vertical-rl}
+.spec-ticks .spec-rule{flex:1;width:11px;background:repeating-linear-gradient(to bottom,var(--border-2) 0 1.5px,transparent 1.5px 13px)}
+.about2-copy{padding:48px 40px}
+.about2-copy p{font-size:clamp(16px,1.9vw,20px);line-height:1.65;color:var(--muted)}
+.about2-copy p em{color:var(--text);font-style:normal;font-weight:600}
+.about2-copy .sig{margin-top:24px;font-family:var(--display);font-size:26px;text-transform:uppercase}
+
+.quotes2{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--border)}
+.quote2{padding:30px 34px;border-right:1px solid var(--border)}
+.quote2:last-child{border-right:none}
+.quote2 .tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-2);margin-bottom:14px}
+.quote2 p{font-size:16px;line-height:1.55;color:var(--muted)}
+.quote2 .who{margin-top:18px;font-size:12.5px;color:var(--muted-2);font-family:var(--mono)}
+
+/* ============ CONTACT ============ */
+.contact2{padding-top:20px}
+.contact2 h2{font-family:var(--display);text-transform:uppercase;line-height:1.02;letter-spacing:-.01em;
+  font-size:clamp(42px,8.6vw,132px)}
+.contact2 .sub{color:var(--muted);font-size:clamp(15px,1.8vw,18px);margin-top:22px;max-width:520px}
+.contact2 .mail{margin-top:32px;display:inline-flex;align-items:center;gap:12px;font-family:var(--display);
+  text-transform:uppercase;font-size:clamp(22px,3vw,36px);color:var(--text);border-bottom:1px solid var(--border-2);
+  padding-bottom:8px;transition:.3s}
+.contact2 .mail:hover{border-color:var(--text)}
+.contact-rows{margin-top:44px;border-top:1px solid var(--border)}
+.crow{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 0;border-bottom:1px solid var(--border);
+  font-family:var(--mono);font-size:13px}
+.crow .l{color:var(--muted);letter-spacing:.06em;text-transform:uppercase;font-size:11px}
+.crow .r{color:var(--text);display:flex;align-items:center;gap:10px}
+.crow .r a{transition:color .25s}
+.crow .r a:hover{color:var(--muted)}
+.badge-ph{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted-2);border:1px dashed var(--border-2);padding:3px 7px}
+
+/* ============ FOOTER (deliberately inverted, fixed palette regardless of theme) ============ */
+footer.foot2{background:var(--footer-bg);color:var(--footer-fg);margin-top:0;position:relative;z-index:2}
+footer.foot2 .fcols{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid var(--footer-border)}
+footer.foot2 .fcol{padding:40px 34px;border-right:1px solid var(--footer-border)}
+footer.foot2 .fcol:last-child{border-right:none}
+footer.foot2 .fcol h6{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--footer-muted);margin-bottom:18px}
+footer.foot2 .fcol a,footer.foot2 .fcol .row{display:block;font-size:14px;color:var(--footer-fg);margin-bottom:10px;
+  transition:opacity .25s}
+footer.foot2 .fcol a:hover{opacity:.6}
+footer.foot2 .fcol .row .note{display:block;font-family:var(--mono);font-size:10px;color:var(--footer-muted);margin-top:2px}
+footer.foot2 .wordmark{padding:0 28px;overflow:hidden}
+footer.foot2 .wordmark .wm-line{font-family:var(--display);text-transform:uppercase;letter-spacing:-.02em;
+  font-size:clamp(64px,16vw,240px);line-height:.84;color:var(--footer-fg);white-space:nowrap}
+footer.foot2 .fbottom{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;
+  padding:22px 34px;border-top:1px solid var(--footer-border);font-family:var(--mono);font-size:11px;color:var(--footer-muted)}
+footer.foot2 .fbottom a{color:var(--footer-fg);border-bottom:1px solid var(--footer-border);padding-bottom:2px;transition:border-color .25s}
+footer.foot2 .fbottom a:hover{border-color:var(--footer-fg)}
+footer.foot2 .foot-note{padding:0 34px 22px;font-family:var(--mono);font-size:11.5px;color:var(--footer-muted);letter-spacing:.02em}
+footer.foot2 .foot-note a{color:var(--footer-fg);border-bottom:1px solid var(--footer-border);padding-bottom:1px;transition:border-color .25s}
+footer.foot2 .foot-note a:hover{border-color:var(--footer-fg)}
+
+/* ============ RESPONSIVE ============ */
+@media(max-width:960px){
+  .hero-headline{padding:0 22px 34px}
+  .hl-code{font-size:10px}
+  .hud{grid-template-columns:1fr 1fr}
+  .hud .cell:nth-child(2n){border-right:none}
+  .grid-2,.grid-3{grid-template-columns:1fr}
+  .case2-head{grid-template-columns:1fr}
+  .case2-visual{border-left:none;border-top:1px solid var(--border)}
+  .hud-stats{grid-template-columns:1fr 1fr}
+  .hud-stats .s:nth-child(2){border-right:none}
+  .case2-detail{grid-template-columns:1fr}
+  .case2-detail .col:first-child{border-right:none;border-bottom:1px solid var(--border)}
+  .tool2-inner{grid-template-columns:1fr}
+  .tool2-copy{border-right:none;border-bottom:1px solid var(--border)}
+  .tile-grid{grid-template-columns:repeat(2,1fr)}
+  .about2{grid-template-columns:1fr}
+  .about2-photo{border-right:none;border-bottom:1px solid var(--border);min-height:280px}
+  .quotes2{grid-template-columns:1fr}
+  .quote2{border-right:none;border-bottom:1px solid var(--border)}
+  footer.foot2 .fcols{grid-template-columns:1fr}
+  footer.foot2 .fcol{border-right:none;border-bottom:1px solid var(--footer-border)}
+}
+@media(max-width:860px){
+  .rail{display:none}
+  .shell{margin-left:0}
+  .frame-nav{padding-left:68px}
+}
+@media(max-width:720px){
+  .frame-links{display:none}
+  .frame-nav{justify-content:space-between}
+  .hero-tag{max-width:170px}
+  .hero-color-toggle{font-size:9px;padding:7px 11px;bottom:18px;right:20px}
+  .frame-body{padding:52px 0}
+}
+@media(max-width:560px){
+  .wrap{padding:0 20px}
+  .hud{grid-template-columns:1fr}
+  .hud .cell{border-right:none}
+  .hud-stats{grid-template-columns:1fr}
+  .hud-stats .s{border-right:none;border-bottom:1px solid var(--border)}
+  .tile-grid{grid-template-columns:1fr}
+  .tile2.wide{grid-column:span 1}
+  footer.foot2 .wordmark .wm-line{font-size:clamp(52px,20vw,120px)}
+  .hero-tag{top:18px;left:20px;font-size:9.5px}
+  .hl-row{gap:10px}
+  .hero-headline{padding:0 18px 24px}
+  .frame-body{padding:40px 0}
+  .about2-copy{padding:30px 22px}
+  .spec-ticks{width:20px}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+  .hl-line span{transform:none!important}
+}
+</style>
+</head>
+<body class="loading">
+
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<div id="loader">
+  <div class="ld-word" aria-hidden="true">
+    <div class="wl"><span>Yash</span></div>
+    <div class="wl"><span>Gohel</span></div>
+  </div>
+  <div class="ld-hud">
+    <div class="ld-cross" aria-hidden="true">
+      <svg viewBox="0 0 24 24"><line x1="12" y1="2" x2="12" y2="9"/><line x1="12" y1="15" x2="12" y2="22"/><line x1="2" y1="12" x2="9" y2="12"/><line x1="15" y1="12" x2="22" y2="12"/><circle cx="12" cy="12" r="1.3"/></svg>
+    </div>
+    <div class="ld-row"><span class="ld-idx">00</span><div class="ld-num" id="ldNum">00</div><span class="ld-idx">%</span></div>
+    <div class="ld-label">Yash Gohel: Loading System</div>
+    <div class="ld-bar"><span id="ldBar"></span></div>
+  </div>
+</div>
+
+<div class="grain"></div>
+
+<!-- FIXED CHROME -->
+<button class="burger" id="burgerBtn" type="button" aria-label="Open menu" aria-expanded="false">
+  <svg viewBox="0 0 24 24"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+</button>
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle light / dark mode">
+  <span class="tt-icon tt-sun" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.4 4.4l1.7 1.7M17.9 17.9l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.4 19.6l1.7-1.7M17.9 6.1l1.7-1.7"/></svg></span>
+  <span class="tt-icon tt-moon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z"/></svg></span>
+</button>
+
+<div class="palette-switch" id="paletteSwitch">
+  <button class="palette-btn" id="paletteBtn" type="button" aria-label="Choose color theme" aria-expanded="false" aria-haspopup="true">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="8.5"/><circle cx="9" cy="9.3" r="1.2" fill="currentColor" stroke="none"/><circle cx="15.2" cy="9.8" r="1.2" fill="currentColor" stroke="none"/><circle cx="9.2" cy="14.8" r="1.2" fill="currentColor" stroke="none"/><circle cx="14.8" cy="15.2" r="1.2" fill="currentColor" stroke="none"/></svg>
+  </button>
+  <div class="palette-menu" id="paletteMenu" role="menu">
+    <button class="palette-opt" data-palette="mono" role="menuitemradio"><span class="sw sw-mono"></span>Monotone</button>
+    <button class="palette-opt" data-palette="pastel" role="menuitemradio"><span class="sw sw-pastel"></span>Pastel</button>
+    <button class="palette-opt" data-palette="cyber" role="menuitemradio"><span class="sw sw-cyber"></span>Cyber</button>
+    <button class="palette-opt" data-palette="brass" role="menuitemradio"><span class="sw sw-brass"></span>Brass</button>
+    <button class="palette-opt" data-palette="editorial" role="menuitemradio"><span class="sw sw-editorial"></span>Editorial</button>
+    <button class="palette-opt" data-palette="terracotta" role="menuitemradio"><span class="sw sw-terracotta"></span>Terracotta</button>
+    <button class="palette-opt" data-palette="forest" role="menuitemradio"><span class="sw sw-forest"></span>Forest</button>
+    <button class="palette-opt" data-palette="risograph" role="menuitemradio"><span class="sw sw-risograph"></span>Risograph</button>
+    <button class="palette-opt" data-palette="sepia" role="menuitemradio"><span class="sw sw-sepia"></span>Sepia</button>
+    <button class="palette-opt" data-palette="glass" role="menuitemradio"><span class="sw sw-glass"></span>Glass</button>
+    <button class="palette-opt" data-palette="spiderverse" role="menuitemradio"><span class="sw sw-spiderverse"></span>Spider-Verse</button>
+  </div>
+</div>
+
+<button class="minimal-toggle" id="minimalToggle" type="button" aria-label="Toggle minimalist black and white mode" aria-pressed="false">
+  <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 3a9 9 0 000 18V3Z" fill="currentColor"/></svg>
+</button>
+
+<!-- BACKGROUND AUDIO: drop a file at audio/theme.mp3 (same folder-name convention as
+     "Hero Image" / "art section") and this button lights up automatically; it stays
+     hidden if no file is present so nothing looks broken. -->
+<button class="audio-toggle" id="audioToggle" type="button" aria-label="Toggle background audio" aria-pressed="false">
+  <span class="at-icon at-on" aria-hidden="true"><svg viewBox="0 0 24 24"><rect class="bar" x="3.5" y="10" width="2.6" height="4"/><rect class="bar" x="9.2" y="6" width="2.6" height="12"/><rect class="bar" x="14.9" y="9" width="2.6" height="6"/><rect class="bar" x="20.6" y="4" width="2.6" height="16"/></svg></span>
+  <span class="at-icon at-off" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 9v6h4l5 4V5L8 9H4Z"/><line x1="16" y1="9" x2="21" y2="15"/><line x1="21" y1="9" x2="16" y2="15"/></svg></span>
+</button>
+<audio id="bgAudio" loop preload="none" src="audio/Things%20Left%20Unsaid.mp3"></audio>
+
+<div class="rail" aria-hidden="true">
+  <div class="rail-mark">YG</div>
+  <div class="rail-cross">
+    <svg viewBox="0 0 24 24"><line x1="12" y1="2" x2="12" y2="9"/><line x1="12" y1="15" x2="12" y2="22"/><line x1="2" y1="12" x2="9" y2="12"/><line x1="15" y1="12" x2="22" y2="12"/><circle cx="12" cy="12" r="1.3"/></svg>
+  </div>
+</div>
+
+<!-- FULLSCREEN NAV DRAWER -->
+<div class="nav-drawer" id="navDrawer">
+  <button class="drawer-close" id="drawerClose" type="button" aria-label="Close menu">×</button>
+  <nav class="drawer-links">
+    <a href="#work"><span class="dnum">01</span>Work</a>
+    <a href="#systems"><span class="dnum">02</span>How I Work</a>
+    <a href="#tools"><span class="dnum">03</span>Tools</a>
+    <a href="#about"><span class="dnum">04</span>About</a>
+    <a href="#contact"><span class="dnum">05</span>Contact</a>
+  </nav>
+  <div class="drawer-foot">
+    <a href="Full%20Funnel%20Marketer.pdf" download>Download résumé ↓</a>
+    <a href="mailto:yashlehog@gmail.com">yashlehog@gmail.com</a>
+    <a href="alt.html">View other design →</a>
+    <a href="index.html">View card layout →</a>
+  </div>
+</div>
+
+<div class="shell">
+<main>
+
+  <!-- ============ 01 · HERO ============ -->
+  <section class="frame" id="hero">
+    <div class="frame-nav">
+      <span class="fn-mark"><span class="fn-dot"></span><span class="fn-discover">Discover</span></span>
+      <nav class="frame-links">
+        <a href="#work" class="on">Work</a>
+        <a href="#systems">How I Work</a>
+        <a href="#tools">Tools</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <span class="frame-idx"></span>
+    </div>
+
+    <div class="hero-panel">
+      <div class="hero-visual hv-color" id="heroVisual" aria-hidden="true">
+        <div class="hv-scroll" id="hvScroll">
+          <div class="hv-bg" id="hvBg"></div>
+        </div>
+        <img class="hv-fg" id="hvFg" alt="" />
+        <div class="hv-scrim"></div>
+      </div>
+      <div class="hero-tag">YASH GOHEL &middot; CREATIVE STRATEGIST &amp; FULL-FUNNEL MARKETER.</div>
+      <button class="hero-color-toggle" id="heroColorToggle" type="button" aria-pressed="true">View in black &amp; white</button>
+
+      <div class="hero-headline">
+        <div class="hl-row"><span class="hl-code">01T</span><span class="hl-line"><span>Think.</span></span></div>
+        <div class="hl-row"><span class="hl-code">02B</span><span class="hl-line"><span>Build.</span></span></div>
+        <div class="hl-row"><span class="hl-code">03S</span><span class="hl-line"><span>Scale.</span></span></div>
+      </div>
+    </div>
+
+    <div class="hero-sub-wrap">
+      <p class="hero-sub reveal">From the first creative brief to the checkout button: I direct the shoot, write the copy, build the store, and read the analytics. <b>6+ years across healthtech, fintech, and DTC.</b> Currently building brand, creative &amp; growth at GoodFlip (Zydus Wellness).</p>
+      <div class="hero-btns reveal d1">
+        <a href="#work" class="btn primary">View Work <span class="arw">↗</span></a>
+        <a href="Full%20Funnel%20Marketer.pdf" download class="btn ghost">Download Résumé <span class="arw">↓</span></a>
+        <a href="#contact" class="btn ghost">Get in touch</a>
+      </div>
+      <div class="hud reveal d2" style="margin-top:56px">
+        <div class="cell"><span class="tag">A</span><div class="num" data-count="1" data-suffix="">0</div><div class="lbl">DTC brand's entire e-commerce built from zero</div></div>
+        <div class="cell"><span class="tag">B</span><div class="num" data-count="1200" data-suffix="+">0</div><div class="lbl">Qualified leads generated / month</div></div>
+        <div class="cell"><span class="tag">C</span><div class="num" data-count="50" data-suffix="K+">0</div><div class="lbl">Newsletter subscribers grown from scratch</div></div>
+        <div class="cell"><span class="tag">D</span><div class="num" data-count="6" data-suffix="+">0</div><div class="lbl">Years across 3 industries</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE (reveal lives on the wrapper; GSAP's skewY targets .marquee itself,
+       kept on separate elements so the two transform sources never fight) -->
+  <div class="marquee-reveal reveal">
+  <div class="marquee">
+    <div class="track">
+      <span>Shopify <b>build</b></span><span class="dot">◆</span>
+      <span>Performance <b>creative</b></span><span class="dot">◆</span>
+      <span>Lifecycle <b>CRM</b></span><span class="dot">◆</span>
+      <span>Brand <b>design</b></span><span class="dot">◆</span>
+      <span>Video <b>direction</b></span><span class="dot">◆</span>
+      <span>AI <b>systems</b></span><span class="dot">◆</span>
+      <span>Shopify <b>build</b></span><span class="dot">◆</span>
+      <span>Performance <b>creative</b></span><span class="dot">◆</span>
+      <span>Lifecycle <b>CRM</b></span><span class="dot">◆</span>
+      <span>Brand <b>design</b></span><span class="dot">◆</span>
+      <span>Video <b>direction</b></span><span class="dot">◆</span>
+      <span>AI <b>systems</b></span><span class="dot">◆</span>
+    </div>
+  </div>
+  </div>
+
+  <!-- MANIFESTO -->
+  <div class="manifesto-wrap" id="manifestoWrap">
+    <div class="manifesto-sticky wrap">
+      <p class="manifesto" id="manifesto">I build the whole funnel. The brief. The shoot. The copy. The store. The checkout button. And the analytics that prove it worked, all owned end to end.</p>
+      <div class="manifesto-cap">Six years. Three industries. One person who owns the whole thing.</div>
+    </div>
+  </div>
+
+  <!-- ============ 02 · HOW I WORK / SYSTEMS ============ -->
+  <section class="frame" id="systems">
+    <div class="frame-nav">
+      <span class="fn-mark"><span class="fn-dot"></span><span class="fn-discover">Discover</span></span>
+      <nav class="frame-links">
+        <a href="#work">Work</a>
+        <a href="#systems" class="on">How I Work</a>
+        <a href="#tools">Tools</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <span class="frame-idx"></span>
+    </div>
+    <div class="frame-body wrap">
+      <div class="f-eyebrow reveal">How I work</div>
+      <h2 class="f-title reveal">I build the machine,<br>then <span class="dim">teach AI to run it.</span></h2>
+      <p class="f-lead reveal d1">I use AI as an operating system for marketing: turning strategy, ICPs, and content into repeatable workflows that move at 10× speed. The proof isn't a logo wall. It's the output.</p>
+
+      <div class="chips reveal d2" style="margin-top:36px">
+        <div class="chip2"><b>~2 days → ~2 hrs</b> to build a full ICP + content system</div>
+        <div class="chip2"><b>12+</b> repeatable workflows built</div>
+        <div class="chip2"><b>Vibe-coded</b> &amp; shipped live tools</div>
+      </div>
+    </div>
+    <div class="grid-2">
+      <div class="card2 reveal">
+        <div class="k">What I actually do with it</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:14px;margin-top:8px">
+          <li style="position:relative;padding-left:20px;color:var(--text);font-size:14.5px;line-height:1.55">
+            <span style="position:absolute;left:0;color:var(--muted-2);font-family:var(--mono)">→</span>
+            Build ICPs and audience segments from scratch as a repeatable prompt system, not one-off chats.</li>
+          <li style="position:relative;padding-left:20px;color:var(--text);font-size:14.5px;line-height:1.55">
+            <span style="position:absolute;left:0;color:var(--muted-2);font-family:var(--mono)">→</span>
+            Turn strategy into content buckets and a full editorial pipeline in hours.</li>
+          <li style="position:relative;padding-left:20px;color:var(--text);font-size:14.5px;line-height:1.55">
+            <span style="position:absolute;left:0;color:var(--muted-2);font-family:var(--mono)">→</span>
+            Generate and pressure-test go-to-market strategies before committing budget.</li>
+          <li style="position:relative;padding-left:20px;color:var(--text);font-size:14.5px;line-height:1.55">
+            <span style="position:absolute;left:0;color:var(--muted-2);font-family:var(--mono)">→</span>
+            Vibe-code small tools and pages to ship ideas without waiting on engineering.</li>
+        </ul>
+      </div>
+      <div class="card2 reveal d1">
+        <div class="k">Proof, not description</div>
+        <h3 style="font-size:24px">Built &amp; shipped in ~4 days</h3>
+        <p class="hook">This site itself was built and shipped with AI-assisted workflows in ~4 days: a quiet flex that proves the point without saying it.</p>
+        <a href="#tools" class="link2">Jump to the live tools <span class="arw">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 03 · WORK: GOODFLIP ============ -->
+  <section class="frame" id="work">
+    <div class="frame-nav">
+      <span class="fn-mark"><span class="fn-dot"></span><span class="fn-discover">Discover</span></span>
+      <nav class="frame-links">
+        <a href="#work" class="on">Work</a>
+        <a href="#systems">How I Work</a>
+        <a href="#tools">Tools</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <span class="frame-idx"></span>
+    </div>
+    <div class="frame-body wrap">
+      <div class="f-head">
+        <div>
+          <div class="f-eyebrow reveal">Flagship &middot; TatvaCare / Zydus Wellness</div>
+          <h2 class="f-title reveal">GoodFlip</h2>
+        </div>
+        <p class="f-lead reveal d1">The centerpiece. I owned this end-to-end: store architecture, content, creative, and conversion. Everything else here is a short fold underneath it.</p>
+      </div>
+    </div>
+
+    <!-- deep case study -->
+    <div class="case2 reveal">
+      <div class="case2-head">
+        <div class="case2-copy">
+          <div class="k">3A · Deep case study</div>
+          <h3>E-commerce, built from zero.</h3>
+          <p class="hook">Architected and launched an entire DTC health brand's commerce ecosystem: Shopify, Amazon, and Flipkart, plus the content, creative, and conversion behind it.</p>
+        </div>
+        <div class="case2-visual">
+          <div class="browser browser2">
+            <div class="bar"><i></i><i></i><i></i></div>
+            <div class="body">
+              <div class="u">shop.goodflip.in</div>
+              <div class="hl">Health, delivered direct.</div>
+              <div class="sm">Multi-platform DTC storefront: architecture, PDPs, and checkout built from the ground up.</div>
+              <div class="prc"><span>Shopify</span><span>Amazon</span><span>Flipkart</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hud-stats">
+        <div class="s"><span class="tag">Platforms</span><div class="n">3</div><div class="l">Launched: Shopify · Amazon · Flipkart</div></div>
+        <div class="s"><span class="tag">PDPs</span><div class="n">10+</div><div class="l">Product pages written &amp; designed</div></div>
+        <div class="s"><span class="tag">AOV lift</span><div class="n">~15%</div><div class="l">Via upsell / cross-sell (Q1)</div></div>
+        <div class="s"><span class="tag">Traffic growth</span><div class="n">~28%</div><div class="l">Organic page-traffic in 3 months</div></div>
+      </div>
+      <div class="case2-detail">
+        <div class="col">
+          <h5>Context &amp; role</h5>
+          <p>GoodFlip started with no storefront. I took it from an idea to a live, multi-platform DTC business.</p>
+          <p><b style="color:var(--text)">My role:</b> End-to-end owner, store architecture, content, creative, and conversion.</p>
+          <h5 style="margin-top:24px">Result</h5>
+          <p>A live, multi-channel DTC store generating revenue across three platforms, with measurable lifts in AOV, organic traffic, and CPA.</p>
+        </div>
+        <div class="col">
+          <h5>What I did</h5>
+          <ul>
+            <li>Built the full Shopify store: architecture, theme, navigation taxonomy, collection structure, checkout flow.</li>
+            <li>Wrote and designed 10+ PDPs where copy and visuals were built together to guide the buyer.</li>
+            <li>Set up and optimized Amazon (A+ content, brand store) and Flipkart listings.</li>
+            <li>Integrated upsell/cross-sell into the cart to lift AOV.</li>
+            <li>Built campaign landing pages matched to paid-ad intent, cutting CPA ~18%.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="case2-foot">
+        <div class="tools">Shopify · Amazon Seller Central · Flipkart · Figma · Photoshop · Illustrator</div>
+        <div style="display:flex;gap:24px;flex-wrap:wrap">
+          <a href="work/goodflip.html" class="link2">Full case study <span class="arw">→</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- short folds -->
+    <div class="grid-2">
+      <div class="card2 reveal">
+        <div class="k">3B · Performance creative</div>
+        <h3>Meta static + video ads.</h3>
+        <p class="hook">Static and video ad creative across every GoodFlip therapy area: CGM, BCA, supplements, and more.</p>
+        <div class="chips">
+          <span class="chip2"><b>4.2%</b> avg CTR (vs 4% benchmark)</span>
+          <span class="chip2"><b>1,200+</b> qualified leads / mo</span>
+          <span class="chip2"><b>4+</b> campaigns / month</span>
+        </div>
+        <div class="cap">Concept, copy, and creative direction across paid social. <span class="ph">[Add link: ad gallery / Drive / Behance, your 6–8 best]</span></div>
+        <div class="tools">Meta Ads · Photoshop · Illustrator · VEO / Firefly</div>
+      </div>
+      <div class="card2 reveal d1">
+        <div class="k">3C · Video ads by therapy area</div>
+        <h3>Script → storyboard → final cut.</h3>
+        <p class="hook">Scripted and produced video ads for CGM, BCA, supplements, and device lines.</p>
+        <div class="chips">
+          <span class="chip2"><b class="ph">[#]</b> videos produced</span>
+          <span class="chip2"><b class="ph">[metric]</b> best-performer</span>
+          <span class="chip2">CGM · BCA · Supplements · Devices</span>
+        </div>
+        <div class="cap">Where creative + performance overlap shows best. <span class="ph">[Embed 2–3 best videos or link a reel]</span></div>
+        <div class="tools">Premiere · After Effects · VEO / Firefly</div>
+      </div>
+      <div class="card2 reveal">
+        <div class="k">3D · Brand design &amp; product launches</div>
+        <h3>From digital ad to physical shelf.</h3>
+        <p class="hook">Built GoodFlip's visual language and launched its product lines: packaging, GTM creative, and product photography.</p>
+        <div class="chips">
+          <span class="chip2"><b class="ph">[#]</b> SKUs launched</span>
+          <span class="chip2">Supplements · PCOS Care · BP Monitor · Devices</span>
+          <span class="chip2"><b>Now launching:</b> ARC Smart Ring</span>
+        </div>
+        <div class="cap">Branding, packaging design briefs, and go-to-market creative. ARC Smart Ring is <b style="color:var(--text)">currently building</b>, live, real work. <span class="ph">[Add packaging shots / launch creatives]</span></div>
+      </div>
+      <div class="card2 reveal d1">
+        <div class="k">3E · Lifecycle marketing (CLM / CRM)</div>
+        <h3>Acquisition → re-engagement.</h3>
+        <p class="hook">Designed multi-stage lifecycle journeys across WhatsApp, push, and in-app.</p>
+        <div class="chips">
+          <span class="chip2"><b>8+</b> CRM journeys built</span>
+          <span class="chip2"><b>1.5% → 1.8%</b> conversion (+20% rel.)</span>
+          <span class="chip2">WhatsApp · Push · In-app</span>
+        </div>
+        <div class="cap">Built in MoEngage. Acquisition, activation, retention, re-engagement. <span class="ph">[Add journey-flow screenshots, blur sensitive]</span></div>
+        <div class="tools">MoEngage · WhatsApp API</div>
+      </div>
+      <div class="card2 reveal" style="grid-column:1 / -1">
+        <div class="k">3F · App feature launches via lifecycle</div>
+        <h3>Turning releases into activation: Kickstarter Program &amp; Flipcoins.</h3>
+        <p class="hook">Drove adoption of new GoodFlip app features through CLM/CRM campaigns: feature launch strategy plus the lifecycle campaigns that made them stick.</p>
+        <div class="chips">
+          <span class="chip2"><b class="ph">[%]</b> Kickstarter activation</span>
+          <span class="chip2"><b class="ph">[lift]</b> from Flipcoins engagement</span>
+          <span class="chip2"><b class="ph">[#]</b> feature launches supported</span>
+        </div>
+        <div class="cap">Feature launch strategy + lifecycle campaigns. <span class="ph">[Add in-app screenshots or campaign creatives]</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STREAK ============ -->
+  <section class="frame" id="streak">
+    <div class="frame-nav">
+      <span class="fn-mark"><span class="fn-dot"></span><span class="fn-discover">Discover</span></span>
+      <nav class="frame-links">
+        <a href="#work">Work</a>
+        <a href="#systems">How I Work</a>
+        <a href="#tools">Tools</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <span class="frame-idx"></span>
+    </div>
+    <div class="frame-body wrap">
+      <div class="f-head">
+        <div>
+          <div class="f-eyebrow reveal">Fintech, archived</div>
+          <h2 class="f-title reveal">Streak AI <span class="dim">Technologies</span></h2>
+        </div>
+        <p class="f-lead reveal d1">Archived work: the live pages were retired after a company restructuring. Presented via screenshots &amp; Wayback Machine captures. Totally normal, totally credible.<br><a href="work/streak.html" class="link2" style="margin-top:14px">Read the full case study <span class="arw">→</span></a></p>
+      </div>
+    </div>
+    <div class="grid-2">
+      <div class="card2 reveal">
+        <div class="k">4A · Fintech help centre, built from scratch</div>
+        <h3>Trading education for lakhs of first-time traders.</h3>
+        <p class="hook">Wrote an entire trading education Help Centre covering strategic trading, technical indicators, and strategies for retail traders.</p>
+        <div class="chips">
+          <span class="chip2"><b>100+</b> articles + videos</span>
+          <span class="chip2"><b>+37%</b> user conversion</span>
+          <span class="chip2">Built from zero</span>
+        </div>
+        <div class="cap">Turned complex financial concepts into confident, beginner-friendly language. Original pages retired after restructuring, archived captures shown. <span class="ph">[Add Wayback link / screenshots]</span></div>
+      </div>
+      <div class="card2 reveal d1">
+        <div class="k">4B · Product UX copy</div>
+        <h3>Jargon into clarity, in-product.</h3>
+        <p class="hook">Authored the full UI/UX copy for a fintech trading platform used by lakhs of retail traders.</p>
+        <div class="chips">
+          <span class="chip2">Entire product copy</span>
+          <span class="chip2"><b>150+</b> user interviews</span>
+          <span class="chip2">Fintech · Trading</span>
+        </div>
+        <div class="cap">Onboarding, in-product flows, microcopy. <span class="ph">[Add app screenshots showing copy in context]</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ QUICKO ============ -->
+  <section class="frame" id="quicko">
+    <div class="frame-nav">
+      <span class="fn-mark"><span class="fn-dot"></span><span class="fn-discover">Discover</span></span>
+      <nav class="frame-links">
+        <a href="#work">Work</a>
+        <a href="#systems">How I Work</a>
+        <a href="#tools">Tools</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <span class="frame-idx"></span>
+    </div>
+    <div class="frame-body wrap">
+      <div class="f-eyebrow reveal">Content brand</div>
+      <h2 class="f-title reveal">Quicko: <span class="dim">from zero to an audience.</span></h2>
+      <p class="f-lead reveal d1">Proof I can build a content brand from nothing: content, editorial design, UI/UX, illustration, motion, and the first email out the door.</p>
+    </div>
+    <div class="grid-2">
+      <div class="card2 reveal" style="grid-column:1 / -1">
+        <div class="k">5A · Bytes newsletter + Quicko blog</div>
+        <h3>The first send to a large, engaged audience.</h3>
+        <div class="chips">
+          <span class="chip2"><b>50K</b> subscribers from scratch</span>
+          <span class="chip2"><b>60+</b> blog articles</span>
+          <span class="chip2">Content · UI/UX · Illustration · Motion</span>
+        </div>
+        <div class="cap">End-to-end: content, editorial design, UI/UX, illustrations, motion graphics. <span class="ph">[Add newsletter samples / blog link]</span></div>
+        <a href="work/quicko.html" class="link2">Read the full case study <span class="arw">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 06 · TOOLS TEASER ============ -->
+  <section class="frame" id="tools">
+    <div class="frame-nav">
+      <span class="fn-mark"><span class="fn-dot"></span><span class="fn-discover">Discover</span></span>
+      <nav class="frame-links">
+        <a href="#work">Work</a>
+        <a href="#systems">How I Work</a>
+        <a href="#tools" class="on">Tools</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <span class="frame-idx"></span>
+    </div>
+    <div class="frame-body wrap">
+      <div class="f-eyebrow reveal">AI implementation</div>
+      <h2 class="f-title reveal">Ship it. <span class="dim">Systematize it. Think it.</span></h2>
+      <p class="f-lead reveal d1">I don't just use AI. I build systems and ship tools with it. Type into the generator, watch the engine run.</p>
+    </div>
+    <div class="tool2 reveal">
+      <div class="tool2-inner">
+        <div class="tool2-copy">
+          <div class="live"><i></i> Live &amp; interactive</div>
+          <h3>ICP Generator + Content Engine.</h3>
+          <p>A working ICP generator you can type into, and a content engine that turns one pillar input into twelve on-brand assets. Open it as its own page for the full working version.</p>
+          <a href="work/tools.html" class="btn primary" style="margin-top:26px">Open the live tools <span class="arw">↗</span></a>
+        </div>
+        <div class="tool2-stats">
+          <div class="row"><div class="n">1→12</div><div class="l">Assets generated per content-engine cycle</div></div>
+          <div class="row"><div class="n">~2d→~2h</div><div class="l">Time to build a full ICP + content system</div></div>
+          <div class="row"><div class="n">12+</div><div class="l">Repeatable workflows built &amp; in use</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 07 · CREATIVE / PERSONAL ============ -->
+  <section class="frame" id="creative">
+    <div class="frame-nav">
+      <span class="fn-mark"><span class="fn-dot"></span><span class="fn-discover">Discover</span></span>
+      <nav class="frame-links">
+        <a href="#work">Work</a>
+        <a href="#systems">How I Work</a>
+        <a href="#tools">Tools</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <span class="frame-idx"></span>
+    </div>
+    <div class="frame-body wrap" style="padding-bottom:0">
+      <div class="f-eyebrow reveal">@wai.geee</div>
+      <h2 class="f-title reveal">When I'm not <span class="dim">building brands.</span></h2>
+      <p class="f-lead reveal d1">Art, food, and music. Usually after midnight. It shows range, and makes me memorable. Press and hold the scene below.</p>
+    </div>
+
+    <div class="wrap">
+      <div class="art-panel reveal" id="artPanel" role="button" tabindex="0" aria-label="Press and hold to reveal art gallery">
+        <div class="art-visual" aria-hidden="true">
+          <div class="art-scroll" id="artScroll">
+            <div class="art-bg" id="artBg"></div>
+          </div>
+          <img class="art-fg" id="artFg" alt="" />
+          <div class="art-scrim"></div>
+        </div>
+        <div class="art-tag">ART &amp; ILLUSTRATION &middot; @WAI.GEEE</div>
+        <div class="art-idx">HOLD TO REVEAL</div>
+        <div class="art-prompt">
+          <div class="art-ring">
+            <svg viewBox="0 0 76 76">
+              <circle class="track" cx="38" cy="38" r="33"/>
+              <circle class="fill" id="artRingFill" cx="38" cy="38" r="33"/>
+            </svg>
+            <div class="cross"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><line x1="12" y1="3" x2="12" y2="9"/><line x1="12" y1="15" x2="12" y2="21"/><line x1="3" y1="12" x2="9" y2="12"/><line x1="15" y1="12" x2="21" y2="12"/><circle cx="12" cy="12" r="1.2" fill="currentColor" stroke="none"/></svg></div>
+          </div>
+          <div class="art-prompt-label">Click &amp; hold</div>
+        </div>
+        <div class="art-burst" id="artBurst">
+          <div class="art-card" data-full="art section/images for the pop up/1.png">
+            <img src="art%20section/images%20for%20the%20pop%20up/1.png" alt="Fanged creature illustration" loading="lazy" />
+            <div class="cap">01 &middot; Fanged</div>
+          </div>
+          <div class="art-card" data-full="art section/images for the pop up/2.png">
+            <img src="art%20section/images%20for%20the%20pop%20up/2.png" alt="Rollerblading character design" loading="lazy" />
+            <div class="cap">02 &middot; Skate courier</div>
+          </div>
+          <div class="art-card" data-full="art section/images for the pop up/3.png">
+            <img src="art%20section/images%20for%20the%20pop%20up/3.png" alt="Three friends walking under a starry sky" loading="lazy" />
+            <div class="cap">03 &middot; Night walk</div>
+          </div>
+          <div class="art-card" data-full="art section/images for the pop up/4.png">
+            <img src="art%20section/images%20for%20the%20pop%20up/4.png" alt="Girl watching a falling star" loading="lazy" />
+            <div class="cap">04 &middot; Falling star</div>
+          </div>
+          <div class="art-card" data-full="art section/images for the pop up/5.png">
+            <img src="art%20section/images%20for%20the%20pop%20up/5.png" alt="Girl with an umbrella in a city" loading="lazy" />
+            <div class="cap">05 &middot; City umbrella</div>
+          </div>
+          <div class="art-card" data-full="art section/images for the pop up/6.png">
+            <img src="art%20section/images%20for%20the%20pop%20up/6.png" alt="Spider-Man fan art" loading="lazy" />
+            <div class="cap">06 &middot; Web-slinger</div>
+          </div>
+        </div>
+        <div class="art-close-hint">Click anywhere to close</div>
+      </div>
+    </div>
+
+    <div class="wrap" style="padding:26px 34px 0">
+      <a href="hobbies/art.html" class="link2 reveal">View the full gallery <span class="arw">→</span></a>
+    </div>
+
+    <div class="tile-grid reveal" style="margin-top:40px">
+      <a class="tile2 wide" href="hobbies/cooking.html"><div class="fill g2"></div><div class="t"><b>Cooking videos</b><span>I make cooking videos</span></div></a>
+      <a class="tile2" href="hobbies/playlists.html"><div class="fill g3"></div><div class="t"><b>Playlists</b><span>I curate them</span></div></a>
+      <div class="tile2"><div class="fill g4"></div><div class="t"><b>Motion</b><span>Little loops</span></div></div>
+      <div class="tile2 wide"><div class="fill g1"></div><div class="t"><b>Sketchbook</b><span>Ongoing</span></div></div>
+      <div class="tile2"><div class="fill g3"></div><div class="t"><b>Type</b><span>Lettering</span></div></div>
+    </div>
+  </section>
+
+  <!-- lightbox for the art burst cards -->
+  <div class="art-lightbox" id="artLightbox">
+    <button class="lb-close" id="artLightboxClose" type="button" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
+    </button>
+    <img id="artLightboxImg" src="" alt="" />
+  </div>
+
+  <!-- ============ 08 · ABOUT ============ -->
+  <section class="frame" id="about">
+    <div class="frame-nav">
+      <span class="fn-mark"><span class="fn-dot"></span><span class="fn-discover">Discover</span></span>
+      <nav class="frame-links">
+        <a href="#work">Work</a>
+        <a href="#systems">How I Work</a>
+        <a href="#tools">Tools</a>
+        <a href="#about" class="on">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <span class="frame-idx"></span>
+    </div>
+    <div class="about2 reveal">
+      <div class="about2-photo">
+        <div class="init">YG</div>
+        <div class="spec-ticks" aria-hidden="true">
+          <span class="spec-label">Y.G. / 06</span>
+          <div class="spec-rule"></div>
+        </div>
+        <div class="note ph">[Swap in a good photo]</div>
+      </div>
+      <div class="about2-copy">
+        <div class="f-eyebrow">About</div>
+        <p>I'm a creative strategist and full-funnel marketer who likes owning the whole thing: <em>the shoot, the copy, the store, and the analytics.</em> Six years in, across healthtech, fintech, and DTC, I've learned that the best work happens when strategy and craft aren't handed off between people.</p>
+        <p style="font-size:16px;margin-top:18px">These days I build brands and growth systems at GoodFlip, and teach AI to run the parts that should be repeatable. People hire people, so if this sounds like your kind of operator, let's talk.</p>
+        <div class="sig">Yash</div>
+      </div>
+    </div>
+
+    <div class="marquee-reveal reveal">
+    <div class="marquee">
+      <div class="track">
+        <span><b>Shopify</b></span><span class="dot">·</span><span><b>Meta Ads</b></span><span class="dot">·</span>
+        <span><b>MoEngage</b></span><span class="dot">·</span><span><b>Figma</b></span><span class="dot">·</span>
+        <span><b>Photoshop</b></span><span class="dot">·</span><span><b>Illustrator</b></span><span class="dot">·</span>
+        <span><b>Premiere</b></span><span class="dot">·</span><span><b>After Effects</b></span><span class="dot">·</span>
+        <span><b>Amazon Seller Central</b></span><span class="dot">·</span><span><b>Flipkart</b></span><span class="dot">·</span>
+        <span><b>Shopify</b></span><span class="dot">·</span><span><b>Meta Ads</b></span><span class="dot">·</span>
+        <span><b>MoEngage</b></span><span class="dot">·</span><span><b>Figma</b></span><span class="dot">·</span>
+        <span><b>Photoshop</b></span><span class="dot">·</span><span><b>Illustrator</b></span><span class="dot">·</span>
+        <span><b>Premiere</b></span><span class="dot">·</span><span><b>After Effects</b></span><span class="dot">·</span>
+        <span><b>Amazon Seller Central</b></span><span class="dot">·</span><span><b>Flipkart</b></span><span class="dot">·</span>
+      </div>
+    </div>
+    </div>
+
+  </section>
+
+  <!-- ============ 09 · CONTACT ============ -->
+  <section class="frame" id="contact">
+    <div class="frame-nav">
+      <span class="fn-mark"><span class="fn-dot"></span><span class="fn-discover">Discover</span></span>
+      <nav class="frame-links">
+        <a href="#work">Work</a>
+        <a href="#systems">How I Work</a>
+        <a href="#tools">Tools</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="on">Contact</a>
+      </nav>
+      <span class="frame-idx"></span>
+    </div>
+    <div class="frame-body wrap contact2">
+      <div class="f-eyebrow reveal">Let's talk</div>
+      <h2 class="reveal">Let's build <span class="dim">something.</span></h2>
+      <p class="sub reveal d1">Starting, rebuilding, or leveling up, it starts with a conversation. I'm currently open to new roles.</p>
+      <a href="mailto:yashlehog@gmail.com" class="mail reveal d2">yashlehog@gmail.com <span class="arw">↗</span></a>
+
+      <div class="contact-rows reveal d2">
+        <div class="crow"><span class="l">Résumé</span><span class="r"><a href="Full%20Funnel%20Marketer.pdf" download>Download PDF ↓</a></span></div>
+        <div class="crow"><span class="l">Instagram</span><span class="r"><a href="https://instagram.com/wai.geee" target="_blank" rel="noopener">@wai.geee ↗</a></span></div>
+        <div class="crow"><span class="l">LinkedIn</span><span class="r"><a href="https://www.linkedin.com/in/yashnakulgohel/" target="_blank" rel="noopener">LinkedIn ↗</a></span></div>
+      </div>
+    </div>
+
+    <footer class="foot2">
+      <div class="fcols">
+        <div class="fcol">
+          <h6>Navigate</h6>
+          <a href="#work">Work</a>
+          <a href="#systems">How I Work</a>
+          <a href="#tools">Tools</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="fcol">
+          <h6>Connect</h6>
+          <a href="https://instagram.com/wai.geee" target="_blank" rel="noopener">Instagram ↗</a>
+          <a href="https://www.linkedin.com/in/yashnakulgohel/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="mailto:yashlehog@gmail.com">Email ↗</a>
+        </div>
+        <div class="fcol">
+          <h6>Résumé</h6>
+          <a href="Full%20Funnel%20Marketer.pdf" download>Download résumé ↓</a>
+          <div class="row">Currently open to new roles<span class="note">Assistant Manager &middot; Brand, Creative &amp; Comms, TatvaCare</span></div>
+          <a href="alt.html">View other design →</a>
+          <a href="index.html">View card layout →</a>
+        </div>
+      </div>
+      <div class="wordmark reveal">
+        <div class="wm-line">Yash</div>
+        <div class="wm-line">Gohel</div>
+      </div>
+      <div class="foot-note reveal">Did you know? 'Email' predates the 'Internet'. Go ahead, give it a try: <a href="mailto:yashlehog@gmail.com">yashlehog@gmail.com</a></div>
+      <div class="fbottom">
+        <span>© <span id="yr"></span> Yash Gohel</span>
+        <a href="alt.html">[ view other design → ]</a>
+      </div>
+    </footer>
+  </section>
+
+</main>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+/* ===== REDUCED MOTION FLAG ===== */
+const REDUCE=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+
+/* ===== LIVE DATE: the frame-idx label in the top-right of every section
+   used to read "01 / 09 . HERO"; now it's a live-updating clock instead. ===== */
+(function(){
+  const els=document.querySelectorAll('.frame-idx');
+  if(!els.length)return;
+  function fmt(){
+    const d=new Date();
+    const wd=d.toLocaleDateString('en-GB',{weekday:'short'}).toUpperCase();
+    const day=String(d.getDate()).padStart(2,'0');
+    const mon=d.toLocaleDateString('en-GB',{month:'short'}).toUpperCase();
+    const hh=String(d.getHours()).padStart(2,'0');
+    const mm=String(d.getMinutes()).padStart(2,'0');
+    const ss=String(d.getSeconds()).padStart(2,'0');
+    return `${wd} ${day} ${mon} \u00b7 ${hh}:${mm}:${ss}`;
+  }
+  function tick(){const s=fmt();els.forEach(el=>{el.textContent=s;});}
+  tick();
+  setInterval(tick,1000);
+})();
+
+/* ===== SCROLL PROGRESS BAR ===== */
+(function(){
+  const bar=document.getElementById('scrollProgress');
+  if(!bar)return;
+  let ticking=false;
+  function update(){
+    const h=document.documentElement;
+    const max=h.scrollHeight-h.clientHeight;
+    const pct=max>0?(h.scrollTop/max)*100:0;
+    bar.style.width=pct+'%';
+    ticking=false;
+  }
+  window.addEventListener('scroll',()=>{if(!ticking){requestAnimationFrame(update);ticking=true;}},{passive:true});
+  window.addEventListener('resize',update);
+  update();
+})();
+
+/* ===== CUSTOM CURSOR: a fading green trail drawn on canvas, plus a small
+   glowing dot at the tip (synchronized.studio-inspired). Disabled on
+   touch/coarse pointers and when reduced-motion is requested. ===== */
+(function(){
+  if(REDUCE)return;
+  if(!window.matchMedia('(hover:hover) and (pointer:fine)').matches)return;
+  const root=document.documentElement;
+  root.classList.add('has-custom-cursor');
+  const canvas=document.createElement('canvas');canvas.className='cursor-trail-canvas';
+  const dot=document.createElement('div');dot.className='cursor-dot';
+  document.body.append(canvas,dot);
+  const ctx=canvas.getContext('2d');
+  const DPR=Math.min(window.devicePixelRatio||1,2);
+  function resize(){
+    canvas.width=innerWidth*DPR;canvas.height=innerHeight*DPR;
+    canvas.style.width=innerWidth+'px';canvas.style.height=innerHeight+'px';
+    ctx.setTransform(DPR,0,0,DPR,0,0);
+  }
+  resize();
+  window.addEventListener('resize',resize);
+
+  const TRAIL_MS=380;
+  function trailColor(){return getComputedStyle(root).getPropertyValue('--accent-rgb').trim()||'61,255,122';}
+  const pts=[];
+  let mx=innerWidth/2,my=innerHeight/2,hoverTarget=1,dotScale=1;
+  window.addEventListener('pointermove',e=>{
+    mx=e.clientX;my=e.clientY;
+    root.classList.add('cursor-active');
+    pts.push({x:mx,y:my,t:performance.now()});
+  },{passive:true});
+  document.addEventListener('mouseleave',()=>root.classList.remove('cursor-active'));
+  const HOVER_SEL='a,button,.tile2,.art-card,.card2,.chip2,input,textarea,select,[role="button"],[data-cursor]';
+  document.addEventListener('pointerover',e=>{
+    const t=e.target.closest&&e.target.closest(HOVER_SEL);
+    if(t){root.classList.add('cursor-hover');hoverTarget=2;}
+  });
+  document.addEventListener('pointerout',e=>{
+    const t=e.target.closest&&e.target.closest(HOVER_SEL);
+    if(t){root.classList.remove('cursor-hover');hoverTarget=1;}
+  });
+  // art-panel has its own cursor-follow hold-ring (see ART PANEL script below);
+  // hide the generic cursor while over it so the two never overlap.
+  const artPanel=document.getElementById('artPanel');
+  if(artPanel){
+    artPanel.addEventListener('pointerenter',()=>root.classList.add('cursor-hidden'));
+    artPanel.addEventListener('pointerleave',()=>root.classList.remove('cursor-hidden'));
+  }
+
+  (function tick(){
+    const now=performance.now();
+    while(pts.length&&now-pts[0].t>TRAIL_MS)pts.shift();
+    ctx.clearRect(0,0,innerWidth,innerHeight);
+    if(pts.length>1){
+      const trailRGB=trailColor();
+      ctx.lineCap='round';ctx.lineJoin='round';
+      for(let i=1;i<pts.length;i++){
+        const p0=pts[i-1],p1=pts[i];
+        const life=Math.max(0,1-(now-p1.t)/TRAIL_MS);
+        ctx.strokeStyle=`rgba(${trailRGB},${(life*.85).toFixed(3)})`;
+        ctx.lineWidth=Math.max(.6,3*life);
+        ctx.beginPath();ctx.moveTo(p0.x,p0.y);ctx.lineTo(p1.x,p1.y);ctx.stroke();
+      }
+    }
+    dotScale+=(hoverTarget-dotScale)*.25;
+    dot.style.transform=`translate3d(${mx}px,${my}px,0) translate(-50%,-50%) scale(${dotScale})`;
+    requestAnimationFrame(tick);
+  })();
+})();
+
+/* ===== NAV SCRAMBLE HOVER: kprverse.com-style text decode on hover.
+   Targets only the link's own bare text node, so a leading badge like the
+   drawer's "01" .dnum span is left untouched. ===== */
+(function(){
+  if(REDUCE)return;
+  const CHARS='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+  function scrambleNode(node){
+    if(node.__scrambling)return;
+    const original=node.textContent;
+    const len=original.length,dur=420,start=performance.now();
+    node.__scrambling=true;
+    function frame(now){
+      const p=Math.min((now-start)/dur,1),reveal=Math.floor(p*len);
+      let out='';
+      for(let i=0;i<len;i++)out+= original[i]===' ' ? ' ' : (i<reveal ? original[i] : CHARS[Math.floor(Math.random()*CHARS.length)]);
+      node.textContent=out;
+      if(p<1)requestAnimationFrame(frame);else{node.textContent=original;node.__scrambling=false;}
+    }
+    requestAnimationFrame(frame);
+  }
+  document.querySelectorAll('.frame-links a, .drawer-links a').forEach(a=>{
+    const node=[...a.childNodes].find(n=>n.nodeType===3&&n.textContent.trim().length);
+    if(!node)return;
+    a.addEventListener('mouseenter',()=>scrambleNode(node));
+  });
+})();
+
+/* ===== THEME TOGGLE ===== */
+document.getElementById('themeToggle').addEventListener('click',()=>{
+  const root=document.documentElement;
+  const next=root.getAttribute('data-theme')==='light'?'dark':'light';
+  root.setAttribute('data-theme',next);
+  try{localStorage.setItem('theme',next);}catch(e){}
+});
+
+/* ===== MINIMALIST MODE: forces the whole page to grayscale, independent
+   of whichever theme/palette is active. ===== */
+(function(){
+  const btn=document.getElementById('minimalToggle');
+  if(!btn)return;
+  const root=document.documentElement;
+  btn.setAttribute('aria-pressed',String(root.getAttribute('data-minimal')==='true'));
+  btn.addEventListener('click',()=>{
+    const on=root.getAttribute('data-minimal')!=='true';
+    if(on)root.setAttribute('data-minimal','true');else root.removeAttribute('data-minimal');
+    btn.setAttribute('aria-pressed',String(on));
+    try{localStorage.setItem('minimal',String(on));}catch(e){}
+  });
+})();
+
+/* ===== PALETTE SWITCHER ===== */
+(function(){
+  const wrap=document.getElementById('paletteSwitch'),btn=document.getElementById('paletteBtn'),menu=document.getElementById('paletteMenu');
+  if(!wrap)return;
+  const opts=menu.querySelectorAll('.palette-opt');
+  function markActive(p){opts.forEach(o=>o.classList.toggle('active',o.dataset.palette===p));}
+  markActive(document.documentElement.getAttribute('data-palette')||'risograph');
+  function closeMenu(){wrap.classList.remove('open');btn.setAttribute('aria-expanded','false');}
+  btn.addEventListener('click',e=>{
+    e.stopPropagation();
+    const open=wrap.classList.toggle('open');
+    btn.setAttribute('aria-expanded',String(open));
+  });
+  opts.forEach(o=>o.addEventListener('click',()=>{
+    const p=o.dataset.palette;
+    document.documentElement.setAttribute('data-palette',p);
+    try{localStorage.setItem('palette',p);}catch(e){}
+    markActive(p);
+    closeMenu();
+  }));
+  document.addEventListener('click',e=>{if(!wrap.contains(e.target))closeMenu();});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu();});
+})();
+
+/* ===== BACKGROUND AUDIO ===== */
+(function(){
+  const btn=document.getElementById('audioToggle'),audio=document.getElementById('bgAudio');
+  if(!btn||!audio)return;
+  audio.volume=.35;
+  function setPlaying(playing){btn.setAttribute('aria-pressed',String(playing));}
+  let muted=true;
+  try{muted=localStorage.getItem('audio-muted')!=='false';}catch(e){}
+  setPlaying(!muted);
+  if(!muted)audio.play().catch(()=>setPlaying(false));
+  btn.addEventListener('click',()=>{
+    if(audio.paused){
+      // flip the icon the instant the user clicks (paused flips sync too);
+      // don't wait on the play() promise, or the icon can lag/stick on slow decode.
+      setPlaying(true);try{localStorage.setItem('audio-muted','false');}catch(e){}
+      audio.play().catch(()=>{setPlaying(false);try{localStorage.setItem('audio-muted','true');}catch(e){}});
+    }else{
+      audio.pause();setPlaying(false);try{localStorage.setItem('audio-muted','true');}catch(e){}
+    }
+  });
+  audio.addEventListener('error',()=>btn.classList.add('is-hidden'));
+})();
+
+/* ===== NAV DRAWER ===== */
+(function(){
+  const btn=document.getElementById('burgerBtn'),drawer=document.getElementById('navDrawer'),close=document.getElementById('drawerClose');
+  function open(){drawer.classList.add('open');btn.setAttribute('aria-expanded','true');btn.classList.add('is-hidden');}
+  function shut(){drawer.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.classList.remove('is-hidden');}
+  btn.addEventListener('click',()=>{drawer.classList.contains('open')?shut():open();});
+  close.addEventListener('click',shut);
+  drawer.querySelectorAll('a').forEach(a=>a.addEventListener('click',shut));
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')shut();});
+})();
+
+/* ===== LOADER ===== */
+(function(){
+  const loader=document.getElementById('loader'),num=document.getElementById('ldNum'),bar=document.getElementById('ldBar');
+  const REDUCE_L=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  function finish(){
+    loader.classList.add('done');
+    document.body.classList.remove('loading');
+    requestAnimationFrame(()=>document.body.classList.add('ready'));
+  }
+  if(REDUCE_L){loader.classList.add('words-in');finish();return;}
+  requestAnimationFrame(()=>requestAnimationFrame(()=>loader.classList.add('words-in')));
+  let p=0;
+  const t=setInterval(()=>{
+    p+=Math.random()*13+5;
+    if(p>=100){
+      p=100;clearInterval(t);
+      num.textContent='100';bar.style.width='100%';
+      setTimeout(finish,420);
+    }else{
+      num.textContent=String(Math.floor(p)).padStart(2,'0');
+      bar.style.width=p+'%';
+    }
+  },100);
+  // safety net: never trap the user behind the loader
+  setTimeout(finish,4000);
+})();
+
+/* ===== YEAR ===== */
+document.getElementById('yr').textContent=new Date().getFullYear();
+
+/* ===== GSAP / SCROLLTRIGGER REVEALS ===== */
+const HAS_GSAP=typeof gsap!=='undefined'&&typeof ScrollTrigger!=='undefined';
+if(HAS_GSAP)gsap.registerPlugin(ScrollTrigger);
+
+/* ===== MANIFESTO: split words, scrub-filled as the sticky block scrolls ===== */
+(function(){
+  const p=document.getElementById('manifesto'),wrap=document.getElementById('manifestoWrap');
+  if(!p)return;
+  const words=p.textContent.trim().split(/\s+/);
+  p.innerHTML='<span class="qmark">“</span>'+words.map(w=>`<span class="mword">${w}</span>`).join(' ')+'<span class="qmark">”</span>';
+  const mwords=p.querySelectorAll('.mword');
+  if(REDUCE){mwords.forEach(w=>w.style.opacity=1);return;}
+  function fill(prog){
+    const n=mwords.length,filled=prog*(n+6);
+    mwords.forEach((w,i)=>{const local=Math.min(Math.max(filled-i,0),1);w.style.opacity=(0.14+local*0.86).toFixed(3);});
+  }
+  if(HAS_GSAP){
+    ScrollTrigger.create({trigger:wrap,start:'top top',end:'bottom bottom',scrub:.4,onUpdate:self=>fill(self.progress)});
+  }else{
+    function onScrollFallback(){
+      const r=wrap.getBoundingClientRect(),scrollable=wrap.offsetHeight-window.innerHeight;
+      fill(Math.min(Math.max(-r.top/scrollable,0),1));
+    }
+    window.addEventListener('scroll',onScrollFallback,{passive:true});onScrollFallback();
+  }
+})();
+
+function countUp(el){
+  const target=+el.dataset.count,suf=el.dataset.suffix||'';const dur=1200;const st=performance.now();
+  function step(now){let t=Math.min((now-st)/dur,1);t=1-Math.pow(1-t,3);
+    el.textContent=Math.floor(t*target).toLocaleString()+suf;
+    if(t<1)requestAnimationFrame(step);else el.textContent=target.toLocaleString()+suf;}
+  requestAnimationFrame(step);
+}
+
+(function(){
+  const targets=document.querySelectorAll('.reveal');
+  if(REDUCE){targets.forEach(el=>{el.classList.add('in');if(el.dataset.count!==undefined)el.textContent=(+el.dataset.count).toLocaleString()+(el.dataset.suffix||'');});
+    document.querySelectorAll('[data-count]').forEach(el=>el.textContent=(+el.dataset.count).toLocaleString()+(el.dataset.suffix||''));
+    return;}
+  if(HAS_GSAP){
+    ScrollTrigger.batch(targets,{
+      start:'top 90%',once:true,
+      onEnter:batch=>batch.forEach(el=>{
+        el.classList.add('in');
+        el.querySelectorAll('[data-count]').forEach(countUp);
+      })
+    });
+  }else{
+    const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){
+      e.target.classList.add('in');
+      e.target.querySelectorAll('[data-count]').forEach(countUp);
+      io.unobserve(e.target);
+    }}),{threshold:.15,rootMargin:'0px 0px -8% 0px'});
+    targets.forEach(el=>io.observe(el));
+  }
+})();
+
+/* ===== HERO PANEL SUBTLE PARALLAX ===== */
+if(HAS_GSAP&&!REDUCE){
+  gsap.to('.hero-headline',{y:-40,ease:'none',scrollTrigger:{trigger:'.hero-panel',start:'top top',end:'bottom top',scrub:.6}});
+}
+
+/* ===== HERO IMAGE SOURCES =====
+   Two full sets live side by side: "Hero Image/for desktop" and
+   "Hero Image/for mobile" (each its own Background.png/Foreground.png;
+   see the "For Reference.png" in each folder for the intended full-colour
+   composite). The page picks whichever set matches the viewport and
+   re-picks on resize if you cross the breakpoint.
+   Background.png: any full-bleed backdrop, no transparency needed.
+   Foreground.png: MUST have a real transparent background (alpha
+   channel), not a flat black fill; export it that way from
+   Photoshop/remove.bg/etc. If your cutout only has a black backdrop,
+   re-run the same fix used here: threshold pixels brighter than a
+   few units to opaque, everything near-black to transparent, feather
+   the edge ~1px. */
+const HERO_BREAKPOINT=720;
+function heroSet(){
+  return innerWidth<=HERO_BREAKPOINT
+    ? {bg:'Hero%20Image/for%20mobile/Background.png',fg:'Hero%20Image/for%20mobile/Foreground.png'}
+    : {bg:'Hero%20Image/for%20desktop/Background.png',fg:'Hero%20Image/for%20desktop/Foreground.png'};
+}
+(function(){
+  const bg=document.getElementById('hvBg'),fg=document.getElementById('hvFg');
+  if(!bg||!fg)return;
+  let current=null;
+  function apply(){
+    const set=heroSet();
+    if(current===set.bg)return;
+    current=set.bg;
+    bg.style.backgroundImage=`url("${set.bg}")`;
+    fg.src=set.fg;
+  }
+  apply();
+  let resizeTimer;
+  window.addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(apply,150);});
+})();
+
+/* ===== HERO COLOUR TOGGLE: default is the original full-colour artwork;
+   this button reveals the monochrome treatment on demand. ===== */
+(function(){
+  const btn=document.getElementById('heroColorToggle'),visual=document.getElementById('heroVisual');
+  if(!btn||!visual)return;
+  btn.addEventListener('click',()=>{
+    const on=visual.classList.toggle('hv-color');
+    btn.setAttribute('aria-pressed',String(on));
+    btn.textContent=on?'View in black & white':'View in colour';
+  });
+})();
+
+/* ===== HERO VISUAL PARALLAX: background drifts with cursor + scroll, foreground stays put ===== */
+(function(){
+  const panel=document.querySelector('.hero-panel'),bg=document.getElementById('hvBg'),scrollLayer=document.getElementById('hvScroll');
+  if(!panel||!bg)return;
+  if(REDUCE)return; // static image only, no motion, for reduced-motion users
+  if(HAS_GSAP){
+    gsap.set(bg,{scale:1.3,transformOrigin:'center center'});
+    const setX=gsap.quickTo(bg,'x',{duration:.65,ease:'power2.out'});
+    const setY=gsap.quickTo(bg,'y',{duration:.65,ease:'power2.out'});
+    const MAXPX=52;
+    // listen on the whole panel (not just the visual layer) so the headline/
+    // tag sitting on top in z-index don't create dead zones for the cursor
+    panel.addEventListener('mousemove',e=>{
+      const r=panel.getBoundingClientRect();
+      const nx=(e.clientX-r.left)/r.width-0.5;
+      const ny=(e.clientY-r.top)/r.height-0.5;
+      setX(nx*MAXPX*2);
+      setY(ny*MAXPX*2);
+    });
+    panel.addEventListener('mouseleave',()=>{setX(0);setY(0);});
+    if(scrollLayer){
+      gsap.to(scrollLayer,{y:130,ease:'none',scrollTrigger:{trigger:'.hero-panel',start:'top top',end:'bottom top',scrub:.5}});
+    }
+  }
+})();
+
+/* ===== ART & ILLUSTRATION IMAGE SOURCES =====
+   Same swap system as the hero: drop new files into "art section/images
+   for the background" using the SAME filenames and they pick up
+   automatically. Foreground.png needs real alpha transparency (see the
+   note next to HERO_FG above for how to make one if yours doesn't have it). */
+const ART_BG='art%20section/images%20for%20the%20background/web-Background.jpg';
+const ART_FG='art%20section/images%20for%20the%20background/Foreground.png';
+(function(){
+  const bg=document.getElementById('artBg'),fg=document.getElementById('artFg');
+  if(!bg||!fg)return;
+  bg.style.backgroundImage=`url("${ART_BG}")`;
+  fg.src=ART_FG;
+})();
+
+/* ===== ART PANEL: cursor + scroll parallax on the background (identical trick to the hero) ===== */
+(function(){
+  const panel=document.getElementById('artPanel'),bg=document.getElementById('artBg'),scrollLayer=document.getElementById('artScroll');
+  if(!panel||!bg||REDUCE||!HAS_GSAP)return;
+  gsap.set(bg,{scale:1.28,transformOrigin:'center center'});
+  const setX=gsap.quickTo(bg,'x',{duration:.65,ease:'power2.out'});
+  const setY=gsap.quickTo(bg,'y',{duration:.65,ease:'power2.out'});
+  const MAXPX=44;
+  panel.addEventListener('mousemove',e=>{
+    const r=panel.getBoundingClientRect();
+    const nx=(e.clientX-r.left)/r.width-0.5;
+    const ny=(e.clientY-r.top)/r.height-0.5;
+    setX(nx*MAXPX*2);setY(ny*MAXPX*2);
+  });
+  panel.addEventListener('mouseleave',()=>{setX(0);setY(0);});
+  if(scrollLayer){
+    gsap.to(scrollLayer,{y:80,ease:'none',scrollTrigger:{trigger:panel,start:'top bottom',end:'bottom top',scrub:.6}});
+  }
+})();
+
+/* ===== ART PANEL: click-and-hold reveals the gallery in a funky burst ===== */
+(function(){
+  const panel=document.getElementById('artPanel'),ringFill=document.getElementById('artRingFill'),
+        burst=document.getElementById('artBurst'),cards=burst?[...burst.querySelectorAll('.art-card')]:[];
+  if(!panel||!cards.length)return;
+  const CIRC=2*Math.PI*33; // r=33 from the SVG
+  const HOLD_MS=650;
+  let holdTimer=null,holdStart=0,rafId=null,isOpen=false;
+
+  // scattered burst targets, as a fraction of the panel's own size so it
+  // scales sensibly at any viewport; recomputed as CSS px on open.
+  // Cards stay level (no rotation) so the art reads cleanly at any angle.
+  const spread=[
+    {x:-.40,y:-.22},
+    {x:-.10,y:-.36},
+    {x:.24,y:-.28},
+    {x:.40,y:.06},
+    {x:.14,y:.30},
+    {x:-.22,y:.32}
+  ];
+  const prompt=panel.querySelector('.art-prompt');
+  if(prompt){
+    panel.addEventListener('pointermove',e=>{
+      const r=panel.getBoundingClientRect();
+      prompt.style.left=Math.min(Math.max(e.clientX-r.left,0),r.width)+'px';
+      prompt.style.top=Math.min(Math.max(e.clientY-r.top,0),r.height)+'px';
+    });
+  }
+
+  function setRing(p){ringFill.style.strokeDashoffset=String(CIRC*(1-p));}
+
+  function startHold(){
+    if(isOpen)return;
+    panel.classList.add('holding');
+    holdStart=performance.now();
+    cancelAnimationFrame(rafId);
+    function tick(now){
+      const p=Math.min((now-holdStart)/HOLD_MS,1);
+      setRing(p);
+      if(p>=1){openBurst();return;}
+      rafId=requestAnimationFrame(tick);
+    }
+    rafId=requestAnimationFrame(tick);
+  }
+  function cancelHold(){
+    panel.classList.remove('holding');
+    cancelAnimationFrame(rafId);
+    if(!isOpen){
+      if(HAS_GSAP)gsap.to({p:1-parseFloat(ringFill.style.strokeDashoffset||CIRC)/CIRC},{p:0,duration:.3,onUpdate:function(){setRing(this.targets()[0].p);}});
+      else setRing(0);
+    }
+  }
+  function openBurst(){
+    isOpen=true;
+    panel.classList.add('burst-open');
+    panel.classList.remove('holding');
+    const r=panel.getBoundingClientRect();
+    if(HAS_GSAP){
+      cards.forEach((card,i)=>{
+        const t=spread[i%spread.length];
+        gsap.fromTo(card,{x:0,y:0,scale:.15,rotation:0,opacity:0},{
+          x:t.x*r.width,y:t.y*r.height,rotation:0,scale:1,opacity:1,
+          duration:.8,delay:i*.09,ease:'back.out(1.6)'
+        });
+      });
+    }else{
+      cards.forEach((card,i)=>{const t=spread[i%spread.length];
+        card.style.transform=`translate(-50%,-50%) translate(${t.x*r.width}px,${t.y*r.height}px) scale(1)`;
+        card.style.opacity=1;});
+    }
+  }
+  function closeBurst(){
+    if(!isOpen)return;
+    isOpen=false;
+    panel.classList.remove('burst-open');
+    setRing(0);
+    if(HAS_GSAP){
+      gsap.to(cards,{x:0,y:0,scale:.15,rotation:0,opacity:0,duration:.35,ease:'power2.in',stagger:.03});
+    }else{
+      cards.forEach(card=>{card.style.transform='translate(-50%,-50%) scale(.15)';card.style.opacity=0;});
+    }
+  }
+
+  panel.addEventListener('pointerdown',e=>{
+    if(isOpen){
+      // clicking a card opens the lightbox instead of closing; clicking
+      // empty space while open closes the burst
+      if(e.target.closest('.art-card'))return;
+      closeBurst();
+      return;
+    }
+    startHold();
+  });
+  window.addEventListener('pointerup',cancelHold);
+  panel.addEventListener('pointerleave',()=>{if(!isOpen)cancelHold();});
+  panel.addEventListener('contextmenu',e=>e.preventDefault());
+
+  /* lightbox */
+  const lightbox=document.getElementById('artLightbox'),lbImg=document.getElementById('artLightboxImg'),
+        lbClose=document.getElementById('artLightboxClose');
+  cards.forEach(card=>card.addEventListener('click',e=>{
+    e.stopPropagation();
+    lbImg.src=card.dataset.full.replace(/ /g,'%20');
+    lbImg.alt=card.querySelector('img').alt;
+    lightbox.classList.add('open');
+  }));
+  function closeLightbox(){lightbox.classList.remove('open');}
+  lbClose.addEventListener('click',closeLightbox);
+  lightbox.addEventListener('click',e=>{if(e.target===lightbox)closeLightbox();});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeLightbox();closeBurst();}});
+
+  if(REDUCE){
+    // no ambient motion, but the hold-to-reveal still works; just snap
+    // the ring instantly instead of animating it
+  }
+})();
+
+/* ===== MARQUEE: skew with scroll velocity ===== */
+if(HAS_GSAP&&!REDUCE){
+  document.querySelectorAll('.marquee').forEach(marquee=>{
+    const setSkew=gsap.quickTo(marquee,'skewY',{duration:.5,ease:'power3'});
+    ScrollTrigger.create({trigger:marquee,start:'top bottom',end:'bottom top',onUpdate:self=>{
+      setSkew(gsap.utils.clamp(-3,3,self.getVelocity()/-700));
+    }});
+  });
+}
+
+/* ===== FOOTER WORDMARK: reveal on scroll ===== */
+if(HAS_GSAP&&!REDUCE&&document.querySelector('.wordmark')){
+  gsap.from('.wordmark .wm-line',{opacity:0,y:30,stagger:.08,duration:.9,ease:'power3.out',
+    scrollTrigger:{trigger:'.wordmark',start:'top 90%',once:true}});
+}
+</script>
+</body>
+</html>

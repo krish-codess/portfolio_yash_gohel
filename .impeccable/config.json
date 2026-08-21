@@ -1,0 +1,104 @@
+{
+  "detector": {
+    "ignoreRules": [
+      "broken-image",
+      "marquee"
+    ],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "dark-glow",
+        "value": "0 24px 70px rgba(0,0,0,.28),0 0 60px -22px rgba(199,125,255,.4)",
+        "createdAt": "2026-08-19T18:03:55.651Z",
+        "reason": "spiderverse2 'Mood Ring' theme's intentional soft violet card glow (Gwen's Earth-65 watercolor-bleed aesthetic), scoped only to :root[data-palette=spiderverse2] .frame, not a generic default"
+      },
+      {
+        "rule": "dark-glow",
+        "value": "0 24px 70px rgba(0,0,0,.28),0 0 60px -22px rgba(199,125,255,.4)",
+        "files": [
+          "work/goodflip.html"
+        ],
+        "createdAt": "2026-08-19T18:04:25.886Z",
+        "reason": "same sanctioned spiderverse2 card-glow already globally ignored; file-scoping since the global ignore isn't suppressing repeat notifications on this file"
+      },
+      {
+        "rule": "dark-glow",
+        "value": "0 24px 70px rgba(0,0,0,.28),0 0 60px -22px rgba(199,125,255,.4)",
+        "files": [
+          "work/quicko.html"
+        ],
+        "createdAt": "2026-08-19T18:04:54.455Z",
+        "reason": "same sanctioned spiderverse2 card-glow already globally ignored; file-scoping since the global ignore isn't suppressing repeat notifications"
+      },
+      {
+        "rule": "dark-glow",
+        "value": "0 24px 70px rgba(0,0,0,.28),0 0 60px -22px rgba(199,125,255,.4)",
+        "files": [
+          "work/streak.html"
+        ],
+        "createdAt": "2026-08-19T18:04:54.506Z",
+        "reason": "same sanctioned spiderverse2 card-glow already globally ignored; file-scoping since the global ignore isn't suppressing repeat notifications"
+      },
+      {
+        "rule": "dark-glow",
+        "value": "0 24px 70px rgba(0,0,0,.28),0 0 60px -22px rgba(199,125,255,.4)",
+        "files": [
+          "work/tools.html"
+        ],
+        "createdAt": "2026-08-19T18:04:54.545Z",
+        "reason": "same sanctioned spiderverse2 card-glow already globally ignored; file-scoping since the global ignore isn't suppressing repeat notifications"
+      },
+      {
+        "rule": "dark-glow",
+        "value": "0 24px 70px rgba(0,0,0,.28),0 0 60px -22px rgba(199,125,255,.4)",
+        "files": [
+          "hobbies/art.html"
+        ],
+        "createdAt": "2026-08-19T18:04:54.588Z",
+        "reason": "same sanctioned spiderverse2 card-glow already globally ignored; file-scoping since the global ignore isn't suppressing repeat notifications"
+      },
+      {
+        "rule": "dark-glow",
+        "value": "0 24px 70px rgba(0,0,0,.28),0 0 60px -22px rgba(199,125,255,.4)",
+        "files": [
+          "hobbies/cooking.html"
+        ],
+        "createdAt": "2026-08-19T18:04:54.625Z",
+        "reason": "same sanctioned spiderverse2 card-glow already globally ignored; file-scoping since the global ignore isn't suppressing repeat notifications"
+      },
+      {
+        "rule": "dark-glow",
+        "value": "0 24px 70px rgba(0,0,0,.28),0 0 60px -22px rgba(199,125,255,.4)",
+        "files": [
+          "hobbies/playlists.html"
+        ],
+        "createdAt": "2026-08-19T18:04:54.662Z",
+        "reason": "same sanctioned spiderverse2 card-glow already globally ignored; file-scoping since the global ignore isn't suppressing repeat notifications"
+      },
+      {
+        "rule": "overused-font",
+        "value": "space grotesk",
+        "createdAt": "2026-08-19T18:11:45.108Z",
+        "reason": "site's foundational typography choice from project inception (round 1), used sitewide as --sans alongside Anton/JetBrains Mono; user's own PDF feedback this session explicitly said design is already doing enough and to focus on content, not fonts"
+      },
+      {
+        "rule": "dark-glow",
+        "value": "0 24px 70px rgba(0,0,0,.28),0 0 60px -22px rgba(199,125,255,.4)",
+        "files": [
+          "work/playlist-sync.html"
+        ],
+        "createdAt": "2026-08-20T18:47:07.409Z",
+        "reason": "Sanctioned Spider-Verse 2 palette card-glow, same exception already applied sitewide"
+      },
+      {
+        "rule": "dark-glow",
+        "value": "0 24px 70px rgba(0,0,0,.28),0 0 60px -22px rgba(199,125,255,.4)",
+        "files": [
+          "work/marketing-skill.html"
+        ],
+        "createdAt": "2026-08-20T19:02:41.794Z",
+        "reason": "Sanctioned Spider-Verse 2 palette card-glow, same exception already applied sitewide"
+      }
+    ]
+  }
+}
