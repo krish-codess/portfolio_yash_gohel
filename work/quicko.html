@@ -799,9 +799,10 @@ footer.foot2{border:1px solid var(--border-2);border-radius:20px;overflow:hidden
       <span class="frame-idx"></span>
     </div>
   <div class="frame-body wrap">
-    <div class="f-eyebrow reveal">Content brand</div>
+    <div class="f-eyebrow reveal" data-cms-field="eyebrow">Content brand</div>
     <h1 class="f-title reveal">Quicko: <span class="dim">from zero to an audience.</span></h1>
-    <p class="f-lead reveal d1">Turning zero subscribers into an engaged audience of fifty thousand. Launched and grew Quicko&rsquo;s Bytes newsletter and blog from the very first send: content, editorial design, UI/UX, illustration and motion, end to end.</p>
+    <p class="f-lead reveal d1" data-cms-field="lead">Turning zero subscribers into an engaged audience of fifty thousand. Launched and grew Quicko&rsquo;s Bytes newsletter and blog from the very first send: content, editorial design, UI/UX, illustration and motion, end to end.</p>
+    <div data-cms-gallery="quicko" style="display:none"></div>
     <div class="notice reveal d2"><b>A note on this case study:</b> the Quicko Bytes website has since been deprecated, so there&rsquo;s no live link to send you to. This page presents the work via description, with space held for screenshots. <span class="ph">[Add Bytes newsletter / blog screenshots if recovered]</span></div>
   </div>
 
@@ -1252,5 +1253,6 @@ if(HAS_GSAP&&!REDUCE&&document.querySelector('.wordmark')){
   </button>
   <div class="gl-cap" id="glCap"></div>
 </div>
+<script src="../cms-hydrate.js" defer data-cms-page="project" data-cms-slug="quicko"></script>
 </body>
 </html>

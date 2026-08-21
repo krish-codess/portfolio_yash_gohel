@@ -888,9 +888,10 @@ footer.foot2{border:1px solid var(--border-2);border-radius:20px;overflow:hidden
       <span class="frame-idx"></span>
     </div>
   <div class="frame-body wrap" style="padding-bottom:0">
-    <div class="f-eyebrow reveal">@wai.geee</div>
+    <div class="f-eyebrow reveal" data-cms-field="eyebrow">@wai.geee</div>
     <h1 class="f-title reveal">Art &amp; <span class="dim">Illustration.</span></h1>
-    <p class="f-lead reveal d1">Art, food, and music. Usually after midnight. It shows range, and makes me memorable. Press and hold the scene below.</p>
+    <p class="f-lead reveal d1" data-cms-field="lead">Art, food, and music. Usually after midnight. It shows range, and makes me memorable. Press and hold the scene below.</p>
+    <div data-cms-gallery="art" style="display:none"></div>
   </div>
 
   <div class="wrap" style="padding-top:44px">
@@ -1511,5 +1512,6 @@ const ART_FG='../art%20section/images%20for%20the%20background/Foreground.png';
   document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeLightbox();closeBurst();}});
 })();
 </script>
+<script src="../cms-hydrate.js" defer data-cms-page="hobby" data-cms-slug="art"></script>
 </body>
 </html>

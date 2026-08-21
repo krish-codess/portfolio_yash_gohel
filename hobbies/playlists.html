@@ -803,9 +803,10 @@ footer.foot2{border:1px solid var(--border-2);border-radius:20px;overflow:hidden
       <span class="frame-idx"></span>
     </div>
   <div class="frame-body wrap">
-    <div class="f-eyebrow reveal">@wai.geee</div>
+    <div class="f-eyebrow reveal" data-cms-field="eyebrow">@wai.geee</div>
     <h1 class="f-title reveal">Playlists.</h1>
-    <p class="f-lead reveal d1">I curate them.</p>
+    <p class="f-lead reveal d1" data-cms-field="lead">I curate them.</p>
+    <div data-cms-gallery="playlists" style="display:none"></div>
     <p class="about-para reveal d2" style="margin-top:22px">Music for building things, music for cooking, late-night rotation: a few of the categories that tend to come up.</p>
     <a href="https://linktr.ee/duggguuu" target="_blank" rel="noopener" class="link2 reveal d2" style="margin-top:22px">All links, one place: linktr.ee/duggguuu <span class="arw">&rarr;</span></a>
   </div>
@@ -1204,5 +1205,6 @@ if(HAS_GSAP&&!REDUCE&&document.querySelector('.wordmark')){
 
 
 </script>
+<script src="../cms-hydrate.js" defer data-cms-page="hobby" data-cms-slug="playlists"></script>
 </body>
 </html>

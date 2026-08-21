@@ -861,9 +861,10 @@ footer.foot2{border:1px solid var(--border-2);border-radius:20px;overflow:hidden
       <span class="frame-idx"></span>
     </div>
   <div class="frame-body wrap">
-    <div class="f-eyebrow reveal">A capability, not an identity</div>
+    <div class="f-eyebrow reveal" data-cms-field="eyebrow">A capability, not an identity</div>
     <h1 class="f-title reveal">Strategy first. Systems second. <span class="dim">AI where it actually helps.</span></h1>
-    <p class="f-lead reveal d1">A strong marketer who happens to be exceptionally good at using AI, not the other way round. I use it to compress the repetitive parts of marketing, research, segmentation, ideation, production and analysis, so more time goes into the parts that require judgement. The proof isn&rsquo;t a logo wall. It&rsquo;s the tool below, calling Claude live: type into it.</p>
+    <p class="f-lead reveal d1" data-cms-field="lead">A strong marketer who happens to be exceptionally good at using AI, not the other way round. I use it to compress the repetitive parts of marketing, research, segmentation, ideation, production and analysis, so more time goes into the parts that require judgement. The proof isn&rsquo;t a logo wall. It&rsquo;s the tool below, calling Claude live: type into it.</p>
+    <div data-cms-gallery="tools" style="display:none"></div>
   </div>
 
     <div class="hud c3 reveal">
@@ -1459,5 +1460,6 @@ if(HAS_GSAP&&!REDUCE&&document.querySelector('.wordmark')){
   </button>
   <div class="gl-cap" id="glCap"></div>
 </div>
+<script src="../cms-hydrate.js" defer data-cms-page="project" data-cms-slug="tools"></script>
 </body>
 </html>

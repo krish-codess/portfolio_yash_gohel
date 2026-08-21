@@ -808,9 +808,10 @@ footer.foot2{border:1px solid var(--border-2);border-radius:20px;overflow:hidden
       <span class="frame-idx"></span>
     </div>
   <div class="frame-body wrap">
-    <div class="f-eyebrow reveal">Personal tool &middot; built with Claude</div>
+    <div class="f-eyebrow reveal" data-cms-field="eyebrow">Personal tool &middot; built with Claude</div>
     <h1 class="f-title reveal">Playlist Sync.</h1>
-    <p class="f-lead reveal d1">I had roughly five thousand songs spread across sixty-seven YouTube Music playlists, and Spotify is where I actually listen. Rather than export them by hand once, I built a tool that keeps both sides in sync on its own, every twelve hours, for good.</p>
+    <p class="f-lead reveal d1" data-cms-field="lead">I had roughly five thousand songs spread across sixty-seven YouTube Music playlists, and Spotify is where I actually listen. Rather than export them by hand once, I built a tool that keeps both sides in sync on its own, every twelve hours, for good.</p>
+    <div data-cms-gallery="playlist-sync" style="display:none"></div>
   </div>
 
     <div class="hud c3 reveal">
@@ -1230,5 +1231,6 @@ if(HAS_GSAP&&!REDUCE&&document.querySelector('.wordmark')){
   </button>
   <div class="gl-cap" id="glCap"></div>
 </div>
+<script src="../cms-hydrate.js" defer data-cms-page="project" data-cms-slug="playlist-sync"></script>
 </body>
 </html>
