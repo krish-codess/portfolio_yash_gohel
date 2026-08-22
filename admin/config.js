@@ -4,5 +4,5 @@ window.ADMIN_CONFIG = {
   apiBaseUrl:
     location.hostname === 'localhost' || location.hostname === '127.0.0.1'
       ? 'http://localhost:4000'
-      : 'https://REPLACE-WITH-YOUR-RENDER-SERVICE.onrender.com',
+      : 'https://portfolio-cms-backend-8ml5.onrender.com',
 };

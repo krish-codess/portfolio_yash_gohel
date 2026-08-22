@@ -9,7 +9,7 @@
    backend/README.md). Until then, every request will simply fail fast and
    fall back to the static content already in the page — nothing breaks. */
 (function () {
-  var CMS_API = 'https://REPLACE-WITH-YOUR-RENDER-SERVICE.onrender.com';
+  var CMS_API = 'https://portfolio-cms-backend-8ml5.onrender.com';
   var TIMEOUT_MS = 2500;
   var scriptEl = document.currentScript;
   var page = scriptEl && scriptEl.getAttribute('data-cms-page');
