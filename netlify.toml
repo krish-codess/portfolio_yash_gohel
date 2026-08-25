@@ -9,17 +9,3 @@
   from = "/api/*"
   to = "/.netlify/functions/:splat"
   status = 200
-
-# The /admin and /backend folders live in this same repo for the CMS project,
-# but must never be served as static files on the public portfolio domain.
-[[redirects]]
-  from = "/admin/*"
-  to = "/404.html"
-  status = 404
-  force = true
-
-[[redirects]]
-  from = "/backend/*"
-  to = "/404.html"
-  status = 404
-  force = true
