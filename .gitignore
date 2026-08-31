@@ -9,6 +9,15 @@ backend/node_modules/
 .env.*.local
 admin/.env
 backend/.env
+*.token_cache
+ytmusic_auth.json
+
+# personal local tooling, not site content — never belongs in this repo.
+# yt_to_spotify_sync.py has a hardcoded Spotify client secret, curl.txt and
+# ytmusic_auth.json carry live YouTube session cookies/auth headers, and
+# .spotify_token_cache is an OAuth token cache. Excluded as a whole folder
+# rather than per-file so nothing new dropped in here leaks by accident.
+AI Projects/
 
 # stray local python venv
 .venv/

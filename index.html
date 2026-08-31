@@ -584,24 +584,22 @@ main{position:relative;z-index:2}
   border:1px solid rgba(255,255,255,.3);padding:9px 15px;cursor:pointer;
   transition:border-color .25s,color .25s,background-color .25s;backdrop-filter:blur(6px)}
 .hero-color-toggle:hover{color:#fff;border-color:#fff}
-.hero-visual.hv-color .hv-bg,.hero-visual.hv-color .hv-fg{filter:saturate(1)}
+.hero-visual.hv-color .hv-bg{filter:saturate(1)}
 
-/* ============ HERO VISUAL: layered parallax portrait ============
-   To swap the artwork: drop new files into the "Hero Image" folder
-   using the SAME filenames (Background.png / Foreground.png); the
-   page picks them up automatically, no code edits needed. If you
-   want different filenames instead, there is exactly one place to
-   change them: the HERO_BG / HERO_FG constants in the script at the
-   bottom of this file (search "HERO IMAGE SOURCES"). Background
-   drifts with the cursor and scroll; Foreground (the subject) stays
-   put; same depth trick as kprverse.com's hero. */
+/* ============ HERO VISUAL: single full-bleed portrait ============
+   To swap the artwork: drop a new file into "Hero Image/for desktop"
+   and "Hero Image/for mobile", named exactly "Background.png"; the
+   page picks it up automatically, no code edits needed. If you want a
+   different filename instead, there is exactly one place to change it:
+   the heroSet() function in the script at the bottom of this file
+   (search "HERO IMAGE SOURCES"). background-size:contain keeps the
+   whole photo visible always (never cropped), so it drifts slightly
+   with the cursor and scroll rather than being cover-cropped + zoomed
+   for parallax headroom the way a background layer usually is. */
 .hero-visual{position:absolute;inset:0;z-index:0;overflow:hidden}
 .hv-scroll{position:absolute;inset:-22% 0;will-change:transform}
 .hv-bg{position:absolute;inset:0;background-size:contain;background-repeat:no-repeat;background-position:center 32%;
   will-change:transform;filter:saturate(0)}
-.hv-fg{position:absolute;bottom:0;left:46%;height:84%;width:auto;max-width:94%;
-  transform:translateX(-50%);object-fit:contain;
-  pointer-events:none;user-select:none;filter:saturate(0)}
 .hv-scrim{position:absolute;inset:0;pointer-events:none;
   background:
     linear-gradient(to top,#0a0a0b 0%,rgba(10,10,11,.72) 22%,transparent 50%),
@@ -1115,12 +1113,6 @@ footer.foot2 .foot-note a:hover{border-color:var(--footer-fg)}
   .minimal-toggle{top:auto;bottom:14px;right:128px}
   .palette-switch{top:auto;bottom:14px;right:72px}
   .palette-menu{top:auto;bottom:56px}
-  /* the mobile hero Background/Foreground are exported as one pre-composed,
-     identically-sized pair: the same cover-fit/position on both, and no
-     independent drift transform on either (see the gated-off parallax JS
-     below), is what keeps them registered instead of sliding apart. */
-  .hv-fg{position:absolute;inset:0;left:0;bottom:0;top:0;height:100%;width:100%;max-width:100%;
-    transform:none;object-fit:cover;object-position:center 32%}
 }
 @media(max-width:560px){
   .wrap{padding:0 20px}
@@ -1292,7 +1284,6 @@ footer.foot2{border-radius:0 0 20px 20px}
         <div class="hv-scroll" id="hvScroll">
           <div class="hv-bg" id="hvBg"></div>
         </div>
-        <img class="hv-fg" id="hvFg" alt="" />
         <div class="hv-scrim"></div>
       </div>
       <div class="hero-tag">YASH GOHEL &middot; CREATIVE STRATEGIST &amp; FULL-FUNNEL MARKETER.</div>
@@ -2734,34 +2725,27 @@ if(HAS_GSAP&&!REDUCE){
 }
 
 /* ===== HERO IMAGE SOURCES =====
-   Two full sets live side by side: "Hero Image/for desktop" and
-   "Hero Image/for mobile" (each its own Background.png/Foreground.png;
-   see the "For Reference.png" in each folder for the intended full-colour
-   composite). The page picks whichever set matches the viewport and
-   re-picks on resize if you cross the breakpoint.
-   Background.png: any full-bleed backdrop, no transparency needed.
-   Foreground.png: MUST have a real transparent background (alpha
-   channel), not a flat black fill; export it that way from
-   Photoshop/remove.bg/etc. If your cutout only has a black backdrop,
-   re-run the same fix used here: threshold pixels brighter than a
-   few units to opaque, everything near-black to transparent, feather
-   the edge ~1px. */
+   Two full-bleed photos live side by side: "Hero Image/for desktop" and
+   "Hero Image/for mobile", each just a single "Background.png". The page
+   picks whichever matches the viewport and re-picks on resize if you
+   cross the breakpoint. Shown via background-size:contain (see the
+   .hv-bg rule above), so the whole photo is always visible, never
+   cropped — any aspect ratio works, no transparency/cutout needed. */
 const HERO_BREAKPOINT=720;
 function heroSet(){
   return innerWidth<=HERO_BREAKPOINT
-    ? {bg:'Hero%20Image/for%20mobile/Background.png',fg:'Hero%20Image/for%20mobile/Foreground.png'}
-    : {bg:'Hero%20Image/for%20desktop/Background.png',fg:'Hero%20Image/for%20desktop/Foreground.png'};
+    ? {bg:'Hero%20Image/for%20mobile/Background.png'}
+    : {bg:'Hero%20Image/for%20desktop/Background.png'};
 }
 (function(){
-  const bg=document.getElementById('hvBg'),fg=document.getElementById('hvFg');
-  if(!bg||!fg)return;
+  const bg=document.getElementById('hvBg');
+  if(!bg)return;
   let current=null;
   function apply(){
     const set=heroSet();
     if(current===set.bg)return;
     current=set.bg;
     bg.style.backgroundImage=`url("${set.bg}")`;
-    fg.src=set.fg;
   }
   apply();
   let resizeTimer;
@@ -2780,20 +2764,21 @@ function heroSet(){
   });
 })();
 
-/* ===== HERO VISUAL PARALLAX: background drifts with cursor + scroll, foreground stays put ===== */
+/* ===== HERO VISUAL PARALLAX: the photo drifts very slightly with the
+   cursor + scroll. No baseline overscale here on purpose — the photo is
+   shown via background-size:contain (whole frame always visible, never
+   cropped), so the drift range is kept small enough to stay inside the
+   contain-fit's own letterbox margin rather than needing extra zoom
+   headroom the way a cover-fit background would. ===== */
 (function(){
   const panel=document.querySelector('.hero-panel'),bg=document.getElementById('hvBg'),scrollLayer=document.getElementById('hvScroll');
   if(!panel||!bg)return;
   if(REDUCE)return; // static image only, no motion, for reduced-motion users
-  // the mobile hero is one pre-composed bg/fg pair meant to sit perfectly
-  // still and aligned; scaling+drifting bg alone (as desktop does) would
-  // pull it out of sync with the foreground, which never moves.
   if(innerWidth<=HERO_BREAKPOINT)return;
   if(HAS_GSAP){
-    gsap.set(bg,{scale:1.3,transformOrigin:'center center'});
     const setX=gsap.quickTo(bg,'x',{duration:.65,ease:'power2.out'});
     const setY=gsap.quickTo(bg,'y',{duration:.65,ease:'power2.out'});
-    const MAXPX=52;
+    const MAXPX=14;
     // listen on the whole panel (not just the visual layer) so the headline/
     // tag sitting on top in z-index don't create dead zones for the cursor
     panel.addEventListener('mousemove',e=>{

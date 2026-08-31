@@ -4,13 +4,13 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <script>(function(){try{
-  var t=localStorage.getItem('theme')||'dark';
-  var p=localStorage.getItem('palette')||'risograph';
+  var t=localStorage.getItem('theme')||'light';
+  var p=localStorage.getItem('palette')||'glass';
   var m=localStorage.getItem('minimal')==='true';
   document.documentElement.setAttribute('data-theme',t);
   document.documentElement.setAttribute('data-palette',p);
   if(m)document.documentElement.setAttribute('data-minimal','true');
-}catch(e){document.documentElement.setAttribute('data-theme','dark');document.documentElement.setAttribute('data-palette','risograph');}})();</script>
+}catch(e){document.documentElement.setAttribute('data-theme','light');document.documentElement.setAttribute('data-palette','glass');}})();</script>
 <title>GoodFlip Case Study: Yash Gohel</title>
 <meta name="description" content="Case study: architected and launched TatvaCare&#39;s GoodFlip DTC health brand across Shopify, Amazon, and Flipkart, content, creative, and conversion, end to end." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -493,6 +493,8 @@ html.chrome-hidden .minimal-toggle,html.chrome-hidden .palette-switch{
   transition:color .25s;padding:6px 0;border-bottom:1px solid transparent}
 .drawer-links a:hover{color:var(--text)}
 .drawer-links a .dnum{font-family:var(--mono);font-size:13px;letter-spacing:.1em;color:var(--muted-2)}
+.drawer-links a.sub{gap:14px;padding:2px 0 2px 46px;font-size:clamp(16px,2.6vw,24px);color:var(--muted-2)}
+.drawer-links a.sub .dnum{font-size:12px}
 .drawer-foot{margin-top:52px;display:flex;flex-wrap:wrap;gap:28px;font-family:var(--mono);
   font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 .drawer-foot a{border-bottom:1px solid var(--border-2);padding-bottom:3px;transition:color .25s,border-color .25s}
@@ -512,7 +514,7 @@ main{position:relative;z-index:2}
 .frame-links a{color:var(--muted);transition:color .25s}
 .frame-links a:hover,.frame-links a.on{color:var(--accent)}
 .frame-idx{color:var(--muted-2);white-space:nowrap}
-.frame-body{padding:88px 0}
+.frame-body{padding-top:64px;padding-bottom:64px}
 
 .f-eyebrow{display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:11px;
   letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-bottom:22px}
@@ -662,7 +664,7 @@ footer.foot2 .fbottom a:hover{border-color:var(--footer-fg)}
 @media(max-width:720px){
   .frame-links{display:none}
   .frame-nav{justify-content:space-between}
-  .frame-body{padding:52px 0}
+  .frame-body{padding-top:44px;padding-bottom:44px}
   .pagenav{grid-template-columns:1fr}
   .pagenav a:first-child{border-right:none;border-bottom:1px solid var(--border)}
 }
@@ -828,13 +830,17 @@ footer.foot2{border:1px solid var(--border-2);border-radius:20px;overflow:hidden
   <button class="drawer-close" id="drawerClose" type="button" aria-label="Close menu">×</button>
   <nav class="drawer-links">
     <a href="../index.html#work"><span class="dnum">01</span>Work</a>
+    <a href="../index.html#work" class="sub"><span class="dnum">—</span>GoodFlip</a>
+    <a href="../index.html#streak" class="sub"><span class="dnum">—</span>Streak AI</a>
+    <a href="../index.html#quicko" class="sub"><span class="dnum">—</span>Quicko</a>
     <a href="../index.html#systems"><span class="dnum">02</span>How I Work</a>
     <a href="../index.html#tools"><span class="dnum">03</span>Tools</a>
-    <a href="../index.html#about"><span class="dnum">04</span>About</a>
-    <a href="../index.html#contact"><span class="dnum">05</span>Contact</a>
+    <a href="../index.html#creative"><span class="dnum">04</span>Creative</a>
+    <a href="../index.html#about"><span class="dnum">05</span>About</a>
+    <a href="../index.html#contact"><span class="dnum">06</span>Contact</a>
   </nav>
   <div class="drawer-foot">
-    <a href="../Full%20Funnel%20Marketer.pdf" download>Download résumé ↓</a>
+    <a href="../Yash%20Gohel%20Brand%20Manager%20Resume.pdf" download>Download résumé ↓</a>
     <a href="mailto:yashlehog@gmail.com">yashlehog@gmail.com</a>
   </div>
 </div>
@@ -850,6 +856,7 @@ footer.foot2{border:1px solid var(--border-2);border-radius:20px;overflow:hidden
       <a href="../index.html#work" class="on">Work</a>
       <a href="../index.html#systems">How I Work</a>
       <a href="../index.html#tools">Tools</a>
+      <a href="../index.html#creative">Creative</a>
       <a href="../index.html#about">About</a>
       <a href="../index.html#contact">Contact</a>
     </nav>
@@ -858,15 +865,15 @@ footer.foot2{border:1px solid var(--border-2);border-radius:20px;overflow:hidden
   <div class="frame-body wrap">
     <div class="f-eyebrow reveal">Flagship &middot; TatvaCare / Zydus Wellness</div>
     <h1 class="f-title reveal">GoodFlip: <span class="dim">built from zero.</span></h1>
-    <p class="f-lead reveal d1">Turning a complex healthcare proposition into a consumer brand. GoodFlip wasn&rsquo;t simply selling supplements or health programmes: it had to make doctors, diagnostics, devices, coaching and nutrition understandable enough for consumers to act on. I architected and launched the entire DTC commerce ecosystem, Shopify, Amazon and Flipkart, plus the content, creative and conversion behind it.</p>
+    <p class="f-lead reveal d1">GoodFlip wasn&rsquo;t selling a supplement. It was selling doctors, diagnostics, devices, coaching and nutrition, and making all of it simple enough to act on in one sitting. I built the place that sold it: the entire DTC commerce ecosystem across Shopify, Amazon and Flipkart, plus the content, creative and conversion behind it.</p>
     <div class="live reveal d2"><i></i> Live storefront</div>
   </div>
 
     <div class="hud reveal">
-      <div class="cell"><span class="tag">Platforms</span><div class="num">3</div><div class="lbl">Launched: Shopify &middot; Amazon &middot; Flipkart</div></div>
-      <div class="cell"><span class="tag">PDPs</span><div class="num">10+</div><div class="lbl">Product pages written &amp; designed</div></div>
-      <div class="cell"><span class="tag">AOV lift</span><div class="num">~15%</div><div class="lbl">Via upsell / cross-sell (Q1)</div></div>
-      <div class="cell"><span class="tag">Traffic growth</span><div class="num">~28%</div><div class="lbl">Organic page-traffic growth in 3 months</div></div>
+      <div class="cell"><span class="tag">Platforms</span><div class="num">3</div><div class="lbl">Shopify, Amazon and Flipkart, all from zero</div></div>
+      <div class="cell"><span class="tag">PDPs</span><div class="num">10+</div><div class="lbl">Copy and layout, built as one page</div></div>
+      <div class="cell"><span class="tag">AOV lift</span><div class="num">~15%</div><div class="lbl">From upsell and cross-sell in the cart (Q1)</div></div>
+      <div class="cell"><span class="tag">Traffic growth</span><div class="num">~28%</div><div class="lbl">Organic traffic, first three months</div></div>
     </div>
 
   <div class="wrap" style="padding-top:56px">
@@ -881,18 +888,6 @@ footer.foot2{border:1px solid var(--border-2);border-radius:20px;overflow:hidden
     <div class="step"><span class="jn">05</span><h4>Social &amp; performance</h4><p>Ran paid creative and owned organic social, turning films into an ongoing conversation.</p></div>
     <div class="step"><span class="jn">06</span><h4>Lifecycle (CRM)</h4><p>Designed WhatsApp, push and in-app journeys to keep customers engaged post-purchase.</p></div>
   </div>
-
-  <div class="wrap" style="padding-top:56px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap">
-    <div class="f-eyebrow reveal" style="margin-bottom:0">Selected work</div>
-    <button class="gallery-btn" id="galleryBtn" type="button" data-cursor-text="OPEN"><span class="plus">+</span>Gallery</button>
-  </div>
-    <div class="tile-grid" style="margin-top:24px">
-      <div class="tile2 wide"><div class="fill g1"></div><div class="t"><b>Homepage hero</b><span class="ph">[Homepage hero screenshot]</span></div></div>
-      <div class="tile2"><div class="fill g2"></div><div class="t"><b>PDP layout</b><span class="ph">[PDP layout screenshot]</span></div></div>
-      <div class="tile2"><div class="fill g3"></div><div class="t"><b>Amazon A+ content</b><span class="ph">[Amazon A+ content screenshot]</span></div></div>
-      <div class="tile2"><div class="fill g4"></div><div class="t"><b>Campaign landing page</b><span class="ph">[Campaign landing page walkthrough]</span><span class="vid-badge">VIDEO</span></div></div>
-      <div class="tile2 wide"><div class="fill g1"></div><div class="t"><b>Product launch film: CGM</b><span class="ph">[Product launch film, CGM]</span><span class="vid-badge">VIDEO</span></div></div>
-    </div>
 
     <div class="case2-detail">
       <div class="col">
@@ -916,6 +911,9 @@ footer.foot2{border:1px solid var(--border-2);border-radius:20px;overflow:hidden
           <li>Set up and optimised Amazon (A+ content, brand store) and Flipkart listings.</li>
           <li>Integrated upsell/cross-sell into the cart to lift AOV.</li>
           <li>Built campaign landing pages matched to paid-ad intent, cutting CPA ~18%.</li>
+          <li>Cast myself in a large share of GoodFlip&rsquo;s performance ads, on-camera talent alongside the creative direction.</li>
+          <li>Coordinated educational video content with partner doctors to build medical credibility.</li>
+          <li>Built and ran a UGC pipeline: sourcing and enabling customer-generated content for paid and organic use.</li>
         </ul>
         <h5 style="margin-top:24px">The result</h5>
         <p>A live, multi-channel DTC store generating revenue across three platforms, with measurable lifts in AOV, organic traffic and campaign efficiency.</p>
@@ -1029,7 +1027,7 @@ footer.foot2{border:1px solid var(--border-2);border-radius:20px;overflow:hidden
     <div class="vid-group reveal">
       <div class="vid-group-head">
         <h4>Launch films</h4>
-        <p>Fast-paced, feature-led films introducing new devices to the GoodFlip line.</p>
+        <p>Fast-paced, feature-led films introducing new products to the GoodFlip line.</p>
       </div>
       <div class="vid-grid">
         <div class="vid-card">
@@ -1054,6 +1052,18 @@ footer.foot2{border:1px solid var(--border-2);border-radius:20px;overflow:hidden
             <h5>Continuous Glucose Monitor</h5>
             <p>Launch film for India&rsquo;s first Bluetooth-enabled CGM: real-time, painless glucose tracking, positioned as a step toward remission, not just a gadget.</p>
             <div class="chips"><span class="chip2 video"><b>1.1M+</b> views</span><span class="chip2">Flagship device</span></div>
+          </div>
+        </div>
+        <div class="vid-card">
+          <button class="vid-facade" data-yt="rMfDQToHnRg" data-title="Introducing GoodFlip PCOS Care" aria-label="Play: Introducing GoodFlip PCOS Care">
+            <img src="https://i.ytimg.com/vi/rMfDQToHnRg/maxresdefault.jpg" alt="Introducing GoodFlip PCOS Care thumbnail" loading="lazy">
+            <span class="vid-play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+            <span class="vid-badge2">1:56</span>
+          </button>
+          <div class="vid-meta">
+            <h5>PCOS Care</h5>
+            <p>Launch film introducing PCOS Care, GoodFlip&rsquo;s dedicated line for managing PCOS.</p>
+            <div class="chips"><span class="chip2"><b>105</b> views</span></div>
           </div>
         </div>
       </div>
@@ -1100,14 +1110,14 @@ footer.foot2{border:1px solid var(--border-2);border-radius:20px;overflow:hidden
   <div class="grid-2" style="margin-top:24px">
     <div class="card2 reveal">
       <div class="k">Performance creative</div>
-      <h3>Meta static + video ads.</h3>
-      <p class="hook">Static and video ad creative across every GoodFlip therapy area: CGM, BCA, supplements, and more.</p>
+      <h3>Ads built to convert, not to win awards.</h3>
+      <p class="hook">Static and video ad creative across every GoodFlip therapy area: CGM, BCA, supplements, and more. A large share of the video ads were shot with me as the on-camera talent.</p>
       <div class="chips">
         <span class="chip2"><b>4.2%</b> avg CTR (vs 4% benchmark)</span>
         <span class="chip2"><b>1,200+</b> qualified leads / mo</span>
         <span class="chip2"><b>4+</b> campaigns / month</span>
       </div>
-      <div class="cap">Concept, copy, and creative direction across paid social.</div>
+      <div class="cap">Concept, copy, creative direction &mdash; and on-camera talent &mdash; across paid social.</div>
       <div class="tools">Meta Ads &middot; Photoshop &middot; Illustrator</div>
     </div>
     <div class="card2 reveal d1">
@@ -1124,7 +1134,7 @@ footer.foot2{border:1px solid var(--border-2);border-radius:20px;overflow:hidden
     </div>
     <div class="card2 reveal">
       <div class="k">Brand design &amp; product launches</div>
-      <h3>Ideated packaging for every physical SKU.</h3>
+      <h3>From digital ad to doorstep.</h3>
       <p class="hook">Built GoodFlip&rsquo;s visual language from scratch, then ideated and designed packaging across the entire physical product range, before taking each one to market with GTM creative and product photography.</p>
       <div class="chips">
         <span class="chip2">Supplements &middot; PCOS Care &middot; BP Monitor &middot; CGM &middot; BCA</span>
@@ -1148,13 +1158,20 @@ footer.foot2{border:1px solid var(--border-2);border-radius:20px;overflow:hidden
     <div class="card2 reveal" style="grid-column:1/-1">
       <div class="k">Social media &amp; community</div>
       <h3>The always-on channel.</h3>
-      <p class="hook">Planned and ran GoodFlip&rsquo;s organic social calendar across Instagram and YouTube: the day-to-day storytelling that turns a campaign film into an ongoing conversation instead of a one-week spike.</p>
+      <p class="hook">Planned and ran GoodFlip&rsquo;s organic social calendar across Instagram and YouTube: the day-to-day storytelling that turns a campaign film into an ongoing conversation instead of a one-week spike. Also built the UGC pipeline, sourcing and enabling customer-generated content for both paid and organic use.</p>
       <div class="chips">
         <span class="chip2"><b>153K</b> views nurtured organically (Diwali UnInvite)</span>
-        <span class="chip2">Instagram &middot; YouTube</span>
+        <span class="chip2">Instagram &middot; YouTube &middot; UGC</span>
       </div>
-      <div class="cap">Content calendar, community replies, and distribution for every film above.</div>
+      <div class="cap">Content calendar, community replies, UGC sourcing, and distribution for every film above.</div>
     </div>
+  </div>
+
+  <div class="wrap" style="padding-top:56px">
+    <div class="f-eyebrow reveal" style="margin-bottom:0">On Instagram</div>
+    <h3 class="f-title reveal" style="font-size:clamp(24px,3vw,38px);margin-top:14px">@goodflip.in</h3>
+    <p class="f-lead reveal d1" style="margin-top:14px;font-size:14.5px;max-width:720px">GoodFlip&rsquo;s day-to-day channel: campaign films, therapy-area education, and the UGC and creator content that keeps the conversation going between launches.</p>
+    <a href="https://www.instagram.com/goodflip.in/" target="_blank" rel="noopener" class="btn primary" style="margin-top:24px">Follow @goodflip.in on Instagram <span class="arw">↗</span></a>
   </div>
 
   <div class="case2-foot">
@@ -1163,8 +1180,8 @@ footer.foot2{border:1px solid var(--border-2);border-radius:20px;overflow:hidden
 </section>
 
     <nav class="pagenav">
-      <a href="quicko.html"><span class="d">&larr; Previous</span><span class="t">Quicko</span></a>
-      <a href="streak.html"><span class="d">Next &rarr;</span><span class="t">Streak AI Technologies</span></a>
+      <a href="playlist-sync.html"><span class="d">&larr; Previous</span><span class="t">Playlist Sync</span></a>
+      <a href="tools.html"><span class="d">Next &rarr;</span><span class="t">AI Systems &amp; Tools</span></a>
     </nav>
 
 <footer class="foot2">
@@ -1179,13 +1196,14 @@ footer.foot2{border:1px solid var(--border-2);border-radius:20px;overflow:hidden
     </div>
     <div class="fcol">
       <h6>Connect</h6>
-      <a href="https://instagram.com/wai.geee" target="_blank" rel="noopener">Instagram ↗</a>
+      <a href="https://instagram.com/wai.geee" target="_blank" rel="noopener">Instagram (Art) ↗</a>
+      <a href="https://instagram.com/duggguuu" target="_blank" rel="noopener">Instagram (Personal) ↗</a>
       <a href="https://www.linkedin.com/in/yashnakulgohel/" target="_blank" rel="noopener">LinkedIn ↗</a>
       <a href="mailto:yashlehog@gmail.com">Email ↗</a>
     </div>
     <div class="fcol">
       <h6>Résumé</h6>
-      <a href="../Full%20Funnel%20Marketer.pdf" download>Download résumé ↓</a>
+      <a href="../Yash%20Gohel%20Brand%20Manager%20Resume.pdf" download>Download résumé ↓</a>
       <div class="row">Currently open to new roles<span class="note">Assistant Manager &middot; Brand, Creative &amp; Comms, TatvaCare</span></div>
     </div>
   </div>

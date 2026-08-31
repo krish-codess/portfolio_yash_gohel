@@ -4,13 +4,13 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <script>(function(){try{
-  var t=localStorage.getItem('theme')||'dark';
-  var p=localStorage.getItem('palette')||'risograph';
+  var t=localStorage.getItem('theme')||'light';
+  var p=localStorage.getItem('palette')||'glass';
   var m=localStorage.getItem('minimal')==='true';
   document.documentElement.setAttribute('data-theme',t);
   document.documentElement.setAttribute('data-palette',p);
   if(m)document.documentElement.setAttribute('data-minimal','true');
-}catch(e){document.documentElement.setAttribute('data-theme','dark');document.documentElement.setAttribute('data-palette','risograph');}})();</script>
+}catch(e){document.documentElement.setAttribute('data-theme','light');document.documentElement.setAttribute('data-palette','glass');}})();</script>
 <title>Art &amp; Illustration: @wai.geee: Yash Gohel</title>
 <meta name="description" content="Pencil art and illustration from @wai.geee, press and hold the scene to reveal the gallery." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -461,6 +461,8 @@ html.chrome-hidden .minimal-toggle,html.chrome-hidden .palette-switch{
   transition:color .25s;padding:6px 0;border-bottom:1px solid transparent}
 .drawer-links a:hover{color:var(--text)}
 .drawer-links a .dnum{font-family:var(--mono);font-size:13px;letter-spacing:.1em;color:var(--muted-2)}
+.drawer-links a.sub{gap:14px;padding:2px 0 2px 46px;font-size:clamp(16px,2.6vw,24px);color:var(--muted-2)}
+.drawer-links a.sub .dnum{font-size:12px}
 .drawer-foot{margin-top:52px;display:flex;flex-wrap:wrap;gap:28px;font-family:var(--mono);
   font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 .drawer-foot a{border-bottom:1px solid var(--border-2);padding-bottom:3px;transition:color .25s,border-color .25s}
@@ -480,7 +482,7 @@ main{position:relative;z-index:2}
 .frame-links a{color:var(--muted);transition:color .25s}
 .frame-links a:hover,.frame-links a.on{color:var(--accent)}
 .frame-idx{color:var(--muted-2);white-space:nowrap}
-.frame-body{padding:88px 0}
+.frame-body{padding-top:64px;padding-bottom:64px}
 
 .f-eyebrow{display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:11px;
   letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-bottom:22px}
@@ -630,7 +632,7 @@ footer.foot2 .fbottom a:hover{border-color:var(--footer-fg)}
 @media(max-width:720px){
   .frame-links{display:none}
   .frame-nav{justify-content:space-between}
-  .frame-body{padding:52px 0}
+  .frame-body{padding-top:44px;padding-bottom:44px}
   .pagenav{grid-template-columns:1fr}
   .pagenav a:first-child{border-right:none;border-bottom:1px solid var(--border)}
 }
@@ -671,8 +673,14 @@ footer.foot2 .fbottom a:hover{border-color:var(--footer-fg)}
   background:linear-gradient(180deg,rgba(0,0,0,0) 60%,rgba(0,0,0,.6) 100%);opacity:0;transition:opacity .3s}
 .gal-item:hover .gal-cap{opacity:1}
 .gal-item.gal-hidden{display:none}
+/* rip-inktober-2020: a wide (~2.27:1) piece among otherwise-portrait
+   archive images — spans 2 columns at its own native ratio and uses
+   contain instead of cover, so it renders uncropped in the collection
+   grid too, not just in the individual lightbox view. */
+.gal-item.gal-item-wide{grid-column:span 2;aspect-ratio:1024/451;align-self:center}
+.gal-item.gal-item-wide img{object-fit:contain}
 @media(max-width:960px){.gal-grid{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:560px){.gal-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.gal-grid{grid-template-columns:repeat(2,1fr)}.gal-item.gal-item-wide{grid-column:span 2}}
 
 /* full-archive lightbox: same fixed-overlay language as the burst-card
    lightbox above, with prev/next added for browsing the filtered set */
@@ -860,13 +868,17 @@ footer.foot2{border:1px solid var(--border-2);border-radius:20px;overflow:hidden
   <button class="drawer-close" id="drawerClose" type="button" aria-label="Close menu">×</button>
   <nav class="drawer-links">
     <a href="../index.html#work"><span class="dnum">01</span>Work</a>
+    <a href="../index.html#work" class="sub"><span class="dnum">—</span>GoodFlip</a>
+    <a href="../index.html#streak" class="sub"><span class="dnum">—</span>Streak AI</a>
+    <a href="../index.html#quicko" class="sub"><span class="dnum">—</span>Quicko</a>
     <a href="../index.html#systems"><span class="dnum">02</span>How I Work</a>
     <a href="../index.html#tools"><span class="dnum">03</span>Tools</a>
-    <a href="../index.html#about"><span class="dnum">04</span>About</a>
-    <a href="../index.html#contact"><span class="dnum">05</span>Contact</a>
+    <a href="../index.html#creative"><span class="dnum">04</span>Creative</a>
+    <a href="../index.html#about"><span class="dnum">05</span>About</a>
+    <a href="../index.html#contact"><span class="dnum">06</span>Contact</a>
   </nav>
   <div class="drawer-foot">
-    <a href="../Full%20Funnel%20Marketer.pdf" download>Download résumé ↓</a>
+    <a href="../Yash%20Gohel%20Brand%20Manager%20Resume.pdf" download>Download résumé ↓</a>
     <a href="mailto:yashlehog@gmail.com">yashlehog@gmail.com</a>
   </div>
 </div>
@@ -882,6 +894,7 @@ footer.foot2{border:1px solid var(--border-2);border-radius:20px;overflow:hidden
       <a href="../index.html#work">Work</a>
       <a href="../index.html#systems">How I Work</a>
       <a href="../index.html#tools">Tools</a>
+      <a href="../index.html#creative">Creative</a>
       <a href="../index.html#about">About</a>
       <a href="../index.html#contact">Contact</a>
     </nav>
@@ -951,9 +964,11 @@ footer.foot2{border:1px solid var(--border-2);border-radius:20px;overflow:hidden
   <div class="wrap" style="padding-top:40px">
     <div class="f-eyebrow reveal" style="margin-bottom:0">Full archive</div>
     <div class="gal-filters reveal" id="galFilters">
-      <button class="gal-filter active" data-cat="all" type="button">All <span class="gal-count">25</span></button>
+      <button class="gal-filter active" data-cat="all" type="button">All <span class="gal-count">69</span></button>
       <button class="gal-filter" data-cat="digital-painting" type="button">Digital Painting <span class="gal-count">13</span></button>
       <button class="gal-filter" data-cat="humanoid" type="button">Humanoid <span class="gal-count">12</span></button>
+      <button class="gal-filter" data-cat="pencil-art" type="button">Pencil Art <span class="gal-count">40</span></button>
+      <button class="gal-filter" data-cat="perspective-art" type="button">Perspective Art <span class="gal-count">4</span></button>
     </div>
   </div>
   <div class="gal-grid" id="galGrid"></div>
@@ -998,13 +1013,14 @@ footer.foot2{border:1px solid var(--border-2);border-radius:20px;overflow:hidden
     </div>
     <div class="fcol">
       <h6>Connect</h6>
-      <a href="https://instagram.com/wai.geee" target="_blank" rel="noopener">Instagram ↗</a>
+      <a href="https://instagram.com/wai.geee" target="_blank" rel="noopener">Instagram (Art) ↗</a>
+      <a href="https://instagram.com/duggguuu" target="_blank" rel="noopener">Instagram (Personal) ↗</a>
       <a href="https://www.linkedin.com/in/yashnakulgohel/" target="_blank" rel="noopener">LinkedIn ↗</a>
       <a href="mailto:yashlehog@gmail.com">Email ↗</a>
     </div>
     <div class="fcol">
       <h6>Résumé</h6>
-      <a href="../Full%20Funnel%20Marketer.pdf" download>Download résumé ↓</a>
+      <a href="../Yash%20Gohel%20Brand%20Manager%20Resume.pdf" download>Download résumé ↓</a>
       <div class="row">Currently open to new roles<span class="note">Assistant Manager &middot; Brand, Creative &amp; Comms, TatvaCare</span></div>
     </div>
   </div>
@@ -1269,6 +1285,17 @@ const ARCHIVE=[
    files:Array.from({length:13},(_,i)=>`../art section/all images/digital painting/${i+1}.png`)},
   {key:'humanoid',label:'Humanoid',
    files:['92','93','94','95','96','97','98','99','100','101','104','105'].map(n=>`../art section/all images/humanoid/Frame ${n}.png`)},
+  {key:'pencil-art',label:'Pencil Art',
+   files:['A-Free-Man','Apocalypse','Coldplay-Brick','Dee-Kay','Enter-Colossal','Fish-Inktober-2020',
+     'Frame 19','Frame 25','Frame 32','Frame 35','Frame 36','Frame 37','Frame 38','Frame 39',
+     'Goku-Vs-Vegeta','Hide','I-Am-Batman','Joker','Ken','Make-Me-Some-Maggi','Oldie',
+     'Ryuk-The-Shinigami','Shri-Ganesh','Young-Love','armor-inktober-2020','blade-inktober-2020',
+     'bulky-intober-2020','chef-inktober-2020','disgusting-inktober-2020','dizzy-inktober-2020',
+     'dune-inktober-2020','hope-inktober-2020','music-monster','outpost-inktober-2020',
+     'radio-intober-2020','rip-inktober-2020','rocket-inktober-2020','tiger-transform',
+     'time-machine-in-my-hand','warrior-dude'].map(n=>`../art section/all images/pencil art/${n}.png`)},
+  {key:'perspective-art',label:'Perspective Art',
+   files:['Frame 118','Frame 119','Frame 120','7'].map(n=>`../art section/all images/perspective art/${n}.png`)},
 ];
 (function(){
   const grid=document.getElementById('galGrid'),filters=document.getElementById('galFilters');
@@ -1277,6 +1304,11 @@ const ARCHIVE=[
   ARCHIVE.forEach(group=>{group.files.forEach((src,i)=>items.push({src,cat:group.key,label:group.label,idx:i+1}));});
   items.forEach(it=>{
     const el=document.createElement('div');el.className='gal-item';el.dataset.cat=it.cat;
+    // rip-inktober-2020 is a ~2.27:1 wide piece, not the 9:16 portrait every
+    // other archive image is; forcing it into the standard cover-cropped
+    // portrait tile would slice most of the artwork off, so it gets its own
+    // wide, uncropped tile treatment (see .gal-item-wide below) instead.
+    if(it.src.includes('rip-inktober-2020'))el.classList.add('gal-item-wide');
     el.innerHTML=`<img src="${encodeURI(it.src)}" alt="${it.label} ${it.idx}" loading="lazy" />
       <div class="gal-cap">${it.label} &middot; ${String(it.idx).padStart(2,'0')}</div>`;
     grid.appendChild(el);

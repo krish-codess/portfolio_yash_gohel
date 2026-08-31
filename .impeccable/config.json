@@ -98,6 +98,12 @@
         ],
         "createdAt": "2026-08-20T19:02:41.794Z",
         "reason": "Sanctioned Spider-Verse 2 palette card-glow, same exception already applied sitewide"
+      },
+      {
+        "rule": "dark-glow",
+        "value": "#c77dff",
+        "createdAt": "2026-08-29T02:42:13.897Z",
+        "reason": "pre-existing intentional Spider-Verse 2 palette bonus glow accent on .frame under that theme only, confirmed not AI-slop in earlier pass this session, unrelated to current edits"
       }
     ]
   }
