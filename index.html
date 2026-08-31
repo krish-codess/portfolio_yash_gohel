@@ -310,7 +310,14 @@ a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
 button{font:inherit}
 ::selection{background:var(--text);color:var(--bg)}
-.wrap{max-width:var(--maxw);margin:0 auto;padding:0 34px}
+/* width:100% is required (not just implied by block default) because
+   several .wrap instances sit as direct children of main{display:flex},
+   whose align-items:normal shrink-wraps non-stretched flex children to
+   their content width instead of the expected max-width — this silently
+   broke the wiad-photo section (auto-width content collapsed the whole
+   wrap to ~210px) without ever showing up in wraps whose own content
+   already forced full width (grid, 100%-width images, etc). */
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 34px;box-sizing:border-box}
 .ph{font-style:italic;color:var(--muted-2);border-bottom:1px dashed var(--border-2);padding-bottom:1px}
 
 /* grain texture, monochrome */
@@ -598,7 +605,7 @@ main{position:relative;z-index:2}
    for parallax headroom the way a background layer usually is. */
 .hero-visual{position:absolute;inset:0;z-index:0;overflow:hidden}
 .hv-scroll{position:absolute;inset:-22% 0;will-change:transform}
-.hv-bg{position:absolute;inset:0;background-size:contain;background-repeat:no-repeat;background-position:center 32%;
+.hv-bg{position:absolute;inset:0;background-size:100% auto;background-repeat:no-repeat;background-position:center 32%;
   will-change:transform;filter:saturate(0)}
 .hv-scrim{position:absolute;inset:0;pointer-events:none;
   background:
@@ -661,11 +668,13 @@ body.ready .hl-line span{transform:none}
   border-radius:14px;box-shadow:0 10px 24px rgba(0,0,0,.18)}
 
 /* ============ REAL SECTION PHOTOS (dropped in from "homepage images and videos") ============ */
-/* compact, manifesto-photo-style treatment (small rounded frame rather than
-   a full-bleed banner) so the "you're gonna want to sit down for this" chair
-   reads as a punchy lead-in to the capability grid below it, not a hero shot */
-.wiad-photo{display:block;height:min(38vh,320px);width:auto;object-fit:cover;border:1px solid var(--border-2);
-  border-radius:14px;box-shadow:0 10px 24px rgba(0,0,0,.18)}
+/* identical treatment to .manifesto-photo (same height cap, same frame) so
+   the "you're gonna want to sit down for this" chair and the "THINK
+   BIGGER" manifesto photo read as a consistent pair, not two different
+   sizes; margin:0 + margin-right:auto pins it to the left edge like the
+   manifesto photo's align-self:flex-start does inside its flex column. */
+.wiad-photo{display:block;height:min(22vh,180px);width:auto;object-fit:cover;border:1px solid var(--border-2);
+  border-radius:14px;box-shadow:0 10px 24px rgba(0,0,0,.18);margin:0 auto 0 0}
 
 /* ============ CARDS (sharp / technical, not soft-rounded) ============ */
 .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border)}
@@ -1151,12 +1160,20 @@ main{display:flex;flex-direction:column;gap:28px;padding:28px clamp(16px,3vw,40p
   box-shadow:0 24px 70px rgba(0,0,0,.28);border-bottom:1px solid var(--border-2)}
 #hero,#work,#creative,#contact{background:var(--panel-a)}
 #systems,#tools,#about{background:var(--panel-b)}
-.hero-panel{border-radius:20px 20px 0 0;min-height:80vh}
+/* aspect-ratio matches the desktop hero photo's native 1402x1122 so the
+   panel grows tall enough to show the full width-filled image (see
+   .hv-bg's background-size:100% auto) without the bottom getting clipped
+   by this element's own overflow:hidden; min-height stays as a floor for
+   short/ultra-wide viewports where the ratio alone would be too short. */
+.hero-panel{border-radius:20px 20px 0 0;min-height:80vh;aspect-ratio:1402/1122}
 footer.foot2{border-radius:0 0 20px 20px}
 @media(max-width:860px){
   main{padding:18px 14px 44px;gap:18px}
   .frame{border-radius:14px}
-  .hero-panel{border-radius:14px 14px 0 0;min-height:72vh}
+  /* mobile's hero photo is portrait (941x1426), the opposite shape from
+     desktop's — drop the desktop aspect-ratio here so it doesn't force a
+     tiny landscape-height panel on a narrow viewport */
+  .hero-panel{border-radius:14px 14px 0 0;min-height:72vh;aspect-ratio:auto}
   footer.foot2{border-radius:0 0 14px 14px}
 }
 </style>
@@ -1642,10 +1659,6 @@ footer.foot2{border-radius:0 0 20px 20px}
             <span class="chip2"><b>+37%</b> user conversion</span>
             <span class="chip2">Built from zero</span>
           </div>
-          <div class="img-ph reveal" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="1.5"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 16l-5.5-5.5a1.5 1.5 0 0 0-2 0L4 19"/></svg>
-          <span>Help-centre screenshot or Wayback capture</span>
-        </div>
         <div class="cap">Turned complex financial concepts into confident, beginner-friendly language. Original pages retired after restructuring, archived captures shown.</div>
         </div>
         <div class="card2 reveal d1">
@@ -1657,10 +1670,6 @@ footer.foot2{border-radius:0 0 20px 20px}
             <span class="chip2"><b>150+</b> user interviews</span>
             <span class="chip2">Fintech · Trading</span>
           </div>
-          <div class="img-ph reveal" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="1.5"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 16l-5.5-5.5a1.5 1.5 0 0 0-2 0L4 19"/></svg>
-          <span>App screenshots showing copy in context</span>
-        </div>
         <div class="cap">Onboarding, in-product flows, microcopy.</div>
         </div>
         <div class="card2 reveal" style="grid-column:1 / -1">
