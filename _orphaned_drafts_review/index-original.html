@@ -4,18 +4,18 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <script>(function(){try{
-  var t=localStorage.getItem('theme')||'light';
-  var p=localStorage.getItem('palette')||'glass';
+  var t=localStorage.getItem('theme')||'dark';
+  var p=localStorage.getItem('palette')||'risograph';
   var m=localStorage.getItem('minimal')==='true';
   document.documentElement.setAttribute('data-theme',t);
   document.documentElement.setAttribute('data-palette',p);
   if(m)document.documentElement.setAttribute('data-minimal','true');
-}catch(e){document.documentElement.setAttribute('data-theme','light');document.documentElement.setAttribute('data-palette','glass');}})();</script>
+}catch(e){document.documentElement.setAttribute('data-theme','dark');document.documentElement.setAttribute('data-palette','risograph');}})();</script>
 <title>Yash Gohel: Creative Strategist &amp; Full-Funnel Marketer</title>
-<meta name="description" content="Portfolio for Yash Gohel, a creative strategist and full-funnel marketer working at the intersection of brand, creative, growth and execution. 6+ years across healthtech, fintech and DTC." />
+<meta name="description" content="Bold, HUD-framed portfolio for Yash Gohel, Creative Strategist & Full-Funnel Marketer. I build content and growth systems end-to-end. 6+ years across healthtech, fintech, and DTC." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 /* ============================================================
    DESIGN SYSTEM: monochrome only. dark is default, light via
@@ -40,7 +40,7 @@
   --footer-fg:#f5f5f3;
   --footer-muted:rgba(245,245,243,.5);
   --footer-border:rgba(245,245,243,.16);
-  --display:'Archivo Black',Impact,sans-serif;
+  --display:'Anton',Impact,sans-serif;
   --sans:'Space Grotesk',-apple-system,BlinkMacSystemFont,sans-serif;
   --mono:'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace;
   --maxw:1240px;
@@ -243,28 +243,6 @@
   --border:rgba(224,19,109,.16);--border-2:rgba(0,144,168,.24);
   --panel-a:#efe6d2;--panel-b:#e3d6b8;--muted:#5a5468;--muted-2:#8d87a0;--hairline:rgba(224,19,109,.16);
 }
-/* ---- palette: spiderverse2 "Mood Ring", Gwen's Earth-65 watercolor palette,
-   dark mode. Sourced from production interviews (Dean Gordon, art director):
-   her world inverts the standard primary triad, cyan/orange/violet instead
-   of yellow/red/blue, wet dripping-paint medium, color that tracks emotion
-   scene-to-scene rather than staying a fixed brand color. Cyan reads as her
-   default/isolation state, orange as warmth/connection, violet as the
-   turning-point/magic accent. ---- */
-:root[data-palette="spiderverse2"]{
-  --accent:#4fd1e8;--accent-rgb:79,209,232;--accent-2:#ff8a3d;--accent-on:#1a1230;--accent-glow:rgba(79,209,232,.32);
-  --bg:#1a1230;--bg-2:#221937;--bg-3:#2b1f45;
-  --surface:rgba(199,125,255,.06);--surface-2:rgba(79,209,232,.07);
-  --border:rgba(107,91,149,.22);--border-2:rgba(199,125,255,.3);
-  --panel-a:#2b1f45;--panel-b:#221937;--muted:#b8a8d8;--muted-2:#6f6092;--hairline:rgba(107,91,149,.2);
-}
-/* ---- palette: spiderverse2, watercolor-paper light mode ---- */
-:root[data-palette="spiderverse2"][data-theme="light"]{
-  --accent:#0e8fae;--accent-rgb:14,143,174;--accent-2:#d9691a;--accent-on:#fdf9f4;--accent-glow:rgba(14,143,174,.18);
-  --bg:#f5f0fa;--bg-2:#ede3f5;--bg-3:#e2d3ee;
-  --surface:rgba(142,90,196,.05);--surface-2:rgba(14,143,174,.07);
-  --border:rgba(120,80,170,.16);--border-2:rgba(120,80,170,.26);
-  --panel-a:#ede3f5;--panel-b:#e2d3ee;--muted:#5c4d78;--muted-2:#8d7ba8;--hairline:rgba(120,80,170,.16);
-}
 /* ---- palette: glass bonus, real frosted-glass blur on key surfaces (only this theme pays the backdrop-filter cost) ---- */
 :root[data-palette="glass"] .card2,:root[data-palette="glass"] .tile2,:root[data-palette="glass"] .frame-nav,
 :root[data-palette="glass"] .palette-menu,:root[data-palette="glass"] .theme-toggle,:root[data-palette="glass"] .palette-btn,
@@ -284,21 +262,6 @@
 :root[data-palette="spiderverse"] .contact2 h2,:root[data-palette="spiderverse"] .case2-copy h3,
 :root[data-palette="spiderverse"] .tool2-copy h3{
   text-shadow:-1.5px 0 0 rgba(41,240,255,.5),1.5px 0 0 rgba(255,46,136,.5);
-}
-/* ---- palette: spiderverse2 bonus, wet watercolor bleed on the hero scrim
-   (three soft blooms: violet/cyan/orange, echoing color bleeding past
-   silhouette edges) + a soft violet card glow instead of a hard edge ---- */
-:root[data-palette="spiderverse2"] .hv-scrim{
-  background:
-    radial-gradient(50% 40% at 18% 15%,rgba(199,125,255,.24),transparent 62%),
-    radial-gradient(45% 35% at 88% 12%,rgba(79,209,232,.2),transparent 62%),
-    radial-gradient(42% 46% at 58% 92%,rgba(255,138,61,.18),transparent 62%),
-    linear-gradient(to top,#0a0a0b 0%,rgba(10,10,11,.72) 22%,transparent 50%),
-    linear-gradient(115deg,rgba(10,10,11,.5) 0%,transparent 38%),
-    radial-gradient(65% 55% at 78% 8%,rgba(10,10,11,.4),transparent 60%);
-}
-:root[data-palette="spiderverse2"] .frame{
-  box-shadow:0 24px 70px rgba(0,0,0,.28),0 0 60px -22px rgba(199,125,255,.4);
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
@@ -331,12 +294,7 @@ html.cursor-hidden .cursor-dot,html.cursor-hidden .cursor-trail-canvas{opacity:0
 
 /* ============ LOADER (HUD-style, matches the crosshair/coordinate motif) ============ */
 body.loading{overflow:hidden;height:100vh}
-/* Loader is deliberately theme-independent: every colour here is a fixed
-   value, not a --var, so it reads identically no matter which palette was
-   last selected. The "glass" look comes from a frosted panel (blurred,
-   translucent, soft white edge) floating on a fixed dark navy field. */
-#loader{position:fixed;inset:0;z-index:9999;
-  background:radial-gradient(120% 90% at 50% 100%,#1a2436,#0a0d14 70%);
+#loader{position:fixed;inset:0;z-index:9999;background:var(--bg);
   display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding-bottom:60px;
   transition:opacity .6s ease,visibility .6s ease;overflow:hidden}
 #loader.done{opacity:0;visibility:hidden;pointer-events:none}
@@ -345,31 +303,28 @@ body.loading{overflow:hidden;height:100vh}
 .ld-word{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;
   z-index:0;pointer-events:none;overflow:hidden}
 .ld-word .wl{overflow:hidden}
-.ld-word .wl span{display:block;font-family:var(--display);text-transform:uppercase;letter-spacing:0;
-  font-size:clamp(64px,16vw,240px);line-height:.84;color:#eef3fb;white-space:nowrap;
+.ld-word .wl span{display:block;font-family:var(--display);text-transform:uppercase;letter-spacing:-.02em;
+  font-size:clamp(64px,16vw,240px);line-height:.84;color:var(--text);white-space:nowrap;
   transform:translateY(100%);transition:transform 1.1s cubic-bezier(.16,1,.3,1)}
 #loader.words-in .wl span{transform:none}
 .ld-word .wl:nth-child(2) span{transition-delay:.08s}
 #loader.done .ld-word{transition:opacity .5s ease .05s;opacity:0}
 .ld-hud{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;
-  background:rgba(255,255,255,.06);backdrop-filter:blur(20px) saturate(1.5);-webkit-backdrop-filter:blur(20px) saturate(1.5);
-  border:1px solid rgba(255,255,255,.16);border-radius:20px;padding:26px 40px;
-  box-shadow:0 24px 60px rgba(0,0,0,.4),inset 0 1px 0 rgba(255,255,255,.1);
   transition:opacity .45s ease,transform .45s ease}
 #loader.done .ld-hud{opacity:0;transform:translateY(10px)}
-.ld-cross{width:18px;height:18px;color:rgba(238,243,251,.55);margin-bottom:14px}
+.ld-cross{width:18px;height:18px;color:var(--muted-2);margin-bottom:14px}
 .ld-cross svg{width:100%;height:100%;fill:none}
 .ld-cross line{stroke:currentColor;stroke-width:1.3}
 .ld-cross circle{fill:currentColor}
 #loader:not(.done) .ld-cross{animation:ldspin 2.6s linear infinite}
 @keyframes ldspin{to{transform:rotate(360deg)}}
 .ld-row{display:flex;align-items:baseline;gap:8px}
-.ld-idx{font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:rgba(238,243,251,.5)}
-.ld-num{font-family:var(--mono);font-size:clamp(22px,2.6vw,30px);line-height:1;color:#eef3fb;
+.ld-idx{font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--muted-2)}
+.ld-num{font-family:var(--mono);font-size:clamp(22px,2.6vw,30px);line-height:1;color:var(--text);
   letter-spacing:-.01em;font-variant-numeric:tabular-nums}
-.ld-label{margin-top:14px;font-family:var(--mono);font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:rgba(238,243,251,.5)}
-.ld-bar{margin-top:18px;width:min(200px,46vw);height:2px;background:rgba(255,255,255,.16);overflow:hidden;border-radius:2px}
-.ld-bar span{display:block;height:100%;width:0;background:linear-gradient(90deg,#8ec8ff,#eef3fb)}
+.ld-label{margin-top:14px;font-family:var(--mono);font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted-2)}
+.ld-bar{margin-top:18px;width:min(200px,46vw);height:2px;background:var(--border);overflow:hidden}
+.ld-bar span{display:block;height:100%;width:0;background:var(--text)}
 @media(prefers-reduced-motion:reduce){#loader:not(.done) .ld-cross{animation:none}}
 
 /* ============ FIXED CHROME: burger / theme toggle / rail ============ */
@@ -383,7 +338,7 @@ body.loading{overflow:hidden;height:100vh}
 
 .theme-toggle{position:fixed;top:14px;right:16px;z-index:80;background:var(--surface-2);border:1.5px solid var(--border-2);
   border-radius:50%;width:48px;height:48px;display:flex;align-items:center;justify-content:center;cursor:pointer;
-  color:var(--text);transition:border-color .3s,color .3s,transform .4s cubic-bezier(.16,1,.3,1),box-shadow .3s,background-color .3s,opacity .3s ease;
+  color:var(--text);transition:border-color .3s,color .3s,transform .4s cubic-bezier(.16,1,.3,1),box-shadow .3s,background-color .3s;
   box-shadow:0 0 0 0 var(--accent-glow),0 2px 10px rgba(0,0,0,.18)}
 .theme-toggle:hover{color:var(--accent);border-color:var(--accent);transform:rotate(160deg);box-shadow:0 0 0 6px var(--accent-glow),0 2px 10px rgba(0,0,0,.18)}
 .theme-toggle .tt-icon{width:19px;height:19px;display:none}
@@ -394,14 +349,14 @@ body.loading{overflow:hidden;height:100vh}
 /* ---- palette switcher ---- */
 .minimal-toggle{position:fixed;top:14px;right:128px;z-index:80;background:var(--surface-2);border:1.5px solid var(--border-2);
   border-radius:50%;width:48px;height:48px;display:flex;align-items:center;justify-content:center;cursor:pointer;
-  color:var(--text);transition:border-color .3s,color .3s,transform .3s cubic-bezier(.16,1,.3,1),box-shadow .3s,background-color .3s,opacity .3s ease;
+  color:var(--text);transition:border-color .3s,color .3s,transform .3s cubic-bezier(.16,1,.3,1),box-shadow .3s,background-color .3s;
   box-shadow:0 0 0 0 var(--accent-glow),0 2px 10px rgba(0,0,0,.18)}
 .minimal-toggle:hover{border-color:var(--accent);color:var(--accent);transform:scale(1.08);box-shadow:0 0 0 6px var(--accent-glow),0 2px 10px rgba(0,0,0,.18)}
 .minimal-toggle svg{width:19px;height:19px}
 .minimal-toggle[aria-pressed="true"]{color:var(--accent);border-color:var(--accent)}
 :root[data-minimal="true"]{filter:grayscale(1) contrast(1.02)}
 
-.palette-switch{position:fixed;top:14px;right:72px;z-index:80;transition:opacity .3s ease}
+.palette-switch{position:fixed;top:14px;right:72px;z-index:80}
 .palette-btn{background:var(--surface-2);border:1.5px solid var(--border-2);border-radius:50%;width:48px;height:48px;
   display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--accent);
   transition:border-color .3s,color .3s,transform .3s cubic-bezier(.16,1,.3,1),box-shadow .3s,background-color .3s;
@@ -433,31 +388,6 @@ body.loading{overflow:hidden;height:100vh}
 .sw-sepia{background:linear-gradient(135deg,#e8d8b4,#a9784a)}
 .sw-glass{background:linear-gradient(135deg,#6fb7ff,#0a1220)}
 .sw-spiderverse{background:linear-gradient(135deg,#ff2e88,#29f0ff)}
-.sw-spiderverse2{background:linear-gradient(135deg,#4fd1e8,#c77dff,#ff8a3d)}
-
-/* ---- desktop: mode buttons move to a vertical dock under the burger
-   instead of a top-right row (mobile keeps the original top-right row).
-   Dock starts below the rail's "YG" mark (rail padding-top:78px + the
-   mark's own height) so the two don't overlap. Centered on the 64px rail
-   (--railw) rather than left-aligned to it: left:16px put the 48px
-   buttons' right edge exactly on the rail's border, so the circle and the
-   line were touching; left:8px centers the circle with 8px clear on both
-   sides. Burger (42px) gets the same centering treatment. ---- */
-@media(min-width:861px){
-  .burger{left:11px}
-  .theme-toggle{top:150px;right:auto;left:8px}
-  .minimal-toggle{top:208px;right:auto;left:8px}
-  .palette-switch{top:266px;right:auto;left:8px}
-  .palette-menu{top:0;left:72px;right:auto}
-  .frame-nav{padding-right:28px}
-}
-
-/* ---- header chrome (burger + mode dock) hides on scroll-down, reappears
-   on scroll-up; see the SCROLL-HIDE CHROME script near the bottom ---- */
-html.chrome-hidden .burger,html.chrome-hidden .theme-toggle,
-html.chrome-hidden .minimal-toggle,html.chrome-hidden .palette-switch{
-  opacity:0;pointer-events:none;
-}
 
 /* ---- background audio toggle, same 42px circular-button family as theme/palette ---- */
 .audio-toggle{position:fixed;bottom:16px;left:16px;z-index:85;background:var(--bg);border:1px solid var(--border-2);
@@ -467,10 +397,8 @@ html.chrome-hidden .minimal-toggle,html.chrome-hidden .palette-switch{
 .audio-toggle:hover{color:var(--accent);border-color:var(--accent);box-shadow:0 0 0 5px var(--accent-glow)}
 
 /* ---- kprverse-style scroll progress rail, fixed to the very top edge ---- */
-.scroll-progress{position:fixed;top:0;left:0;height:5px;width:0%;z-index:9997;
+.scroll-progress{position:fixed;top:0;left:0;height:3px;width:0%;z-index:9997;
   background:linear-gradient(90deg,var(--accent),var(--accent-2));
-  box-shadow:0 0 16px 0 var(--accent-glow);
-  border-radius:0 3px 3px 0;
   transition:background 0.4s ease}
 .audio-toggle.is-hidden{display:none}
 .audio-toggle .at-icon{width:15px;height:15px;display:none}
@@ -497,35 +425,22 @@ html.chrome-hidden .minimal-toggle,html.chrome-hidden .palette-switch{
 .rail-cross circle{fill:currentColor}
 
 /* ============ NAV DRAWER (mobile-first full overlay) ============ */
-.nav-drawer{position:fixed;inset:0;z-index:90;background:rgba(4,6,10,.5);opacity:0;visibility:hidden;
-  transition:opacity .4s cubic-bezier(.16,1,.3,1),visibility .4s}
-.nav-drawer.open{opacity:1;visibility:visible}
-.drawer-panel{position:absolute;inset:0;width:100%;background:var(--bg);display:flex;flex-direction:column;
-  justify-content:center;padding:32px 8vw;transform:translateY(-12px);
-  transition:transform .4s cubic-bezier(.16,1,.3,1);overflow-y:auto}
-.drawer-panel{justify-content:safe center}
-.nav-drawer.open .drawer-panel{transform:none}
+.nav-drawer{position:fixed;inset:0;z-index:90;background:var(--bg);display:flex;flex-direction:column;
+  justify-content:center;padding:0 8vw;opacity:0;visibility:hidden;transform:translateY(-12px);
+  transition:opacity .4s cubic-bezier(.16,1,.3,1),transform .4s cubic-bezier(.16,1,.3,1),visibility .4s}
+.nav-drawer.open{opacity:1;visibility:visible;transform:none}
 .drawer-close{position:fixed;top:16px;left:16px;z-index:95;width:42px;height:42px;border-radius:50%;
   border:1px solid var(--border-2);background:var(--bg);color:var(--text);font-size:20px;line-height:1;
   display:none;align-items:center;justify-content:center;cursor:pointer}
 .nav-drawer.open .drawer-close{display:flex}
-/* desktop: drawer becomes a half-width side panel over a dimmed backdrop,
-   instead of covering the whole viewport */
-@media(min-width:861px){
-  .drawer-panel{width:50%;max-width:900px;box-shadow:40px 0 80px rgba(0,0,0,.35);
-    transform:translateX(-16px)}
-  .nav-drawer.open .drawer-panel{transform:none}
-}
-.drawer-links{display:flex;flex-direction:column;gap:2px}
-.drawer-links a{display:flex;align-items:baseline;gap:16px;font-family:var(--display);
-  font-size:clamp(22px,4.4vw,40px);text-transform:uppercase;letter-spacing:-.01em;color:var(--muted);
-  transition:color .25s;padding:3px 0;border-bottom:1px solid transparent;line-height:1.1}
+.drawer-links{display:flex;flex-direction:column;gap:6px}
+.drawer-links a{display:flex;align-items:baseline;gap:20px;font-family:var(--display);
+  font-size:clamp(34px,8vw,88px);text-transform:uppercase;letter-spacing:-.01em;color:var(--muted);
+  transition:color .25s;padding:6px 0;border-bottom:1px solid transparent}
 .drawer-links a:hover{color:var(--text)}
-.drawer-links a .dnum{font-family:var(--mono);font-size:12px;letter-spacing:.1em;color:var(--muted-2)}
-.drawer-links a.sub{gap:12px;padding:1px 0 1px 40px;font-size:clamp(13px,1.8vw,15px);color:var(--muted-2)}
-.drawer-links a.sub .dnum{font-size:11px}
-.drawer-foot{margin-top:24px;display:flex;flex-wrap:wrap;gap:24px;font-family:var(--mono);
-  font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.drawer-links a .dnum{font-family:var(--mono);font-size:13px;letter-spacing:.1em;color:var(--muted-2)}
+.drawer-foot{margin-top:52px;display:flex;flex-wrap:wrap;gap:28px;font-family:var(--mono);
+  font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 .drawer-foot a{border-bottom:1px solid var(--border-2);padding-bottom:3px;transition:color .25s,border-color .25s}
 .drawer-foot a:hover{color:var(--text);border-color:var(--text)}
 
@@ -533,7 +448,7 @@ html.chrome-hidden .minimal-toggle,html.chrome-hidden .palette-switch{
 .shell{margin-left:var(--railw)}
 main{position:relative;z-index:2}
 .frame{position:relative;border-bottom:1px solid var(--border);background:var(--bg);transition:background-color .4s ease}
-#work,#creative,#contact{background:var(--bg-2)}
+#work,#quicko,#creative,#contact{background:var(--bg-2)}
 .frame-nav{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;
   padding:15px 190px 15px 28px;border-bottom:1px solid var(--border);font-family:var(--mono);
   font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
@@ -544,12 +459,12 @@ main{position:relative;z-index:2}
 .frame-links a{color:var(--muted);transition:color .25s}
 .frame-links a:hover,.frame-links a.on{color:var(--accent)}
 .frame-idx{color:var(--muted-2);white-space:nowrap}
-.frame-body{padding-top:64px;padding-bottom:64px}
+.frame-body{padding:88px 0}
 
 .f-eyebrow{display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:11px;
   letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-bottom:22px}
 .f-eyebrow::before{content:"";width:7px;height:7px;background:var(--accent);transition:background-color .3s}
-.f-title{font-family:var(--display);text-transform:uppercase;line-height:1.08;letter-spacing:0;
+.f-title{font-family:var(--display);text-transform:uppercase;line-height:1.08;letter-spacing:-.01em;
   font-size:clamp(32px,5.4vw,80px)}
 .f-title .dim{color:var(--muted)}
 .f-lead{color:var(--muted);font-size:clamp(15px,1.7vw,18px);max-width:640px;margin-top:20px;line-height:1.65}
@@ -597,7 +512,7 @@ main{position:relative;z-index:2}
    put; same depth trick as kprverse.com's hero. */
 .hero-visual{position:absolute;inset:0;z-index:0;overflow:hidden}
 .hv-scroll{position:absolute;inset:-22% 0;will-change:transform}
-.hv-bg{position:absolute;inset:0;background-size:contain;background-repeat:no-repeat;background-position:center 32%;
+.hv-bg{position:absolute;inset:0;background-size:cover;background-position:center 32%;
   will-change:transform;filter:saturate(0)}
 .hv-fg{position:absolute;bottom:0;left:46%;height:84%;width:auto;max-width:94%;
   transform:translateX(-50%);object-fit:contain;
@@ -612,8 +527,8 @@ main{position:relative;z-index:2}
 .hl-code{font-family:var(--mono);font-size:clamp(11px,1.1vw,14px);letter-spacing:.06em;color:rgba(242,242,240,.6);
   padding-bottom:.18em;flex:none}
 .hl-line{overflow:hidden;flex:1;min-width:0}
-.hl-line span{display:block;font-family:var(--display);text-transform:uppercase;letter-spacing:0;
-  font-size:clamp(32px,6.2vw,104px);line-height:.9;color:#f2f2f0;transform:translateY(108%);
+.hl-line span{display:block;font-family:var(--display);text-transform:uppercase;letter-spacing:-.015em;
+  font-size:clamp(58px,13vw,190px);line-height:.86;color:#f2f2f0;transform:translateY(108%);
   transition:transform 1s cubic-bezier(.16,1,.3,1)}
 body.ready .hl-line span{transform:none}
 .hero-sub-wrap{position:relative;z-index:2}
@@ -635,136 +550,54 @@ body.ready .hl-line span{transform:none}
 .hud .cell:last-child{border-right:none}
 .hud .cell .tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;color:var(--muted-2);
   text-transform:uppercase;margin-bottom:14px;display:block}
-.hud .cell .num{font-family:var(--display);font-size:clamp(30px,3.6vw,50px);line-height:1;letter-spacing:0}
+.hud .cell .num{font-family:var(--display);font-size:clamp(30px,3.6vw,50px);line-height:1;letter-spacing:-.01em}
 .hud .cell .lbl{margin-top:10px;font-size:12.5px;color:var(--muted);line-height:1.45;max-width:220px}
 
 /* ============ MARQUEE (skills / connective tissue) ============ */
-.marquee{border:1px solid var(--border);padding:22px 0;margin:28px 0;
+.marquee{border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:16px 0;
   overflow:hidden;white-space:nowrap;position:relative;background:var(--bg)}
-.marquee .track{display:inline-flex;align-items:center;gap:16px;animation:scrollx 30s linear infinite;will-change:transform}
+.marquee .track{display:inline-flex;gap:34px;animation:scrollx 30s linear infinite;will-change:transform}
 .marquee:hover .track{animation-play-state:paused}
-.marquee span{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted-2);line-height:1;display:inline-flex;align-items:center}
+.marquee span{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-2)}
 .marquee span b{color:var(--text);font-weight:500}
 .marquee .dot{color:var(--text)}
 @keyframes scrollx{to{transform:translateX(-50%)}}
 
 /* ============ MANIFESTO (scroll-fill sticky quote) ============ */
-.manifesto-wrap{height:160vh;position:relative;border-bottom:1px solid var(--border)}
+.manifesto-wrap{height:240vh;position:relative;border-bottom:1px solid var(--border)}
 .manifesto-sticky{position:sticky;top:0;height:100vh;display:flex;flex-direction:column;
   justify-content:center;overflow:hidden}
 .manifesto{font-family:var(--display);text-transform:uppercase;font-weight:400;text-align:left;
-  letter-spacing:0;font-size:clamp(30px,5.6vw,80px);line-height:1.04;position:relative;z-index:1}
+  letter-spacing:-.005em;font-size:clamp(30px,5.6vw,80px);line-height:1.04;position:relative;z-index:1}
 .manifesto .mword{color:var(--text);opacity:.14;transition:opacity .15s linear;display:inline-block;margin-right:.08em}
 .manifesto .qmark{color:var(--accent);opacity:1}
 .manifesto-cap{align-self:flex-start;max-width:420px;margin-top:40px;position:relative;z-index:1;
   font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);line-height:1.8}
-.manifesto-photo{align-self:flex-start;height:min(22vh,180px);width:auto;object-fit:cover;
-  border:1px solid var(--border-2);margin-bottom:32px;position:relative;z-index:1;
-  border-radius:14px;box-shadow:0 10px 24px rgba(0,0,0,.18)}
-
-/* ============ REAL SECTION PHOTOS (dropped in from "homepage images and videos") ============ */
-/* compact, manifesto-photo-style treatment (small rounded frame rather than
-   a full-bleed banner) so the "you're gonna want to sit down for this" chair
-   reads as a punchy lead-in to the capability grid below it, not a hero shot */
-.wiad-photo{display:block;height:min(38vh,320px);width:auto;object-fit:cover;border:1px solid var(--border-2);
-  border-radius:14px;box-shadow:0 10px 24px rgba(0,0,0,.18)}
 
 /* ============ CARDS (sharp / technical, not soft-rounded) ============ */
 .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border)}
 .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border)}
-/* ---- mobile overflow fix: grid items default to a content-based min-width,
-   which lets a long chip/label force its whole track wider than the viewport.
-   min-width:0 lets tracks shrink to the container instead. ---- */
-.grid-2>*,.grid-3>*,.hud>.cell,.case2-detail>.col,.tile-grid>.tile2,
-footer.foot2 .fcols>.fcol,.pagenav>a{min-width:0}
 .card2{background:var(--bg);padding:32px;position:relative;transition:background-color .3s}
 .card2:hover{background:var(--surface)}
 .card2 .k{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-2);margin-bottom:16px}
-.card2 h3{font-family:var(--display);text-transform:uppercase;font-size:clamp(20px,2.2vw,28px);line-height:1.05;margin-bottom:12px;letter-spacing:0}
+.card2 h3{font-family:var(--display);text-transform:uppercase;font-size:clamp(20px,2.2vw,28px);line-height:1.05;margin-bottom:12px;letter-spacing:-.01em}
 .card2 p.hook{color:var(--muted);font-size:14.5px;line-height:1.6}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
-.chip2{font-size:12px;padding:7px 12px;border:1px solid var(--border-2);color:var(--text);font-family:var(--mono)}
+.chip2{font-size:12px;padding:7px 12px;border:1px solid var(--border-2);color:var(--text);white-space:nowrap;font-family:var(--mono)}
 .chip2 b{font-weight:700}
 .card2 .cap{margin-top:20px;font-size:12.5px;color:var(--muted-2);line-height:1.55;border-top:1px solid var(--border);padding-top:14px}
 .card2 .tools{margin-top:12px;font-size:11.5px;color:var(--muted-2);font-family:var(--mono);letter-spacing:.02em}
-
-/* ============ IMAGE PLACEHOLDERS: dashed drop-zones marking where a real
-   photo/screenshot goes later. Swap the whole .img-ph node for a real
-   <img> (or set it as a background-image) once the asset exists. ============ */
-.img-ph{border:1px dashed var(--border-2);background:var(--surface);display:flex;
-  flex-direction:column;align-items:center;justify-content:center;gap:8px;
-  color:var(--muted-2);text-align:center;padding:20px;min-height:120px;margin-top:20px;transition:border-color .3s,color .3s}
-.card2:hover .img-ph{border-color:var(--border-2)}
-.img-ph svg{width:22px;height:22px;opacity:.6;flex:none}
-.img-ph span{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;line-height:1.5;max-width:230px}
-.img-ph.lg{min-height:240px;margin:32px 0 0}
-.img-ph.lg svg{width:30px;height:30px}
-.img-ph.lg span{font-size:11px;max-width:340px}
-
-/* ============ TOOL CARD BANNERS (real mascot art, replaces .img-ph) ============ */
-.tool-banner{width:100%;aspect-ratio:1/1;object-fit:contain;margin-top:20px;
-  border-radius:10px;border:1px solid var(--border-2);background:#fff}
-
-/* ============ ASSET CAROUSEL: replaces an .img-ph once real photos/
-   videos exist for that slot. No bounding box around the row itself —
-   it's a plain horizontal scroller, several assets visible at once.
-   Assets can be any dimension: each slide is sized to a fixed height with
-   its own natural width (object-fit is never used), so nothing is ever
-   cropped or letterboxed. ============ */
-.asset-carousel{position:relative;margin-top:20px}
-.ac-track{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x proximity;
-  -webkit-overflow-scrolling:touch;scrollbar-width:none;padding-bottom:2px}
-.ac-track::-webkit-scrollbar{display:none}
-.ac-slide{flex:none;height:280px;scroll-snap-align:start;border-radius:12px;overflow:hidden;
-  box-shadow:0 8px 20px rgba(0,0,0,.16)}
-.ac-slide img,.ac-slide video{display:block;height:100%;width:auto;max-width:none}
-.ac-nav{position:absolute;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;
-  border:1px solid var(--border-2);background:var(--surface-2);color:var(--text);display:flex;align-items:center;
-  justify-content:center;cursor:pointer;opacity:.85;transition:opacity .2s,border-color .2s,color .2s;z-index:2;
-  box-shadow:0 4px 14px rgba(0,0,0,.28)}
-.ac-nav svg{width:15px;height:15px}
-.ac-nav:hover,.ac-nav:focus-visible{opacity:1;border-color:var(--accent);color:var(--accent)}
-.ac-prev{left:-4px}
-.ac-next{right:-4px}
-.asset-carousel:not(.multi) .ac-nav{display:none}
 .link2{margin-top:18px;display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-family:var(--mono);
   text-transform:uppercase;letter-spacing:.06em;color:var(--text);transition:gap .3s}
 .link2:hover{gap:12px}
 .link2 .arw{transition:transform .3s}
-
-/* ============ WORK TABS: GoodFlip / Streak / Quicko switcher ============ */
-.work-tabs{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--border);
-  border-bottom:1px solid var(--border);margin-top:32px;z-index:6}
-.work-tab{padding:22px 24px;border-right:1px solid var(--border);border-left:none;border-bottom:none;border-top:none;
-  background:var(--bg);cursor:pointer;text-align:left;font:inherit;color:inherit;min-width:0;
-  display:flex;flex-direction:column;gap:7px;transition:background-color .3s;box-shadow:inset 0 0 0 0 var(--accent)}
-.work-tab:last-child{border-right:none}
-.work-tab:hover{background-color:var(--bg);background-image:linear-gradient(var(--surface),var(--surface))}
-.work-tab.on{background-color:var(--bg);background-image:linear-gradient(var(--surface-2),var(--surface-2));
-  box-shadow:inset 0 -3px 0 0 var(--accent)}
-.work-tab .wt-k{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-2)}
-.work-tab .wt-name{font-family:var(--display);text-transform:uppercase;font-size:clamp(18px,2vw,26px);letter-spacing:0;color:var(--muted);transition:color .25s}
-.work-tab.on .wt-name{color:var(--text)}
-.work-tab .wt-sub{font-size:11.5px;color:var(--muted-2);font-family:var(--mono)}
-.work-panel{display:none}
-.work-panel.on{display:block}
-@media(max-width:720px){
-  .work-tabs{grid-template-columns:repeat(3,1fr)}
-  .work-tab{padding:12px 6px;gap:3px;align-items:center;text-align:center;
-    border-right:1px solid var(--border);border-bottom:none}
-  .work-tab:last-child{border-right:none}
-  .work-tab .wt-k{display:none}
-  .work-tab .wt-name{font-size:13px;letter-spacing:.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
-  .work-tab .wt-sub{font-size:9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
-  .work-tab.on{box-shadow:inset 0 -3px 0 0 var(--accent)}
-}
 
 /* ============ DEEP CASE (GoodFlip) ============ */
 .case2{border-top:1px solid var(--border)}
 .case2-head{display:grid;grid-template-columns:1.15fr .85fr}
 .case2-copy{padding:48px 34px}
 .case2-copy .k{font-family:var(--mono);color:var(--muted);font-size:11px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:18px}
-.case2-copy h3{font-family:var(--display);text-transform:uppercase;font-size:clamp(28px,3.6vw,52px);line-height:1.1;margin-bottom:18px;letter-spacing:0}
+.case2-copy h3{font-family:var(--display);text-transform:uppercase;font-size:clamp(28px,3.6vw,52px);line-height:1.1;margin-bottom:18px;letter-spacing:-.01em}
 .case2-copy .hook{color:var(--muted);font-size:16px;line-height:1.65;max-width:520px}
 .case2-visual{position:relative;border-left:1px solid var(--border);min-height:320px;padding:30px;
   display:flex;align-items:center;justify-content:center;
@@ -777,13 +610,11 @@ footer.foot2 .fcols>.fcol,.pagenav>a{min-width:0}
     radial-gradient(120% 100% at 0% 100%,rgba(10,10,8,.05),transparent 55%),linear-gradient(155deg,var(--panel-a),var(--panel-b))}
 .case2-visual .browser{width:100%;max-width:330px;border:1px solid var(--border-2);background:var(--bg);
   box-shadow:0 24px 50px rgba(0,0,0,.35)}
-.case2-video{width:100%;max-width:420px;aspect-ratio:16/10;object-fit:cover;border:1px solid var(--border-2);
-  background:var(--bg);box-shadow:0 24px 50px rgba(0,0,0,.35);border-radius:14px}
 .browser2 .bar{display:flex;gap:6px;padding:10px 14px;border-bottom:1px solid var(--border)}
 .browser2 .bar i{width:8px;height:8px;border-radius:50%;background:var(--border-2)}
 .browser2 .body{padding:20px 18px 24px}
 .browser2 .body .u{font-family:var(--mono);font-size:10.5px;color:var(--muted-2);margin-bottom:12px;word-break:break-all}
-.browser2 .body .hl{font-family:var(--display);text-transform:uppercase;font-size:22px;margin-bottom:8px;letter-spacing:0}
+.browser2 .body .hl{font-family:var(--display);text-transform:uppercase;font-size:22px;margin-bottom:8px;letter-spacing:-.005em}
 .browser2 .body .sm{font-size:11.5px;color:var(--muted);line-height:1.5}
 .browser2 .body .prc{margin-top:14px;display:flex;gap:7px;flex-wrap:wrap}
 .browser2 .body .prc span{font-family:var(--mono);font-size:10.5px;border:1px solid var(--border-2);padding:5px 9px;color:var(--text)}
@@ -791,7 +622,7 @@ footer.foot2 .fcols>.fcol,.pagenav>a{min-width:0}
 .hud-stats .s{padding:28px 24px;border-right:1px solid var(--border)}
 .hud-stats .s:last-child{border-right:none}
 .hud-stats .s .tag{font-family:var(--mono);font-size:10.5px;color:var(--muted-2);letter-spacing:.12em;text-transform:uppercase;display:block;margin-bottom:12px}
-.hud-stats .s .n{font-family:var(--display);font-size:clamp(26px,3.2vw,40px);line-height:1;letter-spacing:0}
+.hud-stats .s .n{font-family:var(--display);font-size:clamp(26px,3.2vw,40px);line-height:1;letter-spacing:-.01em}
 .hud-stats .s .l{margin-top:9px;font-size:12px;color:var(--muted);line-height:1.4}
 .case2-detail{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--border)}
 .case2-detail .col{padding:34px}
@@ -804,35 +635,6 @@ footer.foot2 .fcols>.fcol,.pagenav>a{min-width:0}
 .case2-foot{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;
   padding:24px 34px;border-top:1px solid var(--border);background:var(--surface)}
 .case2-foot .tools{font-family:var(--mono);font-size:11.5px;color:var(--muted-2)}
-
-/* ============ NOTICE (archived-case-study callout, matches sub-page pattern) ============ */
-.notice{border:1px dashed var(--border-2);padding:22px 26px;margin-top:32px;font-family:var(--mono);font-size:13px;line-height:1.75;color:var(--muted);max-width:740px}
-.notice b{color:var(--text);font-weight:500}
-
-/* ============ YOUTUBE EMBED GRID (Streak 4C launch films) ============ */
-.yt-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}
-.yt-embed{position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:10px;border:1px solid var(--border-2);background:#000}
-.yt-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
-@media(max-width:720px){.yt-grid{grid-template-columns:1fr}}
-
-/* ============ QUICKO BYTES: banner + full-story PDF popup ============ */
-.quicko-bytes-banner{border-radius:14px;overflow:hidden;border:1px solid var(--border-2);
-  box-shadow:0 10px 24px rgba(0,0,0,.18);background:var(--panel-a)}
-.quicko-bytes-banner img{display:block;width:100%;height:auto}
-.quicko-bytes-foot{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
-  padding:20px 24px;font-size:13.5px;color:var(--muted)}
-.bytes-popup{position:fixed;inset:0;z-index:500;background:rgba(4,4,5,.82);display:flex;
-  align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s;padding:40px}
-.bytes-popup.open{opacity:1;visibility:visible}
-.bytes-popup-inner{position:relative;width:min(900px,92vw);height:min(86vh,1100px);background:var(--bg);
-  border:1px solid var(--border-2);border-radius:12px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.6)}
-.bytes-popup-inner iframe{width:100%;height:100%;border:0;display:block}
-.bytes-popup-close{position:absolute;top:14px;right:14px;z-index:2;width:38px;height:38px;border-radius:50%;
-  background:var(--bg);border:1px solid var(--border-2);color:var(--text);display:flex;align-items:center;
-  justify-content:center;cursor:pointer;transition:border-color .2s}
-.bytes-popup-close:hover{border-color:var(--accent);color:var(--accent)}
-.bytes-popup-close svg{width:16px;height:16px}
-@media(max-width:720px){.quicko-bytes-foot{flex-direction:column;align-items:flex-start}}
 
 /* ============ TOOLS TEASER ============ */
 .tool2{border-top:1px solid var(--border)}
@@ -851,27 +653,14 @@ footer.foot2 .fcols>.fcol,.pagenav>a{min-width:0}
 .tool2-stats .row .l{font-size:12.5px;color:var(--muted);line-height:1.4}
 
 /* ============ CREATIVE GRID ============ */
-.tile-grid{display:grid;grid-template-columns:repeat(2,1fr);grid-auto-rows:360px;gap:16px;background:transparent}
-.tile2{position:relative;background:var(--bg);overflow:hidden;display:flex;align-items:flex-end;padding:24px;border-radius:14px;border:1px solid var(--border-2)}
-.tile2 .fill{background-size:cover;background-position:center}
-.tile2.photo::after{content:'';position:absolute;inset:0;z-index:1;
-  background:linear-gradient(to top,rgba(8,8,10,.82) 0%,rgba(8,8,10,.32) 42%,transparent 68%)}
-.tile2.photo:hover .fill{transform:scale(1.04)}
-.tile2 .fill{transition:transform .6s cubic-bezier(.2,.7,.2,1)}
-.tile2.photo .t b,.tile2.photo .t span{color:#f2f2f0}
+.tile-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:190px;gap:1px;background:var(--border)}
+.tile2{position:relative;background:var(--bg);overflow:hidden;display:flex;align-items:flex-end;padding:18px;
   transition:background-color .3s}
 .tile2:hover{background:var(--surface)}
 .tile2 .fill{position:absolute;inset:0;opacity:.9}
 .tile2 .t{position:relative;z-index:2}
-.tile2 .t b{display:block;font-family:var(--display);text-transform:uppercase;font-size:18px;margin-bottom:2px;letter-spacing:0}
+.tile2 .t b{display:block;font-family:var(--display);text-transform:uppercase;font-size:18px;margin-bottom:2px;letter-spacing:-.005em}
 .tile2 .t span{font-size:12px;color:var(--muted);font-family:var(--mono)}
-.tile2.photo .t .tile-cta{display:flex;align-items:center;gap:6px;width:fit-content;margin-top:12px;
-  padding:8px 14px;font-size:11px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.06em;
-  background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.32);border-radius:20px;color:#fff;
-  backdrop-filter:blur(3px);transition:background-color .25s,border-color .25s}
-.tile2.photo:hover .tile-cta{background:rgba(255,255,255,.24);border-color:rgba(255,255,255,.55)}
-.tile2.photo .tile-cta .arw{transition:transform .3s}
-.tile2.photo:hover .tile-cta .arw{transform:translate(3px,-3px)}
 .tile2.wide{grid-column:span 2}
 .tile2.tall{grid-row:span 2}
 .g1{background:repeating-linear-gradient(45deg,rgba(255,255,255,.05) 0 2px,transparent 2px 10px),radial-gradient(120% 120% at 20% 20%,rgba(255,255,255,.09),transparent 60%),var(--panel-a)}
@@ -890,11 +679,9 @@ footer.foot2 .fcols>.fcol,.pagenav>a{min-width:0}
    scroll, foreground stays put. Swap files in "art section/images for the
    background" (same names) to change the scene; see ART_BG/ART_FG in the
    script. Pop-up gallery images live in "art section/images for the pop up". */
-.art-panel{position:relative;height:52vh;min-height:380px;max-height:520px;overflow:hidden;
-  margin-top:48px;border:1px solid var(--border);border-radius:14px;box-shadow:0 10px 24px rgba(0,0,0,.18);
-  cursor:pointer;-webkit-touch-callout:none}
-.art-visual{position:absolute;inset:0;z-index:0;overflow:hidden;transition:opacity .5s ease}
-.art-panel.burst-open .art-visual{opacity:.15}
+.art-panel{position:relative;height:78vh;min-height:520px;max-height:760px;overflow:hidden;
+  margin-top:48px;border:1px solid var(--border);cursor:pointer;-webkit-touch-callout:none}
+.art-visual{position:absolute;inset:0;z-index:0;overflow:hidden}
 .art-scroll{position:absolute;inset:-20% 0;will-change:transform}
 .art-bg{position:absolute;inset:0;background-size:cover;background-position:center;will-change:transform}
 .art-fg{position:absolute;bottom:5%;left:8%;height:24%;width:auto;max-width:60%;object-fit:contain;
@@ -934,22 +721,13 @@ footer.foot2 .fcols>.fcol,.pagenav>a{min-width:0}
 .art-tag{position:absolute;top:22px;left:26px;z-index:2;font-family:var(--mono);font-size:10.5px;
   letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.75);text-shadow:0 2px 10px rgba(0,0,0,.7)}
 .art-idx{position:absolute;bottom:22px;right:26px;z-index:2;font-family:var(--mono);font-size:10.5px;
-  letter-spacing:.14em;color:rgba(255,255,255,.6);text-shadow:0 2px 10px rgba(0,0,0,.7);
-  transition:opacity .3s}
-.art-panel.burst-open .art-idx{opacity:0}
+  letter-spacing:.14em;color:rgba(255,255,255,.6);text-shadow:0 2px 10px rgba(0,0,0,.7)}
 
-/* hold-to-reveal now opens into a horizontally scrollable filmstrip
-   instead of a random scatter burst, once opened, the background art
-   dims (see .art-visual above) so the strip reads clearly against it */
-.art-burst{position:absolute;inset:0;z-index:3;display:flex;align-items:center;
-  opacity:0;pointer-events:none;transition:opacity .4s ease}
-.art-panel.burst-open .art-burst{opacity:1;pointer-events:auto}
-.art-burst-track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x proximity;
-  -webkit-overflow-scrolling:touch;scrollbar-width:none;padding:0 26px;width:100%}
-.art-burst-track::-webkit-scrollbar{display:none}
-.art-card{flex:none;width:150px;border-radius:6px;overflow:hidden;
-  background:#f4f4f2;border:3px solid #f4f4f2;box-shadow:0 20px 45px rgba(0,0,0,.5);
-  scroll-snap-align:start;cursor:pointer}
+.art-burst{position:absolute;inset:0;z-index:3;pointer-events:none}
+.art-panel.burst-open .art-burst{pointer-events:auto}
+.art-card{position:absolute;left:50%;top:50%;width:150px;border-radius:3px;overflow:hidden;
+  background:#f4f4f2;border:3px solid #f4f4f2;box-shadow:0 24px 55px rgba(0,0,0,.55);
+  transform:translate(-50%,-50%) scale(.15);opacity:0;cursor:pointer}
 .art-card img{width:100%;aspect-ratio:9/16;object-fit:cover;display:block;pointer-events:none}
 .art-card .cap{padding:7px 10px 9px;font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;
   text-transform:uppercase;color:#141414}
@@ -972,7 +750,7 @@ footer.foot2 .fcols>.fcol,.pagenav>a{min-width:0}
 .art-lightbox .lb-close svg{width:16px;height:16px}
 
 @media(max-width:720px){
-  .art-panel{height:48vh;min-height:340px}
+  .art-panel{height:64vh;min-height:440px}
   .art-card{width:112px}
 }
 
@@ -987,24 +765,8 @@ footer.foot2 .fcols>.fcol,.pagenav>a{min-width:0}
     radial-gradient(120% 90% at 75% 10%,rgba(10,10,8,.08),transparent 55%),
     radial-gradient(120% 90% at 10% 100%,rgba(10,10,8,.05),transparent 55%),linear-gradient(155deg,var(--panel-a),var(--panel-b))}
 .about2-photo .init{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
-  font-family:var(--display);font-size:min(38vw,220px);color:var(--border-2);letter-spacing:0}
+  font-family:var(--display);font-size:min(38vw,220px);color:var(--border-2);letter-spacing:-.02em}
 .about2-photo .note{position:absolute;bottom:16px;left:16px;font-family:var(--mono);font-size:10.5px;color:var(--muted-2)}
-.about2-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 22%;filter:saturate(.94) contrast(1.03)}
-
-/* ---- "my philosophy" reveal: hover on desktop, long-press on mobile
-   (mirrors the art-panel's press-and-hold convention elsewhere on the
-   page) — a quote card fades in over the portrait rather than replacing it ---- */
-.philosophy-reveal{position:absolute;inset:0;z-index:2;display:flex;align-items:center;justify-content:center;
-  background:#dde1f0;opacity:0;transition:opacity .45s cubic-bezier(.2,.7,.2,1);pointer-events:none}
-.philosophy-reveal img{position:static;width:100%;height:100%;object-fit:contain;padding:14%;filter:none}
-@media(hover:hover) and (pointer:fine){.about2-photo:hover .philosophy-reveal{opacity:1}}
-.about2-photo.is-revealed .philosophy-reveal{opacity:1}
-.philosophy-hint{position:absolute;top:18px;left:18px;z-index:3;font-family:var(--mono);font-size:10px;
-  letter-spacing:.08em;text-transform:uppercase;color:#fff;background:rgba(10,10,10,.5);
-  padding:7px 12px;border-radius:20px;pointer-events:none;transition:opacity .3s ease;backdrop-filter:blur(4px)}
-.philosophy-hint .hint-mobile{display:none}
-@media(hover:none){.philosophy-hint .hint-desktop{display:none}.philosophy-hint .hint-mobile{display:inline}}
-.about2-photo:hover .philosophy-hint,.about2-photo.is-revealed .philosophy-hint{opacity:0}
 .spec-ticks{position:absolute;top:22px;right:22px;bottom:22px;display:flex;flex-direction:column;
   align-items:center;gap:12px;pointer-events:none;z-index:2}
 .spec-ticks .spec-label{font-family:var(--mono);font-size:9px;letter-spacing:.16em;text-transform:uppercase;
@@ -1015,16 +777,6 @@ footer.foot2 .fcols>.fcol,.pagenav>a{min-width:0}
 .about2-copy p em{color:var(--text);font-style:normal;font-weight:600}
 .about2-copy .sig{margin-top:24px;font-family:var(--display);font-size:26px;text-transform:uppercase}
 
-/* ============ SKILLS ============ */
-.skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border)}
-.skill-group{background:var(--bg);padding:34px}
-.skill-group-k{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-2);margin-bottom:20px}
-.skill-tags{display:flex;flex-wrap:wrap;gap:10px}
-.skill-tag{font-size:13px;padding:9px 16px;border:1px solid var(--border-2);border-radius:20px;color:var(--text);
-  font-family:var(--mono);background:var(--bg);cursor:default;transition:border-color .25s,color .25s,background-color .25s,transform .25s}
-.skill-tag:hover{border-color:var(--accent);color:var(--accent);background:var(--surface);transform:translateY(-2px)}
-@media(max-width:860px){.skills-grid{grid-template-columns:1fr}.skill-group{padding:26px}}
-
 .quotes2{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--border)}
 .quote2{padding:30px 34px;border-right:1px solid var(--border)}
 .quote2:last-child{border-right:none}
@@ -1034,12 +786,12 @@ footer.foot2 .fcols>.fcol,.pagenav>a{min-width:0}
 
 /* ============ CONTACT ============ */
 .contact2{padding-top:20px}
-.contact2 h2{font-family:var(--display);text-transform:uppercase;line-height:1.02;letter-spacing:0;
-  font-size:clamp(30px,8.6vw,132px)}
+.contact2 h2{font-family:var(--display);text-transform:uppercase;line-height:1.02;letter-spacing:-.01em;
+  font-size:clamp(42px,8.6vw,132px)}
 .contact2 .sub{color:var(--muted);font-size:clamp(15px,1.8vw,18px);margin-top:22px;max-width:520px}
 .contact2 .mail{margin-top:32px;display:inline-flex;align-items:center;gap:12px;font-family:var(--display);
-  text-transform:uppercase;font-size:clamp(15px,3vw,36px);color:var(--text);border-bottom:1px solid var(--border-2);
-  padding-bottom:8px;transition:.3s;word-break:break-all}
+  text-transform:uppercase;font-size:clamp(22px,3vw,36px);color:var(--text);border-bottom:1px solid var(--border-2);
+  padding-bottom:8px;transition:.3s}
 .contact2 .mail:hover{border-color:var(--text)}
 .contact-rows{margin-top:44px;border-top:1px solid var(--border)}
 .crow{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 0;border-bottom:1px solid var(--border);
@@ -1062,7 +814,7 @@ footer.foot2 .fcol a,footer.foot2 .fcol .row{display:block;font-size:14px;color:
 footer.foot2 .fcol a:hover{opacity:.6}
 footer.foot2 .fcol .row .note{display:block;font-family:var(--mono);font-size:10px;color:var(--footer-muted);margin-top:2px}
 footer.foot2 .wordmark{padding:0 28px;overflow:hidden}
-footer.foot2 .wordmark .wm-line{font-family:var(--display);text-transform:uppercase;letter-spacing:0;
+footer.foot2 .wordmark .wm-line{font-family:var(--display);text-transform:uppercase;letter-spacing:-.02em;
   font-size:clamp(64px,16vw,240px);line-height:.84;color:var(--footer-fg);white-space:nowrap}
 footer.foot2 .fbottom{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;
   padding:22px 34px;border-top:1px solid var(--footer-border);font-family:var(--mono);font-size:11px;color:var(--footer-muted)}
@@ -1078,9 +830,7 @@ footer.foot2 .foot-note a:hover{border-color:var(--footer-fg)}
   .hl-code{font-size:10px}
   .hud{grid-template-columns:1fr 1fr}
   .hud .cell:nth-child(2n){border-right:none}
-  .grid-2{grid-template-columns:1fr}
-  .grid-3{grid-template-columns:repeat(2,1fr)}
-  #tools .grid-3{grid-template-columns:1fr}
+  .grid-2,.grid-3{grid-template-columns:1fr}
   .case2-head{grid-template-columns:1fr}
   .case2-visual{border-left:none;border-top:1px solid var(--border)}
   .hud-stats{grid-template-columns:1fr 1fr}
@@ -1106,21 +856,8 @@ footer.foot2 .foot-note a:hover{border-color:var(--footer-fg)}
   .frame-links{display:none}
   .frame-nav{justify-content:space-between}
   .hero-tag{max-width:170px}
-  .hero-color-toggle{font-size:9px;padding:7px 11px;top:18px;bottom:auto;right:20px}
-  .frame-body{padding-top:44px;padding-bottom:44px}
-  /* mode-switcher dock moves to bottom-right on mobile so it doesn't sit
-     on top of the pinned work-tabs bar, which occupies the top-right
-     corner while scrolling through the Work section. */
-  .theme-toggle{top:auto;bottom:14px;right:16px}
-  .minimal-toggle{top:auto;bottom:14px;right:128px}
-  .palette-switch{top:auto;bottom:14px;right:72px}
-  .palette-menu{top:auto;bottom:56px}
-  /* the mobile hero Background/Foreground are exported as one pre-composed,
-     identically-sized pair: the same cover-fit/position on both, and no
-     independent drift transform on either (see the gated-off parallax JS
-     below), is what keeps them registered instead of sliding apart. */
-  .hv-fg{position:absolute;inset:0;left:0;bottom:0;top:0;height:100%;width:100%;max-width:100%;
-    transform:none;object-fit:cover;object-position:center 32%}
+  .hero-color-toggle{font-size:9px;padding:7px 11px;bottom:18px;right:20px}
+  .frame-body{padding:52px 0}
 }
 @media(max-width:560px){
   .wrap{padding:0 20px}
@@ -1128,14 +865,13 @@ footer.foot2 .foot-note a:hover{border-color:var(--footer-fg)}
   .hud .cell{border-right:none}
   .hud-stats{grid-template-columns:1fr}
   .hud-stats .s{border-right:none;border-bottom:1px solid var(--border)}
-  .tile-grid{grid-template-columns:1fr;grid-auto-rows:260px}
+  .tile-grid{grid-template-columns:1fr}
   .tile2.wide{grid-column:span 1}
   footer.foot2 .wordmark .wm-line{font-size:clamp(52px,20vw,120px)}
   .hero-tag{top:18px;left:20px;font-size:9.5px}
   .hl-row{gap:10px}
   .hero-headline{padding:0 18px 24px}
-  .frame-body{padding-top:32px;padding-bottom:32px}
-  .card2{padding:22px}
+  .frame-body{padding:40px 0}
   .about2-copy{padding:30px 22px}
   .spec-ticks{width:20px}
 }
@@ -1143,29 +879,6 @@ footer.foot2 .foot-note a:hover{border-color:var(--footer-fg)}
   *{animation:none!important;transition:none!important}
   .reveal{opacity:1;transform:none}
   .hl-line span{transform:none!important}
-}
-
-/* ============================================================
-   CARD LAYOUT SKIN: same page, same content, same chrome and JS as
-   index.html, just restyled so each section reads as its own separated,
-   bordered card instead of a seamless edge-to-edge strip, card_inspo.html-
-   inspired. This is the only block that differs from index.html. Sections
-   alternate two background tints so neighbouring cards read as distinct
-   objects even before you notice the border/shadow/gap. ============ */
-body{background:var(--bg-2)}
-main{display:flex;flex-direction:column;gap:28px;padding:28px clamp(16px,3vw,40px) 64px;
-  max-width:1400px;margin:0 auto;box-sizing:border-box}
-.frame{border:1px solid var(--border-2);border-radius:20px;overflow:hidden;
-  box-shadow:0 24px 70px rgba(0,0,0,.28);border-bottom:1px solid var(--border-2)}
-#hero,#work,#creative,#contact{background:var(--panel-a)}
-#systems,#tools,#about{background:var(--panel-b)}
-.hero-panel{border-radius:20px 20px 0 0;min-height:80vh}
-footer.foot2{border-radius:0 0 20px 20px}
-@media(max-width:860px){
-  main{padding:18px 14px 44px;gap:18px}
-  .frame{border-radius:14px}
-  .hero-panel{border-radius:14px 14px 0 0;min-height:72vh}
-  footer.foot2{border-radius:0 0 14px 14px}
 }
 </style>
 </head>
@@ -1215,7 +928,6 @@ footer.foot2{border-radius:0 0 20px 20px}
     <button class="palette-opt" data-palette="sepia" role="menuitemradio"><span class="sw sw-sepia"></span>Sepia</button>
     <button class="palette-opt" data-palette="glass" role="menuitemradio"><span class="sw sw-glass"></span>Glass</button>
     <button class="palette-opt" data-palette="spiderverse" role="menuitemradio"><span class="sw sw-spiderverse"></span>Spider-Verse</button>
-    <button class="palette-opt" data-palette="spiderverse2" role="menuitemradio"><span class="sw sw-spiderverse2"></span>Spider-Verse 2</button>
   </div>
 </div>
 
@@ -1239,32 +951,21 @@ footer.foot2{border-radius:0 0 20px 20px}
   </div>
 </div>
 
-<!-- NAV DRAWER: full-screen scrim on mobile, half-width side panel on desktop -->
+<!-- FULLSCREEN NAV DRAWER -->
 <div class="nav-drawer" id="navDrawer">
   <button class="drawer-close" id="drawerClose" type="button" aria-label="Close menu">×</button>
-  <div class="drawer-panel">
-    <nav class="drawer-links">
-      <a href="#work"><span class="dnum">01</span>Work</a>
-      <a href="#work" class="sub"><span class="dnum">—</span>GoodFlip</a>
-      <a href="#streak" class="sub"><span class="dnum">—</span>Streak AI</a>
-      <a href="#quicko" class="sub"><span class="dnum">—</span>Quicko</a>
-      <a href="#systems"><span class="dnum">02</span>How I Work</a>
-      <a href="#tools"><span class="dnum">03</span>Tools</a>
-      <a href="work/tools.html" class="sub"><span class="dnum">—</span>ICP Generator</a>
-      <a href="work/marketing-skill.html" class="sub"><span class="dnum">—</span>Ladder &amp; Leap</a>
-      <a href="work/playlist-sync.html" class="sub"><span class="dnum">—</span>Playlist Sync</a>
-      <a href="#creative"><span class="dnum">04</span>Creative</a>
-      <a href="hobbies/art.html" class="sub"><span class="dnum">—</span>Art</a>
-      <a href="hobbies/cooking.html" class="sub"><span class="dnum">—</span>Cooking</a>
-      <a href="hobbies/playlists.html" class="sub"><span class="dnum">—</span>Playlists</a>
-      <a href="#about"><span class="dnum">05</span>About</a>
-      <a href="#skills"><span class="dnum">06</span>Skills</a>
-      <a href="#contact"><span class="dnum">07</span>Contact</a>
-    </nav>
-    <div class="drawer-foot">
-      <a href="Yash%20Gohel%20Brand%20Manager%20Resume.pdf" download>Download résumé ↓</a>
-      <a href="mailto:yashlehog@gmail.com">yashlehog@gmail.com</a>
-    </div>
+  <nav class="drawer-links">
+    <a href="#work"><span class="dnum">01</span>Work</a>
+    <a href="#systems"><span class="dnum">02</span>How I Work</a>
+    <a href="#tools"><span class="dnum">03</span>Tools</a>
+    <a href="#about"><span class="dnum">04</span>About</a>
+    <a href="#contact"><span class="dnum">05</span>Contact</a>
+  </nav>
+  <div class="drawer-foot">
+    <a href="Full%20Funnel%20Marketer.pdf" download>Download résumé ↓</a>
+    <a href="mailto:yashlehog@gmail.com">yashlehog@gmail.com</a>
+    <a href="alt.html">View other design →</a>
+    <a href="index.html">View card layout →</a>
   </div>
 </div>
 
@@ -1279,9 +980,7 @@ footer.foot2{border-radius:0 0 20px 20px}
         <a href="#work" class="on">Work</a>
         <a href="#systems">How I Work</a>
         <a href="#tools">Tools</a>
-        <a href="#creative">Creative</a>
         <a href="#about">About</a>
-        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
       <span class="frame-idx"></span>
@@ -1299,70 +998,54 @@ footer.foot2{border-radius:0 0 20px 20px}
       <button class="hero-color-toggle" id="heroColorToggle" type="button" aria-pressed="true">View in black &amp; white</button>
 
       <div class="hero-headline">
-        <div class="hl-row"><span class="hl-code">01B</span><span class="hl-line"><span>Brand.</span></span></div>
-        <div class="hl-row"><span class="hl-code">02C</span><span class="hl-line"><span>Creative.</span></span></div>
-        <div class="hl-row"><span class="hl-code">03G</span><span class="hl-line"><span>Growth.</span></span></div>
+        <div class="hl-row"><span class="hl-code">01T</span><span class="hl-line"><span>Think.</span></span></div>
+        <div class="hl-row"><span class="hl-code">02B</span><span class="hl-line"><span>Build.</span></span></div>
+        <div class="hl-row"><span class="hl-code">03S</span><span class="hl-line"><span>Scale.</span></span></div>
       </div>
     </div>
 
     <div class="hero-sub-wrap">
-      <p class="hero-sub reveal">Creative strategy, brand and growth, connected from the first idea to the final conversion. I sit at the intersection of brand, creative, growth and execution: business problem, strategy, idea, creative, production, acquisition, conversion, retention, measurement. <b>6+ years across healthtech, fintech and DTC.</b> Currently building GoodFlip at Zydus Wellness.</p>
+      <p class="hero-sub reveal">From the first creative brief to the checkout button: I direct the shoot, write the copy, build the store, and read the analytics. <b>6+ years across healthtech, fintech, and DTC.</b> Currently building brand, creative &amp; growth at GoodFlip (Zydus Wellness).</p>
       <div class="hero-btns reveal d1">
-        <a href="#work" class="btn primary">View my work <span class="arw">↗</span></a>
-        <a href="Yash%20Gohel%20Brand%20Manager%20Resume.pdf" download class="btn ghost">Download résumé <span class="arw">↓</span></a>
+        <a href="#work" class="btn primary">View Work <span class="arw">↗</span></a>
+        <a href="Full%20Funnel%20Marketer.pdf" download class="btn ghost">Download Résumé <span class="arw">↓</span></a>
         <a href="#contact" class="btn ghost">Get in touch</a>
       </div>
       <div class="hud reveal d2" style="margin-top:56px">
-        <div class="cell"><span class="tag">A</span><div class="num" data-count="3" data-suffix="">0</div><div class="lbl">Platforms launched from zero, GoodFlip &middot; Shopify, Amazon &amp; Flipkart</div></div>
-        <div class="cell"><span class="tag">B</span><div class="num" data-count="1200" data-suffix="+">0</div><div class="lbl">Qualified leads / month, across diabetes, obesity, fatty liver &amp; PCOS campaigns</div></div>
-        <div class="cell"><span class="tag">C</span><div class="num" data-count="50" data-suffix="K+">0</div><div class="lbl">Newsletter subscribers grown from scratch, Quicko</div></div>
-        <div class="cell"><span class="tag">D</span><div class="num" data-count="6" data-suffix="+">0</div><div class="lbl">Years across healthtech, fintech and DTC</div></div>
+        <div class="cell"><span class="tag">A</span><div class="num" data-count="1" data-suffix="">0</div><div class="lbl">DTC brand's entire e-commerce built from zero</div></div>
+        <div class="cell"><span class="tag">B</span><div class="num" data-count="1200" data-suffix="+">0</div><div class="lbl">Qualified leads generated / month</div></div>
+        <div class="cell"><span class="tag">C</span><div class="num" data-count="50" data-suffix="K+">0</div><div class="lbl">Newsletter subscribers grown from scratch</div></div>
+        <div class="cell"><span class="tag">D</span><div class="num" data-count="6" data-suffix="+">0</div><div class="lbl">Years across 3 industries</div></div>
       </div>
     </div>
   </section>
 
-  <!-- WHAT I ACTUALLY DO: nobody hires a marketer because they know Photoshop,
-       so this leads with capability rather than a tool-name ticker (the tools
-       themselves are a smaller line further down, in the About section). -->
-  <div class="wrap" style="padding:40px 34px 0">
-    <div class="f-eyebrow reveal">What I actually do</div>
+  <!-- MARQUEE (reveal lives on the wrapper; GSAP's skewY targets .marquee itself,
+       kept on separate elements so the two transform sources never fight) -->
+  <div class="marquee-reveal reveal">
+  <div class="marquee">
+    <div class="track">
+      <span>Shopify <b>build</b></span><span class="dot">◆</span>
+      <span>Performance <b>creative</b></span><span class="dot">◆</span>
+      <span>Lifecycle <b>CRM</b></span><span class="dot">◆</span>
+      <span>Brand <b>design</b></span><span class="dot">◆</span>
+      <span>Video <b>direction</b></span><span class="dot">◆</span>
+      <span>AI <b>systems</b></span><span class="dot">◆</span>
+      <span>Shopify <b>build</b></span><span class="dot">◆</span>
+      <span>Performance <b>creative</b></span><span class="dot">◆</span>
+      <span>Lifecycle <b>CRM</b></span><span class="dot">◆</span>
+      <span>Brand <b>design</b></span><span class="dot">◆</span>
+      <span>Video <b>direction</b></span><span class="dot">◆</span>
+      <span>AI <b>systems</b></span><span class="dot">◆</span>
+    </div>
   </div>
-  <div class="wrap">
-    <img class="wiad-photo reveal" src="homepage%20images%20and%20videos/wiad.jpeg" alt="A red folding chair reading &lsquo;you&rsquo;re gonna want to sit down for this&rsquo;" loading="lazy" />
-  </div>
-  <div class="grid-3">
-    <div class="card2 reveal">
-      <div class="k">01 &middot; Creative strategy</div>
-      <p class="hook">Positioning &middot; campaign platforms &middot; content strategy &middot; creative direction</p>
-    </div>
-    <div class="card2 reveal d1">
-      <div class="k">02 &middot; Growth</div>
-      <p class="hook">Performance creative &middot; landing pages &middot; CRO &middot; acquisition</p>
-    </div>
-    <div class="card2 reveal">
-      <div class="k">03 &middot; Brand</div>
-      <p class="hook">Visual systems &middot; e-commerce &middot; product storytelling &middot; launches</p>
-    </div>
-    <div class="card2 reveal d1">
-      <div class="k">04 &middot; Lifecycle</div>
-      <p class="hook">CRM &middot; user journeys &middot; retention &middot; conversion</p>
-    </div>
-    <div class="card2 reveal">
-      <div class="k">05 &middot; Production</div>
-      <p class="hook">Shoot direction &middot; copywriting &middot; video &middot; design</p>
-    </div>
-    <div class="card2 reveal d1">
-      <div class="k">06 &middot; Systems</div>
-      <p class="hook">AI workflows &middot; automation &middot; rapid prototyping</p>
-    </div>
   </div>
 
   <!-- MANIFESTO -->
   <div class="manifesto-wrap" id="manifestoWrap">
     <div class="manifesto-sticky wrap">
-      <img class="manifesto-photo reveal" src="homepage%20images%20and%20videos/above%20most%20marketers%20own%20a%20channel.%20I%20like%20owning%20the%20problem.jpeg" alt="" loading="lazy" />
-      <p class="manifesto" id="manifesto">Most marketers own a channel. I like owning the problem.</p>
-      <div class="manifesto-cap">A campaign doesn't stop at the creative. I want to know what happens after the click: what converts, what doesn't, where users drop off, and what changes next.</div>
+      <p class="manifesto" id="manifesto">I build the whole funnel. The brief. The shoot. The copy. The store. The checkout button. And the analytics that prove it worked, all owned end to end.</p>
+      <div class="manifesto-cap">Six years. Three industries. One person who owns the whole thing.</div>
     </div>
   </div>
 
@@ -1374,42 +1057,44 @@ footer.foot2{border-radius:0 0 20px 20px}
         <a href="#work">Work</a>
         <a href="#systems" class="on">How I Work</a>
         <a href="#tools">Tools</a>
-        <a href="#creative">Creative</a>
         <a href="#about">About</a>
-        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
       <span class="frame-idx"></span>
     </div>
     <div class="frame-body wrap">
       <div class="f-eyebrow reveal">How I work</div>
-      <h2 class="f-title reveal">Strategy first. Systems second.<br><span class="dim">AI where it actually helps.</span></h2>
-      <p class="f-lead reveal d1">I use AI to compress the repetitive parts of marketing: research, segmentation, ideation, production and analysis, so more time goes into the parts that require judgement.</p>
+      <h2 class="f-title reveal">I build the machine,<br>then <span class="dim">teach AI to run it.</span></h2>
+      <p class="f-lead reveal d1">I use AI as an operating system for marketing: turning strategy, ICPs, and content into repeatable workflows that move at 10× speed. The proof isn't a logo wall. It's the output.</p>
+
+      <div class="chips reveal d2" style="margin-top:36px">
+        <div class="chip2"><b>~2 days → ~2 hrs</b> to build a full ICP + content system</div>
+        <div class="chip2"><b>12+</b> repeatable workflows built</div>
+        <div class="chip2"><b>Vibe-coded</b> &amp; shipped live tools</div>
+      </div>
     </div>
-    <div class="grid-3">
+    <div class="grid-2">
       <div class="card2 reveal">
-        <div class="k">01 &middot; Start with the problem</div>
-        <p class="hook">I don't start with &lsquo;What should we post?&rsquo; I start with: what are we trying to change?</p>
-      </div>
-      <div class="card2 reveal d1">
-        <div class="k">02 &middot; Make the strategy visible</div>
-        <p class="hook">A strategy isn't useful if the creative team can't turn it into something. I translate positioning into campaigns, content systems and executable briefs.</p>
-      </div>
-      <div class="card2 reveal">
-        <div class="k">03 &middot; Ship</div>
-        <p class="hook">I'd rather test a strong idea this week than debate a perfect one for three weeks.</p>
-      </div>
-      <div class="card2 reveal d1">
-        <div class="k">04 &middot; Follow the data</div>
-        <p class="hook">Clicks tell me what attracted attention. Conversions tell me whether the idea actually mattered.</p>
-      </div>
-      <div class="card2 reveal">
-        <div class="k">05 &middot; Automate the boring</div>
-        <p class="hook">If AI can do the repetitive 80%, I'll let it. The remaining 20% is where judgement lives.</p>
+        <div class="k">What I actually do with it</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:14px;margin-top:8px">
+          <li style="position:relative;padding-left:20px;color:var(--text);font-size:14.5px;line-height:1.55">
+            <span style="position:absolute;left:0;color:var(--muted-2);font-family:var(--mono)">→</span>
+            Build ICPs and audience segments from scratch as a repeatable prompt system, not one-off chats.</li>
+          <li style="position:relative;padding-left:20px;color:var(--text);font-size:14.5px;line-height:1.55">
+            <span style="position:absolute;left:0;color:var(--muted-2);font-family:var(--mono)">→</span>
+            Turn strategy into content buckets and a full editorial pipeline in hours.</li>
+          <li style="position:relative;padding-left:20px;color:var(--text);font-size:14.5px;line-height:1.55">
+            <span style="position:absolute;left:0;color:var(--muted-2);font-family:var(--mono)">→</span>
+            Generate and pressure-test go-to-market strategies before committing budget.</li>
+          <li style="position:relative;padding-left:20px;color:var(--text);font-size:14.5px;line-height:1.55">
+            <span style="position:absolute;left:0;color:var(--muted-2);font-family:var(--mono)">→</span>
+            Vibe-code small tools and pages to ship ideas without waiting on engineering.</li>
+        </ul>
       </div>
       <div class="card2 reveal d1">
         <div class="k">Proof, not description</div>
-        <p class="hook">Strategy &rarr; design &rarr; code &rarr; iteration &rarr; shipped, using the same process described above.</p>
+        <h3 style="font-size:24px">Built &amp; shipped in ~4 days</h3>
+        <p class="hook">This site itself was built and shipped with AI-assisted workflows in ~4 days: a quiet flex that proves the point without saying it.</p>
         <a href="#tools" class="link2">Jump to the live tools <span class="arw">→</span></a>
       </div>
     </div>
@@ -1423,351 +1108,217 @@ footer.foot2{border-radius:0 0 20px 20px}
         <a href="#work" class="on">Work</a>
         <a href="#systems">How I Work</a>
         <a href="#tools">Tools</a>
-        <a href="#creative">Creative</a>
         <a href="#about">About</a>
-        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
       <span class="frame-idx"></span>
     </div>
-    <div class="frame-body wrap" style="padding-bottom:0">
-      <div class="f-eyebrow reveal">Selected work</div>
-      <h2 class="f-title reveal">Three brands. <span class="dim">Three different problems.</span></h2>
+    <div class="frame-body wrap">
+      <div class="f-head">
+        <div>
+          <div class="f-eyebrow reveal">Flagship &middot; TatvaCare / Zydus Wellness</div>
+          <h2 class="f-title reveal">GoodFlip</h2>
+        </div>
+        <p class="f-lead reveal d1">The centerpiece. I owned this end-to-end: store architecture, content, creative, and conversion. Everything else here is a short fold underneath it.</p>
+      </div>
     </div>
 
-    <!-- case-study switcher: GoodFlip / Streak / Quicko used to be three
-         stacked full sections; tabs keep every word of that content but
-         only render the active one, cutting a huge chunk of scroll. -->
-    <div class="work-tabs" role="tablist" aria-label="Case studies">
-      <button class="work-tab on" type="button" data-tab="goodflip" role="tab" aria-selected="true">
-        <span class="wt-k">01</span><span class="wt-name">GoodFlip</span><span class="wt-sub">Healthtech &middot; Current Role</span>
-      </button>
-      <button class="work-tab" type="button" data-tab="streak" role="tab" aria-selected="false">
-        <span class="wt-k">02</span><span class="wt-name">Streak AI</span><span class="wt-sub">Fintech &middot; Archived</span>
-      </button>
-      <button class="work-tab" type="button" data-tab="quicko" role="tab" aria-selected="false">
-        <span class="wt-k">03</span><span class="wt-name">Quicko</span><span class="wt-sub">Fintech &middot; Tax Filing Platform</span>
-      </button>
-    </div>
-
-    <div class="work-panel on" id="work-goodflip" data-panel="goodflip" role="tabpanel">
-      <div class="frame-body wrap">
-        <div class="f-head">
-          <div>
-            <div class="f-eyebrow reveal">Healthtech &middot; Current Role</div>
-            <h2 class="f-title reveal">GoodFlip</h2>
-          </div>
-          <p class="f-lead reveal d1">Turning a complex healthcare proposition into a consumer brand. The centrepiece: I owned this end-to-end, store architecture, content, creative and conversion. Everything else here is a short fold underneath it.</p>
+    <!-- deep case study -->
+    <div class="case2 reveal">
+      <div class="case2-head">
+        <div class="case2-copy">
+          <div class="k">3A · Deep case study</div>
+          <h3>E-commerce, built from zero.</h3>
+          <p class="hook">Architected and launched an entire DTC health brand's commerce ecosystem: Shopify, Amazon, and Flipkart, plus the content, creative, and conversion behind it.</p>
         </div>
-      </div>
-
-      <!-- deep case study -->
-      <div class="case2 reveal">
-        <div class="case2-head">
-          <div class="case2-copy">
-            <div class="k">The problem</div>
-            <h3>E-commerce, built from zero.</h3>
-            <p class="hook">GoodFlip wasn't selling a supplement. It was selling doctors, diagnostics, devices, coaching and nutrition, and making all of it simple enough to act on in one sitting.</p>
-          </div>
-          <div class="case2-visual">
-            <video class="case2-video" muted loop playsinline preload="none" aria-label="GoodFlip Shopify storefront walkthrough" data-src="homepage%20images%20and%20videos/goodflip%20shopify%20video.mov"></video>
-          </div>
-        </div>
-        <div class="hud-stats">
-          <div class="s"><span class="tag">Platforms</span><div class="n">3</div><div class="l">Shopify, Amazon and Flipkart, all from zero</div></div>
-          <div class="s"><span class="tag">PDPs</span><div class="n">10+</div><div class="l">Copy and layout, built as one page</div></div>
-          <div class="s"><span class="tag">AOV lift</span><div class="n">~15%</div><div class="l">From upsell and cross-sell in the cart (Q1)</div></div>
-          <div class="s"><span class="tag">Traffic growth</span><div class="n">~28%</div><div class="l">Organic traffic, first three months</div></div>
-        </div>
-        <div class="case2-detail">
-          <div class="col">
-            <h5>My role</h5>
-            <p>Most marketers own a channel. I like owning the problem. GoodFlip started with no storefront; I took it from an idea to a live, multi-platform DTC business.</p>
-            <p><b style="color:var(--text)">Brand strategy &middot; creative direction &middot; performance marketing &middot; e-commerce &middot; CRM &middot; content.</b></p>
-            <h5 style="margin-top:24px">The approach</h5>
-            <ul>
-              <li>01 &middot; Turn a complicated proposition into simple consumer narratives.</li>
-              <li>02 &middot; Build creative systems rather than one-off ads.</li>
-              <li>03 &middot; Create landing pages around specific user problems.</li>
-              <li>04 &middot; Connect acquisition to lifecycle journeys.</li>
-              <li>05 &middot; Measure what happens after the click.</li>
-            </ul>
-          </div>
-          <div class="col">
-            <h5>The execution</h5>
-            <ul>
-              <li>Built the full Shopify store: architecture, theme, navigation taxonomy, collection structure, checkout flow.</li>
-              <li>Wrote and designed 10+ PDPs where copy and visuals were built together to guide the buyer.</li>
-              <li>Set up and optimised Amazon (A+ content, brand store) and Flipkart listings.</li>
-              <li>Integrated upsell/cross-sell into the cart to lift AOV.</li>
-              <li>Built campaign landing pages matched to paid-ad intent, cutting CPA ~18%.</li>
-              <li>Cast myself in a large share of GoodFlip's performance ads, on-camera talent alongside the creative direction.</li>
-              <li>Coordinated educational video content with partner doctors to build medical credibility.</li>
-              <li>Built and ran a UGC pipeline: sourcing and enabling customer-generated content for paid and organic use.</li>
-            </ul>
-            <h5 style="margin-top:24px">The result</h5>
-            <p>A live, multi-channel DTC store generating revenue across three platforms, with measurable lifts in AOV, organic traffic and campaign efficiency.</p>
-            <h5 style="margin-top:24px">What I learned</h5>
-            <p>The hardest part wasn't the store. It was making a genuinely complicated health proposition feel simple enough for someone to act on in one sitting.</p>
-          </div>
-        </div>
-        <div class="case2-foot">
-          <div class="tools">Shopify · Amazon Seller Central · Flipkart · Figma · Photoshop · Illustrator</div>
-          <div style="display:flex;gap:24px;flex-wrap:wrap">
-            <a href="work/goodflip.html" class="btn primary">Full case study <span class="arw">→</span></a>
-          </div>
-        </div>
-      </div>
-
-      <!-- short folds -->
-      <div class="grid-2">
-        <div class="card2 reveal">
-          <div class="k">3B · Performance creative</div>
-          <h3>Ads built to convert, not to win awards.</h3>
-          <p class="hook">Static and video ad creative across every GoodFlip therapy area: CGM, BCA, supplements, and more. A large share of the video ads were shot with me as the on-camera talent.</p>
-          <div class="chips">
-            <span class="chip2"><b>4.2%</b> avg CTR (vs 4% benchmark)</span>
-            <span class="chip2"><b>1,200+</b> qualified leads / mo</span>
-            <span class="chip2"><b>4+</b> campaigns / month</span>
-          </div>
-          <div class="asset-carousel reveal" data-carousel aria-label="Performance ad creative">
-            <div class="ac-track">
-              <div class="ac-slide"><img src="goodflip%20assets/3B%20Performance%20creative/1.png" alt="GoodFlip performance ad creative 1" loading="lazy"></div>
-              <div class="ac-slide"><img src="goodflip%20assets/3B%20Performance%20creative/2.png" alt="GoodFlip performance ad creative 2" loading="lazy"></div>
-              <div class="ac-slide"><img src="goodflip%20assets/3B%20Performance%20creative/3.png" alt="GoodFlip performance ad creative 3" loading="lazy"></div>
-              <div class="ac-slide"><img src="goodflip%20assets/3B%20Performance%20creative/4.png" alt="GoodFlip performance ad creative 4" loading="lazy"></div>
-              <div class="ac-slide"><img src="goodflip%20assets/3B%20Performance%20creative/5.png" alt="GoodFlip performance ad creative 5" loading="lazy"></div>
-              <div class="ac-slide"><img src="goodflip%20assets/3B%20Performance%20creative/6.png" alt="GoodFlip performance ad creative 6" loading="lazy"></div>
-              <div class="ac-slide"><img src="goodflip%20assets/3B%20Performance%20creative/7.png" alt="GoodFlip performance ad creative 7" loading="lazy"></div>
+        <div class="case2-visual">
+          <div class="browser browser2">
+            <div class="bar"><i></i><i></i><i></i></div>
+            <div class="body">
+              <div class="u">shop.goodflip.in</div>
+              <div class="hl">Health, delivered direct.</div>
+              <div class="sm">Multi-platform DTC storefront: architecture, PDPs, and checkout built from the ground up.</div>
+              <div class="prc"><span>Shopify</span><span>Amazon</span><span>Flipkart</span></div>
             </div>
-            <button class="ac-nav ac-prev" type="button" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 5l-7 7 7 7"/></svg></button>
-            <button class="ac-nav ac-next" type="button" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 5l7 7-7 7"/></svg></button>
           </div>
-        <div class="cap">Concept, copy, creative direction &mdash; and on-camera talent &mdash; across paid social.</div>
-          <div class="tools">Meta Ads · Photoshop · Illustrator · VEO / Firefly</div>
-        </div>
-        <div class="card2 reveal d1">
-          <div class="k">3C · Video ads by therapy area</div>
-          <h3>Script → storyboard → final cut.</h3>
-          <p class="hook">Scripted and produced video ads for CGM, BCA, supplements, and device lines.</p>
-          <div class="chips">
-            <span class="chip2"><b>20+</b> films produced</span>
-            <span class="chip2"><b>50+</b> short ads</span>
-            <span class="chip2">CGM · BCA · Supplements · Devices</span>
-          </div>
-          <div class="asset-carousel reveal" data-carousel aria-label="Video ads by therapy area">
-            <div class="ac-track">
-              <div class="ac-slide"><video src="goodflip%20assets/3C%20Video%20ads%20by%20therapy%20area/1.mp4" controls preload="metadata" playsinline></video></div>
-              <div class="ac-slide"><video src="goodflip%20assets/3C%20Video%20ads%20by%20therapy%20area/2.mp4" controls preload="metadata" playsinline></video></div>
-              <div class="ac-slide"><video src="goodflip%20assets/3C%20Video%20ads%20by%20therapy%20area/3.mp4" controls preload="metadata" playsinline></video></div>
-              <div class="ac-slide"><video src="goodflip%20assets/3C%20Video%20ads%20by%20therapy%20area/4.mp4" controls preload="metadata" playsinline></video></div>
-            </div>
-            <button class="ac-nav ac-prev" type="button" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 5l-7 7 7 7"/></svg></button>
-            <button class="ac-nav ac-next" type="button" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 5l7 7-7 7"/></svg></button>
-          </div>
-        <div class="cap">Where creative + performance overlap shows best.</div>
-          <div class="tools">Premiere · After Effects · VEO / Firefly</div>
-        </div>
-        <div class="card2 reveal">
-          <div class="k">3D · Brand design &amp; product launches</div>
-          <h3>From digital ad to doorstep.</h3>
-          <p class="hook">Built GoodFlip's visual language and launched its product lines: packaging, GTM creative, and product photography, all for a DTC brand sold online only.</p>
-          <div class="chips">
-            <span class="chip2"><b>8</b> SKUs launched</span>
-            <span class="chip2">Supplements · PCOS Care · BP Monitor · Devices</span>
-            <span class="chip2"><b>Now launching:</b> ARC Smart Ring</span>
-          </div>
-        <div class="cap">Branding, packaging design briefs, and go-to-market creative. ARC Smart Ring is <b style="color:var(--text)">currently building</b>, live, real work.</div>
-        </div>
-        <div class="card2 reveal d1">
-          <div class="k">3E · Lifecycle marketing (CLM / CRM)</div>
-          <h3>Acquisition → re-engagement.</h3>
-          <p class="hook">Designed multi-stage lifecycle journeys across WhatsApp, push, and in-app.</p>
-          <div class="chips">
-            <span class="chip2"><b>8+</b> CRM journeys built</span>
-            <span class="chip2"><b>1.5% → 1.8%</b> conversion (+20% rel.)</span>
-            <span class="chip2">WhatsApp · Push · In-app</span>
-          </div>
-        <div class="cap">Built in MoEngage. Acquisition, activation, retention, re-engagement.</div>
-          <div class="tools">MoEngage · WhatsApp API</div>
-        </div>
-        <div class="card2 reveal" style="grid-column:1 / -1">
-          <div class="k">3F · App feature launches via lifecycle</div>
-          <h3>Turning releases into activation: Kickstarter Program &amp; Flipcoins.</h3>
-          <p class="hook">Drove adoption of new GoodFlip app features through CLM/CRM campaigns: feature launch strategy plus the lifecycle campaigns that made them stick.</p>
-          <div class="chips">
-            <span class="chip2"><b>500+</b> Kickstarter activation</span>
-            <span class="chip2"><b>38%</b> from Flipcoins engagement</span>
-            <span class="chip2"><b>10+</b> feature launches supported</span>
-          </div>
-        <div class="cap">Feature launch strategy + lifecycle campaigns.</div>
         </div>
       </div>
-    </div>
-
-    <div class="work-panel" id="streak" data-panel="streak" role="tabpanel">
-      <div class="frame-body wrap">
-        <div class="f-head">
-          <div>
-            <div class="f-eyebrow reveal">Fintech &middot; Archived</div>
-            <h2 class="f-title reveal">Streak AI <span class="dim">Technologies</span></h2>
-          </div>
-          <p class="f-lead reveal d1">A trading platform used by lakhs, and its language scared off the very beginners it needed. I wrote the school that fixed it: an entire trading-education Help Centre from scratch, plus the full in-product UX copy.</p>
-        </div>
-        <div class="notice reveal d2" style="margin-top:10px"><b>A note on this case study:</b> Streak&rsquo;s original pages were retired after a 2023 restructuring. Shown here via description and archived detail rather than a live link.</div>
-      </div>
-      <div class="hud reveal">
-        <div class="cell"><span class="tag">Help Centre</span><div class="num">100+</div><div class="lbl">The whole curriculum, built from zero</div></div>
-        <div class="cell"><span class="tag">Conversion</span><div class="num">+37%</div><div class="lbl">Lift in first-timer conversion</div></div>
-        <div class="cell"><span class="tag">Research</span><div class="num">150+</div><div class="lbl">Interviews behind the words (1,000+ responses)</div></div>
-        <div class="cell"><span class="tag">Growth</span><div class="num">5,000+</div><div class="lbl">New users a month, via growth partnerships</div></div>
+      <div class="hud-stats">
+        <div class="s"><span class="tag">Platforms</span><div class="n">3</div><div class="l">Launched: Shopify · Amazon · Flipkart</div></div>
+        <div class="s"><span class="tag">PDPs</span><div class="n">10+</div><div class="l">Product pages written &amp; designed</div></div>
+        <div class="s"><span class="tag">AOV lift</span><div class="n">~15%</div><div class="l">Via upsell / cross-sell (Q1)</div></div>
+        <div class="s"><span class="tag">Traffic growth</span><div class="n">~28%</div><div class="l">Organic page-traffic in 3 months</div></div>
       </div>
       <div class="case2-detail">
         <div class="col">
-          <h5>The problem</h5>
-          <p>The platform served lakhs of first-time retail traders who found the language intimidating: there was no structured education layer and no consistent product voice.</p>
-          <h5 style="margin-top:24px">My role</h5>
-          <p><b style="color:var(--text)">Content strategist.</b> Owned the Help Centre build and all in-product UX copy.</p>
+          <h5>Context &amp; role</h5>
+          <p>GoodFlip started with no storefront. I took it from an idea to a live, multi-platform DTC business.</p>
+          <p><b style="color:var(--text)">My role:</b> End-to-end owner, store architecture, content, creative, and conversion.</p>
+          <h5 style="margin-top:24px">Result</h5>
+          <p>A live, multi-channel DTC store generating revenue across three platforms, with measurable lifts in AOV, organic traffic, and CPA.</p>
         </div>
         <div class="col">
-          <h5>The execution</h5>
+          <h5>What I did</h5>
           <ul>
-            <li>Wrote the trading-education Help Centre: 100+ articles &amp; videos, from nothing.</li>
-            <li>Authored the full UI/UX copy: onboarding, in-product flows, and microcopy, turning jargon into clarity.</li>
-            <li>Conducted 150+ user interviews and synthesised 1,000+ responses.</li>
-            <li>Led growth partnerships &amp; co-marketing bringing 5,000+ new users/month.</li>
+            <li>Built the full Shopify store: architecture, theme, navigation taxonomy, collection structure, checkout flow.</li>
+            <li>Wrote and designed 10+ PDPs where copy and visuals were built together to guide the buyer.</li>
+            <li>Set up and optimized Amazon (A+ content, brand store) and Flipkart listings.</li>
+            <li>Integrated upsell/cross-sell into the cart to lift AOV.</li>
+            <li>Built campaign landing pages matched to paid-ad intent, cutting CPA ~18%.</li>
           </ul>
-          <h5 style="margin-top:24px">What I learned</h5>
-          <p>Financial confidence is a language problem before it&rsquo;s a product problem. Most first-time traders don&rsquo;t drop off because the platform is hard to use, they drop off because the terminology makes them feel like they don&rsquo;t belong yet.</p>
         </div>
       </div>
-      <div class="grid-2">
-        <div class="card2 reveal">
-          <div class="k">4A · Fintech help centre, built from scratch</div>
-          <h3>Trading education for lakhs of first-time traders.</h3>
-          <p class="hook">Wrote an entire trading education Help Centre covering strategic trading, technical indicators, and strategies for retail traders.</p>
-          <div class="chips">
-            <span class="chip2"><b>100+</b> articles + videos</span>
-            <span class="chip2"><b>+37%</b> user conversion</span>
-            <span class="chip2">Built from zero</span>
-          </div>
-          <div class="img-ph reveal" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="1.5"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 16l-5.5-5.5a1.5 1.5 0 0 0-2 0L4 19"/></svg>
-          <span>Help-centre screenshot or Wayback capture</span>
-        </div>
-        <div class="cap">Turned complex financial concepts into confident, beginner-friendly language. Original pages retired after restructuring, archived captures shown.</div>
-        </div>
-        <div class="card2 reveal d1">
-          <div class="k">4B · Product UX copy</div>
-          <h3>Jargon into clarity, in-product.</h3>
-          <p class="hook">Authored the full UI/UX copy for a fintech trading platform used by lakhs of retail traders.</p>
-          <div class="chips">
-            <span class="chip2">Entire product copy</span>
-            <span class="chip2"><b>150+</b> user interviews</span>
-            <span class="chip2">Fintech · Trading</span>
-          </div>
-          <div class="img-ph reveal" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="1.5"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 16l-5.5-5.5a1.5 1.5 0 0 0-2 0L4 19"/></svg>
-          <span>App screenshots showing copy in context</span>
-        </div>
-        <div class="cap">Onboarding, in-product flows, microcopy.</div>
-        </div>
-        <div class="card2 reveal" style="grid-column:1 / -1">
-          <div class="k">4C · App version launch videos</div>
-          <h3>Explaining new releases so people actually watch.</h3>
-          <p class="hook">Directed and coordinated the launch videos for new Streak app versions &mdash; briefing the animation team on story and pacing &mdash; then carried each release out through social media, community webinars and direct user comms. I&rsquo;m not the animator; my part was the direction, the message and getting it in front of users.</p>
-          <div class="chips">
-            <span class="chip2">Direction &amp; coordination</span>
-            <span class="chip2">Social media · Webinars · Comms</span>
-            <span class="chip2">3 app-version launches</span>
-          </div>
-          <div class="yt-grid reveal">
-            <div class="yt-embed"><iframe src="https://www.youtube.com/embed/oiz6m4h_4kE" title="Streak app version launch film" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            <div class="yt-embed"><iframe src="https://www.youtube.com/embed/UyW0boq-xps" title="Streak app version launch film" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            <div class="yt-embed"><iframe src="https://www.youtube.com/embed/dLJRwI9S3J4" title="Streak app version launch film" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-          </div>
-          <div class="cap">Animation produced by Streak&rsquo;s design team, from a brief and story I directed; distribution across social, webinars and comms was mine end to end.</div>
+      <div class="case2-foot">
+        <div class="tools">Shopify · Amazon Seller Central · Flipkart · Figma · Photoshop · Illustrator</div>
+        <div style="display:flex;gap:24px;flex-wrap:wrap">
+          <a href="work/goodflip.html" class="link2">Full case study <span class="arw">→</span></a>
         </div>
       </div>
     </div>
 
-    <div class="work-panel" id="quicko" data-panel="quicko" role="tabpanel">
-      <div class="frame-body wrap">
-        <div class="f-eyebrow reveal">Fintech &middot; Tax Filing Platform</div>
-        <h2 class="f-title reveal">Quicko: <span class="dim">from zero to an audience.</span></h2>
-        <p class="f-lead reveal d1">An empty list, turned into fifty thousand people who open the email. Content, editorial design, UI/UX, illustration and motion, end to end, from the first send.</p>
-      </div>
-
-      <!-- SECTION 1: Newsletter (Quicko Bytes) -->
-      <div class="wrap" style="padding-top:8px">
-        <div class="f-eyebrow reveal" style="margin-bottom:0">Newsletter &middot; Quicko Bytes</div>
-        <h3 class="f-title reveal" style="font-size:clamp(24px,3vw,38px);margin-top:14px">50,000 subscribers, from an empty list.</h3>
-        <p class="f-lead reveal d1" style="margin-top:14px;font-size:14.5px;max-width:680px">Rebuilt Bytes from near-zero through editorial vision, strong subject lines, and persona-led content planning &mdash; the first send Quicko&rsquo;s audience actually opened, and kept opening.</p>
-        <div class="chips reveal" style="margin-top:20px">
-          <span class="chip2"><b>50K</b> subscribers from scratch</span>
-          <span class="chip2">Editorial voice &middot; subject lines &middot; persona-led planning</span>
+    <!-- short folds -->
+    <div class="grid-2">
+      <div class="card2 reveal">
+        <div class="k">3B · Performance creative</div>
+        <h3>Meta static + video ads.</h3>
+        <p class="hook">Static and video ad creative across every GoodFlip therapy area: CGM, BCA, supplements, and more.</p>
+        <div class="chips">
+          <span class="chip2"><b>4.2%</b> avg CTR (vs 4% benchmark)</span>
+          <span class="chip2"><b>1,200+</b> qualified leads / mo</span>
+          <span class="chip2"><b>4+</b> campaigns / month</span>
         </div>
+        <div class="cap">Concept, copy, and creative direction across paid social. <span class="ph">[Add link: ad gallery / Drive / Behance, your 6–8 best]</span></div>
+        <div class="tools">Meta Ads · Photoshop · Illustrator · VEO / Firefly</div>
       </div>
-      <div class="wrap" style="padding-top:28px">
-        <div class="quicko-bytes-banner reveal">
-          <img src="quicko%20assets/cover%20image.png" alt="Quicko Bytes newsletter cover identity" loading="lazy" />
-          <div class="quicko-bytes-foot">
-            <span>The Bytes cover identity &mdash; the visual system behind every send.</span>
-            <button class="btn primary" id="bytesStoryBtn" type="button">View full story <span class="arw">→</span></button>
-          </div>
+      <div class="card2 reveal d1">
+        <div class="k">3C · Video ads by therapy area</div>
+        <h3>Script → storyboard → final cut.</h3>
+        <p class="hook">Scripted and produced video ads for CGM, BCA, supplements, and device lines.</p>
+        <div class="chips">
+          <span class="chip2"><b class="ph">[#]</b> videos produced</span>
+          <span class="chip2"><b class="ph">[metric]</b> best-performer</span>
+          <span class="chip2">CGM · BCA · Supplements · Devices</span>
         </div>
+        <div class="cap">Where creative + performance overlap shows best. <span class="ph">[Embed 2–3 best videos or link a reel]</span></div>
+        <div class="tools">Premiere · After Effects · VEO / Firefly</div>
       </div>
-
-      <!-- SECTION 2: everything else built at Quicko -->
-      <div class="wrap" style="padding-top:56px">
-        <div class="f-eyebrow reveal" style="margin-bottom:0">Also built at Quicko</div>
-      </div>
-      <div class="hud c3 reveal" style="margin-top:24px">
-        <div class="cell"><span class="tag">Blog</span><div class="num">60+</div><div class="lbl">Articles, built from nothing</div></div>
-        <div class="cell"><span class="tag">First send</span><div class="num">1st</div><div class="lbl">Email out the door, and the whole system behind it</div></div>
-        <div class="cell"><span class="tag">Forum</span><div class="num">qna.tax</div><div class="lbl">Tax Q&amp;A community, seeded from zero</div></div>
-      </div>
-      <div class="wrap" style="padding-top:56px">
-        <div class="f-eyebrow reveal" style="margin-bottom:0">The online tax forum</div>
-        <h3 class="f-title reveal" style="font-size:clamp(24px,3vw,38px);margin-top:14px">qna.tax.</h3>
-        <p class="f-lead reveal d1" style="margin-top:14px;font-size:14.5px">Zerodha had proven the model with Trading QnA: a community where people ask real questions and get real answers from other users, not just support tickets. I helped bring that same pattern to tax, building <a href="https://qna.tax/" target="_blank" rel="noopener">qna.tax</a> as a community seeded from nothing to an active forum with organic, returning users.</p>
-      </div>
-      <div class="grid-2" style="margin-top:24px">
-        <div class="card2 reveal">
-          <div class="k">Community</div>
-          <h3>Built the forum from zero.</h3>
-          <p class="hook">Helped create and seed qna.tax as a self-sustaining Q&amp;A community, modelled on Zerodha&rsquo;s Trading QnA: real questions, real answers, indexed and searchable, not a closed support inbox.</p>
-          <div class="chips"><span class="chip2">Inspired by Zerodha Trading QnA</span></div>
-          <a href="https://qna.tax/" target="_blank" rel="noopener" class="link2">Visit qna.tax <span class="arw">&rarr;</span></a>
+      <div class="card2 reveal">
+        <div class="k">3D · Brand design &amp; product launches</div>
+        <h3>From digital ad to physical shelf.</h3>
+        <p class="hook">Built GoodFlip's visual language and launched its product lines: packaging, GTM creative, and product photography.</p>
+        <div class="chips">
+          <span class="chip2"><b class="ph">[#]</b> SKUs launched</span>
+          <span class="chip2">Supplements · PCOS Care · BP Monitor · Devices</span>
+          <span class="chip2"><b>Now launching:</b> ARC Smart Ring</span>
         </div>
-        <div class="card2 reveal d1">
-          <div class="k">Growth</div>
-          <h3>Grew it on search, not spend.</h3>
-          <p class="hook">Got the forum to organic traction: real taxpayers finding it through search, asking questions, and coming back, rather than a channel that only worked with paid traffic behind it.</p>
-          <div class="chips"><span class="chip2">Organic, search-led growth</span></div>
+        <div class="cap">Branding, packaging design briefs, and go-to-market creative. ARC Smart Ring is <b style="color:var(--text)">currently building</b>, live, real work. <span class="ph">[Add packaging shots / launch creatives]</span></div>
+      </div>
+      <div class="card2 reveal d1">
+        <div class="k">3E · Lifecycle marketing (CLM / CRM)</div>
+        <h3>Acquisition → re-engagement.</h3>
+        <p class="hook">Designed multi-stage lifecycle journeys across WhatsApp, push, and in-app.</p>
+        <div class="chips">
+          <span class="chip2"><b>8+</b> CRM journeys built</span>
+          <span class="chip2"><b>1.5% → 1.8%</b> conversion (+20% rel.)</span>
+          <span class="chip2">WhatsApp · Push · In-app</span>
         </div>
-        <div class="card2 reveal" style="grid-column:1/-1">
-          <div class="k">Social &amp; blog</div>
-          <h3>Social that fed the newsletter, not fought it.</h3>
-          <p class="hook">Launched the Quicko Blog with 60+ articles, plus original illustration, motion graphics and explainer video. Alongside Bytes and the blog, I also handled Quicko&rsquo;s social media: planning and publishing content that carried the same editorial voice onto Instagram and Twitter/X, feeding the newsletter&rsquo;s growth rather than competing with it for attention.</p>
-          <div class="chips">
-            <span class="chip2"><b>60+</b> blog articles</span>
-            <span class="chip2">Illustration &middot; Motion &middot; Explainer video</span>
-          </div>
+        <div class="cap">Built in MoEngage. Acquisition, activation, retention, re-engagement. <span class="ph">[Add journey-flow screenshots, blur sensitive]</span></div>
+        <div class="tools">MoEngage · WhatsApp API</div>
+      </div>
+      <div class="card2 reveal" style="grid-column:1 / -1">
+        <div class="k">3F · App feature launches via lifecycle</div>
+        <h3>Turning releases into activation: Kickstarter Program &amp; Flipcoins.</h3>
+        <p class="hook">Drove adoption of new GoodFlip app features through CLM/CRM campaigns: feature launch strategy plus the lifecycle campaigns that made them stick.</p>
+        <div class="chips">
+          <span class="chip2"><b class="ph">[%]</b> Kickstarter activation</span>
+          <span class="chip2"><b class="ph">[lift]</b> from Flipcoins engagement</span>
+          <span class="chip2"><b class="ph">[#]</b> feature launches supported</span>
         </div>
+        <div class="cap">Feature launch strategy + lifecycle campaigns. <span class="ph">[Add in-app screenshots or campaign creatives]</span></div>
       </div>
     </div>
   </section>
 
-  <!-- Quicko Bytes full-story PDF popup -->
-  <div class="bytes-popup" id="bytesPopup">
-    <div class="bytes-popup-inner">
-      <button class="bytes-popup-close" id="bytesPopupClose" type="button" aria-label="Close">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
-      </button>
-      <iframe id="bytesPopupFrame" data-src="quicko%20assets/full%20bytes%20pdf.pdf" title="Quicko Bytes full story"></iframe>
+  <!-- ============ STREAK ============ -->
+  <section class="frame" id="streak">
+    <div class="frame-nav">
+      <span class="fn-mark"><span class="fn-dot"></span><span class="fn-discover">Discover</span></span>
+      <nav class="frame-links">
+        <a href="#work">Work</a>
+        <a href="#systems">How I Work</a>
+        <a href="#tools">Tools</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <span class="frame-idx"></span>
     </div>
-  </div>
+    <div class="frame-body wrap">
+      <div class="f-head">
+        <div>
+          <div class="f-eyebrow reveal">Fintech, archived</div>
+          <h2 class="f-title reveal">Streak AI <span class="dim">Technologies</span></h2>
+        </div>
+        <p class="f-lead reveal d1">Archived work: the live pages were retired after a company restructuring. Presented via screenshots &amp; Wayback Machine captures. Totally normal, totally credible.<br><a href="work/streak.html" class="link2" style="margin-top:14px">Read the full case study <span class="arw">→</span></a></p>
+      </div>
+    </div>
+    <div class="grid-2">
+      <div class="card2 reveal">
+        <div class="k">4A · Fintech help centre, built from scratch</div>
+        <h3>Trading education for lakhs of first-time traders.</h3>
+        <p class="hook">Wrote an entire trading education Help Centre covering strategic trading, technical indicators, and strategies for retail traders.</p>
+        <div class="chips">
+          <span class="chip2"><b>100+</b> articles + videos</span>
+          <span class="chip2"><b>+37%</b> user conversion</span>
+          <span class="chip2">Built from zero</span>
+        </div>
+        <div class="cap">Turned complex financial concepts into confident, beginner-friendly language. Original pages retired after restructuring, archived captures shown. <span class="ph">[Add Wayback link / screenshots]</span></div>
+      </div>
+      <div class="card2 reveal d1">
+        <div class="k">4B · Product UX copy</div>
+        <h3>Jargon into clarity, in-product.</h3>
+        <p class="hook">Authored the full UI/UX copy for a fintech trading platform used by lakhs of retail traders.</p>
+        <div class="chips">
+          <span class="chip2">Entire product copy</span>
+          <span class="chip2"><b>150+</b> user interviews</span>
+          <span class="chip2">Fintech · Trading</span>
+        </div>
+        <div class="cap">Onboarding, in-product flows, microcopy. <span class="ph">[Add app screenshots showing copy in context]</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ QUICKO ============ -->
+  <section class="frame" id="quicko">
+    <div class="frame-nav">
+      <span class="fn-mark"><span class="fn-dot"></span><span class="fn-discover">Discover</span></span>
+      <nav class="frame-links">
+        <a href="#work">Work</a>
+        <a href="#systems">How I Work</a>
+        <a href="#tools">Tools</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <span class="frame-idx"></span>
+    </div>
+    <div class="frame-body wrap">
+      <div class="f-eyebrow reveal">Content brand</div>
+      <h2 class="f-title reveal">Quicko: <span class="dim">from zero to an audience.</span></h2>
+      <p class="f-lead reveal d1">Proof I can build a content brand from nothing: content, editorial design, UI/UX, illustration, motion, and the first email out the door.</p>
+    </div>
+    <div class="grid-2">
+      <div class="card2 reveal" style="grid-column:1 / -1">
+        <div class="k">5A · Bytes newsletter + Quicko blog</div>
+        <h3>The first send to a large, engaged audience.</h3>
+        <div class="chips">
+          <span class="chip2"><b>50K</b> subscribers from scratch</span>
+          <span class="chip2"><b>60+</b> blog articles</span>
+          <span class="chip2">Content · UI/UX · Illustration · Motion</span>
+        </div>
+        <div class="cap">End-to-end: content, editorial design, UI/UX, illustrations, motion graphics. <span class="ph">[Add newsletter samples / blog link]</span></div>
+        <a href="work/quicko.html" class="link2">Read the full case study <span class="arw">→</span></a>
+      </div>
+    </div>
+  </section>
 
   <!-- ============ 06 · TOOLS TEASER ============ -->
   <section class="frame" id="tools">
@@ -1777,43 +1328,30 @@ footer.foot2{border-radius:0 0 20px 20px}
         <a href="#work">Work</a>
         <a href="#systems">How I Work</a>
         <a href="#tools" class="on">Tools</a>
-        <a href="#creative">Creative</a>
         <a href="#about">About</a>
-        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
       <span class="frame-idx"></span>
     </div>
     <div class="frame-body wrap">
-      <div class="f-eyebrow reveal">A capability, not an identity</div>
-      <h2 class="f-title reveal">Ship it. <span class="dim">Systemise it. Think it.</span></h2>
-      <p class="f-lead reveal d1">A strong marketer who happens to be exceptionally good at using AI, not the other way round. Three things I&rsquo;ve actually built with it, live and working, not a logo wall.</p>
+      <div class="f-eyebrow reveal">AI implementation</div>
+      <h2 class="f-title reveal">Ship it. <span class="dim">Systematize it. Think it.</span></h2>
+      <p class="f-lead reveal d1">I don't just use AI. I build systems and ship tools with it. Type into the generator, watch the engine run.</p>
     </div>
-    <div class="grid-3" style="margin-top:8px">
-      <a class="card2 reveal" href="work/tools.html">
-        <div class="live" style="margin-bottom:16px"><i></i> Live &amp; interactive</div>
-        <h3>ICP Generator.</h3>
-        <p class="hook">Type in a product, and it calls Claude in real time to research and generate a full, exhaustive ideal-customer profile, not a scripted demo.</p>
-        <div class="chips"><span class="chip2">Calls Claude live</span><span class="chip2"><b>~2hrs</b> build time</span></div>
-        <img class="tool-banner reveal" src="tools%20banners%20for%20homepage/icp%20generator.jpeg" alt="ICP Generator" loading="lazy" />
-        <div class="link2">Open the live tool <span class="arw">↗</span></div>
-      </a>
-      <a class="card2 reveal d1" href="work/marketing-skill.html">
-        <div class="k">Open-source skill</div>
-        <h3>Ladder &amp; Leap.</h3>
-        <p class="hook">An end-to-end Claude Skill for brand managers: positioning frameworks, copywriting craft drawn from decades of award-winning advertising, and campaign checklists built to actually be used.</p>
-        <div class="chips"><span class="chip2">8 reference files</span><span class="chip2">17 copywriters cited</span></div>
-        <img class="tool-banner reveal" src="tools%20banners%20for%20homepage/ladder%20and%20leap.jpeg" alt="Ladder &amp; Leap" loading="lazy" />
-        <div class="link2">See how it&rsquo;s built <span class="arw">&rarr;</span></div>
-      </a>
-      <a class="card2 reveal d2" href="work/playlist-sync.html">
-        <div class="k">Personal tool</div>
-        <h3>Playlist Sync.</h3>
-        <p class="hook">Five thousand songs across sixty-seven YouTube Music playlists, kept in sync with Spotify automatically, every 12 hours, unattended.</p>
-        <div class="chips"><span class="chip2"><b>~5,000</b> songs</span><span class="chip2"><b>67</b> playlists</span></div>
-        <img class="tool-banner reveal" src="tools%20banners%20for%20homepage/playlist%20synch.jpeg" alt="Playlist Sync" loading="lazy" />
-        <div class="link2">Read the build <span class="arw">&rarr;</span></div>
-      </a>
+    <div class="tool2 reveal">
+      <div class="tool2-inner">
+        <div class="tool2-copy">
+          <div class="live"><i></i> Live &amp; interactive</div>
+          <h3>ICP Generator + Content Engine.</h3>
+          <p>A working ICP generator you can type into, and a content engine that turns one pillar input into twelve on-brand assets. Open it as its own page for the full working version.</p>
+          <a href="work/tools.html" class="btn primary" style="margin-top:26px">Open the live tools <span class="arw">↗</span></a>
+        </div>
+        <div class="tool2-stats">
+          <div class="row"><div class="n">1→12</div><div class="l">Assets generated per content-engine cycle</div></div>
+          <div class="row"><div class="n">~2d→~2h</div><div class="l">Time to build a full ICP + content system</div></div>
+          <div class="row"><div class="n">12+</div><div class="l">Repeatable workflows built &amp; in use</div></div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -1825,9 +1363,7 @@ footer.foot2{border-radius:0 0 20px 20px}
         <a href="#work">Work</a>
         <a href="#systems">How I Work</a>
         <a href="#tools">Tools</a>
-        <a href="#creative" class="on">Creative</a>
         <a href="#about">About</a>
-        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
       <span class="frame-idx"></span>
@@ -1860,31 +1396,29 @@ footer.foot2{border-radius:0 0 20px 20px}
           <div class="art-prompt-label">Click &amp; hold</div>
         </div>
         <div class="art-burst" id="artBurst">
-          <div class="art-burst-track">
-            <div class="art-card" data-full="art section/images for the pop up/1.png">
-              <img src="art%20section/images%20for%20the%20pop%20up/1.png" alt="Fanged creature illustration" loading="lazy" />
-              <div class="cap">01 &middot; Fanged</div>
-            </div>
-            <div class="art-card" data-full="art section/images for the pop up/2.png">
-              <img src="art%20section/images%20for%20the%20pop%20up/2.png" alt="Rollerblading character design" loading="lazy" />
-              <div class="cap">02 &middot; Skate courier</div>
-            </div>
-            <div class="art-card" data-full="art section/images for the pop up/3.png">
-              <img src="art%20section/images%20for%20the%20pop%20up/3.png" alt="Three friends walking under a starry sky" loading="lazy" />
-              <div class="cap">03 &middot; Night walk</div>
-            </div>
-            <div class="art-card" data-full="art section/images for the pop up/4.png">
-              <img src="art%20section/images%20for%20the%20pop%20up/4.png" alt="Girl watching a falling star" loading="lazy" />
-              <div class="cap">04 &middot; Falling star</div>
-            </div>
-            <div class="art-card" data-full="art section/images for the pop up/5.png">
-              <img src="art%20section/images%20for%20the%20pop%20up/5.png" alt="Girl with an umbrella in a city" loading="lazy" />
-              <div class="cap">05 &middot; City umbrella</div>
-            </div>
-            <div class="art-card" data-full="art section/images for the pop up/6.png">
-              <img src="art%20section/images%20for%20the%20pop%20up/6.png" alt="Spider-Man fan art" loading="lazy" />
-              <div class="cap">06 &middot; Web-slinger</div>
-            </div>
+          <div class="art-card" data-full="art section/images for the pop up/1.png">
+            <img src="art%20section/images%20for%20the%20pop%20up/1.png" alt="Fanged creature illustration" loading="lazy" />
+            <div class="cap">01 &middot; Fanged</div>
+          </div>
+          <div class="art-card" data-full="art section/images for the pop up/2.png">
+            <img src="art%20section/images%20for%20the%20pop%20up/2.png" alt="Rollerblading character design" loading="lazy" />
+            <div class="cap">02 &middot; Skate courier</div>
+          </div>
+          <div class="art-card" data-full="art section/images for the pop up/3.png">
+            <img src="art%20section/images%20for%20the%20pop%20up/3.png" alt="Three friends walking under a starry sky" loading="lazy" />
+            <div class="cap">03 &middot; Night walk</div>
+          </div>
+          <div class="art-card" data-full="art section/images for the pop up/4.png">
+            <img src="art%20section/images%20for%20the%20pop%20up/4.png" alt="Girl watching a falling star" loading="lazy" />
+            <div class="cap">04 &middot; Falling star</div>
+          </div>
+          <div class="art-card" data-full="art section/images for the pop up/5.png">
+            <img src="art%20section/images%20for%20the%20pop%20up/5.png" alt="Girl with an umbrella in a city" loading="lazy" />
+            <div class="cap">05 &middot; City umbrella</div>
+          </div>
+          <div class="art-card" data-full="art section/images for the pop up/6.png">
+            <img src="art%20section/images%20for%20the%20pop%20up/6.png" alt="Spider-Man fan art" loading="lazy" />
+            <div class="cap">06 &middot; Web-slinger</div>
           </div>
         </div>
         <div class="art-close-hint">Click anywhere to close</div>
@@ -1892,12 +1426,15 @@ footer.foot2{border-radius:0 0 20px 20px}
     </div>
 
     <div class="wrap" style="padding:26px 34px 0">
-      <a href="hobbies/art.html" class="btn primary reveal">View the full gallery <span class="arw">→</span></a>
+      <a href="hobbies/art.html" class="link2 reveal">View the full gallery <span class="arw">→</span></a>
     </div>
 
     <div class="tile-grid reveal" style="margin-top:40px">
-      <a class="tile2 photo" href="hobbies/cooking.html"><div class="fill" style="background-image:url('hobbies/banners/web/cooking-banner.jpg')"></div><div class="t"><b>Cooking videos</b><span>Shot and edited by me</span><span class="tile-cta">Watch now <span class="arw">→</span></span></div></a>
-      <a class="tile2 photo" href="hobbies/playlists.html"><div class="fill" style="background-image:url('hobbies/banners/web/playlists-banner.jpg')"></div><div class="t"><b>Playlists</b><span>Curated, not algorithmic</span></div></a>
+      <a class="tile2 wide" href="hobbies/cooking.html"><div class="fill g2"></div><div class="t"><b>Cooking videos</b><span>I make cooking videos</span></div></a>
+      <a class="tile2" href="hobbies/playlists.html"><div class="fill g3"></div><div class="t"><b>Playlists</b><span>I curate them</span></div></a>
+      <div class="tile2"><div class="fill g4"></div><div class="t"><b>Motion</b><span>Little loops</span></div></div>
+      <div class="tile2 wide"><div class="fill g1"></div><div class="t"><b>Sketchbook</b><span>Ongoing</span></div></div>
+      <div class="tile2"><div class="fill g3"></div><div class="t"><b>Type</b><span>Lettering</span></div></div>
     </div>
   </section>
 
@@ -1917,34 +1454,24 @@ footer.foot2{border-radius:0 0 20px 20px}
         <a href="#work">Work</a>
         <a href="#systems">How I Work</a>
         <a href="#tools">Tools</a>
-        <a href="#creative">Creative</a>
         <a href="#about" class="on">About</a>
-        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
       <span class="frame-idx"></span>
     </div>
     <div class="about2 reveal">
-      <div class="about2-photo" id="about2Photo">
-        <img src="My Photo/web/yash-photo.jpg" alt="Yash Gohel" loading="lazy" />
-        <div class="philosophy-reveal" aria-hidden="true">
-          <img src="homepage%20images%20and%20videos/my%20philosophy.png" alt="My philosophy: it's not hard, it's just new." loading="lazy" />
-        </div>
-        <div class="philosophy-hint" aria-hidden="true">
-          <span class="hint-desktop">Hover to see my philosophy</span>
-          <span class="hint-mobile">Long-press to see my philosophy</span>
-        </div>
+      <div class="about2-photo">
+        <div class="init">YG</div>
         <div class="spec-ticks" aria-hidden="true">
           <span class="spec-label">Y.G. / 06</span>
           <div class="spec-rule"></div>
         </div>
+        <div class="note ph">[Swap in a good photo]</div>
       </div>
       <div class="about2-copy">
         <div class="f-eyebrow">About</div>
-        <p><b style="color:var(--text)">I was never very good at staying in one box.</b></p>
-        <p style="margin-top:16px">I like ideas, but I also want to know whether they worked. I like brand, but I want to understand the funnel behind it. I like making things, which is probably why I've ended up directing shoots, writing campaigns, building stores, designing landing pages and obsessing over dashboards.</p>
-        <p style="font-size:16px;margin-top:16px">Over the last six years, I've worked across healthtech, fintech and DTC, usually in roles where strategy and execution sit unusually close together. Today, I'm building GoodFlip at Zydus Wellness.</p>
-        <p style="font-size:16px;margin-top:16px"><b style="color:var(--text)">The short version: give me a messy marketing problem and enough room to solve it.</b></p>
+        <p>I'm a creative strategist and full-funnel marketer who likes owning the whole thing: <em>the shoot, the copy, the store, and the analytics.</em> Six years in, across healthtech, fintech, and DTC, I've learned that the best work happens when strategy and craft aren't handed off between people.</p>
+        <p style="font-size:16px;margin-top:18px">These days I build brands and growth systems at GoodFlip, and teach AI to run the parts that should be repeatable. People hire people, so if this sounds like your kind of operator, let's talk.</p>
         <div class="sig">Yash</div>
       </div>
     </div>
@@ -1968,76 +1495,6 @@ footer.foot2{border-radius:0 0 20px 20px}
 
   </section>
 
-  <!-- ============ SKILLS ============ -->
-  <section class="frame" id="skills">
-    <div class="frame-nav">
-      <span class="fn-mark"><span class="fn-dot"></span><span class="fn-discover">Discover</span></span>
-      <nav class="frame-links">
-        <a href="#work">Work</a>
-        <a href="#systems">How I Work</a>
-        <a href="#tools">Tools</a>
-        <a href="#creative">Creative</a>
-        <a href="#about">About</a>
-        <a href="#skills" class="on">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <span class="frame-idx"></span>
-    </div>
-    <div class="frame-body wrap">
-      <div class="f-eyebrow reveal">Skills</div>
-      <h2 class="f-title reveal">Six years, <span class="dim">one stack.</span></h2>
-      <p class="f-lead reveal d1">Brand, growth, commerce and the tools that connect them &mdash; the full kit, not just the highlight reel.</p>
-    </div>
-    <div class="skills-grid">
-      <div class="skill-group reveal">
-        <div class="skill-group-k">Brand &amp; Creative</div>
-        <div class="skill-tags">
-          <span class="skill-tag">Creative Direction</span>
-          <span class="skill-tag">Copywriting</span>
-          <span class="skill-tag">Scriptwriting</span>
-          <span class="skill-tag">Storyboarding</span>
-          <span class="skill-tag">Brand Campaigns</span>
-          <span class="skill-tag">Product Launches</span>
-        </div>
-      </div>
-      <div class="skill-group reveal d1">
-        <div class="skill-group-k">Growth &amp; Performance</div>
-        <div class="skill-tags">
-          <span class="skill-tag">Performance Marketing</span>
-          <span class="skill-tag">User Acquisition</span>
-          <span class="skill-tag">CRM / CLM</span>
-          <span class="skill-tag">A/B Testing</span>
-          <span class="skill-tag">SEO</span>
-          <span class="skill-tag">Lead Gen</span>
-        </div>
-      </div>
-      <div class="skill-group reveal">
-        <div class="skill-group-k">E-Commerce</div>
-        <div class="skill-tags">
-          <span class="skill-tag">Shopify (full build)</span>
-          <span class="skill-tag">Amazon Seller Central</span>
-          <span class="skill-tag">A+ Content</span>
-          <span class="skill-tag">DTC Strategy</span>
-        </div>
-      </div>
-      <div class="skill-group reveal d1">
-        <div class="skill-group-k">Tools</div>
-        <div class="skill-tags">
-          <span class="skill-tag">Figma</span>
-          <span class="skill-tag">Photoshop</span>
-          <span class="skill-tag">Illustrator</span>
-          <span class="skill-tag">Premiere</span>
-          <span class="skill-tag">MoEngage</span>
-          <span class="skill-tag">GA4</span>
-          <span class="skill-tag">SEMrush</span>
-          <span class="skill-tag">HubSpot</span>
-          <span class="skill-tag">Claude</span>
-          <span class="skill-tag">VEO / Firefly</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- ============ 09 · CONTACT ============ -->
   <section class="frame" id="contact">
     <div class="frame-nav">
@@ -2046,7 +1503,6 @@ footer.foot2{border-radius:0 0 20px 20px}
         <a href="#work">Work</a>
         <a href="#systems">How I Work</a>
         <a href="#tools">Tools</a>
-        <a href="#creative">Creative</a>
         <a href="#about">About</a>
         <a href="#contact" class="on">Contact</a>
       </nav>
@@ -2055,13 +1511,12 @@ footer.foot2{border-radius:0 0 20px 20px}
     <div class="frame-body wrap contact2">
       <div class="f-eyebrow reveal">Let's talk</div>
       <h2 class="reveal">Let's build <span class="dim">something.</span></h2>
-      <p class="sub reveal d1">Starting, rebuilding, or levelling up, it starts with a conversation. I'm currently open to new roles.</p>
+      <p class="sub reveal d1">Starting, rebuilding, or leveling up, it starts with a conversation. I'm currently open to new roles.</p>
       <a href="mailto:yashlehog@gmail.com" class="mail reveal d2">yashlehog@gmail.com <span class="arw">↗</span></a>
 
       <div class="contact-rows reveal d2">
-        <div class="crow"><span class="l">Résumé</span><span class="r"><a href="Yash%20Gohel%20Brand%20Manager%20Resume.pdf" download>Download PDF ↓</a></span></div>
-        <div class="crow"><span class="l">Instagram (Art)</span><span class="r"><a href="https://instagram.com/wai.geee" target="_blank" rel="noopener">@wai.geee ↗</a></span></div>
-        <div class="crow"><span class="l">Instagram (Personal)</span><span class="r"><a href="https://instagram.com/duggguuu" target="_blank" rel="noopener">@duggguuu ↗</a></span></div>
+        <div class="crow"><span class="l">Résumé</span><span class="r"><a href="Full%20Funnel%20Marketer.pdf" download>Download PDF ↓</a></span></div>
+        <div class="crow"><span class="l">Instagram</span><span class="r"><a href="https://instagram.com/wai.geee" target="_blank" rel="noopener">@wai.geee ↗</a></span></div>
         <div class="crow"><span class="l">LinkedIn</span><span class="r"><a href="https://www.linkedin.com/in/yashnakulgohel/" target="_blank" rel="noopener">LinkedIn ↗</a></span></div>
       </div>
     </div>
@@ -2073,22 +1528,21 @@ footer.foot2{border-radius:0 0 20px 20px}
           <a href="#work">Work</a>
           <a href="#systems">How I Work</a>
           <a href="#tools">Tools</a>
-          <a href="#creative">Creative</a>
           <a href="#about">About</a>
-          <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
         </div>
         <div class="fcol">
           <h6>Connect</h6>
-          <a href="https://instagram.com/wai.geee" target="_blank" rel="noopener">Instagram (Art) ↗</a>
-          <a href="https://instagram.com/duggguuu" target="_blank" rel="noopener">Instagram (Personal) ↗</a>
+          <a href="https://instagram.com/wai.geee" target="_blank" rel="noopener">Instagram ↗</a>
           <a href="https://www.linkedin.com/in/yashnakulgohel/" target="_blank" rel="noopener">LinkedIn ↗</a>
           <a href="mailto:yashlehog@gmail.com">Email ↗</a>
         </div>
         <div class="fcol">
           <h6>Résumé</h6>
-          <a href="Yash%20Gohel%20Brand%20Manager%20Resume.pdf" download>Download résumé ↓</a>
+          <a href="Full%20Funnel%20Marketer.pdf" download>Download résumé ↓</a>
           <div class="row">Currently open to new roles<span class="note">Assistant Manager &middot; Brand, Creative &amp; Comms, TatvaCare</span></div>
+          <a href="alt.html">View other design →</a>
+          <a href="index.html">View card layout →</a>
         </div>
       </div>
       <div class="wordmark reveal">
@@ -2098,6 +1552,7 @@ footer.foot2{border-radius:0 0 20px 20px}
       <div class="foot-note reveal">Did you know? 'Email' predates the 'Internet'. Go ahead, give it a try: <a href="mailto:yashlehog@gmail.com">yashlehog@gmail.com</a></div>
       <div class="fbottom">
         <span>© <span id="yr"></span> Yash Gohel</span>
+        <a href="alt.html">[ view other design → ]</a>
       </div>
     </footer>
   </section>
@@ -2107,7 +1562,6 @@ footer.foot2{border-radius:0 0 20px 20px}
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
 <script>
 /* ===== REDUCED MOTION FLAG ===== */
 const REDUCE=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
@@ -2147,68 +1601,6 @@ const REDUCE=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
   window.addEventListener('scroll',()=>{if(!ticking){requestAnimationFrame(update);ticking=true;}},{passive:true});
   window.addEventListener('resize',update);
   update();
-})();
-
-/* ===== LAZY AUTOPLAY VIDEO: case2-video only fetches its (large) source once
-   its section actually scrolls into view, then autoplays muted + looped. ===== */
-(function(){
-  const vids=document.querySelectorAll('video[data-src]');
-  if(!vids.length)return;
-  const io=new IntersectionObserver(es=>es.forEach(e=>{
-    if(!e.isIntersecting)return;
-    const v=e.target;
-    if(!v.src){v.src=v.dataset.src;v.load();}
-    v.play().catch(()=>{});
-    io.unobserve(v);
-  }),{threshold:.25});
-  vids.forEach(v=>io.observe(v));
-})();
-
-/* ===== INFINITE SCROLL: reaching the bottom loops back to the hero instead
-   of dead-ending at the footer. Triggers only on continued scroll intent
-   past the bottom (accumulated wheel delta / an upward swipe), not on
-   merely arriving there, so reading the footer doesn't get cut short.
-   The jump itself is masked by a fade-to-background overlay rather than
-   a native smooth-scroll, so it reads as the top section starting over
-   again, not as the page visibly rewinding backwards past every section. ===== */
-(function(){
-  if(REDUCE)return;
-  let cooldown=false,wheelAccum=0;
-  function atBottom(){
-    const doc=document.documentElement;
-    return (window.innerHeight+window.scrollY)>=doc.scrollHeight-4;
-  }
-  function loopToTop(){
-    if(cooldown)return;
-    cooldown=true;
-    wheelAccum=0;
-    const overlay=document.createElement('div');
-    overlay.style.cssText='position:fixed;inset:0;z-index:9995;background:var(--bg);opacity:0;pointer-events:none;transition:opacity .4s ease';
-    document.body.appendChild(overlay);
-    requestAnimationFrame(()=>{overlay.style.opacity='1';});
-    setTimeout(()=>{
-      window.scrollTo({top:0,behavior:'auto'});
-      requestAnimationFrame(()=>{overlay.style.opacity='0';});
-      setTimeout(()=>{overlay.remove();cooldown=false;},420);
-    },420);
-  }
-  window.addEventListener('wheel',e=>{
-    if(cooldown)return;
-    if(e.deltaY>0&&atBottom()){
-      wheelAccum+=e.deltaY;
-      if(wheelAccum>160)loopToTop();
-    }else if(e.deltaY<0){
-      wheelAccum=0;
-    }
-  },{passive:true});
-  let touchStartY=null;
-  window.addEventListener('touchstart',e=>{touchStartY=e.touches[0].clientY;},{passive:true});
-  window.addEventListener('touchmove',e=>{
-    if(cooldown||touchStartY==null)return;
-    const dy=touchStartY-e.touches[0].clientY;
-    if(dy>70&&atBottom())loopToTop();
-  },{passive:true});
-  window.addEventListener('touchend',()=>{touchStartY=null;},{passive:true});
 })();
 
 /* ===== CUSTOM CURSOR: a fading green trail drawn on canvas, plus a small
@@ -2380,201 +1772,12 @@ document.getElementById('themeToggle').addEventListener('click',()=>{
 /* ===== NAV DRAWER ===== */
 (function(){
   const btn=document.getElementById('burgerBtn'),drawer=document.getElementById('navDrawer'),close=document.getElementById('drawerClose');
-  function open(){drawer.classList.add('open');btn.setAttribute('aria-expanded','true');btn.classList.add('is-hidden');document.documentElement.style.overflow='hidden';}
-  function shut(){drawer.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.classList.remove('is-hidden');document.documentElement.style.overflow='';}
+  function open(){drawer.classList.add('open');btn.setAttribute('aria-expanded','true');btn.classList.add('is-hidden');}
+  function shut(){drawer.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.classList.remove('is-hidden');}
   btn.addEventListener('click',()=>{drawer.classList.contains('open')?shut():open();});
   close.addEventListener('click',shut);
-  drawer.addEventListener('click',e=>{if(e.target===drawer)shut();});
   drawer.querySelectorAll('a').forEach(a=>a.addEventListener('click',shut));
   document.addEventListener('keydown',e=>{if(e.key==='Escape')shut();});
-})();
-
-/* ===== WORK TABS: GoodFlip / Streak / Quicko live in one #work section
-   now, switched via tabs instead of three stacked sections. Any link that
-   points at #work / #streak / #quicko (nav, drawer, footer) selects the
-   right tab and scrolls to the section, rather than landing on a hidden
-   panel via the browser's native anchor jump. ===== */
-(function(){
-  const tabs=document.querySelectorAll('.work-tab');
-  const panels=document.querySelectorAll('.work-panel');
-  const workSection=document.getElementById('work');
-  if(!tabs.length||!workSection)return;
-  const tabByHash={work:'goodflip',streak:'streak',quicko:'quicko'};
-  const HAS_ANIME=typeof anime!=='undefined';
-  function selectTab(name,scroll){
-    tabs.forEach(t=>{
-      const on=t.dataset.tab===name;
-      t.classList.toggle('on',on);
-      t.setAttribute('aria-selected',on?'true':'false');
-    });
-    const current=[...panels].find(p=>p.classList.contains('on'));
-    const next=[...panels].find(p=>p.dataset.panel===name);
-    if(next)next.querySelectorAll('.reveal').forEach(el=>el.classList.add('in'));
-    if(scroll)workSection.scrollIntoView({behavior:REDUCE?'auto':'smooth',block:'start'});
-    if(current===next)return;
-    if(REDUCE||!HAS_ANIME){
-      panels.forEach(p=>p.classList.toggle('on',p===next));
-      return;
-    }
-    function showNext(){
-      if(!next)return;
-      next.classList.add('on');
-      anime({targets:next,opacity:[0,1],translateY:[10,0],duration:280,easing:'easeOutQuad',
-        complete:()=>{next.style.opacity='';next.style.transform=''}});
-    }
-    if(current){
-      anime({targets:current,opacity:[1,0],duration:160,easing:'easeInQuad',complete:()=>{
-        current.classList.remove('on');
-        current.style.opacity='';
-        showNext();
-      }});
-    }else{
-      showNext();
-    }
-  }
-  tabs.forEach(t=>t.addEventListener('click',()=>selectTab(t.dataset.tab,true)));
-  document.querySelectorAll('a[href="#work"],a[href="#streak"],a[href="#quicko"]').forEach(a=>{
-    a.addEventListener('click',e=>{
-      const hash=a.getAttribute('href').slice(1);
-      const tab=tabByHash[hash];
-      if(!tab)return;
-      e.preventDefault();
-      selectTab(tab,true);
-      history.replaceState(null,'','#'+hash);
-    });
-  });
-  const initial=tabByHash[location.hash.slice(1)];
-  if(initial)selectTab(initial,false);
-
-  /* ===== PIN THE TAB BAR WHILE SCROLLED THROUGH #work =====
-     .frame uses overflow:hidden for its rounded corners, which breaks
-     native CSS position:sticky, so this holds the bar's viewport position
-     with scroll math instead: absolutely positioned within #work (already
-     position:relative) at all times, with `top` computed each frame so it
-     reads as "natural" until the section scrolls past it, then "stuck" at
-     the viewport edge until the section ends. Switching case studies never
-     needs scrolling back up. */
-  const tabsEl=document.querySelector('.work-tabs');
-  const spacer=document.createElement('div');
-  tabsEl.after(spacer);
-  let naturalOffset=0,tabsMarginTop=0;
-  function measurePin(){
-    tabsEl.style.position='';
-    tabsEl.style.top='';
-    tabsMarginTop=parseFloat(getComputedStyle(tabsEl).marginTop)||0;
-    const workRect=workSection.getBoundingClientRect();
-    const tabsRect=tabsEl.getBoundingClientRect();
-    naturalOffset=tabsRect.top-workRect.top-tabsMarginTop;
-    spacer.style.height=tabsRect.height+tabsMarginTop+'px';
-    tabsEl.style.position='absolute';
-    tabsEl.style.left='0';
-    tabsEl.style.right='0';
-    tabsEl.style.marginTop='0';
-    updatePin();
-  }
-  function updatePin(){
-    const workRect=workSection.getBoundingClientRect();
-    const workHeight=workSection.offsetHeight;
-    const tabsHeight=tabsEl.offsetHeight;
-    let top=Math.max(naturalOffset,-workRect.top);
-    top=Math.min(top,Math.max(naturalOffset,workHeight-tabsHeight));
-    tabsEl.style.top=top+'px';
-  }
-  measurePin();
-  // re-measure once web fonts finish swapping in: the display font is
-  // noticeably taller than the fallback, and a stale spacer height (from
-  // measuring against the fallback) leaves the pinned bar overlapping the
-  // panel content beneath it by the difference.
-  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(measurePin);
-  window.addEventListener('load',measurePin);
-  let pinTicking=false;
-  window.addEventListener('scroll',()=>{
-    if(!pinTicking){requestAnimationFrame(()=>{updatePin();pinTicking=false;});pinTicking=true;}
-  },{passive:true});
-  window.addEventListener('resize',measurePin);
-})();
-
-/* ===== SKILLS: staggered anime.js entrance per skill-group, fired once
-   each group scrolls into view. Pills carry no hiding CSS of their own —
-   anime.js sets its own opacity/transform "from" values at animation time
-   — so if anime.js or JS itself fails for any reason, the pills simply
-   render normally visible with no animation, never stuck invisible. ===== */
-(function(){
-  const groups=document.querySelectorAll('.skill-group');
-  if(!groups.length)return;
-  const HAS_ANIME=typeof anime!=='undefined';
-  function revealGroup(target){
-    const tags=target.querySelectorAll('.skill-tag');
-    if(REDUCE||!HAS_ANIME)return;
-    anime({targets:tags,opacity:[0,1],translateY:[14,0],scale:[.94,1],
-      delay:anime.stagger(45),duration:520,easing:'easeOutQuad'});
-  }
-  const io=new IntersectionObserver(entries=>{
-    entries.forEach(entry=>{
-      if(!entry.isIntersecting)return;
-      revealGroup(entry.target);
-      io.unobserve(entry.target);
-    });
-  },{threshold:.2,rootMargin:'0px 0px -8% 0px'});
-  groups.forEach(g=>io.observe(g));
-})();
-
-/* ===== ABOUT PHOTO: "my philosophy" reveal. Desktop uses plain CSS
-   :hover; touch has no hover state, so mobile gets a long-press (same
-   650ms threshold as the art-panel's press-and-hold elsewhere on the
-   page) that toggles the same reveal via a class. ===== */
-(function(){
-  const photo=document.getElementById('about2Photo');
-  if(!photo)return;
-  const HOLD_MS=650;
-  let holdTimer=null;
-  photo.addEventListener('pointerdown',e=>{
-    if(e.pointerType!=='touch')return;
-    holdTimer=setTimeout(()=>photo.classList.add('is-revealed'),HOLD_MS);
-  });
-  function release(e){
-    if(e&&e.pointerType&&e.pointerType!=='touch')return;
-    clearTimeout(holdTimer);
-    photo.classList.remove('is-revealed');
-  }
-  photo.addEventListener('pointerup',release);
-  photo.addEventListener('pointerleave',release);
-  photo.addEventListener('pointercancel',release);
-})();
-
-/* ===== QUICKO BYTES: "View full story" opens the full-bytes PDF as an
-   in-page popup rather than a new tab; iframe src is lazy (only set on
-   first open) so the PDF isn't fetched until the user actually asks. ===== */
-(function(){
-  const btn=document.getElementById('bytesStoryBtn'),popup=document.getElementById('bytesPopup'),
-        closeBtn=document.getElementById('bytesPopupClose'),frame=document.getElementById('bytesPopupFrame');
-  if(!btn||!popup||!frame)return;
-  function openPopup(){
-    if(!frame.src)frame.src=frame.dataset.src;
-    popup.classList.add('open');
-  }
-  function closePopup(){popup.classList.remove('open');}
-  btn.addEventListener('click',openPopup);
-  closeBtn.addEventListener('click',closePopup);
-  popup.addEventListener('click',e=>{if(e.target===popup)closePopup();});
-  document.addEventListener('keydown',e=>{if(e.key==='Escape')closePopup();});
-})();
-
-/* ===== SCROLL-HIDE CHROME: the burger + mode-button dock hide on scroll
-   down and reappear on scroll up, so they don't sit fixed on top of card
-   content the whole time. Paused while the nav drawer is open. ===== */
-(function(){
-  const root=document.documentElement,drawer=document.getElementById('navDrawer');
-  let lastY=window.scrollY,ticking=false;
-  function onScroll(){
-    const y=Math.max(window.scrollY,0);
-    if(!drawer.classList.contains('open')){
-      if(y>lastY+2&&y>80)root.classList.add('chrome-hidden');
-      else if(y<lastY-2||y<80)root.classList.remove('chrome-hidden');
-    }
-    lastY=y;ticking=false;
-  }
-  window.addEventListener('scroll',()=>{if(!ticking){requestAnimationFrame(onScroll);ticking=true;}},{passive:true});
 })();
 
 /* ===== LOADER ===== */
@@ -2644,88 +1847,25 @@ function countUp(el){
 
 (function(){
   const targets=document.querySelectorAll('.reveal');
-  if(REDUCE){targets.forEach(el=>el.classList.add('in'));
+  if(REDUCE){targets.forEach(el=>{el.classList.add('in');if(el.dataset.count!==undefined)el.textContent=(+el.dataset.count).toLocaleString()+(el.dataset.suffix||'');});
     document.querySelectorAll('[data-count]').forEach(el=>el.textContent=(+el.dataset.count).toLocaleString()+(el.dataset.suffix||''));
     return;}
   if(HAS_GSAP){
     ScrollTrigger.batch(targets,{
       start:'top 90%',once:true,
-      onEnter:batch=>batch.forEach(el=>el.classList.add('in'))
+      onEnter:batch=>batch.forEach(el=>{
+        el.classList.add('in');
+        el.querySelectorAll('[data-count]').forEach(countUp);
+      })
     });
   }else{
     const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){
       e.target.classList.add('in');
+      e.target.querySelectorAll('[data-count]').forEach(countUp);
       io.unobserve(e.target);
     }}),{threshold:.15,rootMargin:'0px 0px -8% 0px'});
     targets.forEach(el=>io.observe(el));
   }
-  // Counters run off their own IntersectionObserver, independent of the GSAP
-  // reveal batch above: GSAP's ScrollTrigger start-point can lag on mobile
-  // when the address bar collapses mid-scroll, which was silently stalling
-  // the count-up (the fade-in still worked, the numbers just never fired).
-  const countEls=document.querySelectorAll('[data-count]');
-  if(countEls.length){
-    const cio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){
-      countUp(e.target);
-      cio.unobserve(e.target);
-    }}),{threshold:.2});
-    countEls.forEach(el=>cio.observe(el));
-  }
-})();
-
-/* ===== ASSET CAROUSEL: .ac-track is a plain native horizontal scroller
-   (touch/trackpad swipe and scroll-snap come for free from the browser),
-   the prev/next buttons just nudge it by one slide-width. Single-asset
-   carousels auto-hide their own nav (see the :not(.multi) CSS rule), so
-   this is safe to run against every card. ===== */
-(function(){
-  document.querySelectorAll('.asset-carousel[data-carousel]').forEach(function(car){
-    const track=car.querySelector('.ac-track');
-    const slides=[...car.querySelectorAll('.ac-slide')];
-    const prevBtn=car.querySelector('.ac-prev'),nextBtn=car.querySelector('.ac-next');
-    if(slides.length<=1)return;
-    car.classList.add('multi');
-    function nudge(dir){
-      const step=slides[0].getBoundingClientRect().width+14;
-      track.scrollBy({left:step*dir,behavior:REDUCE?'auto':'smooth'});
-    }
-    prevBtn&&prevBtn.addEventListener('click',()=>nudge(-1));
-    nextBtn&&nextBtn.addEventListener('click',()=>nudge(1));
-  });
-})();
-
-/* ===== CARD HOVER LIFT: a small anime.js-driven lift + shadow on card2/
-   tile2, in addition to the existing CSS background tint, so hover reads
-   as physical rather than just a color swap. Skipped on touch/coarse
-   pointers (no hover) and reduced-motion.
-   Softer than the first pass: negative spread + larger blur on the shadow
-   (a hard 0-spread box-shadow on a sharp-cornered card reads as a flat
-   rectangle "sticker" rather than a lifted object), a touch of scale
-   alongside the translateY so it feels like it's lifting off the page
-   rather than sliding, and each element's in-flight anime instance is
-   tracked and paused before starting the next one, so fast mouse
-   movement across a grid doesn't queue/fight competing tweens. ===== */
-(function(){
-  if(REDUCE||typeof anime==='undefined')return;
-  if(!window.matchMedia('(hover:hover) and (pointer:fine)').matches)return;
-  const els=document.querySelectorAll('.card2,.tile2,.wiad-photo,.manifesto-photo,.case2-video');
-  els.forEach(el=>{
-    const cs=getComputedStyle(el).boxShadow;
-    const restShadow=(cs&&cs!=='none')?cs:'0 0px 0px rgba(0,0,0,0)';
-    const big=el.matches('.case2-video');
-    const liftShadow=big?'0 32px 64px -16px rgba(0,0,0,.4)':'0 20px 40px -14px rgba(0,0,0,.26)';
-    let anim=null;
-    el.addEventListener('mouseenter',()=>{
-      if(anim)anim.pause();
-      anim=anime({targets:el,translateY:big?-7:-4,scale:1.006,boxShadow:liftShadow,
-        duration:420,easing:'easeOutQuint'});
-    });
-    el.addEventListener('mouseleave',()=>{
-      if(anim)anim.pause();
-      anim=anime({targets:el,translateY:0,scale:1,boxShadow:restShadow,
-        duration:320,easing:'easeOutQuad'});
-    });
-  });
 })();
 
 /* ===== HERO PANEL SUBTLE PARALLAX ===== */
@@ -2785,10 +1925,6 @@ function heroSet(){
   const panel=document.querySelector('.hero-panel'),bg=document.getElementById('hvBg'),scrollLayer=document.getElementById('hvScroll');
   if(!panel||!bg)return;
   if(REDUCE)return; // static image only, no motion, for reduced-motion users
-  // the mobile hero is one pre-composed bg/fg pair meant to sit perfectly
-  // still and aligned; scaling+drifting bg alone (as desktop does) would
-  // pull it out of sync with the foreground, which never moves.
-  if(innerWidth<=HERO_BREAKPOINT)return;
   if(HAS_GSAP){
     gsap.set(bg,{scale:1.3,transformOrigin:'center center'});
     const setX=gsap.quickTo(bg,'x',{duration:.65,ease:'power2.out'});
@@ -2853,6 +1989,17 @@ const ART_FG='art%20section/images%20for%20the%20background/Foreground.png';
   const HOLD_MS=650;
   let holdTimer=null,holdStart=0,rafId=null,isOpen=false;
 
+  // scattered burst targets, as a fraction of the panel's own size so it
+  // scales sensibly at any viewport; recomputed as CSS px on open.
+  // Cards stay level (no rotation) so the art reads cleanly at any angle.
+  const spread=[
+    {x:-.40,y:-.22},
+    {x:-.10,y:-.36},
+    {x:.24,y:-.28},
+    {x:.40,y:.06},
+    {x:.14,y:.30},
+    {x:-.22,y:.32}
+  ];
   const prompt=panel.querySelector('.art-prompt');
   if(prompt){
     panel.addEventListener('pointermove',e=>{
@@ -2889,20 +2036,38 @@ const ART_FG='art%20section/images%20for%20the%20background/Foreground.png';
     isOpen=true;
     panel.classList.add('burst-open');
     panel.classList.remove('holding');
+    const r=panel.getBoundingClientRect();
+    if(HAS_GSAP){
+      cards.forEach((card,i)=>{
+        const t=spread[i%spread.length];
+        gsap.fromTo(card,{x:0,y:0,scale:.15,rotation:0,opacity:0},{
+          x:t.x*r.width,y:t.y*r.height,rotation:0,scale:1,opacity:1,
+          duration:.8,delay:i*.09,ease:'back.out(1.6)'
+        });
+      });
+    }else{
+      cards.forEach((card,i)=>{const t=spread[i%spread.length];
+        card.style.transform=`translate(-50%,-50%) translate(${t.x*r.width}px,${t.y*r.height}px) scale(1)`;
+        card.style.opacity=1;});
+    }
   }
   function closeBurst(){
     if(!isOpen)return;
     isOpen=false;
     panel.classList.remove('burst-open');
     setRing(0);
+    if(HAS_GSAP){
+      gsap.to(cards,{x:0,y:0,scale:.15,rotation:0,opacity:0,duration:.35,ease:'power2.in',stagger:.03});
+    }else{
+      cards.forEach(card=>{card.style.transform='translate(-50%,-50%) scale(.15)';card.style.opacity=0;});
+    }
   }
 
   panel.addEventListener('pointerdown',e=>{
     if(isOpen){
-      // clicks/drags inside the filmstrip (a card, or the scrollable
-      // track itself) shouldn't close it — that's what makes it
-      // draggable/scrollable; only clicking the dimmed area outside it does
-      if(e.target.closest('.art-burst'))return;
+      // clicking a card opens the lightbox instead of closing; clicking
+      // empty space while open closes the burst
+      if(e.target.closest('.art-card'))return;
       closeBurst();
       return;
     }
@@ -2932,17 +2097,12 @@ const ART_FG='art%20section/images%20for%20the%20background/Foreground.png';
   }
 })();
 
-/* ===== MARQUEE: skew with scroll velocity, snaps back level once scrolling
-   actually stops (onUpdate alone only fires mid-scroll, so the last velocity
-   reading could freeze the tilt indefinitely without this reset). ===== */
+/* ===== MARQUEE: skew with scroll velocity ===== */
 if(HAS_GSAP&&!REDUCE){
   document.querySelectorAll('.marquee').forEach(marquee=>{
     const setSkew=gsap.quickTo(marquee,'skewY',{duration:.5,ease:'power3'});
-    let resetTimer;
     ScrollTrigger.create({trigger:marquee,start:'top bottom',end:'bottom top',onUpdate:self=>{
       setSkew(gsap.utils.clamp(-3,3,self.getVelocity()/-700));
-      clearTimeout(resetTimer);
-      resetTimer=setTimeout(()=>setSkew(0),120);
     }});
   });
 }

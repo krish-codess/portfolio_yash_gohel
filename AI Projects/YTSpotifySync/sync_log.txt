@@ -1,0 +1,712 @@
+2026-06-14 21:42:40,044  INFO  YouTube Music → Spotify Sync Tool started.
+2026-06-14 21:42:40,044  INFO  Will sync every 12 hours.
+2026-06-14 21:42:40,044  INFO  ==================================================
+2026-06-14 21:42:40,044  INFO  Sync started at 2026-06-14 21:42:40
+2026-06-14 21:42:40,809  INFO  --- Syncing 'Indie OP' → 'Indie OP' ---
+2026-06-14 21:42:49,741  INFO  YT Music 'Indie OP': 149 songs found.
+2026-06-14 21:42:49,742  INFO  User authentication requires interaction with your web browser. Once you enter your credentials and give authorization, you will be redirected to a url.  Paste that url you were directed to to complete the authorization.
+2026-06-14 21:42:49,951  INFO  Opened https://accounts.spotify.com/authorize?client_id=a71df9db830f44cdae32cce5bc165ca3&response_type=code&redirect_uri=http%3A%2F%2F127.0.0.1%3A8888%2Fcallback&scope=playlist-read-private+playlist-modify-private+playlist-modify-public in your browser
+2026-06-14 21:42:55,555  INFO    + Adding: Aalam Naya — NAALAYAK
+2026-06-14 21:42:58,436  INFO    + Adding: Lullaby For The Anxious Bones — Raman Negi
+2026-06-14 21:42:58,885  INFO    + Adding: Mehroom — Raman Negi
+2026-06-14 21:42:59,715  INFO    + Adding: Main Chala — Mohit Chauhan, Shantanu Moitra, & Tanveer Ghazi
+2026-06-14 21:43:00,178  INFO    + Adding: Befikre — Naalayak
+2026-06-14 21:43:01,041  INFO    + Adding: Zakir — Naalayak
+2026-06-14 21:43:01,615  INFO    + Adding: Dilnawaz — The Local Train
+2026-06-14 21:43:04,414  INFO    + Adding: Nusrat (feat. Subir Malik & Jasmine Kaur) — NAALAYAK
+2026-06-14 21:43:05,478  INFO    + Adding: Bawra — NAALAYAK
+2026-06-14 21:43:05,970  INFO    + Adding: Haan Pyaar Hai — Naalayak
+2026-06-14 21:43:06,687  INFO    + Adding: Zakir (Acoustic) — Naalayak
+2026-06-14 21:43:09,887  INFO    + Adding: Umeedein — NAALAYAK
+2026-06-14 21:43:10,308  INFO    + Adding: jazba — Naalayak
+2026-06-14 21:43:11,427  INFO    + Adding: Mann Marziyan — NAALAYAK
+2026-06-14 21:43:12,438  INFO    + Adding: Jeene Do — NAALAYAK
+2026-06-14 21:43:12,938  INFO    + Adding: It's Me — NAALAYAK
+2026-06-14 21:43:13,869  INFO    + Adding: Haan Pyaar Hai (feat. Eskay) — UNPLG'd & Naalayak
+2026-06-14 21:43:14,808  INFO    + Adding: Sahil — Naalayak
+2026-06-14 21:43:15,236  INFO    + Adding: Noorie — NAALAYAK
+2026-06-14 21:43:15,872  INFO    + Adding: Mustafa — Naalayak
+2026-06-14 21:43:16,298  INFO    + Adding: Main Bola Hey! — Karthik Rao
+2026-06-14 21:43:18,861  INFO    + Adding: tere bina — Zaeden
+2026-06-14 21:43:19,697  INFO    + Adding: Farq hai — Suzonn
+2026-06-14 21:43:20,090  INFO    + Adding: Tere Jaisa — Vaibhav Bundhoo & Kamakshi Khanna
+2026-06-14 21:43:20,556  INFO    + Adding: Munasib — Omar Mukhtar
+2026-06-14 21:43:21,020  INFO    + Adding: Sang Rahiyo — Jasleen Royal, Ujjwal Kashyap, & Neeraj Rajawat
+2026-06-14 21:43:21,539  INFO    + Adding: Kali Kali Zulfon Ke — Madhur Sharma
+2026-06-14 21:43:21,975  INFO    + Adding: Dil Mere — The Local Train
+2026-06-14 21:43:22,588  INFO    + Adding: Dooron Dooron - Unplugged — Paresh Pahuja
+2026-06-14 21:43:24,142  INFO    + Adding: Baat Itni Si Hai — Twin Strings
+2026-06-14 21:43:25,057  INFO    + Adding: Aahatein — Agnee
+2026-06-14 21:43:25,675  INFO    + Adding: Khwaab (Reprise) — Anumita Nadesan
+2026-06-14 21:43:26,591  INFO    + Adding: Aankhon Mein Doob Jaane Ko — THE 9TEEN & Sandesh Shandilya
+2026-06-14 21:43:29,425  INFO    + Adding: Husn (Re-imagined) — raaghavan
+2026-06-14 21:43:29,878  INFO    + Adding: Choo Lo — The Local Train
+2026-06-14 21:43:30,746  INFO    + Adding: Falak (feat. Rishab Rikhiram Sharma) — Ravator, Adarsh Rao, & Kutle Khan
+2026-06-14 21:43:33,419  INFO    + Adding: Turiya Turiya — Asad Khan
+2026-06-14 21:43:33,840  INFO    + Adding: Woh — Khatth, Sthiti, & Shruti Prakash Dash
+2026-06-14 21:43:35,230  INFO    + Adding: LOVESEXDHOKA!!! — Chaar Diwaari
+2026-06-14 21:43:35,828  INFO    + Adding: Tujhi Mein — Saahel
+2026-06-14 21:43:36,486  INFO    + Adding: Bairan — Banjaare
+2026-06-14 21:43:36,954  INFO    + Adding: Tu Na Samjhe — Hellow Raja & Maxxturnn
+2026-06-14 21:43:37,414  INFO    + Adding: Falani — Vikram Sarkar & Guri Nimana
+2026-06-14 21:43:37,866  INFO    + Adding: Haaye Re — Banjaare, Swati Shukla, & Maxxturnn
+2026-06-14 21:43:42,032  INFO    + Adding: Kaavish - Dekho — Kaavish
+2026-06-14 21:43:42,459  INFO    + Adding: NEEYO — Vinod Varma
+2026-06-14 21:43:43,001  INFO    + Adding: Mann Melo — Jasleen Royal, Siddharth Amit Bhavsar, & Parth Bharat Thakkar
+2026-06-14 21:43:44,868  INFO    + Adding: Dhun Laagi — Sachin-Jigar, Siddharth Amit Bhavsar, & Niren Bhatt
+2026-06-14 21:43:45,408  INFO    + Adding: Deewani — NAALAYAK
+2026-06-14 21:43:45,879  INFO    + Adding: Kitab — Mr Dutt & Vipin Foji
+2026-06-14 21:43:46,357  INFO    + Adding: Aaj Kal — OutStation
+2026-06-14 21:43:46,842  INFO    + Adding: Kami — Rishabh Vyas
+2026-06-14 21:43:50,873  INFO    + Adding: Sun Bawariya | Official Music Video | Red Box Music — Red Box Music
+2026-06-14 21:43:52,755  INFO    + Adding: Dooriyan — ReddyBhau
+2026-06-14 21:43:53,161  INFO    + Adding: Khamoshiyan Banjaare — Beckchodism
+2026-06-14 21:43:54,444  INFO    + Adding: Roshni Hi Roshni Hai — Gabbar
+2026-06-14 21:43:54,859  INFO    + Adding: Nawazishein — Shuja Haider
+2026-06-14 21:43:55,305  INFO    + Adding: Aur Kya Chahiye — Paresh Pahuja
+2026-06-14 21:43:56,323  INFO    + Adding: Teri Yaad — Ajey Kr
+2026-06-14 21:43:58,826  INFO    + Adding: Munasib — Omar Mukhtar
+2026-06-14 21:44:00,814  INFO    + Adding: Iraaday — Abdul Hannan & Rovalio
+2026-06-14 21:44:02,487  INFO    + Adding: Parchhaiyan — Janisht Joshi, Phosphenes, & Timothy Thampy
+2026-06-14 21:44:02,979  INFO    + Adding: Sadiyaan — Ajey Kr
+2026-06-14 21:44:03,483  INFO    + Adding: Julie — AtharvaMusic & Janisht Joshi
+2026-06-14 21:44:04,031  INFO    + Adding: Kaisey Jiyun — The Local Train
+2026-06-14 21:44:04,567  INFO    + Adding: Yeh Zindagi Hai — The Local Train
+2026-06-14 21:44:05,073  INFO    + Adding: Mere Yaar — The Local Train
+2026-06-14 21:44:05,646  INFO    + Adding: Aaoge Tum Kabhi — The Local Train
+2026-06-14 21:44:06,086  INFO    + Adding: sun saawariya — Accha Insaan, AtharvaMusic, & Yaani Karnawat
+2026-06-14 21:44:06,767  INFO    + Adding: Yeh Jo Halka Halka Suroor Hai (Extended Version) — Farhan Saeed & Nusrat Fateh Ali Khan
+2026-06-14 21:44:08,778  INFO    + Adding: Let Her Go X Husn (Slowed) — raaghavan
+2026-06-14 21:44:09,959  INFO    + Adding: Yeh Duniya Jala Do — Janisht Joshi
+2026-06-14 21:44:10,990  INFO    + Adding: Botalaan - Acoustic — Paresh Pahuja & Shiv Tandan
+2026-06-14 21:44:13,848  INFO    + Adding: Dheere Dheere — Samad - Bharath, Samad Khan, Bharath, and rohh
+2026-06-14 21:44:14,688  INFO    + Adding: Meri Kahani — Atif Aslam
+2026-06-14 21:44:15,866  INFO    + Adding: Preetiya Hesare Neenu — Raghu Dixit, Vasuki Vaibhav, & Raghavendra Kamath
+2026-06-14 21:44:17,111  INFO    + Adding: Vairaagi — Madhubanti Bagchi, Siddarth Amit Bhavsar
+2026-06-14 21:44:17,519  INFO    + Adding: Puraani Bimaari — Janisht Joshi, The Besharams, & Aashay Khot
+2026-06-14 21:44:19,118  INFO    + Adding: Ishq Ki Umar (From "Vadh 2") — Rochak Kohli, Papon, & Kumaar
+2026-06-14 21:44:19,546  INFO    + Adding: Irradon — Lifafa
+2026-06-14 21:44:20,739  INFO    + Adding: Woh — Darzi
+2026-06-14 21:44:21,365  INFO    + Adding: Khota — Janisht Joshi & Ramil Ganjoo
+2026-06-14 21:44:21,837  INFO    + Adding: Urf Zakir — NAALAYAK & UNPLG'd
+2026-06-14 21:44:22,256  INFO    + Adding: Manzil Ki Ore — Taba Chake & Toko Sama
+2026-06-14 21:44:23,691  INFO    + Adding: Gum Ho Kahan — Taba Chake
+2026-06-14 21:44:28,601  INFO    + Adding: Isharey — AtharvaMusic & sarodi
+2026-06-14 21:44:29,046  INFO    + Adding: Idhar Zara Sa Dekh Lo — Shikhar & Yashika Sikka
+2026-06-14 21:44:34,161  ERROR  Error syncing 'Indie OP': HTTPSConnectionPool(host='api.spotify.com', port=443): Read timed out. (read timeout=5)
+2026-06-14 21:44:34,162  INFO  Sync complete.
+2026-06-14 21:44:34,162  INFO  Next sync at: 2026-06-15 09:44:34
+2026-06-14 21:51:31,021  INFO  YouTube Music → Spotify Sync Tool started.
+2026-06-14 21:51:31,021  INFO  Will sync every 12 hours.
+2026-06-14 21:51:31,021  INFO  ==================================================
+2026-06-14 21:51:31,021  INFO  Sync started at 2026-06-14 21:51:31
+2026-06-14 21:51:32,248  INFO  --- Syncing 'Indie OP' → 'Indie OP' ---
+2026-06-14 21:51:38,813  INFO  YT Music 'Indie OP': 149 songs found.
+2026-06-14 21:51:40,036  INFO    + Adding: Aalam Naya — NAALAYAK
+2026-06-14 21:51:40,482  INFO    + Adding: Lullaby For The Anxious Bones — Raman Negi
+2026-06-14 21:51:40,930  INFO    + Adding: Mehroom — Raman Negi
+2026-06-14 21:51:43,000  INFO    + Adding: Main Chala — Mohit Chauhan, Shantanu Moitra, & Tanveer Ghazi
+2026-06-14 21:51:44,077  INFO    + Adding: Befikre — Naalayak
+2026-06-14 21:51:44,868  INFO    + Adding: Zakir — Naalayak
+2026-06-14 21:51:45,328  INFO    + Adding: Dilnawaz — The Local Train
+2026-06-14 21:51:45,986  INFO    + Adding: Nusrat (feat. Subir Malik & Jasmine Kaur) — NAALAYAK
+2026-06-14 21:51:46,432  INFO    + Adding: Bawra — NAALAYAK
+2026-06-14 21:51:46,859  INFO    + Adding: Haan Pyaar Hai — Naalayak
+2026-06-14 21:51:47,297  INFO    + Adding: Zakir (Acoustic) — Naalayak
+2026-06-14 21:51:47,731  INFO    + Adding: Umeedein — NAALAYAK
+2026-06-14 21:51:49,340  INFO    + Adding: jazba — Naalayak
+2026-06-14 21:51:49,772  INFO    + Adding: Mann Marziyan — NAALAYAK
+2026-06-14 21:51:50,757  INFO    + Adding: Jeene Do — NAALAYAK
+2026-06-14 21:51:51,157  INFO    + Adding: It's Me — NAALAYAK
+2026-06-14 21:51:51,974  INFO    + Adding: Haan Pyaar Hai (feat. Eskay) — UNPLG'd & Naalayak
+2026-06-14 21:51:53,141  INFO    + Adding: Sahil — Naalayak
+2026-06-14 21:51:58,257  ERROR  Error syncing 'Indie OP': HTTPSConnectionPool(host='api.spotify.com', port=443): Read timed out. (read timeout=5)
+2026-06-14 21:51:58,259  INFO  Sync complete.
+2026-06-14 21:51:58,259  INFO  Next sync at: 2026-06-15 09:51:58
+2026-06-14 21:55:13,437  INFO  YouTube Music → Spotify Sync Tool started.
+2026-06-14 21:55:13,438  INFO  Will sync every 12 hours.
+2026-06-14 21:55:13,438  INFO  ==================================================
+2026-06-14 21:55:13,438  INFO  Sync started at 2026-06-14 21:55:13
+2026-06-14 21:55:14,077  INFO  --- Syncing 'Indie OP' → 'Indie OP' ---
+2026-06-14 21:55:19,924  INFO  YT Music 'Indie OP': 149 songs found.
+2026-06-14 21:55:21,206  INFO    + Adding: Aalam Naya — NAALAYAK
+2026-06-14 21:55:21,981  INFO    + Adding: Lullaby For The Anxious Bones — Raman Negi
+2026-06-14 21:55:22,399  INFO    + Adding: Mehroom — Raman Negi
+2026-06-14 21:55:24,319  INFO    + Adding: Main Chala — Mohit Chauhan, Shantanu Moitra, & Tanveer Ghazi
+2026-06-14 21:55:24,757  INFO    + Adding: Befikre — Naalayak
+2026-06-14 21:55:25,250  INFO    + Adding: Zakir — Naalayak
+2026-06-14 21:55:26,164  INFO    + Adding: Dilnawaz — The Local Train
+2026-06-14 21:55:27,493  INFO    + Adding: Nusrat (feat. Subir Malik & Jasmine Kaur) — NAALAYAK
+2026-06-14 21:55:28,720  INFO    + Adding: Bawra — NAALAYAK
+2026-06-14 21:55:29,464  INFO    + Adding: Haan Pyaar Hai — Naalayak
+2026-06-14 21:55:29,880  INFO    + Adding: Zakir (Acoustic) — Naalayak
+2026-06-14 21:55:32,862  INFO    + Adding: Umeedein — NAALAYAK
+2026-06-14 21:55:34,531  INFO    + Adding: jazba — Naalayak
+2026-06-14 21:55:34,924  INFO    + Adding: Mann Marziyan — NAALAYAK
+2026-06-14 21:55:35,333  INFO    + Adding: Jeene Do — NAALAYAK
+2026-06-14 21:55:35,748  INFO    + Adding: It's Me — NAALAYAK
+2026-06-14 21:55:37,248  INFO    + Adding: Haan Pyaar Hai (feat. Eskay) — UNPLG'd & Naalayak
+2026-06-14 21:55:38,330  INFO    + Adding: Sahil — Naalayak
+2026-06-14 21:55:38,767  INFO    + Adding: Noorie — NAALAYAK
+2026-06-14 21:55:39,790  INFO    + Adding: Mustafa — Naalayak
+2026-06-14 21:55:40,184  INFO    + Adding: Main Bola Hey! — Karthik Rao
+2026-06-14 21:55:40,645  INFO    + Adding: tere bina — Zaeden
+2026-06-14 21:55:41,153  INFO    + Adding: Farq hai — Suzonn
+2026-06-14 21:55:41,593  INFO    + Adding: Tere Jaisa — Vaibhav Bundhoo & Kamakshi Khanna
+2026-06-14 21:55:42,058  INFO    + Adding: Munasib — Omar Mukhtar
+2026-06-14 21:55:42,507  INFO    + Adding: Sang Rahiyo — Jasleen Royal, Ujjwal Kashyap, & Neeraj Rajawat
+2026-06-14 21:55:42,920  INFO    + Adding: Kali Kali Zulfon Ke — Madhur Sharma
+2026-06-14 21:55:43,510  INFO    + Adding: Dil Mere — The Local Train
+2026-06-14 21:55:44,108  INFO    + Adding: Dooron Dooron - Unplugged — Paresh Pahuja
+2026-06-14 21:55:44,521  INFO    + Adding: Baat Itni Si Hai — Twin Strings
+2026-06-14 21:55:45,470  INFO    + Adding: Aahatein — Agnee
+2026-06-14 21:55:46,002  INFO    + Adding: Khwaab (Reprise) — Anumita Nadesan
+2026-06-14 21:55:48,859  INFO    + Adding: Aankhon Mein Doob Jaane Ko — THE 9TEEN & Sandesh Shandilya
+2026-06-14 21:55:50,057  INFO    + Adding: Husn (Re-imagined) — raaghavan
+2026-06-14 21:55:52,465  INFO    + Adding: Choo Lo — The Local Train
+2026-06-14 21:55:53,155  INFO    + Adding: Falak (feat. Rishab Rikhiram Sharma) — Ravator, Adarsh Rao, & Kutle Khan
+2026-06-14 21:55:53,594  INFO    + Adding: Turiya Turiya — Asad Khan
+2026-06-14 21:55:55,652  INFO    + Adding: Woh — Khatth, Sthiti, & Shruti Prakash Dash
+2026-06-14 21:55:56,834  INFO    + Adding: LOVESEXDHOKA!!! — Chaar Diwaari
+2026-06-14 21:56:01,958  ERROR  Error syncing 'Indie OP': HTTPSConnectionPool(host='api.spotify.com', port=443): Read timed out. (read timeout=5)
+2026-06-14 21:56:01,959  INFO  Sync complete.
+2026-06-14 21:56:01,960  INFO  Next sync at: 2026-06-15 09:56:01
+2026-06-14 22:00:47,371  INFO  YouTube Music → Spotify Sync Tool started.
+2026-06-14 22:00:47,371  INFO  Will sync every 12 hours.
+2026-06-14 22:00:47,371  INFO  ==================================================
+2026-06-14 22:00:47,371  INFO  Sync started at 2026-06-14 22:00:47
+2026-06-14 22:00:48,191  INFO  --- Syncing 'Indie OP' → 'Indie OP' ---
+2026-06-14 22:00:58,115  INFO  YT Music 'Indie OP': 149 songs found.
+2026-06-14 22:01:04,396  INFO    + Adding: Aalam Naya — NAALAYAK
+2026-06-14 22:01:05,465  INFO    + Adding: Lullaby For The Anxious Bones — Raman Negi
+2026-06-14 22:01:08,879  INFO    + Adding: Mehroom — Raman Negi
+2026-06-14 22:01:12,201  INFO    + Adding: Main Chala — Mohit Chauhan, Shantanu Moitra, & Tanveer Ghazi
+2026-06-14 22:01:13,883  INFO    + Adding: Befikre — Naalayak
+2026-06-14 22:01:18,144  INFO    + Adding: Zakir — Naalayak
+2026-06-14 22:01:18,574  INFO    + Adding: Dilnawaz — The Local Train
+2026-06-14 22:01:20,753  INFO    + Adding: Nusrat (feat. Subir Malik & Jasmine Kaur) — NAALAYAK
+2026-06-14 22:01:23,184  INFO    + Adding: Bawra — NAALAYAK
+2026-06-14 22:01:23,681  INFO    + Adding: Haan Pyaar Hai — Naalayak
+2026-06-14 22:01:24,136  INFO    + Adding: Zakir (Acoustic) — Naalayak
+2026-06-14 22:01:29,099  INFO    + Adding: Umeedein — NAALAYAK
+2026-06-14 22:01:34,215  ERROR  Error syncing 'Indie OP': HTTPSConnectionPool(host='api.spotify.com', port=443): Read timed out. (read timeout=5)
+2026-06-14 22:01:34,216  INFO  Sync complete.
+2026-06-14 22:01:34,216  INFO  Next sync at: 2026-06-15 10:01:34
+2026-06-14 22:07:43,359  INFO  YouTube Music → Spotify Sync Tool started.
+2026-06-14 22:07:43,359  INFO  Will sync every 12 hours.
+2026-06-14 22:07:43,359  INFO  ==================================================
+2026-06-14 22:07:43,359  INFO  Sync started at 2026-06-14 22:07:43
+2026-06-14 22:07:44,039  INFO  --- Syncing 'Indie OP' → 'Indie OP' ---
+2026-06-14 22:07:49,160  INFO  YT Music 'Indie OP': 149 songs found.
+2026-06-14 22:07:50,820  INFO    + Adding: Aalam Naya — NAALAYAK
+2026-06-14 22:07:52,330  INFO    + Adding: Lullaby For The Anxious Bones — Raman Negi
+2026-06-14 22:07:53,389  INFO    + Adding: Mehroom — Raman Negi
+2026-06-14 22:07:54,454  INFO    + Adding: Main Chala — Mohit Chauhan, Shantanu Moitra, & Tanveer Ghazi
+2026-06-14 22:07:56,571  INFO    + Adding: Befikre — Naalayak
+2026-06-14 22:07:58,687  INFO    + Adding: Zakir — Naalayak
+2026-06-14 22:07:59,387  INFO    + Adding: Dilnawaz — The Local Train
+2026-06-14 22:08:00,166  INFO    + Adding: Nusrat (feat. Subir Malik & Jasmine Kaur) — NAALAYAK
+2026-06-14 22:08:02,215  INFO    + Adding: Bawra — NAALAYAK
+2026-06-14 22:08:02,793  INFO    + Adding: Haan Pyaar Hai — Naalayak
+2026-06-14 22:08:03,553  INFO    + Adding: Zakir (Acoustic) — Naalayak
+2026-06-14 22:08:04,547  INFO    + Adding: Umeedein — NAALAYAK
+2026-06-14 22:08:05,589  INFO    + Adding: jazba — Naalayak
+2026-06-14 22:08:06,855  INFO    + Adding: Mann Marziyan — NAALAYAK
+2026-06-14 22:08:07,422  INFO    + Adding: Jeene Do — NAALAYAK
+2026-06-14 22:08:07,947  INFO    + Adding: It's Me — NAALAYAK
+2026-06-14 22:08:11,590  INFO    + Adding: Haan Pyaar Hai (feat. Eskay) — UNPLG'd & Naalayak
+2026-06-14 22:08:14,320  INFO    + Adding: Sahil — Naalayak
+2026-06-14 22:08:18,750  INFO    + Adding: Noorie — NAALAYAK
+2026-06-14 22:08:19,751  INFO    + Adding: Mustafa — Naalayak
+2026-06-14 22:08:20,373  INFO    + Adding: Main Bola Hey! — Karthik Rao
+2026-06-14 22:08:20,931  INFO    + Adding: tere bina — Zaeden
+2026-06-14 22:08:21,453  INFO    + Adding: Farq hai — Suzonn
+2026-06-14 22:08:22,832  INFO    + Adding: Tere Jaisa — Vaibhav Bundhoo & Kamakshi Khanna
+2026-06-14 22:08:23,415  INFO    + Adding: Munasib — Omar Mukhtar
+2026-06-14 22:08:24,347  INFO    + Adding: Sang Rahiyo — Jasleen Royal, Ujjwal Kashyap, & Neeraj Rajawat
+2026-06-14 22:08:28,560  INFO    + Adding: Kali Kali Zulfon Ke — Madhur Sharma
+2026-06-14 22:08:29,062  INFO    + Adding: Dil Mere — The Local Train
+2026-06-14 22:08:30,719  INFO    + Adding: Dooron Dooron - Unplugged — Paresh Pahuja
+2026-06-14 22:08:31,238  INFO    + Adding: Baat Itni Si Hai — Twin Strings
+2026-06-14 22:08:32,652  INFO    + Adding: Aahatein — Agnee
+2026-06-14 22:08:33,226  INFO    + Adding: Khwaab (Reprise) — Anumita Nadesan
+2026-06-14 22:08:34,381  INFO    + Adding: Aankhon Mein Doob Jaane Ko — THE 9TEEN & Sandesh Shandilya
+2026-06-14 22:08:35,206  INFO    + Adding: Husn (Re-imagined) — raaghavan
+2026-06-14 22:08:36,021  INFO    + Adding: Choo Lo — The Local Train
+2026-06-14 22:08:36,918  INFO    + Adding: Falak (feat. Rishab Rikhiram Sharma) — Ravator, Adarsh Rao, & Kutle Khan
+2026-06-14 22:08:37,478  INFO    + Adding: Turiya Turiya — Asad Khan
+2026-06-14 22:08:38,009  INFO    + Adding: Woh — Khatth, Sthiti, & Shruti Prakash Dash
+2026-06-14 22:08:44,476  INFO    + Adding: LOVESEXDHOKA!!! — Chaar Diwaari
+2026-06-14 22:08:48,849  INFO    + Adding: Tujhi Mein — Saahel
+2026-06-14 22:08:49,367  INFO    + Adding: Bairan — Banjaare
+2026-06-14 22:08:50,864  INFO    + Adding: Tu Na Samjhe — Hellow Raja & Maxxturnn
+2026-06-14 22:08:52,774  INFO    + Adding: Falani — Vikram Sarkar & Guri Nimana
+2026-06-14 22:08:53,611  INFO    + Adding: Haaye Re — Banjaare, Swati Shukla, & Maxxturnn
+2026-06-14 22:08:55,930  INFO    + Adding: Kaavish - Dekho — Kaavish
+2026-06-14 22:08:58,963  INFO    + Adding: NEEYO — Vinod Varma
+2026-06-14 22:08:59,507  INFO    + Adding: Mann Melo — Jasleen Royal, Siddharth Amit Bhavsar, & Parth Bharat Thakkar
+2026-06-14 22:09:00,765  INFO    + Adding: Dhun Laagi — Sachin-Jigar, Siddharth Amit Bhavsar, & Niren Bhatt
+2026-06-14 22:09:01,636  INFO    + Adding: Deewani — NAALAYAK
+2026-06-14 22:09:04,506  INFO    + Adding: Kitab — Mr Dutt & Vipin Foji
+2026-06-14 22:09:07,192  INFO    + Adding: Aaj Kal — OutStation
+2026-06-14 22:09:07,791  INFO    + Adding: Kami — Rishabh Vyas
+2026-06-14 22:09:10,081  INFO    + Adding: Sun Bawariya | Official Music Video | Red Box Music — Red Box Music
+2026-06-14 22:09:10,907  INFO    + Adding: Dooriyan — ReddyBhau
+2026-06-14 22:09:13,099  INFO    + Adding: Khamoshiyan Banjaare — Beckchodism
+2026-06-14 22:09:13,959  INFO    + Adding: Roshni Hi Roshni Hai — Gabbar
+2026-06-14 22:09:14,627  INFO    + Adding: Nawazishein — Shuja Haider
+2026-06-14 22:09:23,283  INFO    + Adding: Aur Kya Chahiye — Paresh Pahuja
+2026-06-14 22:09:27,721  INFO    + Adding: Teri Yaad — Ajey Kr
+2026-06-14 22:09:28,280  INFO    + Adding: Munasib — Omar Mukhtar
+2026-06-14 22:09:31,058  INFO    + Adding: Iraaday — Abdul Hannan & Rovalio
+2026-06-14 22:09:31,549  INFO    + Adding: Parchhaiyan — Janisht Joshi, Phosphenes, & Timothy Thampy
+2026-06-14 22:09:32,091  INFO    + Adding: Sadiyaan — Ajey Kr
+2026-06-14 22:09:33,552  INFO    + Adding: Julie — AtharvaMusic & Janisht Joshi
+2026-06-14 22:09:34,759  INFO    + Adding: Kaisey Jiyun — The Local Train
+2026-06-14 22:09:36,162  INFO    + Adding: Yeh Zindagi Hai — The Local Train
+2026-06-14 22:09:36,687  INFO    + Adding: Mere Yaar — The Local Train
+2026-06-14 22:09:38,188  INFO    + Adding: Aaoge Tum Kabhi — The Local Train
+2026-06-14 22:09:39,606  INFO    + Adding: sun saawariya — Accha Insaan, AtharvaMusic, & Yaani Karnawat
+2026-06-14 22:09:40,169  INFO    + Adding: Yeh Jo Halka Halka Suroor Hai (Extended Version) — Farhan Saeed & Nusrat Fateh Ali Khan
+2026-06-14 22:09:40,978  INFO    + Adding: Let Her Go X Husn (Slowed) — raaghavan
+2026-06-14 22:09:42,129  INFO    + Adding: Yeh Duniya Jala Do — Janisht Joshi
+2026-06-14 22:09:42,641  INFO    + Adding: Botalaan - Acoustic — Paresh Pahuja & Shiv Tandan
+2026-06-14 22:09:44,394  INFO    + Adding: Dheere Dheere — Samad - Bharath, Samad Khan, Bharath, and rohh
+2026-06-14 22:09:44,887  INFO    + Adding: Meri Kahani — Atif Aslam
+2026-06-14 22:09:47,672  INFO    + Adding: Preetiya Hesare Neenu — Raghu Dixit, Vasuki Vaibhav, & Raghavendra Kamath
+2026-06-14 22:09:48,862  INFO    + Adding: Vairaagi — Madhubanti Bagchi, Siddarth Amit Bhavsar
+2026-06-14 22:09:49,774  INFO    + Adding: Puraani Bimaari — Janisht Joshi, The Besharams, & Aashay Khot
+2026-06-14 22:09:50,882  INFO    + Adding: Ishq Ki Umar (From "Vadh 2") — Rochak Kohli, Papon, & Kumaar
+2026-06-14 22:09:51,824  INFO    + Adding: Irradon — Lifafa
+2026-06-14 22:09:54,080  INFO    + Adding: Woh — Darzi
+2026-06-14 22:09:55,083  INFO    + Adding: Khota — Janisht Joshi & Ramil Ganjoo
+2026-06-14 22:09:56,224  INFO    + Adding: Urf Zakir — NAALAYAK & UNPLG'd
+2026-06-14 22:09:56,777  INFO    + Adding: Manzil Ki Ore — Taba Chake & Toko Sama
+2026-06-14 22:09:58,851  INFO    + Adding: Gum Ho Kahan — Taba Chake
+2026-06-14 22:09:59,652  INFO    + Adding: Isharey — AtharvaMusic & sarodi
+2026-06-14 22:10:01,087  INFO    + Adding: Idhar Zara Sa Dekh Lo — Shikhar & Yashika Sikka
+2026-06-14 22:10:04,382  INFO    + Adding: Pyaar Ka Jua — THE 9TEEN
+2026-06-14 22:10:07,019  INFO    + Adding: Ab Na Laut Paayenge — Janisht Joshi, Gini, & Sudan
+2026-06-14 22:10:07,639  INFO    + Adding: Tum — Raghav Kaushik & Amrita Saluja
+2026-06-14 22:10:08,163  INFO    + Adding: Sapno Ka Mol — Dream Note
+2026-06-14 22:10:14,931  INFO    + Adding: Udi Udi — Aneesh, Sarkar, & Hruday
+2026-06-14 22:10:16,066  INFO    + Adding: Bheegi Bheegi — A. R. Ameen, A. R. Rahman, & Jasleen Royal
+2026-06-14 22:10:19,811  INFO    + Adding: Tere Naal — Bayaan, Sanah Moidutty, & Vaibhav Pani
+2026-06-14 22:10:20,848  INFO    + Adding: Jaane Jaa — Ajay Karan
+2026-06-14 22:10:21,467  INFO    + Adding: Safar — Bayaan & Sherazam
+2026-06-14 22:10:24,724  INFO    + Adding: Aaogi Kya Tum — Anshul Rajpoot
+2026-06-14 22:10:26,983  INFO    + Adding: Dil Behra — KhoslaRaghu
+2026-06-14 22:10:28,553  INFO    + Adding: BEB — Janisht Joshi & KBIR
+2026-06-14 22:10:29,061  INFO    + Adding: Bahane Do — Anshul Rajpoot
+2026-06-14 22:10:31,971  INFO    + Adding: Tere Ishq Mein — Adarsh Rao
+2026-06-14 22:10:34,790  INFO    + Adding: Aziyat — Pratsofficial
+2026-06-14 22:10:39,400  INFO    + Adding: Pardesiya (feat. Harikey) — Riyeor
+2026-06-14 22:10:39,946  INFO    + Adding: Gulfam — NAALAYAK
+2026-06-14 22:10:42,764  INFO    + Adding: Fizool ki baat — Ramil Ganjoo & Alvina D'Souza
+2026-06-14 22:10:45,084  INFO    + Adding: Silsila banjaare — Beckchodism
+2026-06-14 22:10:51,021  INFO    + Adding: Kyu Roye Har Baat Mein Bandeya — Ravzz Musica
+2026-06-14 22:10:52,342  INFO    + Adding: Unse Jaake Kehdo — Justh
+2026-06-14 22:10:53,228  INFO    + Adding: Suno — Rishi Kumar, Nakul Chugh, & Anshul Mathur
+2026-06-14 22:11:03,565  INFO    + Adding: Tum Jaana Chaho — Navjot Ahuja
+2026-06-14 22:11:04,870  INFO    + Adding: Dil Aaya — AviVerse, Avinash Kumar, Abhishek Shukla, and ABS
+2026-06-14 22:11:06,080  INFO    + Adding: Khwabo Ka Shayar — Piyush Chouhan & Shriyanshi Gupta
+2026-06-14 22:11:06,775  INFO    + Adding: Afsana — Niyam
+2026-06-14 22:11:07,539  INFO    + Adding: Socha Na (From "Flirting with your neighbor") — Ashish Singh Rawat
+2026-06-14 22:11:08,632  INFO    + Adding: NaQabil (Bonus Track) — KhoslaRaghu
+2026-06-14 22:11:10,653  INFO    + Adding: Man Chala — Saahel
+2026-06-14 22:11:12,769  INFO    + Adding: Kehna Hai Kya? — Shikhar
+2026-06-14 22:11:13,270  INFO    + Adding: Jadoo — Akshath
+2026-06-14 22:11:15,231  INFO    + Adding: Mann Bawra — Adarsh Rao
+2026-06-14 22:11:19,611  INFO    + Adding: Chal Do Na — Anshul Rajpoot
+2026-06-14 22:11:21,729  INFO    + Adding: Raaston — Shaur
+2026-06-14 22:11:33,775  INFO    + Adding: Pyar Se — Kushagra, Tanishka Bahl, Bharath, and Akash Rajput
+2026-06-14 22:11:34,318  INFO    + Adding: Aasha — Dorwin John
+2026-06-14 22:11:35,245  INFO    + Adding: Tere Hawale - Darshan Raval — Akdas Hayat
+2026-06-14 22:11:36,642  INFO    + Adding: Tera Nasha — Ajey Kr
+2026-06-14 22:11:37,158  INFO    + Adding: Hey Sundari — Charvik
+2026-06-14 22:11:37,656  INFO    + Adding: Parwaaz — The Western Ghats
+2026-06-14 22:11:38,213  INFO    + Adding: Raat — Divyam Sodhi, Khwaab, & Aaghaz
+2026-06-14 22:11:39,993  INFO    + Adding: Mulaqat — Prateek Kuhad
+2026-06-14 22:11:40,520  INFO    + Adding: cold/mess — Prateek Kuhad
+2026-06-14 22:11:41,225  INFO    + Adding: Khat — Navjot Ahuja
+2026-06-14 22:11:41,993  INFO    + Adding: Kaahe Mose — Garvit Soni, Priyansh Srivastava, & Garvit-Priyansh
+2026-06-14 22:11:45,028  INFO    + Adding: Zulfein — Mehul Mahesh & Dj AYnik
+2026-06-14 22:11:46,016  INFO    + Adding: AAOGE TUM KABHI — RAMAN NEGI & THE LOCAL TRAIN
+2026-06-14 22:11:48,835  INFO    + Adding: Aankhon Se Batana — Dikshant
+2026-06-14 22:11:49,384  INFO    + Adding: Tum Se — OutStation
+2026-06-14 22:11:49,923  INFO    + Adding: Aashiqana — Chaar Diwaari, Indian Ocean, & gini
+2026-06-14 22:11:50,430  INFO    + Adding: Sukoon — gini
+2026-06-14 22:11:51,548  INFO    + Adding: Sahiba — Aditya Rikhari
+2026-06-14 22:11:52,674  INFO    + Adding: Sahiba — Jasleen Royal, Stebin Ben, Vijay Deverakonda, Radhikka Madan, Priya Saraiya, and Aditya Sharma
+2026-06-14 22:11:58,357  INFO    + Adding: Gaya Gaya — Dorwin John
+2026-06-14 22:11:58,988  INFO    + Adding: Rooni — Adarsh Rao
+2026-06-14 22:11:59,522  INFO    + Adding: ahista — Anumita Nadesan
+2026-06-14 22:12:00,040  INFO    + Adding: Aise Na Karo — Samad - Bharath, Samad Khan, & Bharath
+2026-06-14 22:12:00,611  INFO    + Adding: KTMBK — Zaeden & Hanita Bhambri
+2026-06-14 22:12:01,134  INFO    + Adding: Hata Diye — Dream Note
+2026-06-14 22:12:01,704  INFO    + Adding: Tu — Rawal, rohh, & Tang Mizaaji
+2026-06-14 22:12:02,523  INFO    + Adding: Jab Tum Miley — Abhilasha Sinha
+2026-06-14 22:12:03,080  INFO    + Adding: Tu Hai Kahan — Taba Chake
+2026-06-14 22:12:03,805  INFO  Done. Added 149, removed 0 tracks.
+2026-06-14 22:12:03,806  INFO  Sync complete.
+2026-06-14 22:12:03,818  INFO  Next sync at: 2026-06-15 10:12:03
+2026-06-14 23:00:25,213  INFO  YouTube Music → Spotify Sync Tool started.
+2026-06-14 23:00:25,213  INFO  Mode: ALL playlists — syncing every 24 hours.
+2026-06-14 23:00:25,213  INFO  ==================================================
+2026-06-14 23:00:25,213  INFO  Sync started at 2026-06-14 23:00:25
+2026-06-14 23:00:27,026  INFO  Found 67 YouTube Music playlist(s): Liked Music, Indie OP, Late Night, India ke Gaane, yash gohel and Khanak Jakhar, Nigger What!, Chill, My Rock Favorites, Hard Rock, Hard Bod, Retro Vibe, Fav Devotional, Songs you probably never heard before 🎶, Gujarati Hits, Damn, Smooth Vibe, 2025 Recap, Slow vibe, yash gohel, Khanak Jakhar and yash gohel, Techno 🍀, South Indian vibe, Live Performances, Indie Rock & Alt Rock Bangers, Guitar Playlist, Nihongo, shanky’s Pet Playlist, Drive 🚗, AllTime|AnyTime, Indie Folk Café, Punjabi Hits 2023, Chilled Hip-Hop, Hindi Beets Party, Retro Party, LEARN: Procreate Dreams, Rec, lana, Room vibe, old is gold 60's 70's & 80's hindi songs, West Coast Classics - GTA V Radio, jazz, retro, December-February Recap '24, 2023 Recap, NW, Amrita’s Playlist, Hindi, Dance, Zone, GnR, Others, Guitar Riffing Piffing, West Coast Classics/Rap, Trekking, My 2021 Hits, My 2020 Hits, Nihongo, Slow vibe, This Is Us OST, Super Bowl 2022, West Coast Greatest, Krishnakulgohel   Yash, West Coast All, Afrobeats, This Is Us OST, My 2010 Hits, Dance Cherry Picked, Episodes for Later
+2026-06-14 23:00:27,027  INFO  --- Syncing 'Liked Music' → 'Liked Music' ---
+2026-06-14 23:00:28,252  INFO  YT Music 'Liked Music': 109 songs found.
+2026-06-14 23:00:29,850  WARNING  Spotify playlist 'Liked Music' not found. Creating it...
+2026-06-14 23:00:30,191  ERROR  HTTP Error for POST to https://api.spotify.com/v1/users/22glgc3idb2f645eodqtfmmga/playlists with Params: {} returned 403 due to Forbidden
+2026-06-14 23:00:30,192  ERROR  Error syncing 'Liked Music': http status: 403, code: -1 - https://api.spotify.com/v1/users/22glgc3idb2f645eodqtfmmga/playlists:
+ Forbidden, reason: None
+2026-06-14 23:00:30,193  INFO  --- Syncing 'Indie OP' → 'Indie OP' ---
+2026-06-14 23:00:32,358  INFO  YT Music 'Indie OP': 149 songs found.
+2026-06-14 23:00:39,494  INFO    + Adding: Aalam Naya — NAALAYAK
+2026-06-14 23:00:42,054  INFO    + Adding: Lullaby For The Anxious Bones — Raman Negi
+2026-06-14 23:00:42,627  INFO    + Adding: Mehroom — Raman Negi
+2026-06-14 23:00:43,445  INFO    + Adding: Main Chala — Mohit Chauhan, Shantanu Moitra, & Tanveer Ghazi
+2026-06-14 23:00:44,652  INFO    + Adding: Befikre — Naalayak
+2026-06-14 23:00:50,737  INFO    + Adding: Zakir — Naalayak
+2026-06-14 23:00:53,881  INFO    + Adding: Dilnawaz — The Local Train
+2026-06-14 23:00:54,775  INFO    + Adding: Nusrat (feat. Subir Malik & Jasmine Kaur) — NAALAYAK
+2026-06-14 23:00:55,299  INFO    + Adding: Bawra — NAALAYAK
+2026-06-14 23:00:56,918  INFO    + Adding: Haan Pyaar Hai — Naalayak
+2026-06-14 23:00:57,456  INFO    + Adding: Zakir (Acoustic) — Naalayak
+2026-06-14 23:01:00,828  INFO    + Adding: Umeedein — NAALAYAK
+2026-06-14 23:01:01,342  INFO    + Adding: jazba — Naalayak
+2026-06-14 23:01:02,043  INFO    + Adding: Mann Marziyan — NAALAYAK
+2026-06-14 23:01:06,491  INFO    + Adding: Jeene Do — NAALAYAK
+2026-06-14 23:01:07,024  INFO    + Adding: It's Me — NAALAYAK
+2026-06-14 23:01:07,879  INFO    + Adding: Haan Pyaar Hai (feat. Eskay) — UNPLG'd & Naalayak
+2026-06-14 23:01:08,422  INFO    + Adding: Sahil — Naalayak
+2026-06-14 23:01:09,688  INFO    + Adding: Noorie — NAALAYAK
+2026-06-14 23:01:10,207  INFO    + Adding: Mustafa — Naalayak
+2026-06-14 23:01:12,537  INFO    + Adding: Main Bola Hey! — Karthik Rao
+2026-06-14 23:01:13,477  INFO    + Adding: tere bina — Zaeden
+2026-06-14 23:01:14,000  INFO    + Adding: Farq hai — Suzonn
+2026-06-14 23:01:15,025  INFO    + Adding: Tere Jaisa — Vaibhav Bundhoo & Kamakshi Khanna
+2026-06-14 23:01:17,382  INFO    + Adding: Munasib — Omar Mukhtar
+2026-06-14 23:01:19,018  INFO    + Adding: Sang Rahiyo — Jasleen Royal, Ujjwal Kashyap, & Neeraj Rajawat
+2026-06-14 23:01:20,102  INFO    + Adding: Kali Kali Zulfon Ke — Madhur Sharma
+2026-06-14 23:01:20,695  INFO    + Adding: Dil Mere — The Local Train
+2026-06-14 23:01:21,754  INFO    + Adding: Dooron Dooron - Unplugged — Paresh Pahuja
+2026-06-14 23:01:23,763  INFO    + Adding: Baat Itni Si Hai — Twin Strings
+2026-06-14 23:01:30,101  INFO    + Adding: Aahatein — Agnee
+2026-06-14 23:01:30,663  INFO    + Adding: Khwaab (Reprise) — Anumita Nadesan
+2026-06-14 23:01:31,351  INFO    + Adding: Aankhon Mein Doob Jaane Ko — THE 9TEEN & Sandesh Shandilya
+2026-06-14 23:01:32,336  INFO    + Adding: Husn (Re-imagined) — raaghavan
+2026-06-14 23:01:35,815  INFO    + Adding: Choo Lo — The Local Train
+2026-06-14 23:01:36,830  INFO    + Adding: Falak (feat. Rishab Rikhiram Sharma) — Ravator, Adarsh Rao, & Kutle Khan
+2026-06-14 23:01:37,364  INFO    + Adding: Turiya Turiya — Asad Khan
+2026-06-14 23:01:38,187  INFO    + Adding: Woh — Khatth, Sthiti, & Shruti Prakash Dash
+2026-06-14 23:01:38,693  INFO    + Adding: LOVESEXDHOKA!!! — Chaar Diwaari
+2026-06-14 23:01:39,804  INFO    + Adding: Tujhi Mein — Saahel
+2026-06-14 23:01:40,336  INFO    + Adding: Bairan — Banjaare
+2026-06-14 23:01:40,885  INFO    + Adding: Tu Na Samjhe — Hellow Raja & Maxxturnn
+2026-06-14 23:01:41,432  INFO    + Adding: Falani — Vikram Sarkar & Guri Nimana
+2026-06-14 23:01:41,938  INFO    + Adding: Haaye Re — Banjaare, Swati Shukla, & Maxxturnn
+2026-06-14 23:01:44,233  INFO    + Adding: Kaavish - Dekho — Kaavish
+2026-06-14 23:01:44,729  INFO    + Adding: NEEYO — Vinod Varma
+2026-06-14 23:01:46,397  INFO    + Adding: Mann Melo — Jasleen Royal, Siddharth Amit Bhavsar, & Parth Bharat Thakkar
+2026-06-14 23:01:47,293  INFO    + Adding: Dhun Laagi — Sachin-Jigar, Siddharth Amit Bhavsar, & Niren Bhatt
+2026-06-14 23:01:48,160  INFO    + Adding: Deewani — NAALAYAK
+2026-06-14 23:01:48,682  INFO    + Adding: Kitab — Mr Dutt & Vipin Foji
+2026-06-14 23:01:49,224  INFO    + Adding: Aaj Kal — OutStation
+2026-06-14 23:01:49,799  INFO    + Adding: Kami — Rishabh Vyas
+2026-06-14 23:01:50,674  INFO    + Adding: Sun Bawariya | Official Music Video | Red Box Music — Red Box Music
+2026-06-14 23:01:51,268  INFO    + Adding: Dooriyan — ReddyBhau
+2026-06-14 23:01:53,941  INFO    + Adding: Khamoshiyan Banjaare — Beckchodism
+2026-06-14 23:01:55,274  INFO    + Adding: Roshni Hi Roshni Hai — Gabbar
+2026-06-14 23:01:55,773  INFO    + Adding: Nawazishein — Shuja Haider
+2026-06-14 23:01:56,357  INFO    + Adding: Aur Kya Chahiye — Paresh Pahuja
+2026-06-14 23:01:59,641  INFO    + Adding: Teri Yaad — Ajey Kr
+2026-06-14 23:02:00,241  INFO    + Adding: Munasib — Omar Mukhtar
+2026-06-14 23:02:03,638  INFO    + Adding: Iraaday — Abdul Hannan & Rovalio
+2026-06-14 23:02:04,346  INFO    + Adding: Parchhaiyan — Janisht Joshi, Phosphenes, & Timothy Thampy
+2026-06-14 23:02:04,876  INFO    + Adding: Sadiyaan — Ajey Kr
+2026-06-14 23:02:05,405  INFO    + Adding: Julie — AtharvaMusic & Janisht Joshi
+2026-06-14 23:02:05,930  INFO    + Adding: Kaisey Jiyun — The Local Train
+2026-06-14 23:02:06,523  INFO    + Adding: Yeh Zindagi Hai — The Local Train
+2026-06-14 23:02:08,509  INFO    + Adding: Mere Yaar — The Local Train
+2026-06-14 23:02:09,031  INFO    + Adding: Aaoge Tum Kabhi — The Local Train
+2026-06-14 23:02:09,602  INFO    + Adding: sun saawariya — Accha Insaan, AtharvaMusic, & Yaani Karnawat
+2026-06-14 23:02:10,139  INFO    + Adding: Yeh Jo Halka Halka Suroor Hai (Extended Version) — Farhan Saeed & Nusrat Fateh Ali Khan
+2026-06-14 23:02:15,781  INFO    + Adding: Let Her Go X Husn (Slowed) — raaghavan
+2026-06-14 23:02:17,268  INFO    + Adding: Yeh Duniya Jala Do — Janisht Joshi
+2026-06-14 23:02:17,797  INFO    + Adding: Botalaan - Acoustic — Paresh Pahuja & Shiv Tandan
+2026-06-14 23:02:20,849  INFO    + Adding: Dheere Dheere — Samad - Bharath, Samad Khan, Bharath, and rohh
+2026-06-14 23:02:22,703  INFO    + Adding: Meri Kahani — Atif Aslam
+2026-06-14 23:02:25,171  INFO    + Adding: Preetiya Hesare Neenu — Raghu Dixit, Vasuki Vaibhav, & Raghavendra Kamath
+2026-06-14 23:02:25,737  INFO    + Adding: Vairaagi — Madhubanti Bagchi, Siddarth Amit Bhavsar
+2026-06-14 23:02:26,280  INFO    + Adding: Puraani Bimaari — Janisht Joshi, The Besharams, & Aashay Khot
+2026-06-14 23:02:30,699  INFO    + Adding: Ishq Ki Umar (From "Vadh 2") — Rochak Kohli, Papon, & Kumaar
+2026-06-14 23:02:32,696  INFO    + Adding: Irradon — Lifafa
+2026-06-14 23:02:33,243  INFO    + Adding: Woh — Darzi
+2026-06-14 23:02:33,826  INFO    + Adding: Khota — Janisht Joshi & Ramil Ganjoo
+2026-06-14 23:02:38,816  INFO    + Adding: Urf Zakir — NAALAYAK & UNPLG'd
+2026-06-14 23:02:40,705  INFO    + Adding: Manzil Ki Ore — Taba Chake & Toko Sama
+2026-06-14 23:02:41,223  INFO    + Adding: Gum Ho Kahan — Taba Chake
+2026-06-14 23:02:44,741  INFO    + Adding: Isharey — AtharvaMusic & sarodi
+2026-06-14 23:02:48,172  INFO    + Adding: Idhar Zara Sa Dekh Lo — Shikhar & Yashika Sikka
+2026-06-14 23:02:48,726  INFO    + Adding: Pyaar Ka Jua — THE 9TEEN
+2026-06-14 23:02:49,257  INFO    + Adding: Ab Na Laut Paayenge — Janisht Joshi, Gini, & Sudan
+2026-06-14 23:02:49,965  INFO    + Adding: Tum — Raghav Kaushik & Amrita Saluja
+2026-06-14 23:02:51,178  INFO    + Adding: Sapno Ka Mol — Dream Note
+2026-06-14 23:02:51,719  INFO    + Adding: Udi Udi — Aneesh, Sarkar, & Hruday
+2026-06-14 23:02:54,636  INFO    + Adding: Bheegi Bheegi — A. R. Ameen, A. R. Rahman, & Jasleen Royal
+2026-06-14 23:02:55,141  INFO    + Adding: Tere Naal — Bayaan, Sanah Moidutty, & Vaibhav Pani
+2026-06-14 23:02:55,635  INFO    + Adding: Jaane Jaa — Ajay Karan
+2026-06-14 23:02:59,535  INFO    + Adding: Safar — Bayaan & Sherazam
+2026-06-14 23:03:01,304  INFO    + Adding: Aaogi Kya Tum — Anshul Rajpoot
+2026-06-14 23:03:02,315  INFO    + Adding: Dil Behra — KhoslaRaghu
+2026-06-14 23:03:02,915  INFO    + Adding: BEB — Janisht Joshi & KBIR
+2026-06-14 23:03:03,419  INFO    + Adding: Bahane Do — Anshul Rajpoot
+2026-06-14 23:03:04,731  INFO    + Adding: Tere Ishq Mein — Adarsh Rao
+2026-06-14 23:03:05,943  INFO    + Adding: Aziyat — Pratsofficial
+2026-06-14 23:03:07,346  INFO    + Adding: Pardesiya (feat. Harikey) — Riyeor
+2026-06-14 23:03:09,779  INFO    + Adding: Gulfam — NAALAYAK
+2026-06-14 23:03:10,478  INFO    + Adding: Fizool ki baat — Ramil Ganjoo & Alvina D'Souza
+2026-06-14 23:03:11,343  INFO    + Adding: Silsila banjaare — Beckchodism
+2026-06-14 23:03:13,523  INFO    + Adding: Kyu Roye Har Baat Mein Bandeya — Ravzz Musica
+2026-06-14 23:03:14,159  INFO    + Adding: Unse Jaake Kehdo — Justh
+2026-06-14 23:03:15,292  INFO    + Adding: Suno — Rishi Kumar, Nakul Chugh, & Anshul Mathur
+2026-06-14 23:03:15,786  INFO    + Adding: Tum Jaana Chaho — Navjot Ahuja
+2026-06-14 23:03:18,467  INFO    + Adding: Dil Aaya — AviVerse, Avinash Kumar, Abhishek Shukla, and ABS
+2026-06-14 23:03:18,995  INFO    + Adding: Khwabo Ka Shayar — Piyush Chouhan & Shriyanshi Gupta
+2026-06-14 23:03:24,901  INFO    + Adding: Afsana — Niyam
+2026-06-14 23:03:27,635  INFO    + Adding: Socha Na (From "Flirting with your neighbor") — Ashish Singh Rawat
+2026-06-14 23:03:29,765  INFO    + Adding: NaQabil (Bonus Track) — KhoslaRaghu
+2026-06-14 23:03:30,815  INFO    + Adding: Man Chala — Saahel
+2026-06-14 23:03:31,411  INFO    + Adding: Kehna Hai Kya? — Shikhar
+2026-06-14 23:03:32,995  INFO    + Adding: Jadoo — Akshath
+2026-06-14 23:03:34,016  INFO    + Adding: Mann Bawra — Adarsh Rao
+2026-06-14 23:03:35,056  INFO    + Adding: Chal Do Na — Anshul Rajpoot
+2026-06-14 23:03:36,255  INFO    + Adding: Raaston — Shaur
+2026-06-14 23:03:37,876  INFO    + Adding: Pyar Se — Kushagra, Tanishka Bahl, Bharath, and Akash Rajput
+2026-06-14 23:03:38,638  INFO    + Adding: Aasha — Dorwin John
+2026-06-14 23:03:39,535  INFO    + Adding: Tere Hawale - Darshan Raval — Akdas Hayat
+2026-06-14 23:03:40,080  INFO    + Adding: Tera Nasha — Ajey Kr
+2026-06-14 23:03:43,288  INFO    + Adding: Hey Sundari — Charvik
+2026-06-14 23:03:43,798  INFO    + Adding: Parwaaz — The Western Ghats
+2026-06-14 23:03:44,333  INFO    + Adding: Raat — Divyam Sodhi, Khwaab, & Aaghaz
+2026-06-14 23:03:46,648  INFO    + Adding: Mulaqat — Prateek Kuhad
+2026-06-14 23:03:47,190  INFO    + Adding: cold/mess — Prateek Kuhad
+2026-06-14 23:03:49,787  INFO    + Adding: Khat — Navjot Ahuja
+2026-06-14 23:03:51,396  INFO    + Adding: Kaahe Mose — Garvit Soni, Priyansh Srivastava, & Garvit-Priyansh
+2026-06-14 23:03:59,317  INFO    + Adding: Zulfein — Mehul Mahesh & Dj AYnik
+2026-06-14 23:04:00,132  INFO    + Adding: AAOGE TUM KABHI — RAMAN NEGI & THE LOCAL TRAIN
+2026-06-14 23:04:01,885  INFO    + Adding: Aankhon Se Batana — Dikshant
+2026-06-14 23:04:03,143  INFO    + Adding: Tum Se — OutStation
+2026-06-14 23:04:03,933  INFO    + Adding: Aashiqana — Chaar Diwaari, Indian Ocean, & gini
+2026-06-14 23:04:08,439  INFO    + Adding: Sukoon — gini
+2026-06-14 23:04:11,495  INFO    + Adding: Sahiba — Aditya Rikhari
+2026-06-14 23:04:12,591  INFO    + Adding: Sahiba — Jasleen Royal, Stebin Ben, Vijay Deverakonda, Radhikka Madan, Priya Saraiya, and Aditya Sharma
+2026-06-14 23:04:14,785  INFO    + Adding: Gaya Gaya — Dorwin John
+2026-06-14 23:04:16,210  INFO    + Adding: Rooni — Adarsh Rao
+2026-06-14 23:04:16,718  INFO    + Adding: ahista — Anumita Nadesan
+2026-06-14 23:04:19,276  INFO    + Adding: Aise Na Karo — Samad - Bharath, Samad Khan, & Bharath
+2026-06-14 23:04:19,839  INFO    + Adding: KTMBK — Zaeden & Hanita Bhambri
+2026-06-14 23:04:21,749  INFO    + Adding: Hata Diye — Dream Note
+2026-06-14 23:04:25,199  INFO    + Adding: Tu — Rawal, rohh, & Tang Mizaaji
+2026-06-14 23:04:27,846  INFO    + Adding: Jab Tum Miley — Abhilasha Sinha
+2026-06-14 23:04:30,673  INFO    + Adding: Tu Hai Kahan — Taba Chake
+2026-06-14 23:04:31,470  INFO  Done. Added 149, removed 0 tracks.
+2026-06-14 23:04:31,471  INFO  --- Syncing 'Late Night' → 'Late Night' ---
+2026-06-14 23:04:33,312  INFO  YT Music 'Late Night': 157 songs found.
+2026-06-14 23:04:34,660  WARNING  Spotify playlist 'Late Night' not found. Creating it...
+2026-06-14 23:04:35,777  ERROR  HTTP Error for POST to https://api.spotify.com/v1/users/22glgc3idb2f645eodqtfmmga/playlists with Params: {} returned 403 due to Forbidden
+2026-06-14 23:04:35,778  ERROR  Error syncing 'Late Night': http status: 403, code: -1 - https://api.spotify.com/v1/users/22glgc3idb2f645eodqtfmmga/playlists:
+ Forbidden, reason: None
+2026-06-14 23:04:35,779  INFO  --- Syncing 'India ke Gaane' → 'India ke Gaane' ---
+2026-06-14 23:04:43,347  INFO  YT Music 'India ke Gaane': 188 songs found.
+2026-06-14 23:04:44,534  WARNING  Spotify playlist 'India ke Gaane' not found. Creating it...
+2026-06-14 23:04:44,868  ERROR  HTTP Error for POST to https://api.spotify.com/v1/users/22glgc3idb2f645eodqtfmmga/playlists with Params: {} returned 403 due to Forbidden
+2026-06-14 23:04:44,869  ERROR  Error syncing 'India ke Gaane': http status: 403, code: -1 - https://api.spotify.com/v1/users/22glgc3idb2f645eodqtfmmga/playlists:
+ Forbidden, reason: None
+2026-06-14 23:04:44,870  INFO  --- Syncing 'yash gohel and Khanak Jakhar' → 'yash gohel and Khanak Jakhar' ---
+2026-06-14 23:04:50,161  INFO  YT Music 'yash gohel and Khanak Jakhar': 50 songs found.
+2026-06-14 23:04:50,493  WARNING  Spotify playlist 'yash gohel and Khanak Jakhar' not found. Creating it...
+2026-06-14 23:04:50,816  ERROR  HTTP Error for POST to https://api.spotify.com/v1/users/22glgc3idb2f645eodqtfmmga/playlists with Params: {} returned 403 due to Forbidden
+2026-06-14 23:04:50,817  ERROR  Error syncing 'yash gohel and Khanak Jakhar': http status: 403, code: -1 - https://api.spotify.com/v1/users/22glgc3idb2f645eodqtfmmga/playlists:
+ Forbidden, reason: None
+2026-06-14 23:04:50,817  INFO  --- Syncing 'Nigger What!' → 'Nigger What!' ---
+2026-06-14 23:04:57,158  INFO  YT Music 'Nigger What!': 100 songs found.
+2026-06-14 23:04:59,812  WARNING  Spotify playlist 'Nigger What!' not found. Creating it...
+2026-06-14 23:05:00,167  ERROR  HTTP Error for POST to https://api.spotify.com/v1/users/22glgc3idb2f645eodqtfmmga/playlists with Params: {} returned 403 due to Forbidden
+2026-06-14 23:05:00,168  ERROR  Error syncing 'Nigger What!': http status: 403, code: -1 - https://api.spotify.com/v1/users/22glgc3idb2f645eodqtfmmga/playlists:
+ Forbidden, reason: None
+2026-06-14 23:05:00,168  INFO  --- Syncing 'Chill' → 'Chill' ---
+2026-06-14 23:05:14,100  INFO  YT Music 'Chill': 245 songs found.
+2026-06-14 23:05:15,962  INFO    + Adding: Higher Place (feat. Ne-Yo) — Dimitri Vegas & Like Mike
+2026-06-14 23:05:16,554  INFO    + Adding: If I Lose Myself (Alesso vs OneRepublic) — OneRepublic & Alesso
+2026-06-14 23:05:17,170  INFO    + Adding: Ho Hey — The Lumineers
+2026-06-14 23:05:17,754  INFO    + Adding: Attention — Charlie Puth
+2026-06-14 23:05:18,331  INFO    + Adding: See You Again (feat. Charlie Puth) — Wiz Khalifa
+2026-06-14 23:05:18,946  INFO    + Adding: One Call Away (Acoustic) — Charlie Puth
+2026-06-14 23:05:21,510  INFO    + Adding: The Way I Am (Acoustic) — Charlie Puth
+2026-06-14 23:05:22,367  INFO    + Adding: Patient — Charlie Puth
+2026-06-14 23:05:22,892  INFO    + Adding: Uncover — Zara Larsson
+2026-06-14 23:05:23,488  INFO    + Adding: 100 Suns — Thirty Seconds To Mars
+2026-06-14 23:05:24,826  INFO    + Adding: Instant Crush (feat. Julian Casablancas) — Daft Punk & Julian Casablancas
+2026-06-14 23:05:27,658  INFO    + Adding: Times Like These — Foo Fighters
+2026-06-14 23:05:28,185  INFO    + Adding: Wheels — Foo Fighters
+2026-06-14 23:05:28,678  INFO    + Adding: Let My Love Open The Door — Pete Townshend
+2026-06-14 23:05:29,316  INFO    + Adding: Death with Dignity — Sufjan Stevens
+2026-06-14 23:05:29,843  INFO    + Adding: Put Your Bags Down — Adam Cohen
+2026-06-14 23:05:30,963  INFO    + Adding: Romeo And Juliet — Dire Straits
+2026-06-14 23:05:31,774  INFO    + Adding: Blues Run the Game (2001 - Remaster) — Jackson C. Frank
+2026-06-14 23:05:33,613  INFO    + Adding: The Wind — Cat Stevens
+2026-06-14 23:05:36,683  INFO    + Adding: Bottle — Broken Anchor, Brad Gordon, & Austin Hartley-Leonard
+2026-06-14 23:05:37,235  INFO    + Adding: Fireflies — Owl City
+2026-06-14 23:05:37,881  INFO    + Adding: Vanilla Twilight — Owl City
+2026-06-14 23:05:38,423  INFO    + Adding: Good Time — Owl City & Carly Rae Jepsen
+2026-06-14 23:05:39,329  INFO    + Adding: Call Me Maybe — Carly Rae Jepsen
+2026-06-14 23:05:39,906  INFO    + Adding: Wake Me Up — Avicii
+2026-06-14 23:05:40,463  INFO    + Adding: The Nights — Avicii
+2026-06-14 23:05:41,069  INFO    + Adding: Waiting For Love — Avicii
+2026-06-14 23:05:41,725  INFO    + Adding: Hey Brother — Avicii
+2026-06-14 23:05:42,262  INFO    + Adding: Whistle — Flo Rida
+2026-06-14 23:05:42,800  INFO    + Adding: Good Feeling — Flo Rida
+2026-06-14 23:05:43,313  INFO    + Adding: I Cry — Flo Rida
+2026-06-14 23:05:43,879  INFO    + Adding: Just the Way You Are — Bruno Mars
+2026-06-14 23:05:44,494  INFO    + Adding: Airplanes (feat. Hayley Williams of Paramore) — B.o.B
+2026-06-14 23:05:45,019  INFO    + Adding: Nothin' on You (feat. Bruno Mars) — B.o.B
+2026-06-14 23:05:45,522  INFO    + Adding: Ridin' Solo (2016 Platinum Hits Edition) — Jason Derulo
+2026-06-14 23:05:46,537  INFO    + Adding: Whatever You Like (Explicit Time Capsule Version) — T.I.
+2026-06-14 23:05:47,100  INFO    + Adding: Right Round (feat. Kesha) — Flo Rida
+2026-06-14 23:05:47,638  INFO    + Adding: Airplanes Pt II (feat. Hayley Williams & Eminem) — B.o.B.
+2026-06-14 23:05:48,349  INFO    + Adding: Talk Dirty (feat. 2 Chainz) — Jason Derulo
+2026-06-14 23:05:48,898  INFO    + Adding: Trumpets — Jason Derulo
+2026-06-14 23:05:49,757  INFO    + Adding: Don't You Worry Child (Radio Edit) (feat. John Martin) — Swedish House Mafia
+2026-06-14 23:05:50,306  INFO    + Adding: Stole the Show — Kygo & Parson James
+2026-06-14 23:05:50,891  INFO    + Adding: Stole the Show — Parson James
+2026-06-14 23:05:51,417  INFO    + Adding: Baby, You Make Me Crazy (Friction Remix) — Sam Smith
+2026-06-14 23:05:52,647  INFO    + Adding: I Need Your Love (feat. Ellie Goulding) — Calvin Harris
+2026-06-14 23:05:53,324  INFO    + Adding: Burn — Ellie Goulding
+2026-06-14 23:05:53,835  INFO    + Adding: I Wanna Love You (feat. Snoop Dogg) — Akon
+2026-06-14 23:05:54,589  INFO    + Adding: Right Now (Na Na Na) — Akon
+2026-06-14 23:05:55,124  INFO    + Adding: Summer Paradise (feat. K'naan) — Simple Plan
+2026-06-14 23:05:55,636  INFO    + Adding: Jet Lag (feat. Natasha Bedingfield) — Simple Plan
+2026-06-14 23:05:56,151  INFO    + Adding: Say You Like Me — We The Kings
+2026-06-14 23:05:57,024  INFO    + Adding: Ride Out — Rich Homie Quan, Tyga, Wale, and YG
+2026-06-14 23:05:57,534  INFO    + Adding: bad guy — Billie Eilish
+2026-06-14 23:05:58,399  INFO    + Adding: Or Nah (Remix) (feat. The Weeknd, Wiz Khalifa & DJ Mustard) — Ty Dolla $ign
+2026-06-14 23:05:59,025  INFO    + Adding: Black and Yellow — Wiz Khalifa
+2026-06-14 23:05:59,516  INFO    + Adding: No Sleep — Wiz Khalifa
+2026-06-14 23:06:00,033  INFO    + Adding: Roll Up — Wiz Khalifa
+2026-06-14 23:06:00,541  INFO    + Adding: Young, Wild & Free (feat. Bruno Mars) — Snoop Dogg & Wiz Khalifa
+2026-06-14 23:06:01,362  INFO    + Adding: The Next Episode (feat. Snoop Dogg) — Dr. Dre
+2026-06-14 23:06:01,905  INFO    + Adding: Smooth Criminal — Michael Jackson
+2026-06-14 23:06:02,448  INFO    + Adding: Dangerous — Michael Jackson
+2026-06-14 23:06:03,236  INFO    + Adding: Low (feat. T-Pain) — Flo Rida
+2026-06-14 23:06:03,742  INFO    + Adding: All Time Low (Acoustic) — Jon Bellion
+2026-06-14 23:06:04,297  INFO    + Adding: Low Life (feat. The Weeknd) — Future
+2026-06-14 23:06:04,872  INFO    + Adding: These Days (feat. Jess Glynne, Macklemore & Dan Caplen) — Rudimental
+2026-06-14 23:06:06,186  INFO    + Adding: Summer Days — Tzu
+2026-06-14 23:06:06,737  INFO    + Adding: Good Old Days — Macklemore & Kesha
+2026-06-14 23:06:13,274  INFO    + Adding: Marmalade (feat. Lil Yachty) — Macklemore
+2026-06-14 23:06:13,788  INFO    + Adding: Corner Store (feat. Dave B & Travis Thompson) — Macklemore
+2026-06-14 23:06:14,337  INFO    + Adding: Wing$ — Macklemore & Ryan Lewis
+2026-06-14 23:06:14,862  INFO    + Adding: Leaving on a Jet Plane (Acoustic) — The Macarons Project
+2026-06-14 23:06:15,399  INFO    + Adding: Leaving, On a Jet Plane ("Greatest Hits" Version) — John Denver
+2026-06-14 23:06:17,308  INFO    + Adding: Radioactive — Imagine Dragons
+2026-06-14 23:06:17,989  INFO    + Adding: Young Dumb & Broke — Khalid
+2026-06-14 23:06:18,685  INFO    + Adding: Let's Hurt Tonight — OneRepublic
+2026-06-14 23:06:21,838  INFO    + Adding: Blue Jeans — Lana Del Rey
+2026-06-14 23:06:23,124  INFO    + Adding: I Really Like You — Carly Rae Jepsen
+2026-06-14 23:06:23,727  INFO    + Adding: Me, Myself & I — G-Eazy
+2026-06-14 23:06:29,595  INFO    + Adding: Some Kind Of Drug (feat. Marc E. Bassy) — G-Eazy
+2026-06-14 23:06:30,135  INFO    + Adding: Hold My Hand (feat. Akon) — Michael Jackson
+2026-06-14 23:06:33,188  INFO    + Adding: How Hard I Try (feat. James Hersey) — filous
+2026-06-14 23:06:33,776  INFO    + Adding: American Pie — Don McLean
+2026-06-14 23:06:36,019  INFO    + Adding: Yeah — L.Nizzle
+2026-06-14 23:06:36,550  INFO    + Adding: DJ Got Us Fallin' In Love (feat. Pitbull) — Usher
+2026-06-14 23:06:38,536  INFO    + Adding: Dessert (Remix) (feat. Silentó) — Dawin
+2026-06-14 23:06:39,128  INFO    + Adding: Crush — David Archuleta
+2026-06-14 23:06:39,660  INFO    + Adding: This Is What It Feels Like (feat. Trevor Guthrie) — Armin van Buuren
+2026-06-14 23:06:40,190  INFO    + Adding: Can't Help Falling in Love — Elvis Presley
+2026-06-14 23:06:40,898  INFO    + Adding: 5pm — Otis Junior & Dr. Dundiff
+2026-06-14 23:06:41,433  INFO    + Adding: Home — Machine Gun Kelly, X Ambassadors, & Bebe Rexha
+2026-06-14 23:06:41,934  INFO    + Adding: Bad Things — mgk & Camila Cabello
+2026-06-14 23:06:42,442  INFO    + Adding: Candy Paint — Post Malone
+2026-06-14 23:06:43,023  INFO    + Adding: Sunflower (Spider-Man: Into the Spider-Verse) — Post Malone & Swae Lee
+2026-06-14 23:06:43,642  INFO    + Adding: rockstar (feat. 21 Savage) — Post Malone
+2026-06-14 23:06:44,174  INFO    + Adding: Congratulations (feat. Quavo) — Post Malone
+2026-06-14 23:06:44,718  INFO    + Adding: Psycho (feat. Ty Dolla $ign) — Post Malone
+2026-06-14 23:06:45,283  INFO    + Adding: White Iverson — Post Malone
+2026-06-14 23:06:45,783  INFO    + Adding: What's Up Danger — Blackway & Black Caviar
+2026-06-14 23:06:46,334  INFO    + Adding: HUMBLE. — Kendrick Lamar
+2026-06-14 23:06:47,034  INFO    + Adding: Pray For Me — The Weeknd & Kendrick Lamar
+2026-06-14 23:06:47,569  INFO    + Adding: Lay It All on Me (feat. Ed Sheeran) — Rudimental
+2026-06-14 23:06:48,070  INFO    + Adding: Shine On You Crazy Diamond (Pts. 1-5) — Pink Floyd
+2026-06-14 23:06:48,663  INFO    + Adding: Memories — Maroon 5
+2026-06-14 23:06:49,568  INFO    + Adding: Payphone (Edit) (feat. Wiz Khalifa) — Maroon 5
+2026-06-14 23:06:50,140  INFO    + Adding: Sugar — Maroon 5
+2026-06-14 23:06:50,632  INFO    + Adding: Girls Like You (Cardi B Version) (feat. Cardi B) — Maroon 5
+2026-06-14 23:06:51,182  INFO    + Adding: Maps — Maroon 5
+2026-06-14 23:06:52,120  INFO    + Adding: Moves Like Jagger (Studio Recording From "The Voice" Performance) (feat. Christina Aguilera) — Maroon 5
+2026-06-14 23:06:52,664  INFO    + Adding: Leaving California — Maroon 5
+2026-06-14 23:06:53,182  INFO    + Adding: Coming Back For You — Maroon 5
+2026-06-14 23:06:54,059  INFO    + Adding: Payphone (feat. Wiz Khalifa) — Maroon 5
+2026-06-14 23:06:54,619  INFO    + Adding: Daylight — Maroon 5
+2026-06-14 23:06:55,559  INFO    + Adding: Bailando (Spanish Version) (feat. Descemer Bueno & Gente De Zona) — Enrique Iglesias
+2026-06-14 23:06:56,096  INFO    + Adding: Be With You — Enrique Iglesias
+2026-06-14 23:06:57,028  INFO    + Adding: I'm A Freak (feat. Pitbull) — Enrique Iglesias
+2026-06-14 23:06:57,575  INFO    + Adding: There Goes My Baby (feat. Flo Rida) — Enrique Iglesias
+2026-06-14 23:06:58,097  INFO    + Adding: Heart Attack — Enrique Iglesias
+2026-06-14 23:06:59,220  INFO    + Adding: Finally Found You (feat. Sammy Adams) — Enrique Iglesias
+2026-06-14 23:06:59,736  INFO    + Adding: One Day At A Time (feat. Akon) — Enrique Iglesias
+2026-06-14 23:07:00,745  WARNING    ? Not found on Spotify: Heartbeat (India Mix) (feat. Sunidhi Chauhan) — Enrique Iglesias
+2026-06-14 23:07:01,283  INFO    + Adding: Do You Know? (The Ping Pong Song) — Enrique Iglesias
+2026-06-14 23:07:01,834  INFO    + Adding: Rhythm Divine — Enrique Iglesias
+2026-06-14 23:07:02,352  INFO    + Adding: Escape — Enrique Iglesias
+2026-06-14 23:07:02,950  INFO    + Adding: Rolling in the Deep — Adele
+2026-06-14 23:07:03,506  INFO    + Adding: Set Fire to the Rain — Adele
+2026-06-14 23:07:04,021  INFO    + Adding: When We Were Young — Adele
+2026-06-14 23:07:04,563  INFO    + Adding: Water Under the Bridge — Adele
+2026-06-14 23:07:05,053  INFO    + Adding: Skyfall — Adele
+2026-06-14 23:07:05,578  INFO    + Adding: Who You Love (feat. John Mayer) — John Mayer
+2026-06-14 23:07:06,606  INFO    + Adding: Gone, Gone, Gone — Phillip Phillips
+2026-06-14 23:07:07,133  INFO    + Adding: Earth — Lil Dicky
+2026-06-14 23:07:07,669  INFO    + Adding: Wishing Well — Juice WRLD
+2026-06-14 23:07:09,969  INFO    + Adding: Lucid Dreams — Juice WRLD
+2026-06-14 23:07:11,623  INFO    + Adding: Holy (feat. Chance The Rapper) — Justin Bieber
+2026-06-14 23:07:12,185  INFO    + Adding: Cheerleader (Felix Jaehn Remix) (Radio Edit) — OMI
+2026-06-14 23:07:13,102  INFO    + Adding: You & Me (Flume Remix) (feat. Eliza Doolittle) — Disclosure
+2026-06-14 23:07:14,027  INFO    + Adding: Latch (feat. Sam Smith) — Disclosure
+2026-06-14 23:07:14,636  INFO    + Adding: Help Me Lose My Mind (feat. London Grammar) — Disclosure
+2026-06-14 23:07:15,223  INFO    + Adding: Love Someone — Lukas Graham
+2026-06-14 23:07:15,757  INFO    + Adding: If I Ain't Got You (feat. Usher) — Alicia Keys
+2026-06-14 23:07:16,434  INFO    + Adding: Down (feat. Lil Wayne) — Jay Sean
+2026-06-14 23:07:17,236  INFO    + Adding: Maria Maria (Radio Edit) (feat. The Product G&B) — Santana
+2026-06-14 23:07:18,834  INFO    + Adding: Leave The Door Open — Bruno Mars, Anderson .Paak, & Silk Sonic
+2026-06-14 23:07:19,395  INFO    + Adding: If I Ain't Got You (Piano & Vocal Version) — Alicia Keys
+2026-06-14 23:07:21,311  INFO    + Adding: Hair Down — SiR
+2026-06-14 23:07:21,829  INFO    + Adding: light — wave to earth
+2026-06-14 23:07:22,365  INFO    + Adding: All Star — Smash Mouth
+2026-06-14 23:07:22,950  INFO    + Adding: Life is a Highway — Rascal Flatts
+2026-06-14 23:07:23,830  INFO    + Adding: Machane Machu — Vinod Varma, Sreecharan, & Deepak Dev
+2026-06-14 23:07:24,388  INFO    + Adding: Fight Song — Rachel Platten
+2026-06-14 23:07:24,909  INFO    + Adding: Like I'm Gonna Lose You (feat. John Legend) — Meghan Trainor
+2026-06-14 23:07:25,487  INFO    + Adding: Lucky — Jason Mraz & Colbie Caillat
+2026-06-14 23:07:26,019  INFO    + Adding: Just Breathe — Pearl Jam
+2026-06-14 23:07:26,933  INFO    + Adding: Life Is Crazy — Shankar Ehsaan Loy, Uday Benegal, Shankar Mahadevan, Loy Mendonsa, and Alyssa Mendonsa
+2026-06-14 23:07:27,482  INFO    + Adding: Unforgettable — Talwiinder
+2026-06-14 23:07:28,094  INFO    + Adding: Nasha — Vision & talwiinder
+2026-06-14 23:07:29,150  INFO    + Adding: Down (J King Y Maximan RMX) (feat. Lil Wayne) — Jay Sean
+2026-06-14 23:07:29,724  INFO    + Adding: Suniyan Suniyan — Juss & Mixsingh
+2026-06-14 23:07:30,565  INFO    + Adding: You And Me - Mashup | Shubh Ft. Sonam Bajwa | Talwiinder | Nain Tere Chain Mere | Afterhour Music — Afterhour Music
+2026-06-14 23:07:31,153  INFO    + Adding: Woh Raat — Shivoryx & Ronit Vinta
+2026-06-14 23:07:31,510  WARNING  Your application has reached a rate/request limit. Retry will occur after: 81323 s
+2026-06-15 19:37:06,755  INFO  YouTube Music → Spotify Sync Tool started.
+2026-06-15 19:37:06,756  INFO  Mode: ALL playlists — syncing every 24 hours.
+2026-06-15 19:37:06,756  INFO  ==================================================
+2026-06-15 19:37:06,756  INFO  Sync started at 2026-06-15 19:37:06
+2026-06-15 19:37:09,251  INFO  Found 67 YouTube Music playlist(s): Liked Music, Indie OP, Late Night, India ke Gaane, yash gohel and Khanak Jakhar, Nigger What!, Chill, My Rock Favorites, Hard Rock, Hard Bod, Retro Vibe, Fav Devotional, Songs you probably never heard before 🎶, Gujarati Hits, Damn, Smooth Vibe, 2025 Recap, Slow vibe, yash gohel, Khanak Jakhar and yash gohel, Techno 🍀, South Indian vibe, Live Performances, Indie Rock & Alt Rock Bangers, Guitar Playlist, Nihongo, shanky’s Pet Playlist, Drive 🚗, AllTime|AnyTime, Indie Folk Café, Punjabi Hits 2023, Chilled Hip-Hop, Hindi Beets Party, Retro Party, LEARN: Procreate Dreams, Rec, lana, Room vibe, old is gold 60's 70's & 80's hindi songs, West Coast Classics - GTA V Radio, jazz, retro, December-February Recap '24, 2023 Recap, NW, Amrita’s Playlist, Hindi, Dance, Zone, GnR, Others, Guitar Riffing Piffing, West Coast Classics/Rap, Trekking, My 2021 Hits, My 2020 Hits, Nihongo, Slow vibe, This Is Us OST, Super Bowl 2022, West Coast Greatest, Krishnakulgohel   Yash, West Coast All, Afrobeats, This Is Us OST, My 2010 Hits, Dance Cherry Picked, Episodes for Later
+2026-06-15 19:37:09,252  INFO  --- Syncing 'Liked Music' → 'Liked Music' ---
+2026-06-15 19:37:17,733  INFO  YT Music 'Liked Music': 109 songs found.
+2026-06-15 19:37:18,805  WARNING  Spotify playlist 'Liked Music' not found. Creating it...
+2026-06-15 19:37:19,043  INFO  Created Spotify playlist 'Liked Music'.
+2026-06-15 19:37:19,388  WARNING  Your application has reached a rate/request limit. Retry will occur after: 7535 s

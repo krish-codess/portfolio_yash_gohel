@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Streak AI Technologies — Case Study | Yash Gohel</title>
+<meta name="description" content="Wrote an entire trading-education Help Centre and the full in-product UX copy for a fintech platform used by lakhs of retail traders." />
+<script>(function(){try{
+  var t=localStorage.getItem('theme')||'dark';
+  document.documentElement.setAttribute('data-theme',t);
+}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0a0b;--bg-2:#111112;--bg-3:#18181a;
+  --surface:rgba(255,255,255,.04);--surface-2:rgba(255,255,255,.07);
+  --border:rgba(255,255,255,.10);--border-2:rgba(255,255,255,.18);
+  --text:#f1f1ef;--muted:#9c9c9f;--muted-2:#68686b;
+  --lavender:#ececea;--mint:#c4c4c6;--peach:#d0d0ce;--sky:#dcdcda;
+  --on-accent:#0a0a0b;--pglow-1:rgba(255,255,255,.16);--pglow-2:rgba(255,255,255,.10);
+  --panel-a:#1c1c1e;--panel-b:#101011;--hairline:rgba(255,255,255,.14);
+  --serif:'Fraunces',Georgia,serif;--sans:'Space Grotesk',-apple-system,BlinkMacSystemFont,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace;--maxw:1180px;
+}
+:root[data-theme="light"]{
+  --bg:#f6f6f4;--bg-2:#eeeeec;--bg-3:#e5e5e2;
+  --surface:rgba(10,10,8,.035);--surface-2:rgba(10,10,8,.06);
+  --border:rgba(10,10,8,.10);--border-2:rgba(10,10,8,.18);
+  --text:#111110;--muted:#57575a;--muted-2:#87878a;
+  --lavender:#141414;--mint:#3a3a3c;--peach:#4d4d4d;--sky:#232324;
+  --on-accent:#f6f6f4;--pglow-1:rgba(10,10,8,.09);--pglow-2:rgba(10,10,8,.055);
+  --panel-a:#ececea;--panel-b:#e0e0dd;--hairline:rgba(10,10,8,.14);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.5;overflow-x:hidden;letter-spacing:.01em;
+  transition:background-color .4s ease,color .4s ease}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+::selection{background:var(--lavender);color:var(--on-accent)}
+
+.bg-fx{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.orb{position:absolute;border-radius:50%;filter:blur(90px);opacity:.5;mix-blend-mode:screen}
+:root[data-theme="light"] .orb{mix-blend-mode:multiply}
+.orb.a{width:520px;height:520px;background:radial-gradient(circle,var(--pglow-1),transparent 70%);top:-120px;left:-80px}
+.orb.b{width:480px;height:480px;background:radial-gradient(circle,var(--pglow-2),transparent 70%);top:30%;right:-140px}
+
+header.nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:18px 0;border-bottom:1px solid transparent;
+  transition:background .4s,backdrop-filter .4s,border-color .4s}
+header.nav.scrolled{background:rgba(10,10,11,.72);backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
+:root[data-theme="light"] header.nav.scrolled{background:rgba(246,246,244,.78)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:var(--serif);font-size:22px;display:inline-flex;align-items:center;gap:9px}
+.logo em{font-style:italic;color:var(--lavender)}
+.crumb{display:flex;align-items:center;gap:22px;font-family:var(--mono);font-size:12px;color:var(--muted)}
+.crumb a::before{content:"[";color:var(--muted-2);margin-right:3px}
+.crumb a::after{content:"]";color:var(--muted-2);margin-left:3px}
+.theme-toggle{background:none;border:1px solid var(--border-2);border-radius:50%;width:30px;height:30px;
+  display:inline-flex;align-items:center;justify-content:center;cursor:pointer;color:var(--muted);flex:none}
+.theme-toggle:hover{color:var(--text);border-color:var(--lavender)}
+.theme-toggle .tt-icon{width:15px;height:15px;display:none}
+.theme-toggle .tt-icon svg{width:100%;height:100%}
+:root:not([data-theme="light"]) .theme-toggle .tt-sun{display:block}
+:root[data-theme="light"] .theme-toggle .tt-moon{display:block}
+
+main{position:relative;z-index:2}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);margin-bottom:22px}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--lavender)}
+
+.p-hero{padding:150px 0 60px}
+.p-hero h1{font-family:var(--serif);font-weight:340;font-size:clamp(42px,7vw,104px);line-height:.98;letter-spacing:-.02em;max-width:900px}
+.p-hero h1 em{font-style:italic;color:var(--lavender)}
+.p-hero .hook{margin-top:26px;color:var(--muted);font-size:clamp(16px,1.8vw,20px);max-width:640px;line-height:1.6}
+.p-hero .plat{margin-top:26px;display:flex;flex-wrap:wrap;gap:9px}
+.p-hero .plat span{font-size:12.5px;padding:7px 13px;border-radius:30px;border:1px solid var(--border);background:var(--surface-2)}
+.hero-btns{margin-top:34px;display:flex;flex-wrap:wrap;align-items:center;gap:22px}
+.btn{padding:14px 26px;border-radius:44px;font-size:14px;font-weight:500;letter-spacing:.02em;transition:.28s;border:1px solid transparent;
+  display:inline-flex;align-items:center;gap:9px;cursor:pointer;background:none;color:var(--text);font-family:var(--sans)}
+.btn.primary{background:linear-gradient(115deg,var(--lavender),var(--sky));color:var(--on-accent)}
+.btn.primary:hover{filter:brightness(1.08);transform:translateY(-2px)}
+.btn.ghost{padding:0;font-family:var(--mono);font-size:13px;color:var(--muted)}
+.btn.ghost::before{content:"[";color:var(--muted-2);margin-right:1px}
+.btn.ghost::after{content:"]";color:var(--muted-2);margin-left:1px}
+.btn.ghost:hover{color:var(--text)}
+.btn .arw{transition:transform .3s}.btn:hover .arw{transform:translate(3px,-3px)}
+
+.notice{margin-top:26px;border:1px dashed var(--border-2);border-radius:16px;padding:16px 20px;color:var(--muted);font-size:13.5px;line-height:1.6;max-width:640px}
+.notice b{color:var(--text)}
+
+.stat-strip{margin-top:64px;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.stat-strip .s{padding:30px 26px;border-right:1px solid var(--border)}
+.stat-strip .s:last-child{border-right:none}
+.stat-strip .n{font-family:var(--serif);font-size:clamp(30px,3.6vw,46px);color:var(--text);line-height:1}
+.stat-strip .l{margin-top:9px;font-size:12.5px;color:var(--muted);line-height:1.4}
+
+section{padding:90px 0}
+.sec-k{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted-2);margin-bottom:14px}
+h2.sec-t{font-family:var(--serif);font-weight:400;font-size:clamp(28px,3.6vw,44px);line-height:1.05;margin-bottom:18px}
+
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.gallery .g-tile{aspect-ratio:4/3;border-radius:16px;border:1px solid var(--border);position:relative;overflow:hidden;
+  background:linear-gradient(150deg,var(--panel-a),var(--panel-b));display:flex;align-items:flex-end;padding:16px}
+.gallery .g-tile.wide{grid-column:span 2}
+.gallery .g-tile::before{content:"";position:absolute;inset:0;background:radial-gradient(120% 100% at 30% 0%,var(--pglow-1),transparent 60%)}
+.gallery .g-tile .tag{position:relative;z-index:1;font-family:var(--mono);font-size:11px;letter-spacing:.04em;color:var(--muted);font-style:italic}
+.gallery .g-tile .kind{position:absolute;top:14px;right:14px;font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--muted-2);border:1px solid var(--border-2);padding:4px 8px;border-radius:20px;z-index:1}
+
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+.two-col h3{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted-2);margin-bottom:16px}
+.two-col p{color:var(--muted);font-size:15.5px;line-height:1.65;margin-bottom:14px}
+.two-col p b{color:var(--text);font-weight:500}
+.two-col ul{list-style:none;display:flex;flex-direction:column;gap:13px}
+.two-col li{position:relative;padding-left:22px;color:var(--text);font-size:15px;line-height:1.55}
+.two-col li::before{content:"";position:absolute;left:0;top:8px;width:8px;height:8px;border-radius:2px;background:var(--lavender)}
+
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:6px}
+.chip{font-size:12.5px;padding:7px 13px;border-radius:30px;border:1px solid var(--border);color:var(--text);background:var(--surface-2)}
+.chip b{color:var(--lavender)}
+.ph{color:var(--peach);font-style:italic}
+.tools-strip{margin-top:8px;font-family:var(--mono);font-size:12.5px;color:var(--muted-2);letter-spacing:.02em}
+
+.p-cta{text-align:center;padding:100px 0}
+.p-cta h2{font-family:var(--serif);font-weight:400;font-size:clamp(32px,5vw,60px)}
+.p-cta h2 em{font-style:italic;color:var(--lavender)}
+.p-cta p{color:var(--muted);margin-top:18px}
+.p-cta .btn{margin-top:30px}
+
+.proj-nav{border-top:1px solid var(--border);display:grid;grid-template-columns:1fr 1fr}
+.proj-nav a{padding:34px 28px;display:flex;flex-direction:column;gap:6px;transition:background .3s}
+.proj-nav a:first-child{border-right:1px solid var(--border)}
+.proj-nav a:hover{background:var(--surface)}
+.proj-nav .d{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-2)}
+.proj-nav .t{font-family:var(--serif);font-size:24px}
+.proj-nav a:last-child{text-align:right;align-items:flex-end}
+
+footer{border-top:1px solid var(--border);padding:36px 0;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+footer .soc{display:flex;gap:22px;font-family:var(--mono);font-size:12px;color:var(--muted)}
+footer .soc a::before{content:"[";color:var(--muted-2);margin-right:2px}
+footer .soc a::after{content:"]";color:var(--muted-2);margin-left:2px}
+footer .soc a:hover{color:var(--lavender)}
+footer .cr{font-family:var(--mono);font-size:11px;color:var(--muted-2)}
+
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+
+@media(max-width:860px){
+  .stat-strip{grid-template-columns:1fr 1fr}
+  .stat-strip .s:nth-child(2){border-right:none}
+  .two-col{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr 1fr}.gallery .g-tile.wide{grid-column:span 2}
+  .crumb a{display:none}
+  .crumb{gap:0}
+  .proj-nav{grid-template-columns:1fr}
+  .proj-nav a:first-child{border-right:none;border-bottom:1px solid var(--border)}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<div class="bg-fx"><div class="orb a"></div><div class="orb b"></div></div>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="../alt.html" class="logo"><b>Yash</b> <em>Gohel</em></a>
+    <div class="crumb">
+      <a href="../alt.html#work">All Work</a>
+      <a href="../alt.html#contact">Contact</a>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle light / dark mode">
+        <span class="tt-icon tt-sun"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.4 4.4l1.7 1.7M17.9 17.9l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.4 19.6l1.7-1.7M17.9 6.1l1.7-1.7"/></svg></span>
+        <span class="tt-icon tt-moon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z"/></svg></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+  <section class="p-hero">
+    <div class="eyebrow reveal">Case study · 02 — Fintech</div>
+    <h1 class="reveal">Streak AI <em>Technologies.</em></h1>
+    <p class="hook reveal">Wrote an entire trading-education Help Centre from scratch, and authored the full in-product UX copy for a fintech platform used by lakhs of retail traders.</p>
+    <div class="plat reveal"><span>Help Centre</span><span>UX Copy</span><span>User Research</span><span>Growth Partnerships</span></div>
+    <div class="hero-btns reveal">
+      <a href="../alt.html#contact" class="btn primary">Get in touch <span class="arw">↗</span></a>
+      <a href="../alt.html#work" class="btn ghost">Back to all work</a>
+    </div>
+    <div class="notice reveal"><b>A note on this case study:</b> Streak's original pages were retired after a company restructuring in 2023. This page presents the work via description and archived captures rather than a live link. <span class="ph">[Add Wayback Machine link / screenshots]</span></div>
+  </section>
+
+  <div class="stat-strip reveal">
+    <div class="s"><div class="n">100+</div><div class="l">Help Centre articles &amp; instructional videos, built from zero</div></div>
+    <div class="s"><div class="n">+37%</div><div class="l">Lift in user conversion after launch</div></div>
+    <div class="s"><div class="n">150+</div><div class="l">User interviews conducted &amp; synthesized</div></div>
+    <div class="s"><div class="n">5,000+</div><div class="l">New users/month via growth partnerships</div></div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="sec-k reveal">Media</div>
+    <h2 class="sec-t reveal">Archived captures.</h2>
+    <div class="gallery reveal">
+      <div class="g-tile wide"><div class="kind">Image</div><div class="tag">[Help Centre homepage — archived screenshot]</div></div>
+      <div class="g-tile"><div class="kind">Image</div><div class="tag">[Article layout — archived]</div></div>
+      <div class="g-tile"><div class="kind">Image</div><div class="tag">[In-app onboarding copy — screenshot]</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-k reveal">Context &amp; approach</div>
+    <div class="two-col">
+      <div class="reveal">
+        <h3>Context &amp; role</h3>
+        <p>Streak's trading platform served lakhs of first-time retail traders who found the product's language — and the market itself — intimidating. There was no structured education layer and no consistent product voice.</p>
+        <p><b>My role:</b> Content strategist — owned the Help Centre build and all in-product UX copy.</p>
+      </div>
+      <div class="reveal d1" style="transition-delay:.08s">
+        <h3>What I did</h3>
+        <ul>
+          <li>Wrote an entire trading-education Help Centre — strategic trading, technical indicators, strategies — with 100+ articles and instructional videos, from nothing.</li>
+          <li>Authored the full UI/UX copy for the platform: onboarding, in-product flows, microcopy — turning jargon into clear, confident language.</li>
+          <li>Conducted 150+ user interviews and synthesized 1,000+ responses to shape content strategy, user journey, and product direction.</li>
+          <li>Led growth partnerships and co-marketing/B2B integrations bringing in 5,000+ new users monthly.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="tools-strip reveal" style="margin-top:36px">User interviews · Content strategy · UX writing · Help-centre architecture · Growth partnerships</div>
+  </div>
+</section>
+
+<div class="p-cta reveal">
+  <div class="eyebrow" style="justify-content:center">Product UX copy</div>
+  <h2>Jargon into <em>clarity.</em></h2>
+  <p>Onboarding, in-product flows, and microcopy for a platform used by lakhs of retail traders.</p>
+  <div class="chips" style="justify-content:center;margin-top:26px"><span class="chip">Entire product copy</span><span class="chip"><b>150+</b> user interviews</span><span class="chip">Fintech · Trading</span></div>
+</div>
+
+<nav class="proj-nav">
+  <a href="goodflip.html"><span class="d">← Previous</span><span class="t">TatvaCare / GoodFlip</span></a>
+  <a href="quicko.html"><span class="d">Next →</span><span class="t">Quicko</span></a>
+</nav>
+
+<footer class="wrap">
+  <div class="logo"><b>Yash</b> <em>Gohel</em></div>
+  <div class="soc">
+    <a href="https://instagram.com/wai.geee" target="_blank" rel="noopener">Instagram ↗</a>
+    <a href="mailto:yashlehog@gmail.com">Email ↗</a>
+  </div>
+  <div class="cr">© <span id="yr"></span> Yash Gohel</div>
+</footer>
+</main>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+document.getElementById('themeToggle').addEventListener('click',()=>{
+  const root=document.documentElement;
+  const next=root.getAttribute('data-theme')==='light'?'dark':'light';
+  root.setAttribute('data-theme',next);
+  try{localStorage.setItem('theme',next);}catch(e){}
+});
+const nav=document.getElementById('nav');
+function onScroll(){nav.classList.toggle('scrolled',window.scrollY>40);}
+window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+const REDUCE=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+if(REDUCE){document.querySelectorAll('.reveal').forEach(el=>el.classList.add('in'));}
+else{
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.15,rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+}
+</script>
+</body>
+</html>
