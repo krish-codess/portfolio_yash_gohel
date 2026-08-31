@@ -2173,53 +2173,6 @@ const REDUCE=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
   vids.forEach(v=>io.observe(v));
 })();
 
-/* ===== INFINITE SCROLL: reaching the bottom loops back to the hero instead
-   of dead-ending at the footer. Triggers only on continued scroll intent
-   past the bottom (accumulated wheel delta / an upward swipe), not on
-   merely arriving there, so reading the footer doesn't get cut short.
-   The jump itself is masked by a fade-to-background overlay rather than
-   a native smooth-scroll, so it reads as the top section starting over
-   again, not as the page visibly rewinding backwards past every section. ===== */
-(function(){
-  if(REDUCE)return;
-  let cooldown=false,wheelAccum=0;
-  function atBottom(){
-    const doc=document.documentElement;
-    return (window.innerHeight+window.scrollY)>=doc.scrollHeight-4;
-  }
-  function loopToTop(){
-    if(cooldown)return;
-    cooldown=true;
-    wheelAccum=0;
-    const overlay=document.createElement('div');
-    overlay.style.cssText='position:fixed;inset:0;z-index:9995;background:var(--bg);opacity:0;pointer-events:none;transition:opacity .4s ease';
-    document.body.appendChild(overlay);
-    requestAnimationFrame(()=>{overlay.style.opacity='1';});
-    setTimeout(()=>{
-      window.scrollTo({top:0,behavior:'auto'});
-      requestAnimationFrame(()=>{overlay.style.opacity='0';});
-      setTimeout(()=>{overlay.remove();cooldown=false;},420);
-    },420);
-  }
-  window.addEventListener('wheel',e=>{
-    if(cooldown)return;
-    if(e.deltaY>0&&atBottom()){
-      wheelAccum+=e.deltaY;
-      if(wheelAccum>160)loopToTop();
-    }else if(e.deltaY<0){
-      wheelAccum=0;
-    }
-  },{passive:true});
-  let touchStartY=null;
-  window.addEventListener('touchstart',e=>{touchStartY=e.touches[0].clientY;},{passive:true});
-  window.addEventListener('touchmove',e=>{
-    if(cooldown||touchStartY==null)return;
-    const dy=touchStartY-e.touches[0].clientY;
-    if(dy>70&&atBottom())loopToTop();
-  },{passive:true});
-  window.addEventListener('touchend',()=>{touchStartY=null;},{passive:true});
-})();
-
 /* ===== CUSTOM CURSOR: a fading green trail drawn on canvas, plus a small
    glowing dot at the tip (synchronized.studio-inspired). Disabled on
    touch/coarse pointers and when reduced-motion is requested. ===== */

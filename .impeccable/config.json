@@ -104,6 +104,11 @@
         "value": "#c77dff",
         "createdAt": "2026-08-29T02:42:13.897Z",
         "reason": "pre-existing intentional Spider-Verse 2 palette bonus glow accent on .frame under that theme only, confirmed not AI-slop in earlier pass this session, unrelated to current edits"
+      },
+      {
+        "rule": "dark-glow",
+        "value": "0 0 60px -22px rgba(199,125,255,.4)",
+        "createdAt": "2026-08-31T18:07:01.238Z"
       }
     ]
   }
