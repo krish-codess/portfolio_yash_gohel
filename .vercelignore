@@ -1,0 +1,21 @@
+# Not site content — excluded from the deployment so it is never publicly
+# reachable and does not count toward deployment size.
+
+# Retired drafts kept in the repo for reference only.
+_orphaned_drafts_review/
+
+# Source resumes, content drafts and role-targeted CVs. These are working
+# documents, not pages — the live resume download is /Yash-Gohel-Resume.pdf.
+other files/
+
+# Superseded Netlify config. Kept in git so the old deploy still works as a
+# fallback during the move; Vercel does not read these.
+netlify/
+netlify.toml
+
+# Local tooling with credentials in it. Already gitignored — repeated here so
+# it can never ship even if it is ever force-added to the repo.
+AI Projects/
+
+.DS_Store
+.impeccable/

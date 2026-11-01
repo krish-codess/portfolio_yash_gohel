@@ -854,7 +854,7 @@ footer.foot2{border:1px solid var(--border-2);border-radius:20px;overflow:hidden
     <a href="../index.html#contact"><span class="dnum">06</span>Contact</a>
   </nav>
   <div class="drawer-foot">
-    <a href="../Yash%20Gohel%20Brand%20Manager%20Resume.pdf" download>Download résumé ↓</a>
+    <a href="../Yash-Gohel-Resume.pdf" download>Download résumé ↓</a>
     <a href="mailto:yashlehog@gmail.com">yashlehog@gmail.com</a>
   </div>
 </div>
@@ -1010,7 +1010,7 @@ footer.foot2{border:1px solid var(--border-2);border-radius:20px;overflow:hidden
     </div>
     <div class="fcol">
       <h6>Résumé</h6>
-      <a href="../Yash%20Gohel%20Brand%20Manager%20Resume.pdf" download>Download résumé ↓</a>
+      <a href="../Yash-Gohel-Resume.pdf" download>Download résumé ↓</a>
       <div class="row">Currently open to new roles<span class="note">Assistant Manager &middot; Brand, Creative &amp; Comms, TatvaCare</span></div>
     </div>
   </div>
@@ -1350,10 +1350,10 @@ if(HAS_GSAP&&!REDUCE&&document.querySelector('.wordmark')){
     scrollTrigger:{trigger:'.wordmark',start:'top 90%',once:true}});
 }
 
-/* ===== ICP GENERATOR: calls the real Claude API server-side via a Netlify
-   function at /api/generate-icp (see netlify.toml + netlify/functions/generate-icp.js).
+/* ===== ICP GENERATOR: calls the real Claude API server-side via a Vercel
+   function at /api/generate-icp (see api/generate-icp.js).
    No API key ever touches the browser. Requires ANTHROPIC_API_KEY to be set
-   as an env var on the Netlify deployment; until then this will show a clear
+   as an env var on the Vercel deployment; until then this will show a clear
    error instead of a fake result. ===== */
 (function(){
   const run=document.getElementById('icpRun'),out=document.getElementById('icpOut');
@@ -1370,7 +1370,7 @@ if(HAS_GSAP&&!REDUCE&&document.querySelector('.wordmark')){
   }
   function renderError(msg){
     out.innerHTML=`<div class="err"><b>Couldn&rsquo;t generate this one.</b><br>${esc(msg)}<br><br>
-      If you&rsquo;re seeing this right after deploying: add <b>ANTHROPIC_API_KEY</b> as an environment variable in your Netlify project settings, then redeploy.</div>`;
+      If you&rsquo;re seeing this right after deploying: add <b>ANTHROPIC_API_KEY</b> as an environment variable in your Vercel project settings, then redeploy.</div>`;
   }
   function renderICP(icp, meta){
     const p=icp.primary_persona||{}, sp=icp.secondary_persona||{};
@@ -1455,7 +1455,7 @@ if(HAS_GSAP&&!REDUCE&&document.querySelector('.wordmark')){
       }
       renderICP(data.icp, {model:data.model, depth:data.depth});
     }catch(e){
-      renderError('Network error reaching the generator. If you’re testing this locally, run it through `netlify dev` so /api routes resolve.');
+      renderError('Network error reaching the generator. If you’re testing this locally, run it through `vercel dev` so /api routes resolve.');
     }finally{
       inFlight=false;
       run.disabled=false;

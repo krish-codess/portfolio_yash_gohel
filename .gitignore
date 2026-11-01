@@ -30,3 +30,8 @@ Thumbs.db
 dist/
 build/
 .netlify/
+
+# Role-targeted CV drafts. This repo is PUBLIC — a resume written for one named
+# employer should not be browsable by your current one, or by that employer.
+# Kept local only. Delete this line if you decide you want it tracked.
+other files/Yash_Gohel_Resume_Accenture_ProcessExcellence.html
